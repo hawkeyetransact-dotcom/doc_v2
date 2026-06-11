@@ -1,0 +1,71 @@
+# ============================================================
+# Doc_V2/.gitignore
+# Keeps customer-specific drafts and internal-only artifacts
+# OFF the public repo while everything else syncs to mobile.
+# ============================================================
+
+# ─── Customer-specific (per-customer engagement records) ───
+# Per-customer folders contain pricing, PoC drafts, prospect profiles.
+# Never push these. Keep local-only.
+10-customer-success/customer-accounts/sanpras-healthcare/
+10-customer-success/customer-accounts/novex-*/
+10-customer-success/customer-accounts/*/PROSPECT-PROFILE.*
+10-customer-success/customer-accounts/*/SANPRAS-CHEAT-SHEET.*
+10-customer-success/customer-accounts/*/SANPRAS-POC-PROPOSAL-*.*
+10-customer-success/customer-accounts/*/DEMO-PLAYBOOK.*
+
+# Customer-specific files anywhere (catch-all pattern)
+**/SANPRAS-*
+**/NOVEX-*
+
+# ─── Internal-only sales handlers ───
+# The sales-team Q&A appendix doc and discount thresholds
+# Stay private. Generic SALES-PLAYBOOK is fine to publish.
+**/*-SALES.md
+**/*-SALES.html
+**/*-SALES.pdf
+
+# ─── Rendered output (regenerate from source) ───
+# HTML and PDF bloat git history; rebuild via _scripts/render-docs.mjs
+*.html
+*.pdf
+# Exception: from-Web bundle PDFs ARE canonical (not regeneratable) — keep them
+!from*Web/**/*.pdf
+# Exception: hero SVG artwork PDF previews if any
+!_assets/**/*.pdf
+
+# ─── Build/scratch ───
+_scratch/
+DRAFT-*.md
+_scripts/temp/
+_scripts/node_modules/
+
+# ─── Web-bundle artifacts that are huge / archival ───
+# The 6.9MB chat-artifacts zip bloats history; keep the PDFs but not the zip
+from*Web/Doc_V2_from_Web/07_cleanup_tools/hawkeye-chat-artifacts.zip
+from*Web/Doc_V2_from_Web/02_strategy_and_pitch/brochures/_archive_*
+
+# ─── OS / editor cruft ───
+.DS_Store
+Thumbs.db
+ehthumbs.db
+desktop.ini
+*.swp
+*.swo
+*~
+.vscode/
+.idea/
+*.tmp
+
+# ─── Node / npm (if any docs scripts use it) ───
+node_modules/
+npm-debug.log
+yarn-error.log
+package-lock.json
+
+# ─── Env / secrets (paranoia layer) ───
+.env
+.env.local
+.env.*.local
+*.key
+*.pem

@@ -1,0 +1,179 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1100 580" font-family="-apple-system,BlinkMacSystemFont,Segoe UI,Inter,sans-serif">
+  <rect width="1100" height="580" fill="#FAFBFC"/>
+
+  <!-- Title -->
+  <rect x="0" y="0" width="1100" height="56" fill="#0F2042"/>
+  <text x="32" y="35" fill="#FFFFFF" font-size="18" font-weight="700">The Cross-Module Chain of Evidence</text>
+  <text x="32" y="50" fill="#94A3B8" font-size="10.5">A single FDA-483 traversing 6 modules · End-to-end traceability · &lt;2 sec inspector query</text>
+  <text x="1068" y="35" fill="#F59E0B" font-size="11" font-weight="700" text-anchor="end">v1.0</text>
+
+  <!-- Inspector finding at the top -->
+  <g transform="translate(50,80)">
+    <rect width="1000" height="56" rx="8" fill="#FEE2E2" stroke="#B91C1C" stroke-width="2"/>
+    <text x="20" y="22" fill="#7F1D1D" font-size="11" font-weight="700" letter-spacing="0.08em">🔍 FDA-483 OBSERVATION · ENTERS THE PIPELINE</text>
+    <text x="20" y="40" fill="#7F1D1D" font-size="11" font-style="italic">"SOP not followed during batch X — operator deviation from documented in-process control limits at step 4"</text>
+    <text x="20" y="52" fill="#B91C1C" font-size="9">Finding ID: F-2026-0142 · Auditor: Maria Santos · Auditee: Sanpras Healthcare</text>
+  </g>
+
+  <!-- Down arrow to first module -->
+  <g stroke="#475569" stroke-width="2" fill="none">
+    <path d="M 200 142 L 200 168" marker-end="url(#arrowChainGray)"/>
+  </g>
+  <text x="220" y="160" fill="#475569" font-size="9" font-style="italic">auto-spawn deviation</text>
+
+  <!-- ============== 7 MODULE CARDS ARRANGED AROUND CENTER ============== -->
+  <!-- Card layout: roughly horizontal flow -->
+
+  <!-- 1. AUDIT MODULE -->
+  <g transform="translate(50,170)">
+    <rect width="170" height="100" rx="8" fill="#FFFFFF" stroke="#1E40AF" stroke-width="1.5"/>
+    <rect width="170" height="22" rx="8" fill="#1E40AF"/>
+    <rect y="14" width="170" height="8" fill="#1E40AF"/>
+    <circle cx="15" cy="11" r="9" fill="#F59E0B"/>
+    <text x="15" y="15" fill="#0F2042" font-size="10" font-weight="700" text-anchor="middle">1</text>
+    <text x="32" y="15" fill="#FFFFFF" font-size="10" font-weight="700">AUDIT</text>
+    <text x="14" y="40" fill="#0F2042" font-size="10" font-weight="700">Observation captured</text>
+    <text x="14" y="55" fill="#475569" font-size="9">+ severity classified</text>
+    <text x="14" y="68" fill="#475569" font-size="9">+ AuditObservation created</text>
+    <text x="14" y="85" fill="#1E40AF" font-size="8" font-style="italic">at close: spawns CAPA</text>
+    <text x="14" y="95" fill="#1E40AF" font-size="8" font-style="italic">per observation</text>
+  </g>
+
+  <!-- 2. DEVIATION -->
+  <g transform="translate(245,170)">
+    <rect width="170" height="100" rx="8" fill="#FFFFFF" stroke="#15803D" stroke-width="1.5"/>
+    <rect width="170" height="22" rx="8" fill="#15803D"/>
+    <rect y="14" width="170" height="8" fill="#15803D"/>
+    <circle cx="15" cy="11" r="9" fill="#F59E0B"/>
+    <text x="15" y="15" fill="#0F2042" font-size="10" font-weight="700" text-anchor="middle">2</text>
+    <text x="32" y="15" fill="#FFFFFF" font-size="10" font-weight="700">DEVIATION</text>
+    <text x="14" y="40" fill="#0F2042" font-size="10" font-weight="700">6-agent AI stack</text>
+    <text x="14" y="55" fill="#475569" font-size="9">AI auto-classifies MAJOR</text>
+    <text x="14" y="68" fill="#475569" font-size="9">+ similarFinder links 3 past</text>
+    <text x="14" y="85" fill="#15803D" font-size="8" font-style="italic">createCapaFromDeviation</text>
+    <text x="14" y="95" fill="#15803D" font-size="8" font-style="italic">on close</text>
+  </g>
+
+  <!-- 3. CAPA -->
+  <g transform="translate(440,170)">
+    <rect width="170" height="100" rx="8" fill="#FFFFFF" stroke="#7C3AED" stroke-width="1.5"/>
+    <rect width="170" height="22" rx="8" fill="#7C3AED"/>
+    <rect y="14" width="170" height="8" fill="#7C3AED"/>
+    <circle cx="15" cy="11" r="9" fill="#F59E0B"/>
+    <text x="15" y="15" fill="#0F2042" font-size="10" font-weight="700" text-anchor="middle">3</text>
+    <text x="32" y="15" fill="#FFFFFF" font-size="10" font-weight="700">CAPA</text>
+    <text x="14" y="40" fill="#0F2042" font-size="10" font-weight="700">Investigation + RCA</text>
+    <text x="14" y="55" fill="#475569" font-size="9">+ 5-Why scaffolder</text>
+    <text x="14" y="68" fill="#475569" font-size="9">+ Action plan + execute</text>
+    <text x="14" y="85" fill="#7C3AED" font-size="8" font-style="italic">spawns Change Control</text>
+    <text x="14" y="95" fill="#7C3AED" font-size="8" font-style="italic">for SOP revision</text>
+  </g>
+
+  <!-- 4. CHANGE CONTROL -->
+  <g transform="translate(635,170)">
+    <rect width="170" height="100" rx="8" fill="#FFFFFF" stroke="#D97706" stroke-width="1.5"/>
+    <rect width="170" height="22" rx="8" fill="#D97706"/>
+    <rect y="14" width="170" height="8" fill="#D97706"/>
+    <circle cx="15" cy="11" r="9" fill="#F59E0B"/>
+    <text x="15" y="15" fill="#0F2042" font-size="10" font-weight="700" text-anchor="middle">4</text>
+    <text x="32" y="15" fill="#FFFFFF" font-size="10" font-weight="700">CHANGE CTRL</text>
+    <text x="14" y="40" fill="#0F2042" font-size="10" font-weight="700">SOP revision approved</text>
+    <text x="14" y="55" fill="#475569" font-size="9">+ Impact assessment</text>
+    <text x="14" y="68" fill="#475569" font-size="9">+ Multi-step e-sig chain</text>
+    <text x="14" y="85" fill="#D97706" font-size="8" font-style="italic">spawns Doc Control</text>
+    <text x="14" y="95" fill="#D97706" font-size="8" font-style="italic">update + Training</text>
+  </g>
+
+  <!-- 5. DOC CONTROL -->
+  <g transform="translate(830,170)">
+    <rect width="170" height="100" rx="8" fill="#FFFFFF" stroke="#0369A1" stroke-width="1.5"/>
+    <rect width="170" height="22" rx="8" fill="#0369A1"/>
+    <rect y="14" width="170" height="8" fill="#0369A1"/>
+    <circle cx="15" cy="11" r="9" fill="#F59E0B"/>
+    <text x="15" y="15" fill="#0F2042" font-size="10" font-weight="700" text-anchor="middle">5</text>
+    <text x="32" y="15" fill="#FFFFFF" font-size="10" font-weight="700">DOC CONTROL</text>
+    <text x="14" y="40" fill="#0F2042" font-size="10" font-weight="700">SOP v2.1 → EFFECTIVE</text>
+    <text x="14" y="55" fill="#475569" font-size="9">+ Review chain + e-sigs</text>
+    <text x="14" y="68" fill="#475569" font-size="9">+ Distribution to readers</text>
+    <text x="14" y="85" fill="#0369A1" font-size="8" font-style="italic">spawns Training</text>
+    <text x="14" y="95" fill="#0369A1" font-size="8" font-style="italic">assignment for SOP v2.1</text>
+  </g>
+
+  <!-- Row 2 -->
+  <!-- 6. TRAINING -->
+  <g transform="translate(440,310)">
+    <rect width="170" height="100" rx="8" fill="#FFFFFF" stroke="#15803D" stroke-width="1.5"/>
+    <rect width="170" height="22" rx="8" fill="#15803D"/>
+    <rect y="14" width="170" height="8" fill="#15803D"/>
+    <circle cx="15" cy="11" r="9" fill="#F59E0B"/>
+    <text x="15" y="15" fill="#0F2042" font-size="10" font-weight="700" text-anchor="middle">6</text>
+    <text x="32" y="15" fill="#FFFFFF" font-size="10" font-weight="700">TRAINING</text>
+    <text x="14" y="40" fill="#0F2042" font-size="10" font-weight="700">12 operators trained</text>
+    <text x="14" y="55" fill="#475569" font-size="9">+ Per-user records</text>
+    <text x="14" y="68" fill="#475569" font-size="9">+ Effectiveness check +90d</text>
+    <text x="14" y="85" fill="#15803D" font-size="8" font-style="italic">closes loop back to CAPA</text>
+    <text x="14" y="95" fill="#15803D" font-size="8" font-style="italic">effectiveness verification</text>
+  </g>
+
+  <!-- 7. CLOSURE (loops back to audit) -->
+  <g transform="translate(635,310)">
+    <rect width="170" height="100" rx="8" fill="#FFFFFF" stroke="#1E40AF" stroke-width="1.5"/>
+    <rect width="170" height="22" rx="8" fill="#1E40AF"/>
+    <rect y="14" width="170" height="8" fill="#1E40AF"/>
+    <circle cx="15" cy="11" r="9" fill="#F59E0B"/>
+    <text x="15" y="15" fill="#0F2042" font-size="10" font-weight="700" text-anchor="middle">7</text>
+    <text x="32" y="15" fill="#FFFFFF" font-size="10" font-weight="700">AUDIT CLOSURE</text>
+    <text x="14" y="40" fill="#0F2042" font-size="10" font-weight="700">Cert issued</text>
+    <text x="14" y="55" fill="#475569" font-size="9">+ CAPA effectiveness OK</text>
+    <text x="14" y="68" fill="#475569" font-size="9">+ Dual e-sig (G8)</text>
+    <text x="14" y="85" fill="#1E40AF" font-size="8" font-style="italic">Outcome: APPROVED</text>
+    <text x="14" y="95" fill="#1E40AF" font-size="8" font-style="italic">Closes F-2026-0142</text>
+  </g>
+
+  <!-- Arrows between cards (horizontal: 1→2→3→4→5) -->
+  <g stroke="#475569" stroke-width="2.5" fill="none" marker-end="url(#arrowChainGray)">
+    <path d="M 220 220 L 245 220"/>
+    <path d="M 415 220 L 440 220"/>
+    <path d="M 610 220 L 635 220"/>
+    <path d="M 805 220 L 830 220"/>
+  </g>
+
+  <!-- Card 5 (Doc Control) → Card 6 (Training) — goes down -->
+  <g stroke="#475569" stroke-width="2.5" fill="none" marker-end="url(#arrowChainGray)">
+    <path d="M 915 270 L 915 295 L 525 295 L 525 310" stroke-dasharray="3,3"/>
+  </g>
+
+  <!-- Card 6 (Training) → Card 7 (Closure) — horizontal -->
+  <g stroke="#475569" stroke-width="2.5" fill="none" marker-end="url(#arrowChainGray)">
+    <path d="M 610 360 L 635 360"/>
+  </g>
+
+  <!-- Audit-trail spine band at the bottom -->
+  <g transform="translate(50,440)">
+    <rect width="1000" height="80" rx="10" fill="#1E3A6E" stroke="#0F2042" stroke-width="2"/>
+    <text x="20" y="26" fill="#F59E0B" font-size="11" font-weight="700" letter-spacing="0.08em">🔒  AUDIT TRAIL SPINE · IMMUTABLE · APPEND-ONLY · QUERYABLE IN &lt;2 SEC</text>
+    <text x="20" y="44" fill="#FFFFFF" font-size="10">Every state change · Every signature · Every AI decision · Every cross-module spawn — logged with reasonForChange + actor + timestamp + before/after diff</text>
+    <text x="20" y="64" fill="#CBD5E1" font-size="9.5" font-style="italic">When the regulator asks "show me the full chain from your F-2026-0142 observation to evidence of training completion" — one query answers, including who signed when, what AI confidence flagged, what reason was given for each change.</text>
+  </g>
+
+  <!-- Down arrows from each card to the spine -->
+  <g stroke="#F59E0B" stroke-width="1" stroke-dasharray="2,3" fill="none" opacity="0.6">
+    <line x1="135" y1="270" x2="135" y2="440"/>
+    <line x1="330" y1="270" x2="330" y2="440"/>
+    <line x1="525" y1="270" x2="525" y2="440"/>
+    <line x1="720" y1="270" x2="720" y2="440"/>
+    <line x1="915" y1="270" x2="915" y2="440"/>
+    <line x1="525" y1="410" x2="525" y2="440"/>
+    <line x1="720" y1="410" x2="720" y2="440"/>
+  </g>
+
+  <text x="550" y="555" fill="#475569" font-size="9" text-anchor="middle" font-style="italic">
+    Same record carries through 7 modules in 4-6 weeks. The chain is the platform. The audit trail is the moat.
+  </text>
+
+  <defs>
+    <marker id="arrowChainGray" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+      <path d="M 0 0 L 10 5 L 0 10 z" fill="#475569"/>
+    </marker>
+  </defs>
+</svg>
