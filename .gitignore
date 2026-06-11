@@ -6,13 +6,8 @@
 
 # ─── Customer-specific (per-customer engagement records) ───
 # Per-customer folders contain pricing, PoC drafts, prospect profiles.
-# Never push these. Keep local-only.
-10-customer-success/customer-accounts/sanpras-healthcare/
-10-customer-success/customer-accounts/novex-*/
-10-customer-success/customer-accounts/*/PROSPECT-PROFILE.*
-10-customer-success/customer-accounts/*/SANPRAS-CHEAT-SHEET.*
-10-customer-success/customer-accounts/*/SANPRAS-POC-PROPOSAL-*.*
-10-customer-success/customer-accounts/*/DEMO-PLAYBOOK.*
+# Index file mentions customer names too. Keep entire customer-accounts/ folder local-only.
+10-customer-success/customer-accounts/
 
 # Customer-specific files anywhere (catch-all pattern)
 **/SANPRAS-*
