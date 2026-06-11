@@ -40,12 +40,12 @@ If you forget the sentence, the workflow still works — Claude will figure it o
 
 ### Before you start
 
-1. Open your phone browser → go to `https://github.com/[your-org]/hawkeye-docs/blob/main/PROJECT-STATE.md`
+1. Open your phone browser → go to `https://github.com/hawkeyetransact-dotcom/doc_v2/blob/main/PROJECT-STATE.md`
 2. Skim it. You'll remember what's been decided in 60 seconds.
 
 ### When you give an instruction to mobile Claude
 
-Open with: *"Per the Hawkeye PROJECT-STATE.md at `https://raw.githubusercontent.com/[your-org]/hawkeye-docs/main/PROJECT-STATE.md` — please read that first. Then [your instruction]."*
+Open with: *"Per the Hawkeye PROJECT-STATE.md at `https://raw.githubusercontent.com/hawkeyetransact-dotcom/doc_v2/main/PROJECT-STATE.md` — please read that first. Then [your instruction]."*
 
 Then ask Claude to do **planning / drafting / ideation** — NOT execution. Examples that work well on mobile:
 

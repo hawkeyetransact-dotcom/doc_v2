@@ -7,6 +7,8 @@
 | **Last updated** | 2026-06-11 |
 | **Updated by** | Claude Code (desktop) |
 | **Companion** | [WORKFLOW.md](./WORKFLOW.md) — operating rules for mobile + desktop sessions |
+| **Public repo (mobile-readable)** | https://github.com/hawkeyetransact-dotcom/doc_v2 |
+| **Raw PROJECT-STATE URL (give to mobile Claude)** | `https://raw.githubusercontent.com/hawkeyetransact-dotcom/doc_v2/main/PROJECT-STATE.md` |
 | **Reading time** | < 5 minutes |
 
 ---
