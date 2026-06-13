@@ -17,11 +17,11 @@ ISPE GAMP 5 (2nd Edition, July 2022) classifies pharma software into five catego
 
 User research (RESEARCH-FINDINGS Insight 3) shows that **GAMP categorization is the procurement gate** at most customer organizations. The IT Compliance team will not start vendor evaluation until "what GAMP category are they?" is answered.
 
-This PDR formalizes the product commitment that Hawkeye is — and will remain — a GAMP 5 Category 4 product, with all the consequences that follow.
+This PDR formalizes the product commitment that S.M.A.R.T. Hawk is — and will remain — a GAMP 5 Category 4 product, with all the consequences that follow.
 
 ## 2. Decision
 
-> 📜 **Hawkeye is a GAMP 5 Category 4 — Configured Product.** This is a load-bearing product commitment that shapes architecture, customization policy, vendor SDLC evidence production, change management, and customer-facing documentation. Customer-requested modifications that would push a workflow to Cat 5 (custom code outside Hawkeye's configuration surface) trigger a separate customization engagement and are explicitly out of standard Cat 4 scope.
+> 📜 **S.M.A.R.T. Hawk is a GAMP 5 Category 4 — Configured Product.** This is a load-bearing product commitment that shapes architecture, customization policy, vendor SDLC evidence production, change management, and customer-facing documentation. Customer-requested modifications that would push a workflow to Cat 5 (custom code outside S.M.A.R.T. Hawk's configuration surface) trigger a separate customization engagement and are explicitly out of standard Cat 4 scope.
 
 ## 3. Alternatives considered
 
@@ -39,7 +39,7 @@ This PDR formalizes the product commitment that Hawkeye is — and will remain �
 
 ### Option D: Selected — Cat 4 with formal commitment
 - **Pros:** Accurate; matches peer products (Veeva Vault QMS, MasterControl, TrackWise, ETQ); enables Validation Accelerator Package; ~60% customer validation effort savings is the value pitch
-- **Cons:** Commits Hawkeye to maintaining vendor SDLC evidence at Cat 4 standards forever; constrains customization policy (Configuration vs Customization rule book — see [GAMP-CAT-4-COMPLIANCE.md §3](../../08-compliance-regulatory/GAMP-CAT-4-COMPLIANCE.md))
+- **Cons:** Commits S.M.A.R.T. Hawk to maintaining vendor SDLC evidence at Cat 4 standards forever; constrains customization policy (Configuration vs Customization rule book — see [GAMP-CAT-4-COMPLIANCE.md §3](../../08-compliance-regulatory/GAMP-CAT-4-COMPLIANCE.md))
 
 ## 4. Rationale
 
@@ -63,7 +63,7 @@ This PDR formalizes the product commitment that Hawkeye is — and will remain �
 - Customer change-control integration is straightforward (release classification → re-validation decision matrix).
 
 ### Negative
-- We cannot accept customer-paid customization that requires Hawkeye source-code modification (would push that workflow to Cat 5 for them and create maintenance burden for us).
+- We cannot accept customer-paid customization that requires S.M.A.R.T. Hawk source-code modification (would push that workflow to Cat 5 for them and create maintenance burden for us).
 - Engineering must maintain Cat 4 SDLC discipline forever: peer review · automated testing · security scanning · release classification · documentation.
 - Annual external pentest is mandatory (cannot defer to cut cost).
 - Vendor Quality Manual must be maintained and reviewed annually.

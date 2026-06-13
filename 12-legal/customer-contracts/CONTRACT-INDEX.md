@@ -43,9 +43,9 @@ flowchart TB
 | Definitions | §1 | Standard |
 | Subscription + scope | §2 | References Order Form |
 | Fees + invoicing | §3 | Quarterly billing default |
-| Customer data + ownership | §4 | Customer owns their data; Hawkeye is data processor |
+| Customer data + ownership | §4 | Customer owns their data; S.M.A.R.T. Hawk is data processor |
 | Confidentiality | §5 | Mutual |
-| Intellectual property | §6 | Hawkeye owns platform IP; customer owns their content |
+| Intellectual property | §6 | S.M.A.R.T. Hawk owns platform IP; customer owns their content |
 | Warranties + disclaimers | §7 | AI-output disclaimer; customer reviews before relying |
 | Indemnification | §8 | Mutual; capped at fees paid in prior 12 months |
 | Limitation of liability | §9 | Capped at fees paid; consequential damages excluded |
@@ -139,7 +139,7 @@ flowchart LR
 
 ## 8. Redline policy
 
-| Customer ask | Hawkeye position |
+| Customer ask | S.M.A.R.T. Hawk position |
 |---|---|
 | Lower liability cap | Standard cap = 12 months of fees paid. Lower → Founder approval. |
 | Customer-jurisdiction governing law | India default; US/EU customer → consider with counsel |

@@ -27,7 +27,7 @@ A user feedback round (June 2026) explicitly asked for a 5-layer architecture wi
 
 ## 2. Decision
 
-> 📜 **Hawkeye is architected as five layers, with Trust · Security · Compliance as Layer 1 — the foundation on which every higher layer depends.**
+> 📜 **S.M.A.R.T. Hawk is architected as five layers, with Trust · Security · Compliance as Layer 1 — the foundation on which every higher layer depends.**
 >
 > 1. **Layer 1 — Trust · Security · Compliance** *(foundation)*: GAMP 5 Cat 4 · Part 11 · Annex 11 · ALCOA+ · encryption · tenant isolation · data residency · zero AI training on customer data
 > 2. **Layer 2 — Data & Evidence**: multi-tenant MongoDB · S3-compatible evidence store · SHA-256 record hashing · tamper-evident audit log
@@ -103,7 +103,7 @@ The previous 3-layer engine framing is **preserved unchanged inside Layer 4** as
 | Layer 4 — Domain Engine | 15 EQMS modules + Configuration + 5-pillar runtime | `modules/*` + `services/` + Configuration via `services/compliance/standardRegistryService.js` etc. |
 | Layer 5 — Experience | Next.js frontend | `frontend/app/` · `frontend/components/` |
 
-The 5-pillar runtime (Collect → Process → Validate → Report → Seal) is described in [ARCHITECTURE.md §1](../01-architecture/ARCHITECTURE.md) and walks through every module identically.
+The 5-pillar runtime (Source → Model → Assess → Report → Trace) is described in [ARCHITECTURE.md §1](../01-architecture/ARCHITECTURE.md) and walks through every module identically.
 
 ---
 

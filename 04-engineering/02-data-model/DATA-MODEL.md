@@ -11,7 +11,7 @@
 
 ## 1. Overview
 
-Hawkeye's data model spans **128+ Mongoose models** organized around 5 concept groups:
+S.M.A.R.T. Hawk's data model spans **128+ Mongoose models** organized around 5 concept groups:
 
 ```mermaid
 flowchart TB

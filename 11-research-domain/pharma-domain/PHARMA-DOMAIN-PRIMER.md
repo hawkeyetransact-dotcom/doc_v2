@@ -5,7 +5,7 @@
 | Owner | Founders + Pharma SME |
 | Status | v1.0 |
 | Last updated | 2026-05-31 |
-| Audience | Hawkeye staff (engineering, sales, support) onboarding into pharma |
+| Audience | S.M.A.R.T. Hawk staff (engineering, sales, support) onboarding into pharma |
 
 ---
 
@@ -44,7 +44,7 @@ flowchart TB
 
 ## 2. The pharma supply chain (where audit fits)
 
-| Stakeholder | Role | Hawkeye relevance |
+| Stakeholder | Role | S.M.A.R.T. Hawk relevance |
 |---|---|---|
 | **API manufacturer** (e.g., Aurobindo, Lupin) | Makes active ingredients | Supplier (audited by formulators) |
 | **Formulator / brand owner** (e.g., Cipla, Sun) | Combines API + excipients into final product | Often the Buyer in audit relationships |
@@ -52,7 +52,7 @@ flowchart TB
 | **Excipient supplier** | Inactive ingredients | Supplier |
 | **Packaging supplier** | Primary + secondary packaging | Supplier |
 | **Logistics + distribution** | Cold-chain, transport | Supplier |
-| **Wholesaler / pharmacy** | End distribution | (Not in Hawkeye scope) |
+| **Wholesaler / pharmacy** | End distribution | (Not in S.M.A.R.T. Hawk scope) |
 
 ## 3. Key pharma quality processes
 
@@ -134,14 +134,14 @@ The **Qualified Person (QP)** is legally responsible for releasing each batch. B
 | **CDMO** | Contract Development and Manufacturing Organization |
 | **CRO** | Contract Research Organization |
 | **CMO** | Contract Manufacturing Organization (subset of CDMO) |
-| **EQMS** | Electronic Quality Management System (where Hawkeye plays) |
+| **EQMS** | Electronic Quality Management System (where S.M.A.R.T. Hawk plays) |
 | **QMS** | Quality Management System (broader; can be paper) |
 | **PQS** | Pharmaceutical Quality System (ICH Q10's term for QMS) |
 | **PAQ** | Pre-Audit Questionnaire |
 | **QP** | Qualified Person (EU; signs batch release) |
 | **GMP audit** | Regulatory inspection by FDA/EMA/etc. |
-| **Supplier audit** | Buyer-pharma audits their suppliers (Hawkeye's wedge) |
-| **Internal audit** | Pharma audits itself (also Hawkeye scope) |
+| **Supplier audit** | Buyer-pharma audits their suppliers (S.M.A.R.T. Hawk's wedge) |
+| **Internal audit** | Pharma audits itself (also S.M.A.R.T. Hawk scope) |
 | **3rd-party audit** | Independent auditor (e.g., Maria) hired by buyer |
 | **Joint audit / shared audit** | Multiple buyers share an audit of one supplier (efficiency play) |
 | **Form FDA-483** | Observation report from FDA inspector |
@@ -155,7 +155,7 @@ The **Qualified Person (QP)** is legally responsible for releasing each batch. B
 | **APR / PQR** | Annual Product Review / Product Quality Review |
 | **OOS / OOT** | Out of Specification / Out of Trend |
 
-## 5. The "30 audits a year" problem (why Hawkeye exists)
+## 5. The "30 audits a year" problem (why S.M.A.R.T. Hawk exists)
 
 A typical mid-pharma Tier 2/3 supplier hosts ~30+ audits per year:
 
@@ -167,9 +167,9 @@ A typical mid-pharma Tier 2/3 supplier hosts ~30+ audits per year:
 | Notified Body audits (med-device) | 1-2/yr | EU MDR compliance |
 | Certifications (ISO 9001, FSSC) | 1-2/yr | External cert renewal |
 
-> 💡 **Why this is broken today.** Same supplier hosts 30 audits/year. Each buyer wants the same documents in a different format. The QA team spends 60-100 days/year just on audit prep. **Hawkeye changes this by providing a single platform where every buyer's audit runs in the same workflow, evidence is reused, and AI drafts the observations.**
+> 💡 **Why this is broken today.** Same supplier hosts 30 audits/year. Each buyer wants the same documents in a different format. The QA team spends 60-100 days/year just on audit prep. **S.M.A.R.T. Hawk changes this by providing a single platform where every buyer's audit runs in the same workflow, evidence is reused, and AI drafts the observations.**
 
-## 6. Indian pharma context (Hawkeye beachhead)
+## 6. Indian pharma context (S.M.A.R.T. Hawk beachhead)
 
 | Stat | Value |
 |---|---|
@@ -180,7 +180,7 @@ A typical mid-pharma Tier 2/3 supplier hosts ~30+ audits per year:
 | US FDA-approved Indian facilities | ~750+ |
 | Common standards | WHO-GMP (baseline), US FDA cGMP (for US exports), EU GMP (for EU exports) |
 
-> 💡 **Why India first.** Highest volume of regulated manufacturers + acute audit-redundancy pain + most price-sensitive (Veeva/MasterControl economically inaccessible). Perfect Hawkeye beachhead.
+> 💡 **Why India first.** Highest volume of regulated manufacturers + acute audit-redundancy pain + most price-sensitive (Veeva/MasterControl economically inaccessible). Perfect S.M.A.R.T. Hawk beachhead.
 
 ## 7. References for deeper learning
 

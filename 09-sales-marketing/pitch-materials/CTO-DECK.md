@@ -1,16 +1,16 @@
-# Hawkeye — CTO / IT Lead Deck
+# S.M.A.R.T. Hawk — CTO / IT Lead Deck
 
 | Field | Value |
 |---|---|
 | Audience | Buyer's CTO · Head of IT · Head of Engineering · Compliance IT |
-| Use case | Technical buy-in for QA Head's Hawkeye decision |
+| Use case | Technical buy-in for QA Head's S.M.A.R.T. Hawk decision |
 | Status | v1.0 — 2026-06-01 |
 | Pairs with | [PLATFORM-ENGINEERING.md](../../04-engineering/00-overview/PLATFORM-ENGINEERING.md) · [PART-11.md](../../08-compliance-regulatory/frameworks/PART-11.md) · [AI-ARCHITECTURE.md](../../04-engineering/07-ai/AI-ARCHITECTURE.md) |
 | Format | 15 slides · 25-min technical session |
 
 ---
 
-## 1. Hawkeye — Native-AI Compliance Engine, Code-Verified
+## 1. S.M.A.R.T. Hawk — Native-AI Compliance Engine, Code-Verified
 
 > 💡 **The one-line technical positioning.** A **5-layer architecture** with Trust · Security · Compliance as Layer 1 (the foundation), Data + AI + Domain Engine + Experience stacked above. Built as a **GAMP 5 Category 4 configured product** with 21 CFR Part 11, EU GMP Annex 11, and ALCOA+ designed-in from day one — not retrofitted.
 
@@ -36,7 +36,7 @@
 | Audit-network plays (Qualifyze) | Network owns the data; you don't; cannot validate per-tenant |
 | In-house spreadsheets + ChatGPT | No audit trail at all; full non-compliance |
 
-> ⚠️ **The validation question every CTO must answer.** When the regulator asks *"reproduce this AI-drafted observation 6 months from now,"* can your stack do it? Hawkeye: yes (`modelVersion + promptHash + retrievalSet + confidence` captured per call). Incumbents: no.
+> ⚠️ **The validation question every CTO must answer.** When the regulator asks *"reproduce this AI-drafted observation 6 months from now,"* can your stack do it? S.M.A.R.T. Hawk: yes (`modelVersion + promptHash + retrievalSet + confidence` captured per call). Incumbents: no.
 
 *Slide 2 / 15*
 
@@ -372,7 +372,7 @@ flowchart LR
 | Next step | What you get | Timing |
 |---|---|---|
 | 90-min architecture deep-dive | Live walkthrough of code paths + your team's questions | This week |
-| Sandbox tenant for your team | Full multi-tenant Hawkeye, your data, 30-day access | 48h |
+| Sandbox tenant for your team | Full multi-tenant S.M.A.R.T. Hawk, your data, 30-day access | 48h |
 | Validation pack preview | IQ/OQ/PQ templates · Part 11 compliance matrix | Email |
 | Security questionnaire | We answer your standard SIG / CAIQ / VSA | Within 5 days |
 | Pentest summary | Latest internal red-team report (signed NDA) | On request |

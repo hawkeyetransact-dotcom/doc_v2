@@ -48,7 +48,7 @@ Existing canon: `00-strategy-and-pitch/market-and-strategy/per-sector-market-ana
 
 ## 5. Pillar 3: Practitioner how-to
 
-Persona-targeted content for the people who actually use Hawkeye:
+Persona-targeted content for the people who actually use S.M.A.R.T. Hawk:
 
 | Persona | Content type | Sample titles |
 |---|---|---|

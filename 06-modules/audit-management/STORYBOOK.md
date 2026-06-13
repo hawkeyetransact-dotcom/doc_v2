@@ -53,13 +53,13 @@ flowchart LR
 - **Veeva is too expensive:** ~$30K floor; ~$50K+ in real practice. Excludes SMB pharma + emerging-market CDMOs entirely.
 - **Qualifyze is network-only:** Solves marketplace audits; doesn't solve the buyer's internal workflow.
 
-> 🚫 **The honest framing.** The market has built better paper. Hawkeye builds the workflow that makes the paper unnecessary.
+> 🚫 **The honest framing.** The market has built better paper. S.M.A.R.T. Hawk builds the workflow that makes the paper unnecessary.
 
 ---
 
 # Beat 2 — The Solution
 
-## §2. What Hawkeye does for audit
+## §2. What S.M.A.R.T. Hawk does for audit
 
 The audit module gives every persona a **single source of truth** that:
 
@@ -96,27 +96,27 @@ sequenceDiagram
     actor Priya as Priya (Buyer)
     actor Maria as Maria (Auditor)
     actor Asha as Asha (Supplier)
-    participant Hawkeye
+    participant S.M.A.R.T. Hawk
 
-    Priya->>Hawkeye: Create audit for Sanpras<br/>via App Wizard
-    Hawkeye-->>Priya: Plan (assign Maria · draft intimation · 1 e-sig)
-    Priya->>Hawkeye: Approve plan + sign
-    Hawkeye->>Maria: Notify: assigned
-    Hawkeye->>Asha: Notify: intimation pending
-    Maria->>Hawkeye: Accept
-    Asha->>Hawkeye: Sign intimation (G1)
-    Note over Hawkeye: Phase: INITIATED → PREP
-    Asha->>Hawkeye: Submit PAQ
-    Maria->>Hawkeye: Lock scope (G5)
-    Note over Hawkeye: Phase: PLANNING → EXECUTION
-    Maria->>Hawkeye: Execute onsite + draft findings
-    Maria->>Hawkeye: Sign report (AUTHORED)
-    Note over Hawkeye: Phase: EXECUTION → FINDINGS
-    Asha->>Hawkeye: Author CAPA
-    Note over Hawkeye: Phase: FINDINGS → CAPA
-    Priya->>Hawkeye: Sign closure cert (APPROVED, G8)
-    Note over Hawkeye: Phase: CAPA → CLOSURE (APPROVED outcome)
-    Hawkeye-->>Asha: Cert + CAPA effectiveness check scheduled +90d
+    Priya->>S.M.A.R.T. Hawk: Create audit for Sanpras<br/>via App Wizard
+    S.M.A.R.T. Hawk-->>Priya: Plan (assign Maria · draft intimation · 1 e-sig)
+    Priya->>S.M.A.R.T. Hawk: Approve plan + sign
+    S.M.A.R.T. Hawk->>Maria: Notify: assigned
+    S.M.A.R.T. Hawk->>Asha: Notify: intimation pending
+    Maria->>S.M.A.R.T. Hawk: Accept
+    Asha->>S.M.A.R.T. Hawk: Sign intimation (G1)
+    Note over S.M.A.R.T. Hawk: Phase: INITIATED → PREP
+    Asha->>S.M.A.R.T. Hawk: Submit PAQ
+    Maria->>S.M.A.R.T. Hawk: Lock scope (G5)
+    Note over S.M.A.R.T. Hawk: Phase: PLANNING → EXECUTION
+    Maria->>S.M.A.R.T. Hawk: Execute onsite + draft findings
+    Maria->>S.M.A.R.T. Hawk: Sign report (AUTHORED)
+    Note over S.M.A.R.T. Hawk: Phase: EXECUTION → FINDINGS
+    Asha->>S.M.A.R.T. Hawk: Author CAPA
+    Note over S.M.A.R.T. Hawk: Phase: FINDINGS → CAPA
+    Priya->>S.M.A.R.T. Hawk: Sign closure cert (APPROVED, G8)
+    Note over S.M.A.R.T. Hawk: Phase: CAPA → CLOSURE (APPROVED outcome)
+    S.M.A.R.T. Hawk-->>Asha: Cert + CAPA effectiveness check scheduled +90d
 ```
 
 ## §3b. Auditor flow — Maria drafts an observation with AI
@@ -293,13 +293,13 @@ When a regulator asks **"show me the full evidence chain for finding F-2026-0142
 ```mermaid
 sequenceDiagram
     actor Regulator
-    participant Hawkeye
+    participant S.M.A.R.T. Hawk
     participant Trail as AuditTrail
 
-    Regulator->>Hawkeye: Query: F-2026-0142
-    Hawkeye->>Trail: GET /api/audit-trail/by-entity?entityId=F-2026-0142
-    Trail-->>Hawkeye: Audit trail rows (all states · all signatures · all AI decisions)
-    Hawkeye-->>Regulator: Linked chain:<br/>1. Audit request created (Priya, 2026-01-10)<br/>2. Intimation signed (Asha, 2026-01-15)<br/>3. PAQ submitted (Asha, 2026-01-22)<br/>4. Observation drafted (AI · model claude-opus-4-7 · confidence 0.83)<br/>5. Observation edited (Maria USER_EDITED)<br/>6. Report signed AUTHORED (Maria, 2026-02-01)<br/>7. Report signed APPROVED (Priya, 2026-02-03)<br/>8. CAPA opened (linked CAPA-2026-1247)<br/>9. CAPA actions completed (3 of 3)<br/>10. Effectiveness verified (2026-05-01)<br/>11. Closure cert AUTHORED (Maria, 2026-05-02)<br/>12. Closure cert APPROVED (Priya, 2026-05-05 - APPROVED outcome)
+    Regulator->>S.M.A.R.T. Hawk: Query: F-2026-0142
+    S.M.A.R.T. Hawk->>Trail: GET /api/audit-trail/by-entity?entityId=F-2026-0142
+    Trail-->>S.M.A.R.T. Hawk: Audit trail rows (all states · all signatures · all AI decisions)
+    S.M.A.R.T. Hawk-->>Regulator: Linked chain:<br/>1. Audit request created (Priya, 2026-01-10)<br/>2. Intimation signed (Asha, 2026-01-15)<br/>3. PAQ submitted (Asha, 2026-01-22)<br/>4. Observation drafted (AI · model claude-opus-4-7 · confidence 0.83)<br/>5. Observation edited (Maria USER_EDITED)<br/>6. Report signed AUTHORED (Maria, 2026-02-01)<br/>7. Report signed APPROVED (Priya, 2026-02-03)<br/>8. CAPA opened (linked CAPA-2026-1247)<br/>9. CAPA actions completed (3 of 3)<br/>10. Effectiveness verified (2026-05-01)<br/>11. Closure cert AUTHORED (Maria, 2026-05-02)<br/>12. Closure cert APPROVED (Priya, 2026-05-05 - APPROVED outcome)
 ```
 
 *Total response time: < 2 seconds. This is what "inspector-readiness as a product feature" means.*
@@ -310,14 +310,14 @@ sequenceDiagram
 
 ## §6a. The numbers (per Tier 3 CDMO customer)
 
-| Today | With Hawkeye | Saved |
+| Today | With S.M.A.R.T. Hawk | Saved |
 |---|---|---|
 | ₹60L audit prep time | -50% via AI prep + evidence reuse | ₹30L |
 | ₹18L audit response | -35% via cross-module wiring | ₹6L |
 | ₹6-15L consultants | Reduced reliance | ₹3L |
 | ₹5-25L cost of findings + remediation | Earlier detection + better CAPA | ₹5-10L |
 | **₹95L total cost** | **₹50-55L** | **~₹45L (~$54K)** |
-| | Hawkeye cost: ₹9L | Net benefit: ~₹36L |
+| | S.M.A.R.T. Hawk cost: ₹9L | Net benefit: ~₹36L |
 
 > ✅ **Payback period: < 4 months. Year-1 net benefit: ~₹36L (~$43K). ROI: ~5x.**
 
@@ -367,7 +367,7 @@ flowchart LR
 ## §7c. Next 12 months (M6-M12)
 
 - **Remote-audit cockpit UI** — the consolidated video + screen-share + annotation experience (URS-B-001) — currently the biggest gap
-- Hawkeye-tuned Llama-3 for low-stakes audit tasks (severity classification, similar-finding search)
+- S.M.A.R.T. Hawk-tuned Llama-3 for low-stakes audit tasks (severity classification, similar-finding search)
 - Active-learning loop UI for auditor disposition feedback
 - Cross-tenant supplier intel surfacing (with consent — URS-B-006)
 
@@ -394,7 +394,7 @@ flowchart LR
 | System architecture + data model + APIs (architect reference) | [ARCHITECTURE.md](ARCHITECTURE.md) |
 | The platform-wide architecture in 1 page (exec) | [../../04-engineering/00-overview/PLATFORM-EXECUTIVE.md](../../04-engineering/00-overview/PLATFORM-EXECUTIVE.md) |
 | The platform-wide architecture in 1 page (CTO) | [../../04-engineering/00-overview/PLATFORM-ENGINEERING.md](../../04-engineering/00-overview/PLATFORM-ENGINEERING.md) |
-| The full Hawkeye narrative | [../../HAWKEYE-STORY.md](../../HAWKEYE-STORY.md) |
+| The full S.M.A.R.T. Hawk narrative | [../../SMART-HAWK-STORY.md](../../SMART-HAWK-STORY.md) |
 | Compliance trace (regulator detail) | [../../08-compliance-regulatory/frameworks/PART-11.md](../../08-compliance-regulatory/frameworks/PART-11.md) |
 | Demo script for sales | [../../09-sales-marketing/demo-scripts/DEMO-INDEX.md](../../09-sales-marketing/demo-scripts/DEMO-INDEX.md) |
 

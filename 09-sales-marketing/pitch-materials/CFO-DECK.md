@@ -1,9 +1,9 @@
-# Hawkeye — CFO Deck
+# S.M.A.R.T. Hawk — CFO Deck
 
 | Field | Value |
 |---|---|
 | Audience | Buyer's CFO · Head of Finance · Head of Procurement |
-| Use case | Procurement / financial approval for QA Head's Hawkeye purchase |
+| Use case | Procurement / financial approval for QA Head's S.M.A.R.T. Hawk purchase |
 | Status | v1.0 — 2026-06-01 |
 | Pairs with | [PRICING.md](../../01-strategy/pricing-and-packaging/PRICING.md) |
 | Format | 17 slides · 25-min finance review |
@@ -12,7 +12,7 @@
 
 ## 1. $300K/yr EQMS · 60% of QA Time on Audit Prep — Where Is the Money?
 
-> 💡 **The CFO question.** Your quality function is one of your three largest non-COGS line items. Half of it is audit prep, response, and remediation that doesn't make the product better. This deck shows you the math: what you spend today, what Hawkeye costs, what you save, and what the contract looks like.
+> 💡 **The CFO question.** Your quality function is one of your three largest non-COGS line items. Half of it is audit prep, response, and remediation that doesn't make the product better. This deck shows you the math: what you spend today, what S.M.A.R.T. Hawk costs, what you save, and what the contract looks like.
 
 | Today's quality spend (typical Tier-3 CDMO) | Annual |
 |---|---|
@@ -47,7 +47,7 @@ flowchart LR
 
 **The math:** 5 QA × 30 audits × 4 days × ₹10K/day loaded cost = ₹60L on prep alone.
 
-This is the addressable cost line — what Hawkeye reduces. Direct GMP manufacturing cost is unchanged.
+This is the addressable cost line — what S.M.A.R.T. Hawk reduces. Direct GMP manufacturing cost is unchanged.
 
 *Slide 2 / 17*
 
@@ -55,7 +55,7 @@ This is the addressable cost line — what Hawkeye reduces. Direct GMP manufactu
 
 ## 3. The Savings Model — 40% Blended Reduction
 
-| Cost line | Today | Hawkeye reduction | Mechanism |
+| Cost line | Today | S.M.A.R.T. Hawk reduction | Mechanism |
 |---|---|---|---|
 | Audit prep time | ₹60L | 50-60% (₹30-36L saved) | AI prep · autofill · evidence reuse |
 | Audit response + CAPA tracking | ₹18L | 30-40% (₹5-7L saved) | Cross-module wiring · auto-spawn |
@@ -69,7 +69,7 @@ This is the addressable cost line — what Hawkeye reduces. Direct GMP manufactu
 
 ---
 
-## 4. Hawkeye Annual Cost — Net Benefit Math
+## 4. S.M.A.R.T. Hawk Annual Cost — Net Benefit Math
 
 ```mermaid
 flowchart LR
@@ -80,7 +80,7 @@ flowchart LR
 
     C["Today's cost<br/>₹95L"]:::cost
     S["Savings<br/>₹38L"]:::save
-    P["Hawkeye ACV<br/>₹9L<br/>= 24% of savings"]:::price
+    P["S.M.A.R.T. Hawk ACV<br/>₹9L<br/>= 24% of savings"]:::price
     N["Net annual benefit<br/>₹29L<br/>Payback < 4 months"]:::net
 
     C --> S --> P --> N
@@ -88,7 +88,7 @@ flowchart LR
 
 | Metric | Value |
 |---|---|
-| Hawkeye annual contract value | **₹9L (~$10.8K)** |
+| S.M.A.R.T. Hawk annual contract value | **₹9L (~$10.8K)** |
 | As % of savings | 24% |
 | As % of today's quality cost | 9.5% |
 | Net annual benefit | **₹29L** |
@@ -99,18 +99,18 @@ flowchart LR
 
 ---
 
-## 5. 3-Year Cumulative TCO — Hawkeye vs Alternatives
+## 5. 3-Year Cumulative TCO — S.M.A.R.T. Hawk vs Alternatives
 
 | Vendor | Y1 ACV | Implementation | Y2 ACV | Y3 ACV | 3-yr TCO |
 |---|---|---|---|---|---|
-| **Hawkeye (Growth)** | $10.8K | $0 (included) | $11.3K | $11.9K | **~$34K** |
+| **S.M.A.R.T. Hawk (Growth)** | $10.8K | $0 (included) | $11.3K | $11.9K | **~$34K** |
 | Veeva Vault QMS | $50-100K | $50-200K | $50-100K | $50-100K | $200-500K |
 | MasterControl | $40-80K | $40-150K | $40-80K | $40-80K | $160-390K |
 | ComplianceQuest | $25-60K | $15-50K | $25-60K | $25-60K | $90-230K |
 | TrackWise (Sparta) | $40-90K | $30-100K | $40-90K | $40-90K | $150-370K |
 | **Status quo (spreadsheets)** | "$0" | "$0" | "$0" | "$0" | **Hidden: ~$345K** in QA time |
 
-> 💡 **The status-quo trap.** "Free" spreadsheets cost you the full ₹95L/yr quality bill = ~$345K over 3 years. Hawkeye at $34K over 3 years saves you $300K+ in QA time alone. The lowest-cost option is the most expensive option.
+> 💡 **The status-quo trap.** "Free" spreadsheets cost you the full ₹95L/yr quality bill = ~$345K over 3 years. S.M.A.R.T. Hawk at $34K over 3 years saves you $300K+ in QA time alone. The lowest-cost option is the most expensive option.
 
 *Slide 5 / 17*
 
@@ -120,7 +120,7 @@ flowchart LR
 
 Computer System Validation (CSV) is the second-largest cost line of any EQMS purchase. The vendor's GAMP classification determines whether you write months of validation paperwork or weeks.
 
-| | Cat 3 — non-configured | **Cat 4 — Hawkeye** | Cat 5 — custom/bespoke |
+| | Cat 3 — non-configured | **Cat 4 — S.M.A.R.T. Hawk** | Cat 5 — custom/bespoke |
 |---|---|---|---|
 | Customer validation effort | Install + UAT | **URS + risk + IQ/OQ/PQ of configuration only** | Full SDLC + source review + V-model |
 | Vendor SDLC evidence leveraged | Minimal | **Extensive** (per GAMP 5 supplier-leverage + FDA CSA) | Limited |
@@ -130,13 +130,13 @@ Computer System Validation (CSV) is the second-largest cost line of any EQMS pur
 
 | Vendor | GAMP class | Your validation cost (one-time) |
 |---|---|---|
-| **Hawkeye** | **Cat 4** | **₹18-30L** (₹0 if you accept the Validation Accelerator Package as-is) |
+| **S.M.A.R.T. Hawk** | **Cat 4** | **₹18-30L** (₹0 if you accept the Validation Accelerator Package as-is) |
 | Veeva Vault QMS | Cat 4 | ₹30-80L (more config surface) |
 | Custom-built (in-house dev) | Cat 5 | ₹50-150L (full V-model) |
 
-> 💡 **What this means to the CFO.** Even if you ignored every other cost line, GAMP Cat 4 alone saves you ₹30-120L (~$36K-$144K) on the validation budget vs a Cat 5 custom build. That's typically 3-10× the Hawkeye Y1 ACV — paid back **before the platform even goes live**.
+> 💡 **What this means to the CFO.** Even if you ignored every other cost line, GAMP Cat 4 alone saves you ₹30-120L (~$36K-$144K) on the validation budget vs a Cat 5 custom build. That's typically 3-10× the S.M.A.R.T. Hawk Y1 ACV — paid back **before the platform even goes live**.
 
-**The Validation Accelerator Package Hawkeye ships at no extra cost:** Vendor Quality Manual · SDLC evidence · FRS + Configuration Spec · IQ/OQ scripts pre-executed against vendor product · annual pentest summary · Vendor Assessment Questionnaire pre-filled · Release Notes per version · Periodic Vendor Audit pack. Reference: ISPE *GAMP 5 Guide, 2nd Edition* (Jul 2022); FDA *Computer Software Assurance* Final Guidance (Sep 2025).
+**The Validation Accelerator Package S.M.A.R.T. Hawk ships at no extra cost:** Vendor Quality Manual · SDLC evidence · FRS + Configuration Spec · IQ/OQ scripts pre-executed against vendor product · annual pentest summary · Vendor Assessment Questionnaire pre-filled · Release Notes per version · Periodic Vendor Audit pack. Reference: ISPE *GAMP 5 Guide, 2nd Edition* (Jul 2022); FDA *Computer Software Assurance* Final Guidance (Sep 2025).
 
 > 📘 **Detailed Cat 4 reference for your QA/Procurement team:** **[GAMP-CAT-4-BRIEF.md](./GAMP-CAT-4-BRIEF.md)** (8 pages) and the canonical **[GAMP-CAT-4-COMPLIANCE.md](../../08-compliance-regulatory/GAMP-CAT-4-COMPLIANCE.md)** (~25 pages, available under NDA).
 
@@ -158,7 +158,7 @@ The healthcare/pharma sector has had the highest cost per breach **for 14 consec
 | Merck NotPetya (2017) | $1.4B total losses; national vaccine reserves released | SEC filings · public analyses |
 | FDA Warning Letters citing data-integrity deficiencies (CDER 2021-2024) | ~60% of all CDER WLs | FDA enforcement data |
 
-> 💡 **What Hawkeye Layer 1 reduces.** Per-tenant isolation · TLS 1.3 + AES-256 · BYOK on Enterprise · India/US/EU residency · NO model-training on your data (default contractual) · cite-or-fallback eliminates hallucinated citations · DPDP/GDPR-ready · SOC 2 Type II in progress. **A platform with weak Layer 1 is a $7.42M one-incident liability waiting to happen.**
+> 💡 **What S.M.A.R.T. Hawk Layer 1 reduces.** Per-tenant isolation · TLS 1.3 + AES-256 · BYOK on Enterprise · India/US/EU residency · NO model-training on your data (default contractual) · cite-or-fallback eliminates hallucinated citations · DPDP/GDPR-ready · SOC 2 Type II in progress. **A platform with weak Layer 1 is a $7.42M one-incident liability waiting to happen.**
 
 *Slide 7 / 17*
 
@@ -288,7 +288,7 @@ No overage surprises. AI credit notifications at 50% / 80% / 100% with auto-susp
 
 ## 12. Audit Trail of the Contract Itself
 
-> 💡 **The meta-feature.** Hawkeye runs Hawkeye for its own customer contracts. Every change to your MSA, DPA, SLA, pricing, or scope is e-signed by both sides and lives in our customer-success tenant. You can request the full audit log of your account anytime.
+> 💡 **The meta-feature.** S.M.A.R.T. Hawk runs S.M.A.R.T. Hawk for its own customer contracts. Every change to your MSA, DPA, SLA, pricing, or scope is e-signed by both sides and lives in our customer-success tenant. You can request the full audit log of your account anytime.
 
 | Change type | Captured |
 |---|---|
@@ -342,14 +342,14 @@ If you sign before paid references exist, you become one. That's the 40% Y1 disc
 
 ## 15. Approval-Ready Summary — For Board Review
 
-> 💡 **The one-paragraph version.** Hawkeye replaces ~40% of our annual ₹95L audit-prep / response / consultant / findings cost (~₹38L / $46K saved per year) for an annual contract value of ₹9L ($10.8K) — 24% of savings, 9.5% of today's quality cost. Payback is under 4 months. The contract is per-site + per-user + AI credits, billed quarterly, 1-year auto-renewal with 60-day notice and free data export. We retain reference-customer pricing (40% Y1 discount) by signing within the first 10. Three-year cumulative net benefit ~₹85L. The vendor is pre-revenue but post-product (15 modules + AskHawk shipped), with founder-level support and a clean termination clause. Recommended: approve a 60-day no-cost PoC; convert to paid contract on success criteria met.
+> 💡 **The one-paragraph version.** S.M.A.R.T. Hawk replaces ~40% of our annual ₹95L audit-prep / response / consultant / findings cost (~₹38L / $46K saved per year) for an annual contract value of ₹9L ($10.8K) — 24% of savings, 9.5% of today's quality cost. Payback is under 4 months. The contract is per-site + per-user + AI credits, billed quarterly, 1-year auto-renewal with 60-day notice and free data export. We retain reference-customer pricing (40% Y1 discount) by signing within the first 10. Three-year cumulative net benefit ~₹85L. The vendor is pre-revenue but post-product (15 modules + AskHawk shipped), with founder-level support and a clean termination clause. Recommended: approve a 60-day no-cost PoC; convert to paid contract on success criteria met.
 
 | Approval ask | Value |
 |---|---|
 | PoC contract (no $$ commitment) | 60 days · $0 |
 | Conversion contract (if PoC succeeds) | ₹9L / yr · ₹5.4L Y1 with reference discount |
 | Multi-year option | 2yr (-10%) or 3yr (-18%) |
-| Risk if Hawkeye fails | Free data export · 60-day notice · move to spreadsheets or competitor |
+| Risk if S.M.A.R.T. Hawk fails | Free data export · 60-day notice · move to spreadsheets or competitor |
 
 **Contact:** sales@hawkeye.app · `[insert Calendly]`
 

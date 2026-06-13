@@ -1,4 +1,4 @@
-# Hawkeye Team Onboarding & App Tour
+# S.M.A.R.T. Hawk Team Onboarding & App Tour
 
 | Field | Value |
 |---|---|
@@ -12,7 +12,7 @@
 
 ## 1. Welcome — read this first
 
-You joined Hawkeye. Two things you need before you can be productive:
+You joined S.M.A.R.T. Hawk. Two things you need before you can be productive:
 
 1. **A working instance of the app** (either the shared Sandbox tenant or your own local dev environment)
 2. **A mental model** for what the app does, who uses it, and how it's built
@@ -41,7 +41,7 @@ If something doesn't work, jump to §10 *(Debugging when things don't work)*. If
 
 ## 2. The platform in one page (read this before clicking)
 
-Hawkeye is an **AI-native EQMS (Enterprise Quality Management System)** for pharmaceutical manufacturers and contract manufacturing organisations (CDMOs). The platform is built across **five architectural layers**, with **Trust · Security · Compliance as Layer 1 — the foundation**:
+S.M.A.R.T. Hawk is an **AI-native EQMS (Enterprise Quality Management System)** for pharmaceutical manufacturers and contract manufacturing organisations (CDMOs). The platform is built across **five architectural layers**, with **Trust · Security · Compliance as Layer 1 — the foundation**:
 
 | Layer | What it provides | Code lives in |
 |---|---|---|
@@ -71,7 +71,7 @@ Hawkeye is an **AI-native EQMS (Enterprise Quality Management System)** for phar
 **Time:** 10 minutes to first login; 1 hour for the full tour
 **Pre-requisites:** A laptop with a modern browser (Chrome ≥ 120 recommended)
 
-> ℹ️ **Honest note on environments.** Hawkeye does NOT yet have a separate staging environment. The team currently uses the **Sandbox tenant** — the same product surface customers access for self-serve discovery — for internal testing. This is fine for pre-customer phase but flag if your work depends on isolation from sandbox sign-ups.
+> ℹ️ **Honest note on environments.** S.M.A.R.T. Hawk does NOT yet have a separate staging environment. The team currently uses the **Sandbox tenant** — the same product surface customers access for self-serve discovery — for internal testing. This is fine for pre-customer phase but flag if your work depends on isolation from sandbox sign-ups.
 
 ### 3.1 Get access
 
@@ -131,15 +131,15 @@ Most Sandbox accounts default to Tenant Admin so you see everything. To experien
 ### 4.2 Clone the repos
 
 ```bash
-mkdir -p ~/Code/Hawkeye
-cd ~/Code/Hawkeye
+mkdir -p ~/Code/S.M.A.R.T. Hawk
+cd ~/Code/S.M.A.R.T. Hawk
 
 # Get repo access from Founder Lead first; then:
 git clone [BACKEND_REPO_URL] backend
 git clone [FRONTEND_REPO_URL] frontend
 ```
 
-> 💡 **Repo URLs** are in the team 1Password vault under "Hawkeye → GitHub". Get repo access from the Founder Lead.
+> 💡 **Repo URLs** are in the team 1Password vault under "S.M.A.R.T. Hawk → GitHub". Get repo access from the Founder Lead.
 
 ### 4.3 Backend setup
 
@@ -193,7 +193,7 @@ Since there's no SSO IdP in local dev, the local auth fallback is enabled:
 # In a new terminal, with backend running:
 cd backend
 npm run seed:dev-user
-# Creates: email=dev@hawkeye.local password=Hawkeye!Dev2026 role=tenant_admin
+# Creates: email=dev@hawkeye.local password=S.M.A.R.T. Hawk!Dev2026 role=tenant_admin
 ```
 
 Log in with those credentials at `http://localhost:3000/auth/login`. You're in.
@@ -247,13 +247,13 @@ For **Path B** (local), use seeded accounts:
 
 | Persona | Email | Password | Role |
 |---|---|---|---|
-| Tenant Admin (default) | `dev@hawkeye.local` | `Hawkeye!Dev2026` | `tenant_admin` |
-| QA Head | `qa-head@hawkeye.local` | `Hawkeye!Dev2026` | `qa_head` |
-| QA Manager | `qa-mgr@hawkeye.local` | `Hawkeye!Dev2026` | `qa_manager` |
-| QA Analyst | `qa-analyst@hawkeye.local` | `Hawkeye!Dev2026` | `qa_analyst` |
-| Operations | `ops@hawkeye.local` | `Hawkeye!Dev2026` | `operations` |
-| External Auditor | `auditor@hawkeye.local` | `Hawkeye!Dev2026` | `auditor` |
-| Auditee (Supplier QA) | `supplier@hawkeye.local` | `Hawkeye!Dev2026` | `auditee` (uses Supplier Portal) |
+| Tenant Admin (default) | `dev@hawkeye.local` | `S.M.A.R.T. Hawk!Dev2026` | `tenant_admin` |
+| QA Head | `qa-head@hawkeye.local` | `S.M.A.R.T. Hawk!Dev2026` | `qa_head` |
+| QA Manager | `qa-mgr@hawkeye.local` | `S.M.A.R.T. Hawk!Dev2026` | `qa_manager` |
+| QA Analyst | `qa-analyst@hawkeye.local` | `S.M.A.R.T. Hawk!Dev2026` | `qa_analyst` |
+| Operations | `ops@hawkeye.local` | `S.M.A.R.T. Hawk!Dev2026` | `operations` |
+| External Auditor | `auditor@hawkeye.local` | `S.M.A.R.T. Hawk!Dev2026` | `auditor` |
+| Auditee (Supplier QA) | `supplier@hawkeye.local` | `S.M.A.R.T. Hawk!Dev2026` | `auditee` (uses Supplier Portal) |
 
 > ℹ️ These are seeded by `npm run seed:dev-user` and `npm run seed:eqms`. Passwords are intentionally identical for dev convenience; never use these patterns in any non-local environment.
 
@@ -271,7 +271,7 @@ Goal: log in → create an audit → upload evidence → generate an AI-drafted 
 | 4 | Fill in: name = "Tour Audit · `<your-name>`" · type = Hosted supplier audit · standard = ICH Q7 · site = default | Form submits; you land on the new audit's detail page |
 | 5 | Observe the **phase stepper** at the top — current state: Draft | Phase stepper visible with 5 phases (Plan → Prep → On-Site → Closeout → Closed) |
 | 6 | Click **Evidence** tab → **+ Upload Evidence** | File picker opens |
-| 7 | Upload any small PDF (e.g., a Hawkeye PDF from `Doc_V2/`) | File appears in evidence ledger with SHA-256 hash, uploader, UTC |
+| 7 | Upload any small PDF (e.g., a S.M.A.R.T. Hawk PDF from `Doc_V2/`) | File appears in evidence ledger with SHA-256 hash, uploader, UTC |
 | 8 | Click **Findings** tab → **+ AI-Draft Finding** | AskHawk drawer opens; AI begins drafting |
 | 9 | Observe the AI draft with **citation chips** and **confidence badge** | If sources found: text + citations. If not: "Insufficient evidence — human input required" |
 | 10 | Click **Accept Draft** → severity = Minor → save | Finding appears in findings table |
@@ -281,7 +281,7 @@ Goal: log in → create an audit → upload evidence → generate an AI-drafted 
 | 14 | Logout (top-right profile menu → Sign out) | Land on `/auth/login` |
 
 **What you just verified:**
-- The 5-pillar runtime (Collect → Process → Validate → Report → Seal) actually executes
+- The 5-pillar runtime (Source → Model → Assess → Report → Trace) actually executes
 - AI grounding works (you saw citations)
 - E-signature ceremony works per Part 11 §11.50 + §11.200
 - Audit trail captures every state change with the right metadata
@@ -426,10 +426,10 @@ Full architectural reference: [ARCHITECTURE.md](../../04-engineering/01-architec
 
 | Term | Definition |
 |---|---|
-| **EQMS** | Enterprise Quality Management System — the product category Hawkeye competes in |
+| **EQMS** | Enterprise Quality Management System — the product category S.M.A.R.T. Hawk competes in |
 | **GxP** | Good Practice (umbrella for GMP · GLP · GCP · GDP · GVP) — the regulatory family for life sciences |
 | **GMP** | Good Manufacturing Practice — applies to drug + device manufacturing (our beachhead) |
-| **GAMP 5** | ISPE's Risk-Based Approach to Compliant GxP Computerized Systems — Hawkeye is **Category 4 — Configured Product** |
+| **GAMP 5** | ISPE's Risk-Based Approach to Compliant GxP Computerized Systems — S.M.A.R.T. Hawk is **Category 4 — Configured Product** |
 | **21 CFR Part 11** | FDA regulation governing electronic records + e-signatures |
 | **EU GMP Annex 11** | EU regulation governing computerised systems used in GMP |
 | **ALCOA+** | Data integrity attributes (Attributable · Legible · Contemporaneous · Original · Accurate + Complete · Consistent · Enduring · Available) — 9 in total |
@@ -437,17 +437,17 @@ Full architectural reference: [ARCHITECTURE.md](../../04-engineering/01-architec
 | **CSA** | Computer Software Assurance — FDA's risk-based replacement for CSV (Final guidance Sep 2025) |
 | **CAPA** | Corrective and Preventive Action — a quality finding's follow-up |
 | **CDMO** | Contract Manufacturing Organisation — our wedge customer segment |
-| **PoC** | Proof of Concept — Hawkeye's 60-day customer trial structure |
-| **Sandbox** | Hawkeye's self-serve free discovery tier (synthetic data · 14-day expiry) |
-| **5-layer architecture** | Hawkeye's canonical architectural framing — see §2 |
-| **5-pillar runtime** | Collect → Process → Validate → Report → Seal — the universal motion every module follows |
+| **PoC** | Proof of Concept — S.M.A.R.T. Hawk's 60-day customer trial structure |
+| **Sandbox** | S.M.A.R.T. Hawk's self-serve free discovery tier (synthetic data · 14-day expiry) |
+| **5-layer architecture** | S.M.A.R.T. Hawk's canonical architectural framing — see §2 |
+| **5-pillar runtime** | Source → Model → Assess → Report → Trace — the universal motion every module follows |
 | **Cite-or-fallback** | Architectural guarantee — every AI output cites a source or returns "Insufficient evidence" |
-| **AskHawk** | Hawkeye's conversational AI agent (cross-cutting feature across all modules) |
-| **Validation Accelerator Package** | Hawkeye's bundle of vendor evidence shipped to customers at PoC kickoff to support GAMP Cat 4 supplier-leveraged validation |
+| **AskHawk** | S.M.A.R.T. Hawk's conversational AI agent (cross-cutting feature across all modules) |
+| **Validation Accelerator Package** | S.M.A.R.T. Hawk's bundle of vendor evidence shipped to customers at PoC kickoff to support GAMP Cat 4 supplier-leveraged validation |
 | **e-sig** | Electronic signature per 21 CFR §11.50 + §11.200 |
 | **WHO-GMP** | WHO's GMP standard — relevant for export-market CDMOs like Sanpras |
 | **WHO-PQ** | WHO Prequalification — a high-bar regulatory pathway |
-| **Persona** | Buyer (Hawkeye's customer's QA team) · Supplier (auditee) · Auditor (external) · etc. |
+| **Persona** | Buyer (S.M.A.R.T. Hawk's customer's QA team) · Supplier (auditee) · Auditor (external) · etc. |
 
 For deeper definitions: [GAMP-CAT-4-COMPLIANCE.md §33](../../08-compliance-regulatory/GAMP-CAT-4-COMPLIANCE.md) glossary.
 

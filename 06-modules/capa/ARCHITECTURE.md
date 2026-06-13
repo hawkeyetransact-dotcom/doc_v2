@@ -319,7 +319,7 @@ Cross-reference [DESIGN §4](DESIGN.md#4-state-machine).
 
 ## 12. The Five-Pillar Walkthrough
 
-CAPA is one expression of Hawkeye's universal 5-pillar pipeline (**COLLECT → PROCESS → VALIDATE → REPORT → SEAL**). This section narrates how a corrective action walks the pillars from upstream trigger to closure, maps each pillar to the actual code, and notes the cross-module fan-in / fan-out. The same shape applies to every regulated workflow on the platform — see the MASTER-REFERENCE for the canonical pattern.
+CAPA is one expression of S.M.A.R.T. Hawk's universal 5-pillar pipeline (**SOURCE → MODEL → ASSESS → REPORT → TRACE**). This section narrates how a corrective action walks the pillars from upstream trigger to closure, maps each pillar to the actual code, and notes the cross-module fan-in / fan-out. The same shape applies to every regulated workflow on the platform — see the MASTER-REFERENCE for the canonical pattern.
 
 ### 12.1 Narrative
 

@@ -4,7 +4,7 @@
 |---|---|
 | Module | Design Control |
 | Vertical | Medical Device (primary); aerospace + automotive variants future |
-| Owner | Product (Hawkeye Platform) |
+| Owner | Product (S.M.A.R.T. Hawk Platform) |
 | Status | DRAFT (med-device vertical pack) |
 | Version | 0.1 |
 | Last updated | 2026-06-01 |
@@ -15,7 +15,7 @@
 
 ## 1. Purpose and Scope
 
-**Purpose.** Hawkeye Design Control manages the **Design History File (DHF)** for medical-device development from concept through transfer to manufacturing, with Part 11–grade e-signature gates on every design review, verification, and validation milestone. It is the **med-device vertical pack** — pharma tenants do not enable it; ISO-13485 / 820.30 customers do.
+**Purpose.** S.M.A.R.T. Hawk Design Control manages the **Design History File (DHF)** for medical-device development from concept through transfer to manufacturing, with Part 11–grade e-signature gates on every design review, verification, and validation milestone. It is the **med-device vertical pack** — pharma tenants do not enable it; ISO-13485 / 820.30 customers do.
 
 **In scope:**
 - DHF lifecycle: planning → inputs → outputs → review → verification → validation → transfer → change

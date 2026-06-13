@@ -49,7 +49,7 @@ flowchart LR
 
 ### 3 · Solution
 - **Industry-agnostic compliance engine, deployed beachhead-first**
-- The 5-pillar engine: Collect → Process → Validate → Report → Seal
+- The 5-pillar engine: Source → Model → Assess → Report → Trace
 - Same architecture serves pharma → food → med-device → auto over time
 - *Not* a pharma tool; *not* a horizontal platform; the **regulated-supply-chain compliance primitive**
 
@@ -113,7 +113,7 @@ flowchart LR
   - 10% compliance/SOC 2 + validation
   - 8% GTM (events, content, tools)
   - 7% buffer + ops
-- **Milestones at close:** 25-35 paying customers, $250-400K ARR, Hawkeye-tuned AI in production, 1+ ring-1 customer signed
+- **Milestones at close:** 25-35 paying customers, $250-400K ARR, S.M.A.R.T. Hawk-tuned AI in production, 1+ ring-1 customer signed
 
 ---
 

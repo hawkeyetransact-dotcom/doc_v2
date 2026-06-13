@@ -3,7 +3,7 @@
 | Field | Value |
 |---|---|
 | Module | Deviation |
-| Owner | Product (Hawkeye Platform) |
+| Owner | Product (S.M.A.R.T. Hawk Platform) |
 | Status | DRAFT (reverse-engineered from current code + canon) |
 | Version | 0.1 |
 | Last updated | 2026-06-01 |
@@ -14,7 +14,7 @@
 
 ## 1. Purpose and Scope
 
-**Purpose.** Hawkeye Deviation manages **in-process deviations from defined procedures or specifications** in regulated manufacturing — from operator intake on the floor, through classification (Critical / Major / Minor), investigation, root-cause analysis, disposition, and either resolution or CAPA generation. Six AI agents collaborate end-to-end to compress cycle time without sacrificing 21 CFR Part 11 traceability.
+**Purpose.** S.M.A.R.T. Hawk Deviation manages **in-process deviations from defined procedures or specifications** in regulated manufacturing — from operator intake on the floor, through classification (Critical / Major / Minor), investigation, root-cause analysis, disposition, and either resolution or CAPA generation. Six AI agents collaborate end-to-end to compress cycle time without sacrificing 21 CFR Part 11 traceability.
 
 **In scope:**
 - Deviation intake (operator, production manager, supplier user)

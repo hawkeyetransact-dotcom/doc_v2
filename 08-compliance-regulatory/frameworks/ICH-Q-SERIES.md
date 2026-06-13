@@ -5,7 +5,7 @@
 | Owner | Compliance + Product |
 | Status | v1.0 |
 | Last updated | 2026-05-31 |
-| Scope | Hawkeye platform — pharma manufacturing & supplier-quality controls |
+| Scope | S.M.A.R.T. Hawk platform — pharma manufacturing & supplier-quality controls |
 | Standards covered | ICH Q7 (APIs), Q9 (Risk), Q10 (PQS) |
 
 ---
@@ -20,12 +20,12 @@ flowchart LR
     Q9["<b>ICH Q9 R1</b><br/>Quality Risk<br/>Management"]:::ich
     Q10["<b>ICH Q10</b><br/>Pharmaceutical<br/>Quality System"]:::ich
 
-    Q7 -.applies in.-> PQS["Hawkeye QMS<br/>module suite"]
+    Q7 -.applies in.-> PQS["S.M.A.R.T. Hawk QMS<br/>module suite"]
     Q9 -.applies in.-> PQS
     Q10 -.applies in.-> PQS
 ```
 
-| Guideline | Year | Scope | Hawkeye coverage |
+| Guideline | Year | Scope | S.M.A.R.T. Hawk coverage |
 |---|---|---|---|
 | **ICH Q7** | 2000 | GMP for Active Pharmaceutical Ingredients (APIs) | Audit + supplier qual + CAPA + change control |
 | **ICH Q9 R1** | 2023 | Quality Risk Management (FMEA, FMECA, fault tree) | Risk module + risk-weighted audit scope |
@@ -35,7 +35,7 @@ flowchart LR
 
 Most-cited sections for audit/supplier-quality workflows:
 
-| Section | Topic | Hawkeye control |
+| Section | Topic | S.M.A.R.T. Hawk control |
 |---|---|---|
 | **§2** | Quality Management | All EQMS modules; especially MRM |
 | **§3** | Personnel | Training module |
@@ -58,7 +58,7 @@ Most-cited sections for audit/supplier-quality workflows:
 
 ### Key §13 — Change Control (most-cited in audits)
 
-| §13.X | Requirement | Hawkeye |
+| §13.X | Requirement | S.M.A.R.T. Hawk |
 |---|---|---|
 | §13.10 | A formal change control system shall be in place | Change Control module ✅ |
 | §13.11 | Procedures should be defined for identification, documentation, appropriate review, and approval of changes | Step-based workflow with approvers per change category ✅ |
@@ -74,7 +74,7 @@ Most-cited sections for audit/supplier-quality workflows:
 
 The 2023 revision (R1) strengthens emphasis on **subjectivity reduction** and **risk-based decisions throughout product lifecycle**.
 
-| Q9 Section | Topic | Hawkeye control |
+| Q9 Section | Topic | S.M.A.R.T. Hawk control |
 |---|---|---|
 | **§4.1** | Risk Assessment (Identification, Analysis, Evaluation) | Risk module + FMEA template |
 | **§4.2** | Risk Control (Reduction, Acceptance) | Risk mitigation tracking |
@@ -113,25 +113,25 @@ flowchart TB
     KE --> P4
 ```
 
-### Q10 Element coverage in Hawkeye
+### Q10 Element coverage in S.M.A.R.T. Hawk
 
-| Q10 §3.2.x | Element | Hawkeye module |
+| Q10 §3.2.x | Element | S.M.A.R.T. Hawk module |
 |---|---|---|
 | §3.2.1 | Process Performance & Product Quality Monitoring | Batch Records + Deviation + Trends |
 | §3.2.2 | CAPA System | CAPA module (full lifecycle) |
 | §3.2.3 | Change Management System | Change Control module |
 | §3.2.4 | Management Review of Process Performance and Product Quality | MRM (Management Review Meeting) module |
 
-### Q10 Enablers in Hawkeye
+### Q10 Enablers in S.M.A.R.T. Hawk
 
-| Enabler | Hawkeye implementation |
+| Enabler | S.M.A.R.T. Hawk implementation |
 |---|---|
 | §2.2 Knowledge Management | AskHawk (Regulations Q&A, SOPs, workflow playbooks); cross-module audit trail |
 | §2.3 Quality Risk Management | Risk module + risk-weighted decisions across audit/deviation/change |
 
 ### Q10 across product lifecycle
 
-| Stage | Hawkeye supports |
+| Stage | S.M.A.R.T. Hawk supports |
 |---|---|
 | Pharmaceutical Development | (Out of scope — handled by ELN/PLM tools; Design Control module for med-device) |
 | Technology Transfer | Change Control + Doc Control for tech-transfer protocols |
@@ -148,13 +148,13 @@ flowchart TB
 | Knowledge management | §6 (documentation) | §1 (informed decisions) | §2.2 (enabler) |
 | Supplier management | §16 (contract manufacturers) | §II.7 (supplier risk) | §3.2.1 (process performance) |
 
-Hawkeye treats these as **one integrated system**, not separate modules — every CAPA can be triggered by a risk assessment, every change references its CAPA outcomes, every audit finds gaps that feed risk + CAPA + change.
+S.M.A.R.T. Hawk treats these as **one integrated system**, not separate modules — every CAPA can be triggered by a risk assessment, every change references its CAPA outcomes, every audit finds gaps that feed risk + CAPA + change.
 
 ## 6. Audit-readiness checklist (ICH-focused)
 
-When an inspector asks ICH-related questions, the answer comes from these Hawkeye queries:
+When an inspector asks ICH-related questions, the answer comes from these S.M.A.R.T. Hawk queries:
 
-| Inspector question | Hawkeye answer source |
+| Inspector question | S.M.A.R.T. Hawk answer source |
 |---|---|
 | "Show me all changes to your API manufacturing process in the last 12 months" | Change Control module → filtered list + per-change full audit trail |
 | "How is risk being managed across your supplier base?" | Risk module + per-supplier risk scores + risk-driven audit frequency |
@@ -189,5 +189,5 @@ When an inspector asks ICH-related questions, the answer comes from these Hawkey
 - [PART-11.md](PART-11.md) — electronic records + signatures
 - [EU-GMP.md](EU-GMP.md) — EU equivalent of GMP
 - [ISO-9001.md](ISO-9001.md) — general quality management
-- [PLATFORM-CONTROLS.md](../platform-controls/PLATFORM-CONTROLS.md) — Hawkeye implementation map
+- [PLATFORM-CONTROLS.md](../platform-controls/PLATFORM-CONTROLS.md) — S.M.A.R.T. Hawk implementation map
 - [06-modules/audit-management/URS.md](../../06-modules/audit-management/URS.md) — audit module requirements traced to ICH

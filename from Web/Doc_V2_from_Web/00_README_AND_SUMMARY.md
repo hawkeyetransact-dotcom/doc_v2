@@ -1,14 +1,14 @@
-# Hawkeye — Conversation Summary & Document Index (V2)
+# S.M.A.R.T. Hawk — Conversation Summary & Document Index (V2)
 
 **Generated:** 11 June 2026
-**For:** Local filing at `C:\Users\debab\Code - Hawkeye\hawkeye-clean\Doc_V2\from Web`
+**For:** Local filing at `C:\Users\debab\Code - S.M.A.R.T. Hawk\hawkeye-clean\Doc_V2\from Web`
 **By:** Claude.ai chat sessions (curated)
 
 ---
 
 ## 1. What this bundle is
 
-This zip contains the **current, canonical** set of Hawkeye strategy, product, and financial documents produced across multiple Claude.ai chat sessions ending June 11, 2026. It is **not** every draft ever produced — many earlier iterations were superseded by later versions, and only the latest is included here.
+This zip contains the **current, canonical** set of S.M.A.R.T. Hawk strategy, product, and financial documents produced across multiple Claude.ai chat sessions ending June 11, 2026. It is **not** every draft ever produced — many earlier iterations were superseded by later versions, and only the latest is included here.
 
 **Total: 46 files, 19MB, organized in 7 numbered folders.**
 
@@ -37,9 +37,9 @@ The work spans many sessions but lands on a coherent thesis. Here it is.
 
 ### Strategic reframe (this matters more than anything else)
 
-**Hawkeye is NOT** a pharma EQMS that might eventually expand to other industries.
+**S.M.A.R.T. Hawk is NOT** a pharma EQMS that might eventually expand to other industries.
 
-**Hawkeye IS** an **industry-agnostic, AI-native compliance engine for regulated supply chains** — and pharma is the *forcing function*, not the destination. Pharma produces the hardest regulatory bar (GxP, 21 CFR Part 11, ALCOA+, validated AI, on-prem sovereignty), which forces an architecture every other regulated supply chain (food, devices, automotive, aerospace, chemicals) can inherit by configuration.
+**S.M.A.R.T. Hawk IS** an **industry-agnostic, AI-native compliance engine for regulated supply chains** — and pharma is the *forcing function*, not the destination. Pharma produces the hardest regulatory bar (GxP, 21 CFR Part 11, ALCOA+, validated AI, on-prem sovereignty), which forces an architecture every other regulated supply chain (food, devices, automotive, aerospace, chemicals) can inherit by configuration.
 
 **Seven elements regulated rigor forces structurally:**
 1. ALCOA+ data integrity
@@ -126,7 +126,7 @@ The cost model showed prior documents understated cost-to-serve. The honest numb
 **founder-memo-2pp.pdf** (2 pp) — Email companion to the pitch deck. Founder-voice. Reads like a real person wrote it, not a deck.
 
 ### `02_strategy_and_pitch/brochures/`
-- **management-product-brochure-v2-LATEST.pdf** (9 pp, 1.1MB) — *Latest, post-feedback rebuild.* Mobile-readable typography, six custom-generated infographics, quantitative value props with dual sourcing (industry benchmark + Hawkeye-modeled), NO commercials. Use this for management/exec conversations.
+- **management-product-brochure-v2-LATEST.pdf** (9 pp, 1.1MB) — *Latest, post-feedback rebuild.* Mobile-readable typography, six custom-generated infographics, quantitative value props with dual sourcing (industry benchmark + S.M.A.R.T. Hawk-modeled), NO commercials. Use this for management/exec conversations.
 - **technical-user-deck.pdf** (11 slides) — Technical deck for QA/IT/CSV teams. No pricing. Pure product/architecture.
 - **_archive_management-deck-v1.pdf** — Previous management deck. Kept because it has the Founding Customer offer details now removed from v2; useful as reference. Don't send.
 

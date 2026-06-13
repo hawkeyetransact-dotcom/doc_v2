@@ -3,7 +3,7 @@
 | Field | Value |
 |---|---|
 | Module | Change Control |
-| Owner | Product (Hawkeye Platform) |
+| Owner | Product (S.M.A.R.T. Hawk Platform) |
 | Status | DRAFT (reverse-engineered from current code + canon) |
 | Version | 0.1 |
 | Last updated | 2026-06-01 |
@@ -14,7 +14,7 @@
 
 ## 1. Purpose and Scope
 
-**Purpose.** Hawkeye Change Control manages the **formal change request workflow** in regulated quality systems — from initiation through classification, impact assessment, multi-step approval, implementation, and post-implementation review. Every regulated change carries 21 CFR Part 11 e-signature + immutable audit trail. The module is the keystone of cross-module change propagation (Doc Control, Risk, CAPA).
+**Purpose.** S.M.A.R.T. Hawk Change Control manages the **formal change request workflow** in regulated quality systems — from initiation through classification, impact assessment, multi-step approval, implementation, and post-implementation review. Every regulated change carries 21 CFR Part 11 e-signature + immutable audit trail. The module is the keystone of cross-module change propagation (Doc Control, Risk, CAPA).
 
 **In scope:**
 - Change request initiation (any role can initiate)

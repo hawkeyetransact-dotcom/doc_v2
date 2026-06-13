@@ -11,7 +11,7 @@
 
 ## 1. API conventions
 
-Hawkeye exposes a **REST-over-JSON** API. Internal services use the same API as the frontend (no separate internal/external split today). All endpoints under `/api/`.
+S.M.A.R.T. Hawk exposes a **REST-over-JSON** API. Internal services use the same API as the frontend (no separate internal/external split today). All endpoints under `/api/`.
 
 ```mermaid
 flowchart LR

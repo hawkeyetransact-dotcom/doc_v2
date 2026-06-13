@@ -1,6 +1,6 @@
 # Proof of Concept — Implementation Plan
 
-## Hawkeye AI-Native EQMS Platform · 60-Day Engagement
+## S.M.A.R.T. Hawk AI-Native EQMS Platform · 60-Day Engagement
 
 ---
 
@@ -9,7 +9,7 @@
 > `[CUSTOMER ADDRESS]`
 >
 > **Prepared by**
-> Hawkeye Transact Pvt. Ltd.
+> S.M.A.R.T. Hawk Transact Pvt. Ltd.
 >
 > **Reference:** `HK-POC-IMP-[YYYY-MM]-[NNN]`
 > **Date issued:** `[DATE]`
@@ -48,16 +48,16 @@ It is intended to be read alongside the **Proposal** (which sets out the offer) 
 
 | Element | Detail |
 |---|---|
-| Project name | `[CUSTOMER NAME]` Hawkeye PoC |
+| Project name | `[CUSTOMER NAME]` S.M.A.R.T. Hawk PoC |
 | Duration | 60 calendar days from Effective Date |
 | Effective Date | `[YYYY-MM-DD]` |
 | PoC end date (Day 60) | `[YYYY-MM-DD]` |
 | Conversion-window closes (Day 74) | `[YYYY-MM-DD]` |
 | Project sponsor (`[CUSTOMER NAME]`) | `[SPONSOR NAME, TITLE]` |
 | Project lead (`[CUSTOMER NAME]`) | `[LEAD NAME, TITLE]` |
-| Engagement lead (Hawkeye) | `[FOUNDER NAME]`, Founder & CEO |
-| Customer Success Engineer (Hawkeye) | `[CS ENGINEER NAME]` |
-| Pharma SME Consultant (Hawkeye) | `[SME NAME, CREDENTIALS]` |
+| Engagement lead (S.M.A.R.T. Hawk) | `[FOUNDER NAME]`, Founder & CEO |
+| Customer Success Engineer (S.M.A.R.T. Hawk) | `[CS ENGINEER NAME]` |
+| Pharma SME Consultant (S.M.A.R.T. Hawk) | `[SME NAME, CREDENTIALS]` |
 | Slack/Teams channel | Provisioned at kickoff |
 | Status meeting cadence | Weekly 30-minute checkpoint (day/time agreed at kickoff) |
 
@@ -143,13 +143,13 @@ gantt
 | Week | Calendar dates | Activities | Owner | Deliverable |
 |---|---|---|---|---|
 | **0** | `[DATES]` | Agreement signed · Kickoff workshop · SSO IT contact aligned · Baseline data request issued | Joint | Kickoff minutes; Success criteria document |
-| **1** | `[DATES]` | Tenant provisioned · SSO configured · Named users invited · User onboarding training (1-hour live session) | Hawkeye | Tenant access confirmation; Training attendance log |
-| **2** | `[DATES]` | Baseline audit imported · Tenant acceptance test executed · Pharma SME compliance review (session 1) | Hawkeye | Tenant acceptance test report; Compliance posture review note |
+| **1** | `[DATES]` | Tenant provisioned · SSO configured · Named users invited · User onboarding training (1-hour live session) | S.M.A.R.T. Hawk | Tenant access confirmation; Training attendance log |
+| **2** | `[DATES]` | Baseline audit imported · Tenant acceptance test executed · Pharma SME compliance review (session 1) | S.M.A.R.T. Hawk | Tenant acceptance test report; Compliance posture review note |
 | **3** | `[DATES]` | Audit 1 kicked off in platform · Section assignments made · Pre-audit AI drafting begins | Joint | Audit 1 plan document |
 | **4** | `[DATES]` | Pre-audit pack completed · Live audit days conducted | Joint | Audit 1 evidence pack |
 | **5** | `[DATES]` | Audit 1 findings drafted with AI assistance · CAPAs spawned · E-signatures applied | Joint | Audit 1 findings report |
 | **6** | `[DATES]` | Audit 1 closeout · Audit 2 kicked off (if scheduled) | Joint | Audit 1 closeout certificate |
-| **7** | `[DATES]` | Stopwatch comparison vs baseline · User survey deployed · Validation summary report drafted · Pharma SME review (session 2) | Hawkeye | Stopwatch report; Survey results; Validation summary report |
+| **7** | `[DATES]` | Stopwatch comparison vs baseline · User survey deployed · Validation summary report drafted · Pharma SME review (session 2) | S.M.A.R.T. Hawk | Stopwatch report; Survey results; Validation summary report |
 | **8** | `[DATES]` | Day-60 review meeting · Decision document signed · (if go) Conversion paperwork begins | Joint | Day-60 decision document |
 
 ### 3.3 Critical path
@@ -171,23 +171,23 @@ Any 3+ day slippage on a critical-path activity triggers a re-plan conversation 
 
 | # | Deliverable | Owner | Due | Acceptance criterion |
 |---|---|---|---|---|
-| D1 | Kickoff minutes | Hawkeye | End of Week 0 | Co-signed by Sponsor and Founder Lead |
-| D2 | Success criteria document (with locked targets) | Hawkeye | End of Week 0 | Co-signed by Sponsor and Founder Lead |
-| D3 | Tenant provisioned with SSO | Hawkeye | End of Week 1 | All named users log in successfully via SSO |
-| D4 | User onboarding training delivered | Hawkeye | End of Week 1 | All named users attend or receive recording within 48 hrs |
-| D5 | Baseline audit imported | Hawkeye | End of Week 2 | `[CUSTOMER NAME]` PoC Lead confirms data fidelity |
-| D6 | Tenant acceptance test report | Hawkeye | End of Week 2 | PoC Lead signs off on functional readiness |
-| D7 | Pharma SME compliance review note (session 1) | Hawkeye | End of Week 2 | Note delivered to Sponsor |
+| D1 | Kickoff minutes | S.M.A.R.T. Hawk | End of Week 0 | Co-signed by Sponsor and Founder Lead |
+| D2 | Success criteria document (with locked targets) | S.M.A.R.T. Hawk | End of Week 0 | Co-signed by Sponsor and Founder Lead |
+| D3 | Tenant provisioned with SSO | S.M.A.R.T. Hawk | End of Week 1 | All named users log in successfully via SSO |
+| D4 | User onboarding training delivered | S.M.A.R.T. Hawk | End of Week 1 | All named users attend or receive recording within 48 hrs |
+| D5 | Baseline audit imported | S.M.A.R.T. Hawk | End of Week 2 | `[CUSTOMER NAME]` PoC Lead confirms data fidelity |
+| D6 | Tenant acceptance test report | S.M.A.R.T. Hawk | End of Week 2 | PoC Lead signs off on functional readiness |
+| D7 | Pharma SME compliance review note (session 1) | S.M.A.R.T. Hawk | End of Week 2 | Note delivered to Sponsor |
 | D8 | Audit 1 plan document | Joint | End of Week 3 | PoC Lead signs off |
 | D9 | Audit 1 evidence pack | Joint | End of Week 4 | Pack passes platform-level validation (no broken links, all e-sigs applied) |
 | D10 | Audit 1 findings report | Joint | End of Week 5 | All findings cite source · all signed · CAPAs spawned |
 | D11 | Audit 1 closeout certificate | Joint | End of Week 6 | Issued by platform, signed by both parties |
-| D12 | Stopwatch comparison report | Hawkeye | End of Week 7 | Methodology agreed at kickoff · raw data provided |
-| D13 | User survey results | Hawkeye | End of Week 7 | All 5 PoC users surveyed · raw responses provided |
-| D14 | Validation summary report (GAMP 5 Cat 4 supplier-leveraged) | Hawkeye | End of Week 7 | Covers 21 CFR Part 11 (clause-level: §11.10 · §11.50 · §11.70 · §11.100 · §11.200 · §11.300) · EU GMP Annex 11 (all 17 clauses) · MHRA/WHO ALCOA+ (9 attributes) · FDA CSA risk-based assurance · GAMP 5 Cat 4 Validation Accelerator Package |
-| D15 | Pharma SME compliance review note (session 2) | Hawkeye | End of Week 7 | Note delivered to Sponsor |
+| D12 | Stopwatch comparison report | S.M.A.R.T. Hawk | End of Week 7 | Methodology agreed at kickoff · raw data provided |
+| D13 | User survey results | S.M.A.R.T. Hawk | End of Week 7 | All 5 PoC users surveyed · raw responses provided |
+| D14 | Validation summary report (GAMP 5 Cat 4 supplier-leveraged) | S.M.A.R.T. Hawk | End of Week 7 | Covers 21 CFR Part 11 (clause-level: §11.10 · §11.50 · §11.70 · §11.100 · §11.200 · §11.300) · EU GMP Annex 11 (all 17 clauses) · MHRA/WHO ALCOA+ (9 attributes) · FDA CSA risk-based assurance · GAMP 5 Cat 4 Validation Accelerator Package |
+| D15 | Pharma SME compliance review note (session 2) | S.M.A.R.T. Hawk | End of Week 7 | Note delivered to Sponsor |
 | D16 | Day-60 decision document | Joint | End of Week 8 | Co-signed by Sponsor and Founder Lead |
-| D17 | (If no-go) Data export package | Hawkeye | Within 7 business days of decision | Includes PDF (audit-trail-grade) + CSV (raw) + signed manifest |
+| D17 | (If no-go) Data export package | S.M.A.R.T. Hawk | Within 7 business days of decision | Includes PDF (audit-trail-grade) + CSV (raw) + signed manifest |
 | D18 | (If go) Master Services Agreement & Order Form | Joint | Within 14 calendar days of decision | Executed by both parties |
 
 ---
@@ -196,7 +196,7 @@ Any 3+ day slippage on a critical-path activity triggers a re-plan conversation 
 
 **Legend:** R = Responsible (does the work) · A = Accountable (signs off) · C = Consulted · I = Informed
 
-| Activity | Sponsor (`[CUSTOMER NAME]`) | PoC Lead (`[CUSTOMER NAME]`) | Named Users (`[CUSTOMER NAME]`) | IT/InfoSec (`[CUSTOMER NAME]`) | Founder Lead (Hawkeye) | CS Engineer (Hawkeye) | Pharma SME (Hawkeye) |
+| Activity | Sponsor (`[CUSTOMER NAME]`) | PoC Lead (`[CUSTOMER NAME]`) | Named Users (`[CUSTOMER NAME]`) | IT/InfoSec (`[CUSTOMER NAME]`) | Founder Lead (S.M.A.R.T. Hawk) | CS Engineer (S.M.A.R.T. Hawk) | Pharma SME (S.M.A.R.T. Hawk) |
 |---|---|---|---|---|---|---|---|
 | Sign PoC Agreement | A | C | I | C | A | I | I |
 | Attend kickoff workshop | A | R | I | C | A | R | C |
@@ -261,20 +261,20 @@ Any 3+ day slippage on a critical-path activity triggers a re-plan conversation 
 | One historical supplier audit (PDFs, evidence, findings) | End of Week 2 | PoC Lead | For baseline benchmark |
 | Baseline measurement data | End of Week 1 | PoC Lead | Hours by role, tools used, friction points |
 | At least one real supplier audit scheduled within Weeks 3-6 | Confirmed at kickoff | Sponsor | Critical-path dependency |
-| Slack or Teams account access for CS Engineer | End of Week 0 | PoC Lead | Or Hawkeye-hosted channel acceptable |
+| Slack or Teams account access for CS Engineer | End of Week 0 | PoC Lead | Or S.M.A.R.T. Hawk-hosted channel acceptable |
 | NDA + Data Processing Agreement signed | Kickoff | Sponsor (legal) | Executed alongside PoC Agreement |
 
-### 7.2 What Hawkeye will provide
+### 7.2 What S.M.A.R.T. Hawk will provide
 
 | Item | Provided by | When |
 |---|---|---|
-| Hawkeye platform tenant (dedicated for PoC) | CS Engineer | End of Week 1 |
+| S.M.A.R.T. Hawk platform tenant (dedicated for PoC) | CS Engineer | End of Week 1 |
 | Named user accounts (up to 5) | CS Engineer | End of Week 1 |
 | AI credits (25,000) | CS Engineer | Pre-loaded at tenant provisioning |
 | Onboarding training session (1 hour, live) | CS Engineer | End of Week 1 |
 | Slack/Teams support channel | CS Engineer | Week 0 |
 | Documentation access (User Guide, Admin Guide, API Reference) | CS Engineer | Week 0 |
-| One custom integration (up to 16 engineering hours) | CS Engineer + Hawkeye Engineering | If requested at kickoff, delivered by Week 4 |
+| One custom integration (up to 16 engineering hours) | CS Engineer + S.M.A.R.T. Hawk Engineering | If requested at kickoff, delivered by Week 4 |
 | Pharma SME consultancy (2 sessions) | Pharma SME | Week 2 · Week 7 |
 | **GAMP 5 Cat 4 Validation Accelerator Package** (Vendor Quality Manual · SDLC evidence · FRS + Configuration Specification · IQ/OQ scripts · annual pentest summary · Vendor Assessment Questionnaire · Release Notes per version) | CS Engineer | Week 0 (at kickoff) |
 | Validation summary report | CS Engineer + Pharma SME | End of Week 7 |
@@ -291,7 +291,7 @@ Any 3+ day slippage on a critical-path activity triggers a re-plan conversation 
 | ☐ | At least one real supplier audit confirmed within Weeks 3-6 | Sponsor |
 | ☐ | IT/InfoSec contact identified | Sponsor |
 | ☐ | Founder Lead direct contact details exchanged | Joint |
-| ☐ | Hawkeye InfoSec questionnaire returned (if requested) | Hawkeye |
+| ☐ | S.M.A.R.T. Hawk InfoSec questionnaire returned (if requested) | S.M.A.R.T. Hawk |
 
 ---
 
@@ -303,10 +303,10 @@ Any 3+ day slippage on a critical-path activity triggers a re-plan conversation 
 | R2 | SSO configuration delayed beyond Week 1 | Medium | Medium | IT/InfoSec | Engage IT/InfoSec at kickoff · pre-flight test | Local auth fallback for PoC duration |
 | R3 | Baseline audit data unavailable | Low | High | PoC Lead | Identify baseline at kickoff | Use industry-benchmark default for measurement |
 | R4 | Named users unavailable due to competing work | Medium | Medium | Sponsor | Weekly checkpoints surface adoption gaps | Substitute named users with Sponsor approval |
-| R5 | AI generation produces inaccurate citation | Very Low | Very High | Hawkeye Engineering | Cite-or-fallback by design | Immediate platform-wide review · written incident report |
-| R6 | Platform outage during scheduled audit | Very Low | High | Hawkeye Engineering | 99.5% SLA · daily backups · emergency hotline | Backup PDF export at any moment |
+| R5 | AI generation produces inaccurate citation | Very Low | Very High | S.M.A.R.T. Hawk Engineering | Cite-or-fallback by design | Immediate platform-wide review · written incident report |
+| R6 | Platform outage during scheduled audit | Very Low | High | S.M.A.R.T. Hawk Engineering | 99.5% SLA · daily backups · emergency hotline | Backup PDF export at any moment |
 | R7 | Custom integration scope exceeds 16 hours | Medium | Low | CS Engineer | Scope at kickoff · early estimation | Defer integration to post-conversion |
-| R8 | `[CUSTOMER NAME]` IT/InfoSec rejects deployment posture | Low | High | Hawkeye | InfoSec questionnaire pre-filled · architecture review on request | On-prem deployment available post-conversion |
+| R8 | `[CUSTOMER NAME]` IT/InfoSec rejects deployment posture | Low | High | S.M.A.R.T. Hawk | InfoSec questionnaire pre-filled · architecture review on request | On-prem deployment available post-conversion |
 | R9 | Regulator visit during PoC | Low | Medium | Sponsor | PoC data is parallel to production records | Pharma SME on standby to assist `[CUSTOMER NAME]` |
 | R10 | Decision delayed past Day 74 | Medium | Medium (loss of conversion benefits) | Sponsor | Day-60 review forcing function · clear conversion window | Negotiated case-by-case extension |
 
@@ -336,7 +336,7 @@ Any change to PoC scope, success criteria, or timeline requires:
 3. Co-signature by Sponsor and Founder Lead in the form of an updated kickoff minutes addendum
 4. Update to this Implementation Plan as a versioned amendment
 
-Changes that increase Hawkeye's cost burden (e.g., second custom integration, additional sites) may require commercial discussion before approval.
+Changes that increase S.M.A.R.T. Hawk's cost burden (e.g., second custom integration, additional sites) may require commercial discussion before approval.
 
 ---
 
@@ -447,11 +447,11 @@ flowchart LR
 
 | Step | Owner | Duration |
 |---|---|---|
-| Data export package prepared (PDF + CSV + audit-trail manifest) | Hawkeye | Within 7 business days |
-| Export package delivered via SFTP or secure download link | Hawkeye | On day 7 |
+| Data export package prepared (PDF + CSV + audit-trail manifest) | S.M.A.R.T. Hawk | Within 7 business days |
+| Export package delivered via SFTP or secure download link | S.M.A.R.T. Hawk | On day 7 |
 | `[CUSTOMER NAME]` confirms successful download | PoC Lead | Within 14 days |
-| (If requested) Hard-deletion of all data including backups | Hawkeye | Within 30 calendar days |
-| Certificate of deletion provided | Hawkeye | At deletion |
+| (If requested) Hard-deletion of all data including backups | S.M.A.R.T. Hawk | Within 30 calendar days |
+| Certificate of deletion provided | S.M.A.R.T. Hawk | At deletion |
 | Optional 30-minute feedback debrief | Joint | At `[CUSTOMER NAME]`'s convenience |
 
 ---
@@ -474,8 +474,8 @@ For questions on this Implementation Plan or any aspect of the PoC execution, pl
 
 | Role | Name | Contact |
 |---|---|---|
-| Engagement Lead (Hawkeye) | `[FOUNDER NAME]` | `[FOUNDER EMAIL]` · `[FOUNDER PHONE]` |
-| Customer Success Engineer (Hawkeye) | `[CS ENGINEER NAME]` | `[CS EMAIL]` |
+| Engagement Lead (S.M.A.R.T. Hawk) | `[FOUNDER NAME]` | `[FOUNDER EMAIL]` · `[FOUNDER PHONE]` |
+| Customer Success Engineer (S.M.A.R.T. Hawk) | `[CS ENGINEER NAME]` | `[CS EMAIL]` |
 | PoC Lead (`[CUSTOMER NAME]`) | `[POC LEAD NAME]` | `[POC LEAD EMAIL]` |
 
 ---
@@ -484,7 +484,7 @@ For questions on this Implementation Plan or any aspect of the PoC execution, pl
 
 By signing below, `[CUSTOMER NAME]` acknowledges receipt and review of this Implementation Plan and agrees to the responsibilities, deliverables, and schedule set out herein, subject to the binding terms of the PoC Agreement.
 
-| For `[CUSTOMER NAME]` | For Hawkeye Transact Pvt. Ltd. |
+| For `[CUSTOMER NAME]` | For S.M.A.R.T. Hawk Transact Pvt. Ltd. |
 |---|---|
 | **Name:** `[POC LEAD NAME]` | **Name:** `[FOUNDER NAME]` |
 | **Title:** PoC Lead | **Title:** Founder & CEO |
@@ -493,4 +493,4 @@ By signing below, `[CUSTOMER NAME]` acknowledges receipt and review of this Impl
 
 ---
 
-*Hawkeye Transact Pvt. Ltd. · Implementation Plan HK-POC-IMP-`[YYYY-MM]`-`[NNN]` · `[DATE ISSUED]` · Confidential*
+*S.M.A.R.T. Hawk Transact Pvt. Ltd. · Implementation Plan HK-POC-IMP-`[YYYY-MM]`-`[NNN]` · `[DATE ISSUED]` · Confidential*

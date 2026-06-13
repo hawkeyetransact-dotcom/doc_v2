@@ -37,7 +37,7 @@ flowchart TB
 | Theme | Why it matters | Cadence |
 |---|---|---|
 | **Sector expansion mapping** | Validates the industry-agnostic engine thesis ring by ring | 1-2/yr |
-| **Standards convergence** (ISO 9001:2026, IA9100, IATF) | Hawkeye is rowing with this current; explain it publicly | 1/yr |
+| **Standards convergence** (ISO 9001:2026, IA9100, IATF) | S.M.A.R.T. Hawk is rowing with this current; explain it publicly | 1/yr |
 | **AI in regulated industries** | Stake the "grounded + reproducible" position; counter "AI black box" criticism | Quarterly |
 | **Customer case studies** | Real ROI numbers > generic claims | Per-customer |
 | **Regulatory deep-dives** (per standard) | Establish technical credibility | 1-2/quarter |
@@ -81,13 +81,13 @@ Authoritative sources we cite in research:
 | ICH Q-series + Annex 11 + Annex 16 | Compliance baselines |
 | ISPE GAMP 5 + ISPE PQLI | Validation methodology |
 | Customer discovery interview transcripts (anonymized) | Voice-of-customer signal |
-| Hawkeye platform telemetry (post-customers) | Anonymized usage trends for industry insights |
+| S.M.A.R.T. Hawk platform telemetry (post-customers) | Anonymized usage trends for industry insights |
 
 ## 7. Research distribution channels
 
 | Channel | Format | Cadence |
 |---|---|---|
-| Hawkeye blog (long-form, hawkeye.io/research) | HTML + PDF download | Per publication |
+| S.M.A.R.T. Hawk blog (long-form, hawkeye.io/research) | HTML + PDF download | Per publication |
 | LinkedIn company page + founder posts | Summary card + key takeaway | Per publication |
 | Industry newsletters (paid sponsorship post-Series A) | Featured article | Quarterly |
 | Conference presentations | Live talk + slide deck publication | 2-3/yr |

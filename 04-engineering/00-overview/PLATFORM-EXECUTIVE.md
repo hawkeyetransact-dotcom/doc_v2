@@ -9,7 +9,7 @@
 
 ---
 
-> 💡 **The one-line summary.** Hawkeye is an **industry-agnostic compliance engine** built around 5 universal pillars. Same architecture, different configuration per vertical. Today: pharma. Tomorrow: food + med-device. Eventually: every regulated supply chain.
+> 💡 **The one-line summary.** S.M.A.R.T. Hawk is an **industry-agnostic compliance engine** built around 5 universal pillars. Same architecture, different configuration per vertical. Today: pharma. Tomorrow: food + med-device. Eventually: every regulated supply chain.
 
 ---
 
@@ -53,7 +53,7 @@ Three layers. The pipeline (middle) does the work. The configuration layer (top)
 ## What's Coming (next 18 months)
 
 - SOC 2 Type 1 certification (M12)
-- Hawkeye-tuned Llama-3 in production (M12)
+- S.M.A.R.T. Hawk-tuned Llama-3 in production (M12)
 - Remote-audit cockpit UI (M15)
 - First 25-35 paying customers (M18)
 - First Food & Beverage vertical pack (M18-M24)
@@ -67,9 +67,9 @@ Three layers. The pipeline (middle) does the work. The configuration layer (top)
 | **Round** | Pre-seed / Angel |
 | **Size** | $1.2-1.5M (target $1.5M) |
 | **Runway** | 18 months |
-| **Milestones at close** | $250-400K ARR · 25-35 customers · Hawkeye-tuned AI in prod · 1+ non-pharma vertical signed |
+| **Milestones at close** | $250-400K ARR · 25-35 customers · S.M.A.R.T. Hawk-tuned AI in prod · 1+ non-pharma vertical signed |
 
-> 💡 **Next move:** read the [Hawkeye Story](../../HAWKEYE-STORY.md) for the full narrative, or [BUSINESS-PLAN.md](../../02-fundraising/business-plan/BUSINESS-PLAN.md) for the bottom-up financials.
+> 💡 **Next move:** read the [S.M.A.R.T. Hawk Story](../../SMART-HAWK-STORY.md) for the full narrative, or [BUSINESS-PLAN.md](../../02-fundraising/business-plan/BUSINESS-PLAN.md) for the bottom-up financials.
 
 ---
 

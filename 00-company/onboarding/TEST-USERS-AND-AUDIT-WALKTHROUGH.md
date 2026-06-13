@@ -4,7 +4,7 @@
 |---|---|
 | Owner | Engineering · QA |
 | Status | v1.0 — 2026-06-08 |
-| Audience | Hawkeye Developers and QA testing the deployed Audit Management module |
+| Audience | S.M.A.R.T. Hawk Developers and QA testing the deployed Audit Management module |
 | Outcome | In 60 minutes, you've logged in as 5 different personas, played out a complete audit lifecycle, and seen every step work end-to-end |
 | Pairs with | [TEAM-ONBOARDING.md](./TEAM-ONBOARDING.md) (deeper setup if you need local dev) · [COMPLIANCE-TEST-GUIDE.md](./COMPLIANCE-TEST-GUIDE.md) (deeper verification if you're QA) |
 
@@ -30,7 +30,7 @@ Total time: about 60 minutes for the full story. About 10 minutes if you just wa
 
 > 💡 **All passwords are identical: `Testing@2022`** — this is intentional for shared team testing on a non-production environment. Never use this pattern anywhere real.
 
-> ℹ️ **Email domain:** `@test.com`. These are not real email addresses — they exist only inside the Hawkeye database for testing.
+> ℹ️ **Email domain:** `@test.com`. These are not real email addresses — they exist only inside the S.M.A.R.T. Hawk database for testing.
 
 ### 1.1 Buyer organisations (5 tenants × 3 users each = 15 users)
 
@@ -83,13 +83,13 @@ Total time: about 60 minutes for the full story. About 10 minutes if you just wa
 | **External Auditor Firm 4** | `auditor4@test.com` | Independent Auditor | |
 | **External Auditor Firm 5** | `auditor5@test.com` | Independent Auditor | |
 
-### 1.4 Hawkeye platform admin (1 user)
+### 1.4 S.M.A.R.T. Hawk platform admin (1 user)
 
-> Think of this as the Hawkeye team's superadmin account — sees across all tenants. Use sparingly.
+> Think of this as the S.M.A.R.T. Hawk team's superadmin account — sees across all tenants. Use sparingly.
 
 | Login email | Layman role | What this person does |
 |---|---|---|
-| `hawkeye-admin@test.com` | Hawkeye Superadmin | Cross-tenant platform administration (for Hawkeye team use only) |
+| `hawkeye-admin@test.com` | S.M.A.R.T. Hawk Superadmin | Cross-tenant platform administration (for S.M.A.R.T. Hawk team use only) |
 
 ### 1.5 Totals
 
@@ -117,7 +117,7 @@ Both scripts are **idempotent** — safe to re-run; they update existing users a
 
 Once that's done, every email + password in §1 is live and ready to log into. You don't need to run them again unless the database was reset.
 
-> 🔧 **For Hawkeye Engineering only.** If you want fewer or more sets (e.g., 3 buyers instead of 5), set `SEED_PERSONA_COUNT=3` before running. Default is 5.
+> 🔧 **For S.M.A.R.T. Hawk Engineering only.** If you want fewer or more sets (e.g., 3 buyers instead of 5), set `SEED_PERSONA_COUNT=3` before running. Default is 5.
 
 ---
 
@@ -300,7 +300,7 @@ The QA Head closes the audit.
 
 🎉 **The story is complete.** You just played 5 different people through one full audit lifecycle.
 
-> 🔍 **The hard gate you just triggered.** Annex 11 §15 requires audit-trail review before batch release. Hawkeye enforces this as a workflow rule: the "Close Audit" button does not enable until "Review Audit Trail" is e-signed. This is one of the top FDA-483 themes — and it's structurally impossible to bypass in Hawkeye.
+> 🔍 **The hard gate you just triggered.** Annex 11 §15 requires audit-trail review before batch release. S.M.A.R.T. Hawk enforces this as a workflow rule: the "Close Audit" button does not enable until "Review Audit Trail" is e-signed. This is one of the top FDA-483 themes — and it's structurally impossible to bypass in S.M.A.R.T. Hawk.
 
 ---
 
@@ -358,12 +358,12 @@ Use these when you want to explore a specific persona without re-reading the who
 | Cannot do | Modify the audit record, sign on behalf of buyer or supplier, create new audits, see audits I wasn't invited to |
 | Main views | Audits I've been invited to · my observations · my colleagues' observations |
 
-### 4.6 Hawkeye Superadmin (`hawkeye-admin@test.com`)
+### 4.6 S.M.A.R.T. Hawk Superadmin (`hawkeye-admin@test.com`)
 
 | Thing | Value |
 |---|---|
 | Tenant | Platform (cross-tenant) |
-| Layman role | "I'm the Hawkeye team — I administer the platform" |
+| Layman role | "I'm the S.M.A.R.T. Hawk team — I administer the platform" |
 | Can do | View all tenants, manage tenant settings, troubleshoot issues, generate cross-tenant reports |
 | Cannot do | Modify a customer tenant's records as if you were that customer (your actions are logged separately in the governance audit trail) |
 | Main views | Platform Admin console · all tenants list · platform audit log |

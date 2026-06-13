@@ -75,7 +75,7 @@ A Tier-3 CDMO with 5 QA + 2 Reg Affairs staff:
 
 ## §2. What AskHawk does
 
-AskHawk is **Hawkeye's cross-cutting AI co-worker** — persona-aware, grounded, cited, confidence-scored, audit-trailed. It is **not a chatbot retrofit**: every output cites KB chunks, every call writes a Part-11-grade audit trail row, and every write action requires explicit e-signature.
+AskHawk is **S.M.A.R.T. Hawk's cross-cutting AI co-worker** — persona-aware, grounded, cited, confidence-scored, audit-trailed. It is **not a chatbot retrofit**: every output cites KB chunks, every call writes a Part-11-grade audit trail row, and every write action requires explicit e-signature.
 
 It answers, it surfaces, and it does.
 
@@ -94,13 +94,13 @@ It answers, it surfaces, and it does.
 
 | Why cross-cutting | Evidence |
 |---|---|
-| Every Hawkeye module has AI features | Audit's `observationDrafter`, CAPA's `rcaDrafter`, Deviation's `intakeClassifier`, Supplier's `intelAgent` — all consume AskHawk's `groundedGenerationService` |
+| Every S.M.A.R.T. Hawk module has AI features | Audit's `observationDrafter`, CAPA's `rcaDrafter`, Deviation's `intakeClassifier`, Supplier's `intelAgent` — all consume AskHawk's `groundedGenerationService` |
 | One trusted pipeline, many features | Citations + confidence + audit trail are *infrastructure*, not per-module logic |
 | One e-sig story for AI WRITE | Wizard's single-sig-per-plan applies across audit, CAPA, deviation, supplier modules |
 | Persona infrastructure scales | The same persona-aware retrieval that powers playbooks powers cross-module AI everywhere |
 | Regulator-readiness is shared | One audit-trail query answers "show me all AI-generated content in the last 12 months" across every module |
 
-> ✅ **The strategic play.** Hawkeye doesn't sell "AI features" per module — it sells a **trusted AI spine** that every module borrows. New modules light up AI for free.
+> ✅ **The strategic play.** S.M.A.R.T. Hawk doesn't sell "AI features" per module — it sells a **trusted AI spine** that every module borrows. New modules light up AI for free.
 
 ### The two surfaces
 
@@ -409,13 +409,13 @@ When a regulator asks: **"show me every AI-generated observation made by Claude 
 ```mermaid
 sequenceDiagram
     actor Regulator
-    participant Hawkeye
+    participant S.M.A.R.T. Hawk
     participant Trail as AuditTrail (indexed)
 
-    Regulator->>Hawkeye: Query: ai.feature=audit.observation_drafter<br/>+ ai.modelVersion=claude-sonnet-4-6<br/>+ date range 12mo
-    Hawkeye->>Trail: GET /api/audit-trail/by-entity<br/>?ai.feature=audit.observation_drafter<br/>&ai.modelVersion=claude-sonnet-4-6
-    Trail-->>Hawkeye: 247 rows (< 2 sec)
-    Hawkeye-->>Regulator: For each row:<br/>1. Audit ID + observation ID<br/>2. Auditor (Maria Santos)<br/>3. promptHash + retrievalSet<br/>4. Confidence + citations<br/>5. Disposition (ACCEPTED / EDITED)<br/>6. If EDITED — diff between draft and final
+    Regulator->>S.M.A.R.T. Hawk: Query: ai.feature=audit.observation_drafter<br/>+ ai.modelVersion=claude-sonnet-4-6<br/>+ date range 12mo
+    S.M.A.R.T. Hawk->>Trail: GET /api/audit-trail/by-entity<br/>?ai.feature=audit.observation_drafter<br/>&ai.modelVersion=claude-sonnet-4-6
+    Trail-->>S.M.A.R.T. Hawk: 247 rows (< 2 sec)
+    S.M.A.R.T. Hawk-->>Regulator: For each row:<br/>1. Audit ID + observation ID<br/>2. Auditor (Maria Santos)<br/>3. promptHash + retrievalSet<br/>4. Confidence + citations<br/>5. Disposition (ACCEPTED / EDITED)<br/>6. If EDITED — diff between draft and final
 ```
 
 *Total response time: < 2 sec for 100k entries. This is URS-B-001 — Part-11-grade AI traceability as a queryable feature, not a research project.*
@@ -450,7 +450,7 @@ flowchart LR
     M6["Month 6<br/>Per-module AI cascades<br/>observation drafter etc."]:::value
     M9["Month 9<br/>Active learning signals<br/>prompts tuned to tenant"]:::value
     M12["Month 12<br/>Cross-tenant intel<br/>(consent-gated)"]:::value
-    M18["Month 18<br/>Fine-tuned Hawkeye model<br/>lower cost · higher accuracy"]:::value
+    M18["Month 18<br/>Fine-tuned S.M.A.R.T. Hawk model<br/>lower cost · higher accuracy"]:::value
 
     M1 --> M3 --> M6 --> M9 --> M12 --> M18
 ```
@@ -498,7 +498,7 @@ The longer a tenant uses AskHawk, the better it gets — disposition signals tun
 
 ## §7d. Next 18-24 months (M12-M24)
 
-- **Fine-tuned Hawkeye model on domain corpus** — train Llama-3 / Mistral on accepted/edited drafts captured by active learning; lower cost + better accuracy for low-stakes tasks
+- **Fine-tuned S.M.A.R.T. Hawk model on domain corpus** — train Llama-3 / Mistral on accepted/edited drafts captured by active learning; lower cost + better accuracy for low-stakes tasks
 - Multi-region (EU GDPR sovereignty)
 - TSA cryptographic timestamp on AI decision rows
 - Voice surface (e-sig story TBD for voice-initiated WRITE plans)
@@ -529,7 +529,7 @@ The longer a tenant uses AskHawk, the better it gets — disposition signals tun
 | System architecture + data model + APIs (architect reference) | [ARCHITECTURE.md](ARCHITECTURE.md) |
 | Platform-wide AI pattern (the moat) | [../../04-engineering/07-ai/AI-ARCHITECTURE.md](../../04-engineering/07-ai/AI-ARCHITECTURE.md) |
 | Audit module storybook (the wedge surface) | [../audit-management/STORYBOOK.md](../audit-management/STORYBOOK.md) |
-| The full Hawkeye narrative | [../../HAWKEYE-STORY.md](../../HAWKEYE-STORY.md) |
+| The full S.M.A.R.T. Hawk narrative | [../../SMART-HAWK-STORY.md](../../SMART-HAWK-STORY.md) |
 | Compliance trace (regulator detail) | [../../08-compliance-regulatory/frameworks/PART-11.md](../../08-compliance-regulatory/frameworks/PART-11.md) |
 | Demo script for sales | [../../09-sales-marketing/demo-scripts/DEMO-INDEX.md](../../09-sales-marketing/demo-scripts/DEMO-INDEX.md) |
 

@@ -12,7 +12,7 @@
 
 ## 1. Context
 
-Hawkeye's AI features (audit finding drafting, CAPA RCA, deviation analysis, AskHawk Q&A) generate text that ends up in regulator-facing artifacts. A single hallucinated citation — an LLM inventing a non-existent 21 CFR clause or a fabricated SOP reference — is a **direct data-integrity violation** under MHRA ALCOA+ (fails Attributable, Accurate, Original) and a candidate Part 11 / Annex 11 finding.
+S.M.A.R.T. Hawk's AI features (audit finding drafting, CAPA RCA, deviation analysis, AskHawk Q&A) generate text that ends up in regulator-facing artifacts. A single hallucinated citation — an LLM inventing a non-existent 21 CFR clause or a fabricated SOP reference — is a **direct data-integrity violation** under MHRA ALCOA+ (fails Attributable, Accurate, Original) and a candidate Part 11 / Annex 11 finding.
 
 User research (RESEARCH-FINDINGS Insight 2) is explicit:
 
@@ -43,7 +43,7 @@ This rule applies to every task type: audit finding drafts, CAPA RCAs, deviation
 
 ### Option B: Cite-or-fallback as a configurable threshold (per-tenant)
 - **Pros:** Customer can tune their own risk tolerance
-- **Cons:** Creates inconsistent platform behavior; customer's auditor can no longer rely on "Hawkeye always cites"; admin button to disable is a misuse pattern waiting to happen; complicates the regulatory pitch ("Part 11 §11.10(a) Validation is a per-tenant configuration"); makes the platform-level guarantee untrue
+- **Cons:** Creates inconsistent platform behavior; customer's auditor can no longer rely on "S.M.A.R.T. Hawk always cites"; admin button to disable is a misuse pattern waiting to happen; complicates the regulatory pitch ("Part 11 §11.10(a) Validation is a per-tenant configuration"); makes the platform-level guarantee untrue
 
 ### Option C: Cite-or-fallback only for "regulated" task types (audit, CAPA) but not others (AskHawk casual)
 - **Pros:** AskHawk feels more conversational

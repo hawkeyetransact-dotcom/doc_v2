@@ -12,7 +12,7 @@
 
 # FOR
 
-# HAWKEYE AUDIT MANAGEMENT MODULE
+# S.M.A.R.T. HAWK AUDIT MANAGEMENT MODULE
 
 ---
 
@@ -58,7 +58,7 @@ Pharmaceutical manufacturing organizations — including originator pharma, cont
 
 The status-quo tooling for audit management — spreadsheets, email threads, shared drives, point CAPA trackers, and external consultants — consumes approximately 60% of the QA team's calendar time on audit preparation, response, and remediation. In addition to direct cost (~₹95L / ~$115K per year per representative customer), the status quo carries qualitative burden: weekend war-rooms before regulatory inspections, recurring findings that resurface every renewal cycle, and the inability to defend a complete "who changed what, when, why" lineage to a regulator.
 
-Hawkeye is an AI-native Enterprise Quality Management System (EQMS) for the regulated supply chain. The Audit Management module is the headline module of the platform — the entry point through which most customers adopt Hawkeye — and is the principal module measured during the 60-day Proof of Concept that precedes paid customer engagement.
+S.M.A.R.T. Hawk is an AI-native Enterprise Quality Management System (EQMS) for the regulated supply chain. The Audit Management module is the headline module of the platform — the entry point through which most customers adopt S.M.A.R.T. Hawk — and is the principal module measured during the 60-day Proof of Concept that precedes paid customer engagement.
 
 This User Need Specification (UNS) captures the user needs that the Audit Management module shall satisfy. It is the input to the module's User Requirements Specification (URS.md), Functional Specification (FRS), Configuration Specification, and downstream IQ / OQ / PQ validation artifacts as required by GAMP 5 Category 4 supplier-leveraged validation per ISPE *GAMP 5 Guide, 2nd Edition* (July 2022) and 21 CFR Part 11 §11.10(a) validation.
 
@@ -66,7 +66,7 @@ This User Need Specification (UNS) captures the user needs that the Audit Manage
 
 ## 3.0 PURPOSE
 
-The purpose of this document is to identify and establish the intended use of the Hawkeye Audit Management module as the principal computerized system supporting the customer's audit lifecycle from intake through closeout, including evidence collection, AI-assisted finding drafting, electronic signature ceremony, audit-trail capture, CAPA spawning, and inspection-readiness pack assembly.
+The purpose of this document is to identify and establish the intended use of the S.M.A.R.T. Hawk Audit Management module as the principal computerized system supporting the customer's audit lifecycle from intake through closeout, including evidence collection, AI-assisted finding drafting, electronic signature ceremony, audit-trail capture, CAPA spawning, and inspection-readiness pack assembly.
 
 The Audit Management module is delivered as a configured product (GAMP 5 Category 4) supplied as multi-tenant Software-as-a-Service (SaaS) with optional sovereign on-premise deployment for Enterprise customers. The customer is responsible for the configuration of their tenant (vocabulary, standards selected, workflow definitions, role assignments, AI prompt templates) and for executing customer-side validation of the configuration per GAMP 5 Cat 4 supplier-leverage and FDA Computer Software Assurance (CSA) risk-based assurance frameworks.
 
@@ -76,7 +76,7 @@ This UNS describes the user needs that the supplied module shall satisfy. It doe
 
 ## 4.0 SCOPE
 
-The product in the scope of this document is the **Hawkeye Audit Management module**, including:
+The product in the scope of this document is the **S.M.A.R.T. Hawk Audit Management module**, including:
 
 - The Audit Management module application code, data models, workflows, AI integrations, and user interface
 - The cross-cutting platform capabilities the module depends on: authentication, multi-tenant isolation, role-based access control, audit-trail capture, electronic signature ceremony, document storage, notification engine, and AI Gateway
@@ -86,8 +86,8 @@ The product in the scope of this document is the **Hawkeye Audit Management modu
 The following are explicitly **out of scope**:
 
 - The customer's medicinal product registration, manufacturing process, or batch-record content (governed by the customer's separate quality systems)
-- Workflows requiring custom code modification of the Hawkeye product (these would push the workflow to GAMP Category 5; available under a separate customization engagement)
-- The customer's IT infrastructure outside Hawkeye (Identity Provider, network, endpoint security)
+- Workflows requiring custom code modification of the S.M.A.R.T. Hawk product (these would push the workflow to GAMP Category 5; available under a separate customization engagement)
+- The customer's IT infrastructure outside S.M.A.R.T. Hawk (Identity Provider, network, endpoint security)
 - Customer-side validation execution (URS, Configuration Spec, customer-environment IQ, configuration-specific OQ, PQ, Validation Summary Report — these are the customer's GAMP Cat 4 responsibility per the Validation Accelerator Package guidance)
 
 The Audit Management module is delivered from a common code base to all customers and configured per tenant — never per-customer code-forked.
@@ -131,23 +131,23 @@ The Audit Management module is delivered from a common code base to all customer
 | Schedule M — Good Manufacturing Practices and Requirements of Premises, Plant and Equipment for Pharmaceutical Products (India) | India Schedule M (2023 revision) |
 | WHO Prequalification Programme — Good Manufacturing Practices | WHO PQ GMP |
 | PIC/S Guide to Good Manufacturing Practice for Medicinal Products | PIC/S PE 009 |
-| Hawkeye Platform Overview (5-layer architecture canonical reference) | Doc_V2 / PLATFORM-OVERVIEW.md |
-| Hawkeye GAMP 5 Category 4 Compliance Reference | Doc_V2 / GAMP-CAT-4-COMPLIANCE.md |
-| Hawkeye System Architecture | Doc_V2 / ARCHITECTURE.md |
-| Hawkeye Frontend Architecture | Doc_V2 / FRONTEND.md |
-| Hawkeye Security Architecture | Doc_V2 / SECURITY.md |
-| Hawkeye AI Architecture (Layer 3) | Doc_V2 / AI-ARCHITECTURE.md |
-| Hawkeye Accessibility Reference | Doc_V2 / ACCESSIBILITY.md |
-| Hawkeye Design Principles | Doc_V2 / DESIGN-PRINCIPLES.md |
-| Hawkeye Design Tokens | Doc_V2 / DESIGN-TOKENS.md |
-| Hawkeye User Flows | Doc_V2 / USER-FLOWS.md |
-| Hawkeye Audit Management Module — URS | 06-modules/audit-management/URS.md |
-| Hawkeye Audit Management Module — DESIGN | 06-modules/audit-management/DESIGN.md |
-| Hawkeye Audit Management Module — ARCHITECTURE | 06-modules/audit-management/ARCHITECTURE.md |
-| Hawkeye Audit Management Module — STORYBOOK | 06-modules/audit-management/STORYBOOK.md |
-| Hawkeye ADR-001 — Five-Layer Architecture | 04-engineering/08-adrs/ADR-001-five-layer-architecture.md |
-| Hawkeye ADR-002 — Multi-LLM Gateway | 04-engineering/08-adrs/ADR-002-multi-llm-gateway.md |
-| Hawkeye ADR-003 — Cite-or-Fallback | 04-engineering/08-adrs/ADR-003-cite-or-fallback.md |
+| S.M.A.R.T. Hawk Platform Overview (5-layer architecture canonical reference) | Doc_V2 / PLATFORM-OVERVIEW.md |
+| S.M.A.R.T. Hawk GAMP 5 Category 4 Compliance Reference | Doc_V2 / GAMP-CAT-4-COMPLIANCE.md |
+| S.M.A.R.T. Hawk System Architecture | Doc_V2 / ARCHITECTURE.md |
+| S.M.A.R.T. Hawk Frontend Architecture | Doc_V2 / FRONTEND.md |
+| S.M.A.R.T. Hawk Security Architecture | Doc_V2 / SECURITY.md |
+| S.M.A.R.T. Hawk AI Architecture (Layer 3) | Doc_V2 / AI-ARCHITECTURE.md |
+| S.M.A.R.T. Hawk Accessibility Reference | Doc_V2 / ACCESSIBILITY.md |
+| S.M.A.R.T. Hawk Design Principles | Doc_V2 / DESIGN-PRINCIPLES.md |
+| S.M.A.R.T. Hawk Design Tokens | Doc_V2 / DESIGN-TOKENS.md |
+| S.M.A.R.T. Hawk User Flows | Doc_V2 / USER-FLOWS.md |
+| S.M.A.R.T. Hawk Audit Management Module — URS | 06-modules/audit-management/URS.md |
+| S.M.A.R.T. Hawk Audit Management Module — DESIGN | 06-modules/audit-management/DESIGN.md |
+| S.M.A.R.T. Hawk Audit Management Module — ARCHITECTURE | 06-modules/audit-management/ARCHITECTURE.md |
+| S.M.A.R.T. Hawk Audit Management Module — STORYBOOK | 06-modules/audit-management/STORYBOOK.md |
+| S.M.A.R.T. Hawk ADR-001 — Five-Layer Architecture | 04-engineering/08-adrs/ADR-001-five-layer-architecture.md |
+| S.M.A.R.T. Hawk ADR-002 — Multi-LLM Gateway | 04-engineering/08-adrs/ADR-002-multi-llm-gateway.md |
+| S.M.A.R.T. Hawk ADR-003 — Cite-or-Fallback | 04-engineering/08-adrs/ADR-003-cite-or-fallback.md |
 
 ---
 
@@ -155,7 +155,7 @@ The Audit Management module is delivered from a common code base to all customer
 
 ### Product description
 
-The Hawkeye Audit Management module is the principal computerized system supporting the GxP audit lifecycle for pharmaceutical manufacturers, CDMOs, and other regulated-supply-chain organisations. It implements the universal 5-pillar runtime pipeline of the Hawkeye Domain Engine (Layer 4 of the 5-layer architecture) — Collect → Process → Validate → Report → Seal — applied to the audit domain, with grounded AI assistance at every step and human electronic signature at every record commit.
+The S.M.A.R.T. Hawk Audit Management module is the principal computerized system supporting the GxP audit lifecycle for pharmaceutical manufacturers, CDMOs, and other regulated-supply-chain organisations. It implements the universal 5-pillar runtime pipeline of the S.M.A.R.T. Hawk Domain Engine (Layer 4 of the 5-layer architecture) — Source → Model → Assess → Report → Trace — applied to the audit domain, with grounded AI assistance at every step and human electronic signature at every record commit.
 
 The module supports three audit types out of the box:
 
@@ -165,7 +165,7 @@ The module supports three audit types out of the box:
 
 The module is delivered as multi-tenant Software-as-a-Service with optional sovereign on-premise deployment, supporting per-tenant data residency in India (Mumbai, default), United States (US-East), or European Union (Frankfurt). It is multi-persona: Quality Assurance Head, Quality Assurance Manager / Analyst, Operations / Subject Matter Expert, External Auditor, Auditee (supplier-side QA), and Tenant Administrator all interact with persona-tailored interfaces against the same underlying audit record.
 
-The module integrates inseparably with the Hawkeye platform's cross-cutting capabilities: Single Sign-On via SAML 2.0 / OIDC, role-based access control at module and record level, the tamper-evident cross-module audit trail (21 CFR §11.10(e); Annex 11 §9), the electronic signature ceremony (Part 11 §11.50 + §11.200), the Multi-LLM AI Gateway (Anthropic Claude, OpenAI GPT, Google Gemini, local vLLM Llama 3), the cite-or-fallback grounded generation guarantee, and the AI Audit Trail capturing model + version + prompt hash + retrieval set + confidence + user disposition per AI call.
+The module integrates inseparably with the S.M.A.R.T. Hawk platform's cross-cutting capabilities: Single Sign-On via SAML 2.0 / OIDC, role-based access control at module and record level, the tamper-evident cross-module audit trail (21 CFR §11.10(e); Annex 11 §9), the electronic signature ceremony (Part 11 §11.50 + §11.200), the Multi-LLM AI Gateway (Anthropic Claude, OpenAI GPT, Google Gemini, local vLLM Llama 3), the cite-or-fallback grounded generation guarantee, and the AI Audit Trail capturing model + version + prompt hash + retrieval set + confidence + user disposition per AI call.
 
 ### General product design / usage query / expectation
 
@@ -175,10 +175,10 @@ The module integrates inseparably with the Hawkeye platform's cross-cutting capa
 | Q2 | Who is going to use it? | The Quality Assurance Head, who owns the budget for the EQMS, attends the Day-60 Proof-of-Concept review, signs the customer contract, and reviews aggregate dashboards weekly. | Quality Assurance Managers and Analysts, who use the module daily, host or conduct individual audits, draft findings, and approve CAPAs spawned from those findings. | External Auditors (from customer or regulator) who visit the supplier site and use the module read-mostly; and Auditees (supplier-side QA) who respond to questionnaires and upload evidence via the supplier portal. |
 | Q3 | When will it be used? | Weekly for dashboard review; monthly for Management Review Meeting inputs; at every audit closeout requiring sponsor sign-off; at every quarterly external customer audit. | Daily during audit prep weeks; intensively during on-site audit days; continuously for finding tracking and CAPA closure. | Per inbound audit request received via the supplier portal; per outbound site visit conducted at a customer-supplier site. |
 | Q4 | What important attributes or features should be considered? | GAMP 5 Cat 4 vendor classification (so my validation team can leverage vendor evidence); 21 CFR Part 11 and EU GMP Annex 11 conformance by design (so I can defend the system to FDA/EMA); ALCOA+ data integrity enforced at Layer 1; data residency control; vendor's no-AI-training contractual commitment; SOC 2 attestation; right-to-audit. | An audit-trail one click away on every record; phase stepper visible at all times; AI drafts always cite source or return "insufficient evidence"; e-sig ceremony per Part 11 §11.50 + §11.200 on every signed action; keyboard-first navigation; print-ready PDF for every closure certificate. | Ability to respond from a single login regardless of which customer is auditing me; ability to reuse evidence across customers; transparent finding criteria; my response data is mine and exportable on request. |
-| Q5 | How will the user interact with the product? | Via the web UI dashboard, AskHawk conversational queries about audit status, and the per-audit closure certificates that require sponsor e-sign. | Via the web UI phase stepper, evidence ledger, AI-draft panel with citation chips, findings table, signature dialog, and the AskHawk drawer for in-context compliance questions. | Via the supplier portal web UI, with SSO authentication into the customer's Hawkeye tenant context, section-assignment workflows, evidence upload, and AI-assisted narrative response drafting. |
+| Q5 | How will the user interact with the product? | Via the web UI dashboard, AskHawk conversational queries about audit status, and the per-audit closure certificates that require sponsor e-sign. | Via the web UI phase stepper, evidence ledger, AI-draft panel with citation chips, findings table, signature dialog, and the AskHawk drawer for in-context compliance questions. | Via the supplier portal web UI, with SSO authentication into the customer's S.M.A.R.T. Hawk tenant context, section-assignment workflows, evidence upload, and AI-assisted narrative response drafting. |
 | Q6 | What type of procedures will the product be used for? | Strategic procedures — supplier qualification governance, periodic Management Review of supplier audit outcomes, regulatory inspection readiness, customer-contractual quality reporting. | Operational procedures — supplier audit scheduling, questionnaire authoring, evidence review, finding drafting, CAPA spawning, audit closure, audit-trail review at batch release. | Reactive procedures — responding to a received audit questionnaire, uploading evidence per assigned section, attending an on-site audit, signing-off on responses, receiving findings and CAPA assignments. |
-| Q7 | Is the product used once, or repeatedly? | Used continuously throughout the customer's contractual term with Hawkeye; renewed annually; multi-year contracts available. | Used daily for the duration of the customer's contractual term. | Used per audit cycle; the same supplier may interact with the same Hawkeye tenant repeatedly over years. |
-| Q8 | What other systems will the module interact with? | Customer's Identity Provider (Okta / Azure AD / Google) for SSO; customer's email system for notifications; potentially customer's ERP (SAP / Oracle) and LIMS for evidence import. | Other Hawkeye modules within the same tenant: Document Control (for cited SOPs), CAPA (for spawned actions), Deviation (for linked deviations), Supplier Management (for supplier master), Training (for auditor credentials), Risk Management (for risk-weighted findings), Management Review (for aggregate inputs). | DigiLocker (Indian government document vault) for evidence import where applicable; customer's own document systems via secure file upload. |
+| Q7 | Is the product used once, or repeatedly? | Used continuously throughout the customer's contractual term with S.M.A.R.T. Hawk; renewed annually; multi-year contracts available. | Used daily for the duration of the customer's contractual term. | Used per audit cycle; the same supplier may interact with the same S.M.A.R.T. Hawk tenant repeatedly over years. |
+| Q8 | What other systems will the module interact with? | Customer's Identity Provider (Okta / Azure AD / Google) for SSO; customer's email system for notifications; potentially customer's ERP (SAP / Oracle) and LIMS for evidence import. | Other S.M.A.R.T. Hawk modules within the same tenant: Document Control (for cited SOPs), CAPA (for spawned actions), Deviation (for linked deviations), Supplier Management (for supplier master), Training (for auditor credentials), Risk Management (for risk-weighted findings), Management Review (for aggregate inputs). | DigiLocker (Indian government document vault) for evidence import where applicable; customer's own document systems via secure file upload. |
 
 ---
 
@@ -192,7 +192,7 @@ The module integrates inseparably with the Hawkeye platform's cross-cutting capa
 |---|---|---|
 | **Strategic governance** — Aggregate dashboard review · sign-off on audit closures requiring sponsor authority · authorize CAPA actions exceeding QA Manager approval limit · attend Day-60 PoC review · sign customer contract | **Audit lifecycle execution** — Create or accept audit request · select applicable standard · author or accept questionnaire · assign sections to operations / SME · review uploaded evidence · invoke AI finding drafter · review and edit AI-drafted findings · e-sign findings (Part 11 §11.50) · spawn CAPAs from findings · review audit-trail at batch release (Annex 11 §15) · sign closeout (Part 11 §11.50) · generate audit closure certificate (PDF) | **Audit response execution** — Receive customer audit request via supplier portal · assign sections to internal team · upload evidence per section · author narrative response per section (AI-assisted, cite-or-fallback) · review and e-sign response · receive findings · acknowledge findings · respond to CAPA assignments |
 | **Configuration governance** — Approve tenant-level configuration changes (vocabulary · standards · workflow definitions · AI prompt templates) · attend annual Periodic Vendor Audit · review Vendor Quality Manual and SDLC evidence | **Operational governance** — Manage user provisioning (within tenant_admin scope) · review weekly metrics · investigate slow audit closures · escalate stalled CAPAs · participate in quarterly Management Review | **Site-level governance** — Manage supplier-side user provisioning · review aggregate response performance · participate in joint quality agreement reviews with customer |
-| **Compliance evidence** — Author the customer-side Validation Summary Report citing Hawkeye's GAMP Cat 4 Validation Accelerator Package · maintain customer-side audit-trail review records per Annex 11 §11 · prepare for regulatory inspection · attend FDA / EMA / MHRA / WHO PQ inspections | **Compliance execution** — Execute customer-side configuration-specific OQ on every Hawkeye release classified as functional · spot-check audit trail · participate in periodic supplier audits | **Compliance reciprocity** — Maintain own supplier-side validation per customer's quality agreement · share validation status when customer requests |
+| **Compliance evidence** — Author the customer-side Validation Summary Report citing S.M.A.R.T. Hawk's GAMP Cat 4 Validation Accelerator Package · maintain customer-side audit-trail review records per Annex 11 §11 · prepare for regulatory inspection · attend FDA / EMA / MHRA / WHO PQ inspections | **Compliance execution** — Execute customer-side configuration-specific OQ on every S.M.A.R.T. Hawk release classified as functional · spot-check audit trail · participate in periodic supplier audits | **Compliance reciprocity** — Maintain own supplier-side validation per customer's quality agreement · share validation status when customer requests |
 
 | Steps | Requirements |
 |---|---|
@@ -216,7 +216,7 @@ The module integrates inseparably with the Hawkeye platform's cross-cutting capa
 
 | Quality Assurance Head (Sponsor) | Quality Assurance Manager / Analyst (Daily user) | External Auditor / Auditee (Supplier QA) |
 |---|---|---|
-| Hawkeye Audit Management is NOT a substitute for the customer's own quality management responsibility; the customer remains responsible for URS, configuration-specific FRS, customer-environment IQ, configuration-specific OQ, PQ, and Validation Summary Report sign-off. Use of unvalidated or sub-floor-configured Hawkeye for GxP production may compromise the customer's regulatory standing. | The module does NOT authorize the AI to commit any record. AI drafts; human always e-signs. Disabling the audit trail is structurally impossible. Disabling cite-or-fallback at Layer 3 is structurally impossible. Bypassing the CAPA effectiveness check gate is structurally impossible. Any of these attempts indicate a misconfigured or compromised environment. | The supplier portal is NOT a substitute for the supplier's own internal quality system. Responding to a customer audit via Hawkeye does NOT discharge the supplier's responsibility to maintain its own validated systems and records. |
+| S.M.A.R.T. Hawk Audit Management is NOT a substitute for the customer's own quality management responsibility; the customer remains responsible for URS, configuration-specific FRS, customer-environment IQ, configuration-specific OQ, PQ, and Validation Summary Report sign-off. Use of unvalidated or sub-floor-configured S.M.A.R.T. Hawk for GxP production may compromise the customer's regulatory standing. | The module does NOT authorize the AI to commit any record. AI drafts; human always e-signs. Disabling the audit trail is structurally impossible. Disabling cite-or-fallback at Layer 3 is structurally impossible. Bypassing the CAPA effectiveness check gate is structurally impossible. Any of these attempts indicate a misconfigured or compromised environment. | The supplier portal is NOT a substitute for the supplier's own internal quality system. Responding to a customer audit via S.M.A.R.T. Hawk does NOT discharge the supplier's responsibility to maintain its own validated systems and records. |
 
 | Steps | Requirements |
 |---|---|
@@ -234,10 +234,10 @@ The module integrates inseparably with the Hawkeye platform's cross-cutting capa
 |---|---|---|---|---|---|
 | **A.** | **GENERAL REQUIREMENTS** | | | | |
 | 1. | The module shall implement end-to-end audit lifecycle management for the customer's regulated quality system. | Module shall support audit creation, prep, on-site execution, finding capture, CAPA spawning, closeout, and post-closeout audit-trail review without external tooling. | Lifecycle traceability from create → close with audit-trail rows for every transition; no out-of-system handoff required. | X | |
-| 2. | The module shall be delivered as a multi-tenant Software-as-a-Service product within the Hawkeye platform. | Multi-tenant logical isolation enforced at the query layer; row-level tenant filter on every Mongoose query; tested per OQ. | Multi-tenant isolation tested OQ-AUDIT-INFRA-001 passes for every release. | X | |
-| 3. | The module shall conform to the Hawkeye 5-layer architecture, residing within Layer 4 (Domain Engine) and consuming Layer 3 (AI Gateway), Layer 2 (Data & Evidence), and Layer 1 (Trust · Security · Compliance). | Module shall not bypass Layer 3 AI Gateway for any LLM call; shall not bypass Layer 1 audit trail for any state change; shall not bypass Layer 2 tenant isolation for any query. | Architectural rules enforced per ARCHITECTURE.md §11; verified by code review and integration tests. | X | |
-| 4. | The module shall implement the universal 5-pillar runtime pipeline of the Hawkeye Domain Engine. | Every audit shall traverse Collect → Process → Validate → Report → Seal pillars; pillar transitions captured in audit trail. | 5-pillar transitions visible in phase stepper; audit-trail rows tagged with pillar. | X | |
-| 5. | The module shall integrate with the other twelve EQMS modules of the Hawkeye platform for cross-module traceability. | Audit findings shall spawn CAPAs in the CAPA module; deviations may be linked; documents cited from Document Control module; supplier master read from Supplier Management module. | Cross-module link verified by integration tests; cross-module audit-trail query returns related records under 2 seconds at p95. | X | |
+| 2. | The module shall be delivered as a multi-tenant Software-as-a-Service product within the S.M.A.R.T. Hawk platform. | Multi-tenant logical isolation enforced at the query layer; row-level tenant filter on every Mongoose query; tested per OQ. | Multi-tenant isolation tested OQ-AUDIT-INFRA-001 passes for every release. | X | |
+| 3. | The module shall conform to the S.M.A.R.T. Hawk 5-layer architecture, residing within Layer 4 (Domain Engine) and consuming Layer 3 (AI Gateway), Layer 2 (Data & Evidence), and Layer 1 (Trust · Security · Compliance). | Module shall not bypass Layer 3 AI Gateway for any LLM call; shall not bypass Layer 1 audit trail for any state change; shall not bypass Layer 2 tenant isolation for any query. | Architectural rules enforced per ARCHITECTURE.md §11; verified by code review and integration tests. | X | |
+| 4. | The module shall implement the universal 5-pillar runtime pipeline of the S.M.A.R.T. Hawk Domain Engine. | Every audit shall traverse Source → Model → Assess → Report → Trace pillars; pillar transitions captured in audit trail. | 5-pillar transitions visible in phase stepper; audit-trail rows tagged with pillar. | X | |
+| 5. | The module shall integrate with the other twelve EQMS modules of the S.M.A.R.T. Hawk platform for cross-module traceability. | Audit findings shall spawn CAPAs in the CAPA module; deviations may be linked; documents cited from Document Control module; supplier master read from Supplier Management module. | Cross-module link verified by integration tests; cross-module audit-trail query returns related records under 2 seconds at p95. | X | |
 | 6. | The module shall be classified as a GAMP 5 Category 4 — Configured Product per ISPE GAMP 5, 2nd Edition (Jul 2022). | Vendor SDLC evidence shall be shipped to customers; customer validation effort focuses on configuration, not source code; supplier-leverage clause applies. | GAMP Cat 4 classification declared in customer-facing documents; Validation Accelerator Package delivered at PoC kickoff per GAMP-CAT-4-COMPLIANCE.md §9. | X | |
 | 7. | The module shall be accessible through a browser-based web user interface. | Supported browsers: Chrome ≥ 120, Edge ≥ 120, Safari ≥ 17, Firefox ≥ 120 (latest two major versions of each). | UI renders functionally equivalent across supported browsers; E2E Playwright tests run against Chromium per release. | X | |
 | 8. | The module shall be mobile-responsive for tablet and phone form factors. | UI shall render usably on screens ≥ 360px wide; touch-target size ≥ 44 × 44 CSS pixels per WCAG 2.5.5. | Manual responsive testing per release; mobile companion native app planned roadmap M9. | X | |
@@ -259,8 +259,8 @@ The module integrates inseparably with the Hawkeye platform's cross-cutting capa
 | 23. | The module shall require electronic signature for any configuration change classified as functional. | Configuration changes classified as: functional (require e-sig + reason + change-control record), security (require e-sig), cosmetic (no e-sig). | E-sig enforcement at admin console; classification documented per configurable element. | X | |
 | **C.** | **PERSONA & ACCESS CONTROL REQUIREMENTS** | | | | |
 | 24. | The module shall support six personas with persona-tailored interfaces. | Personas: Quality Assurance Head, Quality Assurance Manager/Analyst, Operations/Subject Matter Expert, External Auditor, Auditee (supplier QA), Tenant Administrator. | Persona detected from RBAC role; UI elements hidden when not actionable; same audit record renders differently per persona. | X | |
-| 25. | The module shall authenticate users via Single Sign-On using SAML 2.0 or OpenID Connect protocols. | SSO with customer's Identity Provider (Okta, Azure AD, Google Workspace, Ping, OneLogin, others); no Hawkeye-issued passwords for end users. | SSO setup completes within 7 days of customer kickoff; SAML metadata exchanged; OIDC discovery URL accepted. | X | |
-| 26. | The module shall support Multi-Factor Authentication (MFA) enforced per tenant policy. | MFA delegated to customer IdP; Hawkeye enforces session-level checks; MFA bypass not possible for production tenants. | MFA policy configurable per tenant; per-role MFA elevation supported. | X | |
+| 25. | The module shall authenticate users via Single Sign-On using SAML 2.0 or OpenID Connect protocols. | SSO with customer's Identity Provider (Okta, Azure AD, Google Workspace, Ping, OneLogin, others); no S.M.A.R.T. Hawk-issued passwords for end users. | SSO setup completes within 7 days of customer kickoff; SAML metadata exchanged; OIDC discovery URL accepted. | X | |
+| 26. | The module shall support Multi-Factor Authentication (MFA) enforced per tenant policy. | MFA delegated to customer IdP; S.M.A.R.T. Hawk enforces session-level checks; MFA bypass not possible for production tenants. | MFA policy configurable per tenant; per-role MFA elevation supported. | X | |
 | 27. | The module shall implement Role-Based Access Control (RBAC) at both module and record level. | Module-level: per-role enablement of module access; record-level: per-record permission grant via shared list or workflow assignment. | RBAC enforced at API + UI; tested per OQ-AUDIT-RBAC-001 through 010. | X | |
 | 28. | The module shall distinguish between TENANT-scoped administrators and PLATFORM-scoped super-administrators per the adminScope enum. | Tenant admin: full control within tenant; Platform admin: cross-tenant operational access for support (logged in governance audit trail). | adminScope captured in userModel; separation of duties enforced; platform admin actions logged separately. | X | |
 | 29. | The module shall support unlimited view-only (read-only) users without per-user licensing fees, with billed seats only for named full-edit users. | View-only role can read audit records, evidence, findings, audit trail; cannot modify or sign. Named full-edit users billed per PRICING.md. | View-only audit trail captures who viewed what when; per-tenant seat count enforced for full-edit role. | X | |
@@ -295,7 +295,7 @@ The module integrates inseparably with the Hawkeye platform's cross-cutting capa
 | 56. | The module shall support evidence export as PDF (audit-trail-grade) and CSV (raw metadata). | Per-audit bulk export; per-tenant bulk export at termination; per-record on-demand export. | Export packaging tested OQ-AUDIT-EXPORT-001; signed manifest included. | X | |
 | 57. | The module shall integrate with DigiLocker (India government document vault) for evidence import where applicable to Indian tenants. | OAuth-based import from customer's DigiLocker account; imported documents flagged with source = DigiLocker. | DigiLocker integration tested per OQ-AUDIT-DIGILOCKER-001 for India-region tenants. | X | |
 | **F.** | **AI ASSISTANCE REQUIREMENTS** | | | | |
-| 58. | The module shall invoke all AI / Large Language Model (LLM) capabilities exclusively through the Hawkeye AI Gateway (Layer 3) per ADR-002. | Direct provider SDK imports prohibited; lint rule and code review enforce; gateway is the single ingress. | Architectural rule enforcement per ARCHITECTURE.md §11; verified per release. | X | |
+| 58. | The module shall invoke all AI / Large Language Model (LLM) capabilities exclusively through the S.M.A.R.T. Hawk AI Gateway (Layer 3) per ADR-002. | Direct provider SDK imports prohibited; lint rule and code review enforce; gateway is the single ingress. | Architectural rule enforcement per ARCHITECTURE.md §11; verified per release. | X | |
 | 59. | The module's AI features shall enforce cite-or-fallback as a non-configurable guarantee per ADR-003. | Every AI output either cites at least one retrievable source, or returns "Insufficient evidence — human input required." Cannot be configured away. | Cite-or-fallback enforced at gateway pre-output check; tested OQ-AI-001; failed-citation count metric tracked. | X | |
 | 60. | The module's AI shall never commit a record state change. | AI drafts, suggests, scores. Human always reviews and e-signs the commit. Workflow layer enforces this — no "auto-approve from AI" path exists. | Workflow layer audit verifies; tested OQ-AUDIT-AI-COMMIT-001 (negative test). | X | |
 | 61. | The module shall log every AI call to the AI Audit Trail. | Captured: model provider, model version, prompt hash (SHA-256 of full prompt), retrieval set (source IDs + hashes), output text, confidence, user disposition (accepted / edited / rejected), userId, tenantId, UTC. | AI Audit Trail tamper-evident; reproducibility tested OQ-AI-REPRO-001. | X | |
@@ -307,7 +307,7 @@ The module integrates inseparably with the Hawkeye platform's cross-cutting capa
 | 67. | The module shall defend against prompt injection in ingested customer documents. | Adversarial input filtering at Layer 3; suspicious patterns flagged and escalated. | Prompt injection test corpus run per release; new injection patterns added quarterly. | X | |
 | **G.** | **FINDINGS & CAPA REQUIREMENTS** | | | | |
 | 68. | The module shall classify findings into four severity tiers: Critical, Major, Minor, Observation. | Severity affects SLA for CAPA closure, escalation path, sponsor signature requirement, and inspection-readiness inclusion. | Severity capture mandatory; default severity = Observation; reclassification audited. | X | |
-| 69. | The module shall support per-finding risk-weighting through the Hawkeye Risk Management module integration. | Risk orchestrator (services/risk/riskOrchestrator.js) consumes finding severity, evidence trust, supplier risk profile to compute composite score. | Risk score visible per finding; recomputed on relevant changes; explainable breakdown available. | X | |
+| 69. | The module shall support per-finding risk-weighting through the S.M.A.R.T. Hawk Risk Management module integration. | Risk orchestrator (services/risk/riskOrchestrator.js) consumes finding severity, evidence trust, supplier risk profile to compute composite score. | Risk score visible per finding; recomputed on relevant changes; explainable breakdown available. | X | |
 | 70. | The module shall capture per-finding electronic signature with meaning = "Review" or "Approval" per the customer's workflow definition. | Workflow definition specifies which meanings are valid for each finding-severity tier. | E-sig meaning captured; later validation reports cite the meaning per §11.50(a)(3). | X | |
 | 71. | The module shall auto-spawn one CAPA record per signed finding of severity ≥ Minor by default; configurable per workflow. | CAPA carries: source finding ID, severity, recommended action, due date, assignee. | Spawn behavior tested; configuration changes audited; downstream CAPA module accepts spawn payload. | X | |
 | 72. | The module shall enforce an effectiveness check gate before CAPA closure. | CAPA cannot transition to "Closed" without an "Effectiveness Verified" e-sig and supporting evidence. | Hard-gate enforcement tested OQ-AUDIT-CAPA-EFF-001; bypass not possible. | X | |
@@ -324,7 +324,7 @@ The module integrates inseparably with the Hawkeye platform's cross-cutting capa
 | 82. | The module shall link e-signatures to their records cryptographically per §11.70. | E-signature binds to SHA-256 snapshot hash of signed record; tampering invalidates signature. | Linkage verified per OQ-AUDIT-ESIG-LINK-001; cryptographic break attempt tested as negative case. | X | |
 | 83. | The module shall ensure each e-signature is unique to one individual per §11.100. | One signature account per person via SSO identity; never reassigned; identity verified at IdP. | Provisioning policy tested; account-reuse prevention verified. | X | |
 | 84. | The module shall require two distinct components for non-biometric e-signature per §11.200. | Password (delegated via SSO; session token) + Reason (free-text mandatory). Session-boundary rule enforced: first sign in continuous session uses both components; subsequent signs use one; session timeout requires both again. | Session-boundary rule tested per OQ-AUDIT-ESIG-2COMP-001. | X | |
-| 85. | The module shall implement ID/password integrity controls per §11.300. | Password policy enforced via SSO; lockout per UN 33; failed-attempt audit log; periodic password aging per IdP policy. | Controls inherited from customer's IdP per SSO contract; Hawkeye enforces session-level. | X | |
+| 85. | The module shall implement ID/password integrity controls per §11.300. | Password policy enforced via SSO; lockout per UN 33; failed-attempt audit log; periodic password aging per IdP policy. | Controls inherited from customer's IdP per SSO contract; S.M.A.R.T. Hawk enforces session-level. | X | |
 | 86. | The module shall comply with EU GMP Annex 11 Clause 3 — formal supplier/service-provider agreement and audit basis. | Data Processing Agreement + Vendor Assessment Questionnaire pre-filled + annual right-to-audit per GAMP-CAT-4-COMPLIANCE.md §19. | Customer DPA executed at contract; right-to-audit clause included; audit pack updated annually. | X | |
 | 87. | The module shall comply with EU GMP Annex 11 Clause 9 — audit trail capturing user, time, AND reason for changes/deletions. | Reason field mandatory on every modification; cannot be skipped. | Reason capture tested OQ-AUDIT-REASON-001; UI enforces. | X | |
 | 88. | The module shall comply with EU GMP Annex 11 Clause 14 — electronic signature equivalent to handwritten, permanently linked, showing name/date/time/meaning. | Per UN 81 + UN 82. | Annex 11 §14 conformance per GAMP-CAT-4-COMPLIANCE.md §23. | X | |
@@ -349,13 +349,13 @@ The module integrates inseparably with the Hawkeye platform's cross-cutting capa
 | 104. | The module shall provide an aggregate dashboard summarizing audit volume, status, severity mix, and CAPA cycle time. | Dashboard role-aware: QA Head sees aggregate; QA Manager sees own team's; auditor sees own conducted. | Dashboard refresh p95 < 3 seconds; export to PDF / CSV available. | X | |
 | 105. | The module shall provide a custom report builder for ad-hoc reporting. | Filter by audit type, status, date range, severity, supplier, site, standard; group by any captured field; export PDF / CSV / JSON. | Report builder tested; common reports template-saved per tenant. | X | |
 | 106. | The module shall provide an inspection-readiness pack assembler (planned roadmap M12) integrating findings, CAPAs, audit trail, e-signature manifests, and validation summary into a single signed PDF. | Per-inspection scope selection (modules, dates, products); assembled pack signed by QA Head; archived in module. | Inspection pack tested as design partner workflow before general availability. | | X |
-| 107. | The module shall provide aggregate metrics suitable for the Hawkeye Management Review (MRM) module's quarterly cycle. | Audit count, supplier risk distribution, finding-severity trend, CAPA cycle time, recurring-pattern incidence. | MRM input format documented and tested. | X | |
+| 107. | The module shall provide aggregate metrics suitable for the S.M.A.R.T. Hawk Management Review (MRM) module's quarterly cycle. | Audit count, supplier risk distribution, finding-severity trend, CAPA cycle time, recurring-pattern incidence. | MRM input format documented and tested. | X | |
 | **L.** | **INTEGRATION REQUIREMENTS** | | | | |
 | 108. | The module shall expose all functionality via a documented REST API conforming to OpenAPI 3.1. | OpenAPI spec served at /docs; authenticated via JWT or API key; per-tenant rate limits. | API surface tested OQ-AUDIT-API-001; OpenAPI spec versioned per release. | X | |
 | 109. | The module shall emit webhook events on significant state changes for customer-side integration. | Events: AUDIT_CREATED, AUDIT_QUESTIONNAIRE_SENT, FINDINGS_SIGNED, CAPAS_SPAWNED, AUDIT_CLOSED, AUDIT_REOPENED. | Webhook retry policy defined; per-event subscription configurable per tenant. | X | |
 | 110. | The module shall support one custom integration to a customer-specific system within the PoC scope per POC-AGREEMENT.md §3.5. | Engineering scope ≤ 16 hours; greater scope by separate agreement. | Custom integration spec documented at PoC kickoff; tested in customer environment. | X | |
-| 111. | The module shall integrate with Hawkeye Document Control module for citing controlled SOPs and work instructions in audit findings. | Document references retained as DocCtl-ID + version; document deprecation flagged in citing finding. | Cross-module link tested per integration test. | X | |
-| 112. | The module shall integrate with Hawkeye Supplier Management module for supplier master data lookup. | Supplier records retrieved as read-only from Supplier Management; supplier risk profile factored into audit risk weighting. | Cross-module read tested per integration test. | X | |
+| 111. | The module shall integrate with S.M.A.R.T. Hawk Document Control module for citing controlled SOPs and work instructions in audit findings. | Document references retained as DocCtl-ID + version; document deprecation flagged in citing finding. | Cross-module link tested per integration test. | X | |
+| 112. | The module shall integrate with S.M.A.R.T. Hawk Supplier Management module for supplier master data lookup. | Supplier records retrieved as read-only from Supplier Management; supplier risk profile factored into audit risk weighting. | Cross-module read tested per integration test. | X | |
 | 113. | The module shall send notifications via the platform's notification service (SMTP-agnostic; default Resend). | Notification events configured per tenant: assignment, due-date approach, overdue, finding signed, CAPA spawned, audit closed. | Notification delivery log queryable; delivery SLA monitored. | X | |
 | **M.** | **SECURITY & PRIVACY REQUIREMENTS** | | | | |
 | 114. | The module shall encrypt all data in transit using TLS 1.3. | No plaintext anywhere; HSTS enforced; downgrade attacks blocked. | TLS verified per release; downgrade attempt tested as negative case. | X | |
@@ -366,25 +366,25 @@ The module integrates inseparably with the Hawkeye platform's cross-cutting capa
 | 119. | The module shall obtain SOC 2 Type II attestation (target Q1 2027). | External auditor engaged; Type I targeted Q3 2026; Type II targeted Q1 2027. | SOC 2 Type I report available under NDA; Type II report on completion. | X | |
 | 120. | The module shall undergo annual third-party penetration testing with executive summary shared with customers under NDA. | Annual pentest of full platform including this module; critical findings remediated within 7 days. | Annual pentest summary in Validation Accelerator Package. | X | |
 | 121. | The module shall implement dependency vulnerability scanning with critical CVE patching SLA of 7 days. | Dependabot weekly; SAST (CodeQL) every PR; critical CVE patched within 7 days; high within 30 days. | Vulnerability management policy documented; SLA tracked per quarter. | X | |
-| 122. | The module shall support hard-delete of all customer data within 30 calendar days of written request, with signed certificate of deletion. | Hard-delete includes backups; certificate signed by Hawkeye and delivered to customer. | Deletion process tested OQ-AUDIT-DELETE-001; certificate template per GAMP-CAT-4-COMPLIANCE.md §8.5. | X | |
+| 122. | The module shall support hard-delete of all customer data within 30 calendar days of written request, with signed certificate of deletion. | Hard-delete includes backups; certificate signed by S.M.A.R.T. Hawk and delivered to customer. | Deletion process tested OQ-AUDIT-DELETE-001; certificate template per GAMP-CAT-4-COMPLIANCE.md §8.5. | X | |
 | 123. | The module shall support customer data export at PoC end (and at contract termination) within 7 business days. | Export bundle: PDF (audit-trail-grade) + CSV + JSON + signed manifest; delivered via SFTP or secure download link with 30-day retention. | Export tested per POC-AGREEMENT.md §8.4. | X | |
 | **N.** | **PERFORMANCE & AVAILABILITY REQUIREMENTS** | | | | |
-| 124. | The module shall meet the Hawkeye Service Level Agreement for uptime. | 99.5% calendar-month uptime during PoC; 99.9% during Enterprise paid; ≤ 4 hours per week scheduled maintenance. | Uptime measured per status.hawkeye.io; SLA credits per Master Services Agreement. | X | |
+| 124. | The module shall meet the S.M.A.R.T. Hawk Service Level Agreement for uptime. | 99.5% calendar-month uptime during PoC; 99.9% during Enterprise paid; ≤ 4 hours per week scheduled maintenance. | Uptime measured per status.hawkeye.io; SLA credits per Master Services Agreement. | X | |
 | 125. | The module's API response latency shall be p95 < 500ms for read endpoints. | Measured at edge; excludes AI-Gateway calls (UN 126). | Latency dashboard per endpoint; SLA tracked. | X | |
 | 126. | The module's AI-assisted draft generation latency shall be p95 < 2 seconds for typical audit-scope contexts. | Includes retrieval + LLM inference + post-validation. | Latency measured per task type; cite-or-fallback latency capped same. | X | |
 | 127. | The module's audit-trail query latency shall be p95 < 2 seconds for any record's full lineage. | Cross-module trail aggregation included. | Latency tested OQ-AUDIT-TRAIL-LATENCY-001. | X | |
 | 128. | The module shall support at least 100 concurrent active users per tenant without performance degradation. | Concurrent users defined as users with active session within last 10 minutes. | Load tested OQ-AUDIT-LOAD-001 at 100 concurrent users; higher scale via Atlas cluster tier upgrade. | X | |
 | 129. | The module shall be backed up daily with monthly restore tests. | Daily MongoDB snapshot + S3 object snapshot; 7-day rolling retention (PoC) / 30-day rolling (production); monthly restore test executed in staging. | Backup + restore test results documented in Validation Accelerator Package per GAMP-CAT-4-COMPLIANCE.md §20. | X | |
-| 130. | The module shall meet the Hawkeye Disaster Recovery objectives: Recovery Time Objective (RTO) < 4 hours; Recovery Point Objective (RPO) < 24 hours. | DR runbook documented; quarterly DR drill (target monthly per GAMP Cat 4 maturity). | DR drill results documented; runbook reviewed annually. | X | |
+| 130. | The module shall meet the S.M.A.R.T. Hawk Disaster Recovery objectives: Recovery Time Objective (RTO) < 4 hours; Recovery Point Objective (RPO) < 24 hours. | DR runbook documented; quarterly DR drill (target monthly per GAMP Cat 4 maturity). | DR drill results documented; runbook reviewed annually. | X | |
 | **O.** | **ACCESSIBILITY & USABILITY REQUIREMENTS** | | | | |
 | 131. | The module shall conform to W3C Web Content Accessibility Guidelines (WCAG) 2.2 Level AA (target full conformance Q4 2026). | 50 Success Criteria covered; current status 42 conformant + 8 partial per ACCESSIBILITY.md §3. | Quarterly internal accessibility audit; annual external audit; VPAT 2.5 + WCAG 2.2 mapping available on request. | X | |
-| 132. | The module shall support keyboard-first navigation per Hawkeye Design Principle 7. | Every interactive element reachable via Tab; focus visible; keyboard shortcut catalog including ⌘K for AskHawk. | Keyboard navigation tested per release; shortcut catalog documented in help. | X | |
+| 132. | The module shall support keyboard-first navigation per S.M.A.R.T. Hawk Design Principle 7. | Every interactive element reachable via Tab; focus visible; keyboard shortcut catalog including ⌘K for AskHawk. | Keyboard navigation tested per release; shortcut catalog documented in help. | X | |
 | 133. | The module shall support screen-reader interaction including NVDA, VoiceOver, and JAWS. | ARIA roles + labels on custom components; live regions for dynamic updates; tested quarterly per ACCESSIBILITY.md §5. | Screen-reader test results documented; major issues tracked in accessibility backlog. | X | |
 | 134. | The module's electronic signature ceremony shall be accessible per ACCESSIBILITY.md §7. | No password-typing timeout; "Meaning" dropdown keyboard-reachable; plain-language meaning options with tooltips; pre-confirmation summary; alternative auth method roadmap for motor-impaired users. | E-sig ceremony tested with screen reader and keyboard-only; user research with assistive-tech users twice yearly. | X | |
-| 135. | The module shall render print-ready PDF for every signed record per Hawkeye Design Principle 8. | Print CSS first-class; PDFs include e-sig manifest, audit-trail summary, evidence references; tested PDF/A-1b conformance for archival. | Print quality tested per release; PDF/A-1b validator passes. | X | |
-| 136. | The module shall render persona-aware UI hiding actions the current user cannot take per Hawkeye Design Principle 5. | Buyer view vs Supplier view of the same audit record differs visibly; hidden actions not shown (not disabled). | Persona-rendering tested per OQ-AUDIT-PERSONA-001 through 006. | X | |
-| 137. | The module shall always show audit status via phase stepper + status chips per Hawkeye Design Principle 4. | Phase stepper visible on every audit detail page; status chips combine color + icon + text label per ACCESSIBILITY.md §6 (no color-only signaling). | Status visibility verified per design review of every new flow. | X | |
-| 138. | The module shall maintain consistent regulatory vocabulary per Hawkeye Design Principle 2. | "Finding" not "issue"; "Deviation" not "problem"; "CAPA" not "task"; "Observation" not "comment". | Vocabulary linter on UI strings; copy review per release. | X | |
+| 135. | The module shall render print-ready PDF for every signed record per S.M.A.R.T. Hawk Design Principle 8. | Print CSS first-class; PDFs include e-sig manifest, audit-trail summary, evidence references; tested PDF/A-1b conformance for archival. | Print quality tested per release; PDF/A-1b validator passes. | X | |
+| 136. | The module shall render persona-aware UI hiding actions the current user cannot take per S.M.A.R.T. Hawk Design Principle 5. | Buyer view vs Supplier view of the same audit record differs visibly; hidden actions not shown (not disabled). | Persona-rendering tested per OQ-AUDIT-PERSONA-001 through 006. | X | |
+| 137. | The module shall always show audit status via phase stepper + status chips per S.M.A.R.T. Hawk Design Principle 4. | Phase stepper visible on every audit detail page; status chips combine color + icon + text label per ACCESSIBILITY.md §6 (no color-only signaling). | Status visibility verified per design review of every new flow. | X | |
+| 138. | The module shall maintain consistent regulatory vocabulary per S.M.A.R.T. Hawk Design Principle 2. | "Finding" not "issue"; "Deviation" not "problem"; "CAPA" not "task"; "Observation" not "comment". | Vocabulary linter on UI strings; copy review per release. | X | |
 | **P.** | **VALIDATION & VENDOR EVIDENCE REQUIREMENTS** | | | | |
 | 139. | The module shall be delivered as a GAMP 5 Category 4 Configured Product per PDR-002 and ISPE GAMP 5 2nd Edition (Jul 2022). | Classification formal; Validation Accelerator Package delivered at PoC kickoff. | Classification declared in GAMP-CAT-4-COMPLIANCE.md §1; comparable to Veeva Vault QMS, MasterControl, TrackWise. | X | |
 | 140. | The module shall ship with a vendor Quality Manual demonstrating ISO 9001 / GAMP-aligned Software Development Lifecycle. | ~30-page QM covering organization, document control, training, internal audits, management review, CAPA, risk management, customer feedback, continual improvement. | Vendor QM delivered annually; updates per material change. | X | |
@@ -396,14 +396,14 @@ The module integrates inseparably with the Hawkeye platform's cross-cutting capa
 | 146. | The module shall ship with a pre-filled Vendor Assessment Questionnaire containing answers to 100+ standardized supplier-qualification questions. | VAQ aligned to common pharma procurement intake; updated annually; covers SDLC, security, residency, compliance, AI governance. | VAQ delivered at PoC kickoff; extract in GAMP-CAT-4-COMPLIANCE.md Annex A. | X | |
 | 147. | The module shall ship with a Periodic Vendor Audit Pack supporting the customer's annual right-to-audit per EU GMP Annex 11 §3. | Pre-prepared audit pack reduces customer audit-prep burden to 4-6 hours of remote audit (vs 2-3 days from cold). | Audit Pack delivered annually; covers SDLC, security, configuration management, customer support, residency, AI governance, training, internal audits, sub-processors. | X | |
 | 148. | The module shall publish Release Notes per version with change classification (functional / security / cosmetic) and customer notification SLA. | Major: 90 days advance; Minor: 30 days; Patch (functional bugfix): 7 days; Patch (security): ≤ 24 hours; Cosmetic: at release. | Release Notes archived; classification tested per release; customer notification log retained. | X | |
-| 149. | The module shall be assessed annually against ISPE GAMP 5 updates, FDA CSA updates, EU GMP Annex 11 (revised 2026 + Annex 22 for AI), MHRA ALCOA+, FDA GMLP, EMA AI Reflection Paper, and ISPE Validation 4.0 for ongoing conformance. | Annual review by Hawkeye Compliance; updates issued via new revision of GAMP-CAT-4-COMPLIANCE.md and downstream vendor evidence refresh. | Annual compliance review documented; customer notification of material posture change within 30 days. | X | |
+| 149. | The module shall be assessed annually against ISPE GAMP 5 updates, FDA CSA updates, EU GMP Annex 11 (revised 2026 + Annex 22 for AI), MHRA ALCOA+, FDA GMLP, EMA AI Reflection Paper, and ISPE Validation 4.0 for ongoing conformance. | Annual review by S.M.A.R.T. Hawk Compliance; updates issued via new revision of GAMP-CAT-4-COMPLIANCE.md and downstream vendor evidence refresh. | Annual compliance review documented; customer notification of material posture change within 30 days. | X | |
 | 150. | The module shall maintain a public status page at status.hawkeye.io for real-time customer-visible service status. | Per-service component status; incident history; subscription for email/SMS notifications. | Status page available within 1 minute of incident detection; updated continuously during incidents. | X | |
 
 ---
 
 ## 9.0 REGULATORY REQUIREMENTS
 
-The Hawkeye Audit Management module is a component of the Hawkeye Enterprise Quality Management System (EQMS) platform. It is delivered as **Software-as-a-Service (SaaS)** to pharmaceutical manufacturers, CDMOs, and other regulated-supply-chain organisations. Per the regulatory analysis below, it does not itself constitute a medical device under FDA 21 CFR Part 820 (QMSR) or EU Medical Device Regulation (MDR 2017/745); however, it is a **GxP-impacting computerised system** governed by:
+The S.M.A.R.T. Hawk Audit Management module is a component of the S.M.A.R.T. Hawk Enterprise Quality Management System (EQMS) platform. It is delivered as **Software-as-a-Service (SaaS)** to pharmaceutical manufacturers, CDMOs, and other regulated-supply-chain organisations. Per the regulatory analysis below, it does not itself constitute a medical device under FDA 21 CFR Part 820 (QMSR) or EU Medical Device Regulation (MDR 2017/745); however, it is a **GxP-impacting computerised system** governed by:
 
 | Regulatory framework | Applicability | Module compliance posture |
 |---|---|---|
@@ -412,7 +412,7 @@ The Hawkeye Audit Management module is a component of the Hawkeye Enterprise Qua
 | **EU GMP Annex 11** — Computerised Systems (2011 text + 7 Jul 2025 draft revision; new Annex 22 — Artificial Intelligence — expected 2026) | EU-region customer use | All 17 clauses addressed per GAMP-CAT-4-COMPLIANCE.md §23 |
 | **MHRA "GxP Data Integrity Definitions and Guidance for Industry"** (March 2018) + **WHO TRS 1033 Annex 4** (2021) | All customer use for data-integrity-sensitive records | All 9 ALCOA+ attributes enforced per UN 89 through UN 97 |
 | **FDA Computer Software Assurance (CSA)** — Final Guidance issued 24 Sep 2025; re-issued 3 Feb 2026 | US-region customer validation approach | Validation Accelerator Package designed for vendor-evidence-leveraged customer assurance per CSA risk-based framework |
-| **ICH Q9 (R1)** — Quality Risk Management | Customer's risk-based approach to validation effort and CAPA prioritization | Module integrates with Hawkeye Risk Management module |
+| **ICH Q9 (R1)** — Quality Risk Management | Customer's risk-based approach to validation effort and CAPA prioritization | Module integrates with S.M.A.R.T. Hawk Risk Management module |
 | **ICH Q10** — Pharmaceutical Quality System | Customer's overall PQS, of which the module is a supporting computerized system | Module supports ICH Q10 process elements including Process Performance Monitoring, CAPA, Change Management, Management Review |
 | **FDA Good Machine Learning Practice — 10 Guiding Principles** (Oct 2021) | AI features of the module | Aligned per AI-ARCHITECTURE.md and GAMP-CAT-4-COMPLIANCE.md §29 |
 | **EMA Reflection Paper on AI in the Medicinal Product Lifecycle** (CHMP/CVMP adopted September 2024) | AI features of the module | Aligned per GAMP-CAT-4-COMPLIANCE.md §29 |
@@ -423,7 +423,7 @@ The Hawkeye Audit Management module is a component of the Hawkeye Enterprise Qua
 | **EU GDPR** | EU customer data | DPA executed at contract; EU residency option available |
 | **W3C WCAG 2.2 Level AA** | Accessibility of customer-facing interfaces | Target full conformance Q4 2026 per ACCESSIBILITY.md §3 |
 
-> Note on regulatory classification. The Hawkeye Audit Management module is NOT itself a medical device. It is a computerised system used by pharmaceutical manufacturers in support of their GxP quality system. The customer remains responsible for the regulatory standing of the medicinal products they manufacture and for the validated state of the systems they use. The module's role is to satisfy 21 CFR §11.10(a) validation in conjunction with the customer's GAMP Cat 4 supplier-leveraged validation lifecycle.
+> Note on regulatory classification. The S.M.A.R.T. Hawk Audit Management module is NOT itself a medical device. It is a computerised system used by pharmaceutical manufacturers in support of their GxP quality system. The customer remains responsible for the regulatory standing of the medicinal products they manufacture and for the validated state of the systems they use. The module's role is to satisfy 21 CFR §11.10(a) validation in conjunction with the customer's GAMP Cat 4 supplier-leveraged validation lifecycle.
 
 ---
 
@@ -440,7 +440,7 @@ Based on the qualitative discovery research (24 interviews across 18 organisatio
 - AI tools (informal ChatGPT use) have produced fabricated CFR citations, a direct ALCOA+ violation that has caused product rejection at multiple organisations
 - Validation cost for a custom or Cat 5 system dwarfs the SaaS subscription cost (typical ₹30L+ versus ₹10L ACV)
 
-The Hawkeye Audit Management module is designed against each of these problem statements per the user needs cataloged in §8.0. Outcomes are measured during the 60-day Proof of Concept against the six success criteria documented in POC-AGREEMENT.md §4.
+The S.M.A.R.T. Hawk Audit Management module is designed against each of these problem statements per the user needs cataloged in §8.0. Outcomes are measured during the 60-day Proof of Concept against the six success criteria documented in POC-AGREEMENT.md §4.
 
 ---
 
@@ -453,7 +453,7 @@ The Audit Management module shall be supplied to:
 - **Tier-4 SME pharma** (single site, < $10M revenue): India + Africa, with the Starter packaging tier
 - **API manufacturers** servicing branded and generic pharma supply chains
 - **Packaging and labelling subcontractors** participating in supplier-audit workflows
-- **Future verticals** (post-Series-A): Medical device manufacturers (under ISO 13485), Food manufacturers (HACCP/FSMA), Aerospace component suppliers (IATF), Cosmetics manufacturers — each via a vertical configuration pack slotting into Hawkeye Layer 4
+- **Future verticals** (post-Series-A): Medical device manufacturers (under ISO 13485), Food manufacturers (HACCP/FSMA), Aerospace component suppliers (IATF), Cosmetics manufacturers — each via a vertical configuration pack slotting into S.M.A.R.T. Hawk Layer 4
 
 Geographic data-residency support: India (Mumbai, default for IN tenants), United States (US-East), European Union (Frankfurt). Customer elects at tenant provisioning.
 
@@ -470,7 +470,7 @@ The Audit Management module shall be sold to **Quality Assurance leadership** at
 - **Influencer (IT Compliance):** IT Compliance Lead — verifies GAMP classification, SOC 2 status, data residency, SSO compatibility, validation accelerator content
 - **Influencer (CFO):** Chief Financial Officer / Procurement Lead — signs off on annual ACV against documented ROI math and validation TCO savings per CFO-DECK.md slide 5a
 
-The module is configured for the customer's tenant by Hawkeye Customer Success during onboarding, with ongoing configuration changes available to the customer's Tenant Administrator per UN 16 through UN 23.
+The module is configured for the customer's tenant by S.M.A.R.T. Hawk Customer Success during onboarding, with ongoing configuration changes available to the customer's Tenant Administrator per UN 16 through UN 23.
 
 The customer remains responsible for further integration and validation of the module within their broader quality system, including clinical / commercial use of any medicinal product manufactured under the customer's quality oversight.
 
@@ -478,11 +478,11 @@ The customer remains responsible for further integration and validation of the m
 
 ## 13.0 SOLUTION OVERVIEW
 
-The Hawkeye Audit Management module shall comply with the regulatory and industry standards enumerated in §5.0 and §9.0. The principal solution components are:
+The S.M.A.R.T. Hawk Audit Management module shall comply with the regulatory and industry standards enumerated in §5.0 and §9.0. The principal solution components are:
 
-a) **5-Layer Architecture** (Hawkeye platform canonical) — Trust · Security · Compliance (foundation) → Data & Evidence → AI Gateway → Domain Engine (where this module lives) → Experience. Per ADR-001 and PLATFORM-OVERVIEW.md §2.
+a) **5-Layer Architecture** (S.M.A.R.T. Hawk platform canonical) — Trust · Security · Compliance (foundation) → Data & Evidence → AI Gateway → Domain Engine (where this module lives) → Experience. Per ADR-001 and PLATFORM-OVERVIEW.md §2.
 
-b) **5-Pillar Runtime Pipeline** (universal across all 15 EQMS modules) — Collect → Process → Validate → Report → Seal. The Audit Management module instantiates this pipeline for the audit lifecycle.
+b) **5-Pillar Runtime Pipeline** (universal across all 15 EQMS modules) — Source → Model → Assess → Report → Trace. The Audit Management module instantiates this pipeline for the audit lifecycle.
 
 c) **GAMP 5 Category 4 Configured Product** classification per PDR-002 and GAMP-CAT-4-COMPLIANCE.md, with Validation Accelerator Package shipped at PoC kickoff.
 
@@ -492,7 +492,7 @@ e) **21 CFR Part 11 Electronic Signature ceremony** — Password + Reason on eve
 
 f) **Tamper-evident Audit Trail** capturing every state change with user · UTC · session · IP · reason per §11.10(e) and Annex 11 §9, retained per record lifetime, cannot be disabled by any user role.
 
-g) **Cross-module integration** with the twelve other EQMS modules of the Hawkeye platform (Document Control, CAPA, Deviation, Change Control, Training, Risk Management, Complaint, Supplier Management, Equipment, Batch Records, Management Review, Design Control) plus the cross-cutting AskHawk conversational AI agent.
+g) **Cross-module integration** with the twelve other EQMS modules of the S.M.A.R.T. Hawk platform (Document Control, CAPA, Deviation, Change Control, Training, Risk Management, Complaint, Supplier Management, Equipment, Batch Records, Management Review, Design Control) plus the cross-cutting AskHawk conversational AI agent.
 
 h) **Multi-tenant SaaS delivery** with optional sovereign on-premise deployment for Enterprise customers requiring data sovereignty (roadmap M12+).
 
@@ -504,7 +504,7 @@ j) **SOC 2 Type II** attestation target Q1 2027; **ISO/IEC 27001:2022** certific
 
 ## 14.0 TECHNOLOGY OVERVIEW
 
-The Hawkeye Audit Management module is built on the following technical stack and processed through the following operational pipeline:
+The S.M.A.R.T. Hawk Audit Management module is built on the following technical stack and processed through the following operational pipeline:
 
 a) **Frontend** — Next.js 15 (App Router) · React 18 · TypeScript 5 strict · Material-UI (MUI) 6 · Emotion (CSS-in-JS) · Tailwind CSS · react-hook-form + Zod · next-intl (i18n) · socket.io-client (real-time). Per FRONTEND.md.
 
@@ -532,7 +532,7 @@ j) **Release Process** — Semantic versioning (MAJOR.MINOR.PATCH) · classified
 
 | Current Version | Effective Date | Reason for change |
 |---|---|---|
-| 00 | (To be set on approval) | New document — initial issue of User Need Specification for the Hawkeye Audit Management module per change control CC/2026/HK-AUDIT/001 |
+| 00 | (To be set on approval) | New document — initial issue of User Need Specification for the S.M.A.R.T. Hawk Audit Management module per change control CC/2026/HK-AUDIT/001 |
 
 ---
 

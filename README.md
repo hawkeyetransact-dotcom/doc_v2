@@ -1,4 +1,4 @@
-# Doc_V2/ — Hawkeye Company Documentation
+# Doc_V2/ — S.M.A.R.T. Hawk Company Documentation
 
 > Created 2026-05-31. This is a from-scratch taxonomy for everything a SaaS startup needs to document. It runs in parallel with the legacy `backend/docs/` tree while we migrate.
 

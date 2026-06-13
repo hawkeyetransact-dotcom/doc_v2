@@ -1,18 +1,18 @@
 # GAMP 5 Category 4 Compliance Reference
 
-## Hawkeye AI-Native EQMS Platform
+## S.M.A.R.T. Hawk AI-Native EQMS Platform
 
 ---
 
 > **Prepared for**
-> The QA Director, Validation Lead, IT Compliance Lead, and Supplier-Qualification team of any customer evaluating Hawkeye
+> The QA Director, Validation Lead, IT Compliance Lead, and Supplier-Qualification team of any customer evaluating S.M.A.R.T. Hawk
 >
 > **Prepared by**
-> Hawkeye Transact Pvt. Ltd.
+> S.M.A.R.T. Hawk Transact Pvt. Ltd.
 >
 > **Reference:** `HK-GAMP-CAT4-v1.0`
 > **Issued:** 2026-06-05
-> **Status:** Canonical — this is the authoritative GAMP Cat 4 compliance reference for Hawkeye
+> **Status:** Canonical — this is the authoritative GAMP Cat 4 compliance reference for S.M.A.R.T. Hawk
 > **Companion:** [GAMP-CAT-4-BRIEF.md](../09-sales-marketing/pitch-materials/GAMP-CAT-4-BRIEF.md) (customer-facing summary)
 > **Confidential** — for the sole use of the addressee under NDA
 
@@ -22,9 +22,9 @@
 
 | Version | Date | Author | Reviewer | Change |
 |---|---|---|---|---|
-| 1.0 | 2026-06-05 | Hawkeye Engineering + Compliance | Founder Lead | Initial issue |
+| 1.0 | 2026-06-05 | S.M.A.R.T. Hawk Engineering + Compliance | Founder Lead | Initial issue |
 
-This document is reviewed annually and on any material change to Hawkeye's vendor-side validation posture, the regulatory landscape (ISPE GAMP, FDA, EMA, MHRA, WHO, EC), or the Hawkeye product architecture.
+This document is reviewed annually and on any material change to S.M.A.R.T. Hawk's vendor-side validation posture, the regulatory landscape (ISPE GAMP, FDA, EMA, MHRA, WHO, EC), or the S.M.A.R.T. Hawk product architecture.
 
 ---
 
@@ -32,28 +32,28 @@ This document is reviewed annually and on any material change to Hawkeye's vendo
 
 ### Purpose
 
-This document is the **canonical statement of Hawkeye's GAMP 5 Category 4 conformance posture**. It is intended to be used by a customer's QA Director, Validation Lead, and Supplier-Qualification team to:
+This document is the **canonical statement of S.M.A.R.T. Hawk's GAMP 5 Category 4 conformance posture**. It is intended to be used by a customer's QA Director, Validation Lead, and Supplier-Qualification team to:
 
-1. Confirm Hawkeye's GAMP 5 classification before procurement.
-2. Plan the customer-side validation lifecycle with Hawkeye's vendor evidence already in hand.
+1. Confirm S.M.A.R.T. Hawk's GAMP 5 classification before procurement.
+2. Plan the customer-side validation lifecycle with S.M.A.R.T. Hawk's vendor evidence already in hand.
 3. Conduct supplier audits (initial and periodic) using pre-prepared evidence.
-4. Map Hawkeye controls to 21 CFR Part 11, EU GMP Annex 11, ALCOA+, FDA CSA, ICH Q9, and ICH Q10.
+4. Map S.M.A.R.T. Hawk controls to 21 CFR Part 11, EU GMP Annex 11, ALCOA+, FDA CSA, ICH Q9, and ICH Q10.
 5. Validate AI-augmented workflows (Layer 3) within the same Cat 4 framework.
 
 ### Scope
 
 This document covers:
 
-- The Hawkeye SaaS platform (multi-tenant cloud deployment; optional sovereign deployment).
+- The S.M.A.R.T. Hawk SaaS platform (multi-tenant cloud deployment; optional sovereign deployment).
 - All 15 default EQMS modules (Audit Management · Document Control · CAPA · Change Control · Deviation & Event · Training · Risk · Supplier Quality · Management Review · Asset & Equipment Management · Chain of Custody · Transaction Review · Regulatory Intelligence · AskHawk · RFQ & Procurement).
 - All five architectural layers (Trust · Data · AI Gateway · Domain Engine · Experience).
 - AI capabilities of Layer 3 (multi-LLM routing, grounded generation, cite-or-fallback, AI audit trail).
 
 This document does NOT cover:
 
-- The customer's own infrastructure or non-Hawkeye systems.
-- Workflows the customer chooses to build outside Hawkeye's configuration surface (which would push the workflow to GAMP Cat 5; see §3 below).
-- Hardware qualification (Hawkeye is delivered as SaaS; underlying cloud infrastructure is qualified by the hyperscaler).
+- The customer's own infrastructure or non-S.M.A.R.T. Hawk systems.
+- Workflows the customer chooses to build outside S.M.A.R.T. Hawk's configuration surface (which would push the workflow to GAMP Cat 5; see §3 below).
+- Hardware qualification (S.M.A.R.T. Hawk is delivered as SaaS; underlying cloud infrastructure is qualified by the hyperscaler).
 
 ### Intended audience
 
@@ -76,7 +76,7 @@ This document does NOT cover:
 3. Configuration vs Customization — the Rule Book
 
 **Part 2 — Vendor SDLC & Quality Posture**
-4. Hawkeye SDLC Overview
+4. S.M.A.R.T. Hawk SDLC Overview
 5. Vendor Quality Manual Summary
 6. Configuration Management & Release Process
 7. Vendor-Side Validation of the Product
@@ -130,15 +130,15 @@ This document does NOT cover:
 
 ## 1. GAMP 5 Category 4 Classification Statement
 
-> 📜 **Formal Classification Statement.** Hawkeye Transact Pvt. Ltd. classifies the Hawkeye AI-Native EQMS Platform as a **GAMP 5 Category 4 — Configured Product** per the ISPE *GAMP 5: A Risk-Based Approach to Compliant GxP Computerized Systems, 2nd Edition* (July 2022). This classification is reviewed annually and on any material architectural change.
+> 📜 **Formal Classification Statement.** S.M.A.R.T. Hawk Transact Pvt. Ltd. classifies the S.M.A.R.T. Hawk AI-Native EQMS Platform as a **GAMP 5 Category 4 — Configured Product** per the ISPE *GAMP 5: A Risk-Based Approach to Compliant GxP Computerized Systems, 2nd Edition* (July 2022). This classification is reviewed annually and on any material architectural change.
 
 ### 1.1 Basis for classification
 
-The Hawkeye Platform meets the GAMP 5 Category 4 criteria in full:
+The S.M.A.R.T. Hawk Platform meets the GAMP 5 Category 4 criteria in full:
 
-| GAMP 5 Cat 4 criterion | Hawkeye conformance |
+| GAMP 5 Cat 4 criterion | S.M.A.R.T. Hawk conformance |
 |---|---|
-| Software is a commercial off-the-shelf (COTS) product | Yes — Hawkeye is delivered as a SaaS COTS product to all customers from a common code base |
+| Software is a commercial off-the-shelf (COTS) product | Yes — S.M.A.R.T. Hawk is delivered as a SaaS COTS product to all customers from a common code base |
 | Business logic can be tailored via built-in tools | Yes — `vocabularyService`, `standardRegistryService`, `universalModuleConfigService`, `WorkflowDefinitionService` provide configuration without code change |
 | Configuration is achieved without modifying source code | Yes — all customer-tailorable behavior is data-driven, stored in tenant-scoped configuration records |
 | Vendor maintains a managed SDLC | Yes — documented Vendor Quality Manual, semantic versioned releases, peer review, automated testing, security testing |
@@ -147,7 +147,7 @@ The Hawkeye Platform meets the GAMP 5 Category 4 criteria in full:
 
 ### 1.2 Comparable EQMS products in the same classification
 
-The following EQMS products are also industry-recognized as GAMP 5 Cat 4 — confirming Hawkeye's classification is in line with industry practice:
+The following EQMS products are also industry-recognized as GAMP 5 Cat 4 — confirming S.M.A.R.T. Hawk's classification is in line with industry practice:
 
 | Product | Vendor | Cat |
 |---|---|---|
@@ -155,7 +155,7 @@ The following EQMS products are also industry-recognized as GAMP 5 Cat 4 — con
 | MasterControl Quality Excellence | MasterControl Inc. | 4 |
 | Sparta TrackWise (now Honeywell) | Honeywell | 4 |
 | ETQ Reliance | Hexagon | 4 |
-| **Hawkeye** | **Hawkeye Transact Pvt. Ltd.** | **4** |
+| **S.M.A.R.T. Hawk** | **S.M.A.R.T. Hawk Transact Pvt. Ltd.** | **4** |
 
 *Sources: GoValidation industry classification guides (2026); PQMS validation-classification references; ISPE 2nd-Ed appendix examples.*
 
@@ -163,17 +163,17 @@ The following EQMS products are also industry-recognized as GAMP 5 Cat 4 — con
 
 | Outcome | Detail |
 |---|---|
-| Customer validation effort is **~60% less** than a Cat 5 bespoke build | Industry consultant consensus; specific Hawkeye estimates in §8 |
-| Customer can **leverage Hawkeye's vendor SDLC evidence** under the GAMP 5 supplier-leverage clause + FDA CSA's risk-based framework | See §25 |
-| Customer **does NOT need to perform source-code review** of the Hawkeye product | Source-code review is a Cat 5 obligation; Cat 4 leverages vendor SDLC evidence |
+| Customer validation effort is **~60% less** than a Cat 5 bespoke build | Industry consultant consensus; specific S.M.A.R.T. Hawk estimates in §8 |
+| Customer can **leverage S.M.A.R.T. Hawk's vendor SDLC evidence** under the GAMP 5 supplier-leverage clause + FDA CSA's risk-based framework | See §25 |
+| Customer **does NOT need to perform source-code review** of the S.M.A.R.T. Hawk product | Source-code review is a Cat 5 obligation; Cat 4 leverages vendor SDLC evidence |
 | Customer **owns its configuration validation** | URS, configuration-specific FRS, configuration-specific OQ, PQ — see §10–§15 |
-| Customer **must perform supplier qualification** of Hawkeye as a vendor | Annual right-to-audit; supplier assessment per Annex 11 §3 — see §19 |
+| Customer **must perform supplier qualification** of S.M.A.R.T. Hawk as a vendor | Annual right-to-audit; supplier assessment per Annex 11 §3 — see §19 |
 
 ---
 
 ## 2. Cat 3 vs Cat 4 vs Cat 5 — Decision Matrix
 
-| Aspect | Cat 3 — Non-configured | **Cat 4 — Configured (Hawkeye)** | Cat 5 — Custom/Bespoke |
+| Aspect | Cat 3 — Non-configured | **Cat 4 — Configured (S.M.A.R.T. Hawk)** | Cat 5 — Custom/Bespoke |
 |---|---|---|---|
 | **Definition** | COTS used as-installed | COTS configured via built-in tools | Custom-built or extensively code-modified |
 | **Source code modification** | None | None | Yes |
@@ -188,9 +188,9 @@ The following EQMS products are also industry-recognized as GAMP 5 Cat 4 — con
 | **Periodic vendor audit** | Optional | **Required (annual)** | Required (annual + post-change) |
 | **Re-validation triggered by vendor release** | Rarely | **Risk-based per change classification** | Yes (any material change) |
 
-### 2.1 Why Hawkeye is not Cat 3
+### 2.1 Why S.M.A.R.T. Hawk is not Cat 3
 
-Hawkeye is not Cat 3 because every customer deployment requires meaningful configuration:
+S.M.A.R.T. Hawk is not Cat 3 because every customer deployment requires meaningful configuration:
 
 - Vocabulary configuration (batch / lot / part / sample) per tenant
 - Standards configuration (which regulatory frameworks apply: ICH Q7 · 21 CFR · ISO 9001 · etc.)
@@ -198,32 +198,32 @@ Hawkeye is not Cat 3 because every customer deployment requires meaningful confi
 - Module enablement (which of the 15 modules are in scope per tenant)
 - Template configuration (audit checklists, document templates, report formats)
 
-A "Cat 3" Hawkeye would mean a customer who installs and uses Hawkeye **without any configuration** — which contradicts the product's design purpose. Hence Cat 4.
+A "Cat 3" S.M.A.R.T. Hawk would mean a customer who installs and uses S.M.A.R.T. Hawk **without any configuration** — which contradicts the product's design purpose. Hence Cat 4.
 
-### 2.2 Why Hawkeye is not Cat 5
+### 2.2 Why S.M.A.R.T. Hawk is not Cat 5
 
-Hawkeye is not Cat 5 because:
+S.M.A.R.T. Hawk is not Cat 5 because:
 
 - The customer does NOT receive or modify source code.
 - All customer-tailorable behavior is configured via data records, not code.
 - The product is supplied from a common code base to all customers (not bespoke per customer).
 - Configuration does not extend the product's core capabilities — it tunes them.
 
-A workflow that requires custom-coded extensions outside Hawkeye's configuration surface would push **that workflow** (not the whole platform) to Cat 5. See §3 for the rule book.
+A workflow that requires custom-coded extensions outside S.M.A.R.T. Hawk's configuration surface would push **that workflow** (not the whole platform) to Cat 5. See §3 for the rule book.
 
 ---
 
 ## 3. Configuration vs Customization — The Rule Book
 
-This section defines what counts as **configuration** (stays Cat 4) versus **customization** (would push that workflow to Cat 5). The customer's validation team uses this rule book to keep their Hawkeye deployment within Cat 4 scope.
+This section defines what counts as **configuration** (stays Cat 4) versus **customization** (would push that workflow to Cat 5). The customer's validation team uses this rule book to keep their S.M.A.R.T. Hawk deployment within Cat 4 scope.
 
 ### 3.1 The rule (one sentence)
 
-> 💡 **A change is configuration (Cat 4) if it is achieved by editing values inside Hawkeye's data model. A change is customization (Cat 5) if it requires writing or modifying code — including JavaScript, Python, custom CSS rules, custom hooks, or custom integrations beyond the documented API.**
+> 💡 **A change is configuration (Cat 4) if it is achieved by editing values inside S.M.A.R.T. Hawk's data model. A change is customization (Cat 5) if it requires writing or modifying code — including JavaScript, Python, custom CSS rules, custom hooks, or custom integrations beyond the documented API.**
 
 ### 3.2 What stays Cat 4 (configuration)
 
-| Activity | How it's done in Hawkeye |
+| Activity | How it's done in S.M.A.R.T. Hawk |
 |---|---|
 | Renaming "batch" to "lot" for your tenant | `vocabularyService` — config record |
 | Enabling/disabling EQMS modules | `universalModuleConfigService` — boolean flags |
@@ -244,38 +244,38 @@ This section defines what counts as **configuration** (stays Cat 4) versus **cus
 
 ### 3.3 What requires customization (Cat 5)
 
-If you need any of the following, the workflow that uses it becomes Cat 5 for your customer-side validation purposes — and Hawkeye Engineering will scope it as a separate engagement:
+If you need any of the following, the workflow that uses it becomes Cat 5 for your customer-side validation purposes — and S.M.A.R.T. Hawk Engineering will scope it as a separate engagement:
 
 | Activity | Why it's Cat 5 |
 |---|---|
-| Custom code that modifies Hawkeye's product behavior | By definition not configuration |
-| Custom server-side scripts that intercept Hawkeye events | Code modification |
+| Custom code that modifies S.M.A.R.T. Hawk's product behavior | By definition not configuration |
+| Custom server-side scripts that intercept S.M.A.R.T. Hawk events | Code modification |
 | Custom AI model fine-tuning on customer data | Goes beyond product surface |
-| Custom integrations with proprietary internal systems beyond Hawkeye's published API | Code outside Hawkeye |
+| Custom integrations with proprietary internal systems beyond S.M.A.R.T. Hawk's published API | Code outside S.M.A.R.T. Hawk |
 | Modifications to the audit-trail format | Affects the compliance spine; not configurable |
 | Custom e-signature ceremonies beyond §11.50 + §11.200 | Affects regulatory compliance posture |
-| Patches to Hawkeye source code at customer request | By definition modification of vendor product |
+| Patches to S.M.A.R.T. Hawk source code at customer request | By definition modification of vendor product |
 
 ### 3.4 Hybrid case: documented API integrations
 
-A customer-authored integration that uses Hawkeye's published REST API or webhook events is **Cat 4** as far as Hawkeye is concerned (no Hawkeye code is modified). The integration itself, if it's custom-built by the customer's IT team, may be Cat 5 for the customer's validation — but that is a customer-side classification, not a Hawkeye-side one.
+A customer-authored integration that uses S.M.A.R.T. Hawk's published REST API or webhook events is **Cat 4** as far as S.M.A.R.T. Hawk is concerned (no S.M.A.R.T. Hawk code is modified). The integration itself, if it's custom-built by the customer's IT team, may be Cat 5 for the customer's validation — but that is a customer-side classification, not a S.M.A.R.T. Hawk-side one.
 
 ### 3.5 Maintaining Cat 4 status
 
-To keep your Hawkeye deployment cleanly in Cat 4:
+To keep your S.M.A.R.T. Hawk deployment cleanly in Cat 4:
 
-1. Achieve all customer-specific behavior through Hawkeye's configuration surface (§3.2).
-2. Avoid requesting custom code modifications from Hawkeye Engineering.
-3. Route any business need that seems to require customization through Hawkeye's product roadmap (it may already exist or be on the roadmap as native configuration).
+1. Achieve all customer-specific behavior through S.M.A.R.T. Hawk's configuration surface (§3.2).
+2. Avoid requesting custom code modifications from S.M.A.R.T. Hawk Engineering.
+3. Route any business need that seems to require customization through S.M.A.R.T. Hawk's product roadmap (it may already exist or be on the roadmap as native configuration).
 4. Document the configuration scope in your Configuration Specification (§12) so a future auditor can see what stays Cat 4.
 
 ---
 
 # Part 2 — Vendor SDLC & Quality Posture
 
-## 4. Hawkeye SDLC Overview
+## 4. S.M.A.R.T. Hawk SDLC Overview
 
-This section gives the customer's IT Compliance / QA team visibility into how Hawkeye's product is built and released. Combined with §5 (Vendor QM) and §6 (Configuration Management), this constitutes Hawkeye's vendor-side validation evidence — the foundation of GAMP Cat 4 supplier leverage.
+This section gives the customer's IT Compliance / QA team visibility into how S.M.A.R.T. Hawk's product is built and released. Combined with §5 (Vendor QM) and §6 (Configuration Management), this constitutes S.M.A.R.T. Hawk's vendor-side validation evidence — the foundation of GAMP Cat 4 supplier leverage.
 
 ### 4.1 Lifecycle stages
 
@@ -311,7 +311,7 @@ flowchart LR
 
 ### 4.3 Release classification
 
-Every Hawkeye release is classified into one of three buckets, which determines the customer's re-validation obligation (see §18):
+Every S.M.A.R.T. Hawk release is classified into one of three buckets, which determines the customer's re-validation obligation (see §18):
 
 | Class | Definition | Customer re-validation? |
 |---|---|---|
@@ -323,7 +323,7 @@ Release classification is published in every Release Note. Customer is notified 
 
 ### 4.4 ISO 9001 alignment
 
-Hawkeye's engineering QMS is aligned to ISO 9001:2015 (and 2026 revision as released). Formal ISO 9001 certification is targeted for 2027.
+S.M.A.R.T. Hawk's engineering QMS is aligned to ISO 9001:2015 (and 2026 revision as released). Formal ISO 9001 certification is targeted for 2027.
 
 ---
 
@@ -362,7 +362,7 @@ The full Vendor Quality Manual is provided to customers at PoC kickoff and on su
 | Branching model | `main` (protected) · feature branches · release branches · hotfix branches |
 | Release tagging | Semantic versioning (MAJOR.MINOR.PATCH) |
 | Release notes | Published per release in `RELEASES.md`; classified per §4.3 |
-| Configuration code | Hawkeye's own configuration (workflow definitions, standard library, prompt templates) is versioned alongside code |
+| Configuration code | S.M.A.R.T. Hawk's own configuration (workflow definitions, standard library, prompt templates) is versioned alongside code |
 
 ### 6.2 Release cadence
 
@@ -382,15 +382,15 @@ The full Vendor Quality Manual is provided to customers at PoC kickoff and on su
 
 ### 6.4 Customer change-control integration
 
-Hawkeye release notifications are designed to integrate with the customer's change-control system. See §18 for the full procedure.
+S.M.A.R.T. Hawk release notifications are designed to integrate with the customer's change-control system. See §18 for the full procedure.
 
 ---
 
 ## 7. Vendor-Side Validation of the Product
 
-### 7.1 What Hawkeye validates (so the customer does not have to)
+### 7.1 What S.M.A.R.T. Hawk validates (so the customer does not have to)
 
-Hawkeye Engineering executes the following validation activities at the **product** level before any release reaches a customer tenant. These are documented in the Validation Accelerator Package (§9):
+S.M.A.R.T. Hawk Engineering executes the following validation activities at the **product** level before any release reaches a customer tenant. These are documented in the Validation Accelerator Package (§9):
 
 | Activity | Evidence |
 |---|---|
@@ -408,12 +408,12 @@ Hawkeye Engineering executes the following validation activities at the **produc
 
 ### 7.2 Vendor-executed IQ/OQ scripts
 
-For each release, Hawkeye runs:
+For each release, S.M.A.R.T. Hawk runs:
 
 - **Installation Qualification (IQ)** in our staging environment — confirms the product installs correctly per documented procedure
 - **Operational Qualification (OQ)** in our staging environment — confirms each module's documented functionality operates as specified
 
-The customer **re-executes IQ in their tenant environment** (smoke tests) and **executes configuration-specific OQ** (their workflows). The base OQ scripts Hawkeye provides accelerate this dramatically.
+The customer **re-executes IQ in their tenant environment** (smoke tests) and **executes configuration-specific OQ** (their workflows). The base OQ scripts S.M.A.R.T. Hawk provides accelerate this dramatically.
 
 ### 7.3 Security validation
 
@@ -436,7 +436,7 @@ This is the master responsibility matrix that drives every other section of this
 
 **Legend:** R = Responsible (does the work) · A = Accountable (signs off) · C = Consulted · I = Informed
 
-| # | Validation Deliverable | Customer Validation Lead | Customer QA Director | Customer IT | Hawkeye CS Engineer | Hawkeye Founder Lead | Hawkeye Pharma SME |
+| # | Validation Deliverable | Customer Validation Lead | Customer QA Director | Customer IT | S.M.A.R.T. Hawk CS Engineer | S.M.A.R.T. Hawk Founder Lead | S.M.A.R.T. Hawk Pharma SME |
 |---|---|---|---|---|---|---|---|
 | 1 | Validation Plan | R | A | I | C | I | C |
 | 2 | Risk Assessment (FMEA) | R | A | I | C | I | C |
@@ -461,15 +461,15 @@ This is the master responsibility matrix that drives every other section of this
 
 **Reading the matrix:**
 
-- **Customer R/A on items 1–3, 5, 7, 9, 11–14:** these are the items the customer's validation team owns and signs off. Hawkeye provides templates and examples, but the customer is accountable.
-- **Hawkeye R on items 4, 6, 8, 10, 15–20:** these are the items Hawkeye produces as part of the Validation Accelerator Package. The customer reviews and leverages them.
-- **The customer's effective scope** is items 1–3, 5, 7, 9, 11–14 only. Items 4, 6, 8, 10 are leveraged from Hawkeye. **This is what makes Cat 4 ~60% less effort than Cat 5.**
+- **Customer R/A on items 1–3, 5, 7, 9, 11–14:** these are the items the customer's validation team owns and signs off. S.M.A.R.T. Hawk provides templates and examples, but the customer is accountable.
+- **S.M.A.R.T. Hawk R on items 4, 6, 8, 10, 15–20:** these are the items S.M.A.R.T. Hawk produces as part of the Validation Accelerator Package. The customer reviews and leverages them.
+- **The customer's effective scope** is items 1–3, 5, 7, 9, 11–14 only. Items 4, 6, 8, 10 are leveraged from S.M.A.R.T. Hawk. **This is what makes Cat 4 ~60% less effort than Cat 5.**
 
 ---
 
 ## 9. The Validation Accelerator Package — Full Inventory
 
-The Validation Accelerator Package is the bundle of vendor evidence and templates Hawkeye delivers to every customer at PoC kickoff (or contract signing for direct paid customers). Its content is designed to satisfy GAMP 5's supplier-leverage clause and FDA CSA's risk-based assurance framework.
+The Validation Accelerator Package is the bundle of vendor evidence and templates S.M.A.R.T. Hawk delivers to every customer at PoC kickoff (or contract signing for direct paid customers). Its content is designed to satisfy GAMP 5's supplier-leverage clause and FDA CSA's risk-based assurance framework.
 
 | # | Artifact | Format | Purpose | Updated |
 |---|---|---|---|---|
@@ -477,7 +477,7 @@ The Validation Accelerator Package is the bundle of vendor evidence and template
 | 2 | **SDLC Evidence Pack** | PDF + sample artifacts | Coding standards · peer-review records · branch protection rules · CI/CD pipeline description · automated test coverage reports | Quarterly |
 | 3 | **Functional Specification (FRS) — Product Level** | PDF (~50 pages per module) | Defines vendor-product behavior at functional level | Per minor release |
 | 4 | **Configuration Specification — Template** | DOCX / MD | Customer authors their configuration-specific Config Spec from this template | At PoC kickoff |
-| 5 | **IQ Scripts — Vendor Pre-Executed** | PDF + script files | Proof Hawkeye product installs correctly in staging | Per minor release |
+| 5 | **IQ Scripts — Vendor Pre-Executed** | PDF + script files | Proof S.M.A.R.T. Hawk product installs correctly in staging | Per minor release |
 | 6 | **IQ Scripts — Customer Environment** | DOCX template | Customer re-executes in their tenant; smoke tests | At PoC kickoff |
 | 7 | **OQ Scripts — Base Functional (Vendor-Executed)** | PDF + script files | Proof each module's documented functionality operates | Per minor release |
 | 8 | **OQ Scripts — Configuration-Specific Template** | DOCX template | Customer authors per their workflow configuration | At PoC kickoff |
@@ -496,7 +496,7 @@ The Validation Accelerator Package is the bundle of vendor evidence and template
 
 The Validation Accelerator Package is delivered as:
 
-- A shared folder (Hawkeye Customer Portal or customer's preferred drive)
+- A shared folder (S.M.A.R.T. Hawk Customer Portal or customer's preferred drive)
 - Indexed PDF for review by procurement / legal
 - Refreshed annually + per material release
 
@@ -521,36 +521,36 @@ The Validation Accelerator Package is delivered as:
 
 # Part 4 — V-Model Lifecycle Mapping
 
-This part walks each V-model deliverable end-to-end, showing exactly what Hawkeye supplies and what the customer authors.
+This part walks each V-model deliverable end-to-end, showing exactly what S.M.A.R.T. Hawk supplies and what the customer authors.
 
 ## 10. URS — User Requirements Specification
 
-**Who owns it:** Customer (R/A). Hawkeye provides template + examples.
+**Who owns it:** Customer (R/A). S.M.A.R.T. Hawk provides template + examples.
 
 **Contents:**
 
-| URS section | Description | Hawkeye support |
+| URS section | Description | S.M.A.R.T. Hawk support |
 |---|---|---|
-| 1. Purpose & Scope | Why the customer is deploying Hawkeye | Template + sector examples |
-| 2. User Roles | Personas using the system | Standard Hawkeye personas (QA Head, QA Analyst, Operations, Auditor, Auditee, Sponsor) as starting point |
-| 3. Business Process Requirements | What workflows must the system support | Pre-mapped to Hawkeye 15 modules |
-| 4. Functional Requirements | What the system must do | Cross-referenced to Hawkeye FRS |
+| 1. Purpose & Scope | Why the customer is deploying S.M.A.R.T. Hawk | Template + sector examples |
+| 2. User Roles | Personas using the system | Standard S.M.A.R.T. Hawk personas (QA Head, QA Analyst, Operations, Auditor, Auditee, Sponsor) as starting point |
+| 3. Business Process Requirements | What workflows must the system support | Pre-mapped to S.M.A.R.T. Hawk 15 modules |
+| 4. Functional Requirements | What the system must do | Cross-referenced to S.M.A.R.T. Hawk FRS |
 | 5. Regulatory Requirements | Which standards apply | Pre-mapped: Part 11 / Annex 11 / ALCOA+ / ICH / etc. |
-| 6. Data Requirements | What data is processed; retention | Aligned to Hawkeye data model |
-| 7. Interface Requirements | SSO · APIs · external systems | Hawkeye integration catalog |
-| 8. Performance Requirements | Throughput · response time | Hawkeye SLA matrix |
+| 6. Data Requirements | What data is processed; retention | Aligned to S.M.A.R.T. Hawk data model |
+| 7. Interface Requirements | SSO · APIs · external systems | S.M.A.R.T. Hawk integration catalog |
+| 8. Performance Requirements | Throughput · response time | S.M.A.R.T. Hawk SLA matrix |
 | 9. Security Requirements | Access · encryption · audit | Cross-referenced to Layer 1 controls |
-| 10. Availability Requirements | Uptime · DR | Hawkeye SLA |
+| 10. Availability Requirements | Uptime · DR | S.M.A.R.T. Hawk SLA |
 
-**Hawkeye accelerator:** template URS authored from the perspective of a typical Tier-3 CDMO, pre-populated with 80% of common requirements. Customer adapts the remaining 20% to their specifics.
+**S.M.A.R.T. Hawk accelerator:** template URS authored from the perspective of a typical Tier-3 CDMO, pre-populated with 80% of common requirements. Customer adapts the remaining 20% to their specifics.
 
 ## 11. FRS — Functional Requirements Specification
 
 **Two layers:**
 
-### 11.1 Product-level FRS (Hawkeye-authored)
+### 11.1 Product-level FRS (S.M.A.R.T. Hawk-authored)
 
-Hawkeye produces the product-level FRS for each module — what the product as built does at the functional level. The customer reviews but does not author this.
+S.M.A.R.T. Hawk produces the product-level FRS for each module — what the product as built does at the functional level. The customer reviews but does not author this.
 
 **Structure** (per module, ~50 pages):
 
@@ -567,15 +567,15 @@ Hawkeye produces the product-level FRS for each module — what the product as b
 
 ### 11.2 Configuration-specific FRS (customer-authored)
 
-The customer authors a Configuration-specific FRS describing **how they have configured** their Hawkeye deployment — which workflows, which roles, which gates, which AI prompts, which reports.
+The customer authors a Configuration-specific FRS describing **how they have configured** their S.M.A.R.T. Hawk deployment — which workflows, which roles, which gates, which AI prompts, which reports.
 
-**Hawkeye accelerator:** the Configuration Specification template (§12) doubles as the input to Configuration-specific FRS authoring.
+**S.M.A.R.T. Hawk accelerator:** the Configuration Specification template (§12) doubles as the input to Configuration-specific FRS authoring.
 
 ## 12. Configuration Specification
 
-**Who owns it:** Customer (R/A). Hawkeye provides template.
+**Who owns it:** Customer (R/A). S.M.A.R.T. Hawk provides template.
 
-A Configuration Specification is a controlled document that records every configuration setting in the customer's Hawkeye tenant, with rationale and version. It is the source of truth for the customer's auditor.
+A Configuration Specification is a controlled document that records every configuration setting in the customer's S.M.A.R.T. Hawk tenant, with rationale and version. It is the source of truth for the customer's auditor.
 
 **Structure:**
 
@@ -591,21 +591,21 @@ A Configuration Specification is a controlled document that records every config
 | 8. Integration Configuration | Custom integrations · webhook subscriptions · API consumers |
 | 9. Change Log | Every change to configuration with reason · approver · date |
 
-**Hawkeye accelerator:** the Hawkeye admin console can export the live configuration as a Configuration Specification snapshot (PDF + JSON) on demand — eliminating the manual transcription burden.
+**S.M.A.R.T. Hawk accelerator:** the S.M.A.R.T. Hawk admin console can export the live configuration as a Configuration Specification snapshot (PDF + JSON) on demand — eliminating the manual transcription burden.
 
 ## 13. IQ — Installation Qualification
 
 ### 13.1 Vendor-executed IQ
 
-For each Hawkeye release, Hawkeye Engineering executes IQ in our staging environment per the documented IQ procedure. Evidence is delivered as Item #5 in the Validation Accelerator Package.
+For each S.M.A.R.T. Hawk release, S.M.A.R.T. Hawk Engineering executes IQ in our staging environment per the documented IQ procedure. Evidence is delivered as Item #5 in the Validation Accelerator Package.
 
-The customer can leverage this as evidence under GAMP 5 supplier-leverage — the customer does not need to re-prove that the Hawkeye product can be installed.
+The customer can leverage this as evidence under GAMP 5 supplier-leverage — the customer does not need to re-prove that the S.M.A.R.T. Hawk product can be installed.
 
 ### 13.2 Customer-environment IQ
 
 The customer still needs to confirm the **customer-specific tenant** is provisioned correctly. This is the customer-side IQ — substantially smaller scope than a Cat 5 IQ.
 
-**Customer IQ scope (using Hawkeye's IQ template):**
+**Customer IQ scope (using S.M.A.R.T. Hawk's IQ template):**
 
 | Item | Test |
 |---|---|
@@ -626,9 +626,9 @@ The customer still needs to confirm the **customer-specific tenant** is provisio
 
 ### 14.1 Vendor-executed base OQ
 
-Hawkeye Engineering executes OQ in staging for every release, covering all documented functional capabilities of each module. Evidence is Item #7 in the Validation Accelerator Package.
+S.M.A.R.T. Hawk Engineering executes OQ in staging for every release, covering all documented functional capabilities of each module. Evidence is Item #7 in the Validation Accelerator Package.
 
-The customer leverages this as evidence that Hawkeye's product as supplied operates per its FRS.
+The customer leverages this as evidence that S.M.A.R.T. Hawk's product as supplied operates per its FRS.
 
 ### 14.2 Configuration-specific OQ (customer)
 
@@ -636,7 +636,7 @@ The customer authors and executes OQ for their **configured workflows** — test
 
 **Example:** if the customer has configured a supplier audit workflow with a specific approval chain (QA Manager → QA Director → e-sign), the customer's OQ tests that exact chain executes correctly per their Configuration Specification.
 
-**Hawkeye accelerator:** the OQ template (Item #8 in the package) includes 50+ pre-authored test cases for common workflow patterns. The customer typically adapts 10–20 of these per module.
+**S.M.A.R.T. Hawk accelerator:** the OQ template (Item #8 in the package) includes 50+ pre-authored test cases for common workflow patterns. The customer typically adapts 10–20 of these per module.
 
 **Effort:** typically 2–5 days for a customer Validation Lead per module.
 
@@ -644,7 +644,7 @@ The customer authors and executes OQ for their **configured workflows** — test
 
 **Who owns it:** Customer (R/A) — PQ is inherently customer-side because it ties to the customer's SOPs.
 
-**PQ scope:** demonstrate that the customer's actual end-users, using their actual SOPs, can successfully perform their GxP workflows on Hawkeye in their actual operating environment.
+**PQ scope:** demonstrate that the customer's actual end-users, using their actual SOPs, can successfully perform their GxP workflows on S.M.A.R.T. Hawk in their actual operating environment.
 
 **Typical PQ activities:**
 
@@ -653,25 +653,25 @@ The customer authors and executes OQ for their **configured workflows** — test
 - Multiple users execute concurrently
 - Test cases include happy-path + error-handling + edge cases per SOP
 
-**Hawkeye accelerator:** PQ planning consultation with Hawkeye's Pharma SME (included in PoC kickoff and ongoing engagement).
+**S.M.A.R.T. Hawk accelerator:** PQ planning consultation with S.M.A.R.T. Hawk's Pharma SME (included in PoC kickoff and ongoing engagement).
 
 **Effort:** typically 1–2 weeks of customer-side execution time per module.
 
 ## 16. Traceability Matrix
 
-**Who owns it:** Customer (R/A). Hawkeye provides pre-populated template.
+**Who owns it:** Customer (R/A). S.M.A.R.T. Hawk provides pre-populated template.
 
-The Traceability Matrix shows every URS requirement traced through FRS → DS → IQ → OQ → PQ → VSR. For Cat 4 supplier-leverage, the customer's matrix can reference Hawkeye's product-level rows directly.
+The Traceability Matrix shows every URS requirement traced through FRS → DS → IQ → OQ → PQ → VSR. For Cat 4 supplier-leverage, the customer's matrix can reference S.M.A.R.T. Hawk's product-level rows directly.
 
-**Hawkeye accelerator:** the Traceability Matrix template (Item #10) is pre-populated with rows for every Hawkeye product feature, mapped to the corresponding Hawkeye FRS section + product-level IQ/OQ test case. The customer extends with rows for their configuration-specific requirements.
+**S.M.A.R.T. Hawk accelerator:** the Traceability Matrix template (Item #10) is pre-populated with rows for every S.M.A.R.T. Hawk product feature, mapped to the corresponding S.M.A.R.T. Hawk FRS section + product-level IQ/OQ test case. The customer extends with rows for their configuration-specific requirements.
 
 **Effort:** typically 1–3 days for a customer Validation Lead.
 
 ## 17. Validation Summary Report
 
-**Who owns it:** Customer (R/A). Hawkeye provides template.
+**Who owns it:** Customer (R/A). S.M.A.R.T. Hawk provides template.
 
-The Validation Summary Report is the customer's signed conclusion that the Hawkeye deployment is validated and fit for intended use. It cites all evidence leveraged from Hawkeye + all customer-authored evidence.
+The Validation Summary Report is the customer's signed conclusion that the S.M.A.R.T. Hawk deployment is validated and fit for intended use. It cites all evidence leveraged from S.M.A.R.T. Hawk + all customer-authored evidence.
 
 **Structure (template provided):**
 
@@ -693,9 +693,9 @@ The Validation Summary Report is the customer's signed conclusion that the Hawke
 
 ## 18. Change Management for Vendor Releases
 
-### 18.1 Hawkeye's commitment
+### 18.1 S.M.A.R.T. Hawk's commitment
 
-Hawkeye notifies every customer of every release with:
+S.M.A.R.T. Hawk notifies every customer of every release with:
 
 - Version (semver)
 - Classification (functional · security · cosmetic) per §4.3
@@ -716,14 +716,14 @@ Hawkeye notifies every customer of every release with:
 
 ### 18.3 Customer's change-control integration
 
-The customer's change-control process can integrate Hawkeye releases at four touchpoints:
+The customer's change-control process can integrate S.M.A.R.T. Hawk releases at four touchpoints:
 
 ```mermaid
 flowchart LR
     classDef hk fill:#FEE2E2,stroke:#B91C1C,color:#7F1D1D
     classDef cust fill:#DBEAFE,stroke:#1E40AF,color:#1E3A8A
 
-    HK1["Hawkeye<br/>announces release<br/>+ classification"]:::hk
+    HK1["S.M.A.R.T. Hawk<br/>announces release<br/>+ classification"]:::hk
     CC1["Customer<br/>creates change<br/>record"]:::cust
     CC2["Customer<br/>risk assessment<br/>(may be NIL for cosmetic)"]:::cust
     CC3["Customer<br/>re-execute affected<br/>OQ/PQ if functional"]:::cust
@@ -753,10 +753,10 @@ The customer **cannot** skip security patches (deployed automatically). The cust
 
 ### 19.1 Right to audit
 
-Per the Data Processing Agreement and this document, the customer has the **right to audit Hawkeye annually**, on reasonable notice (typically 30 days), via:
+Per the Data Processing Agreement and this document, the customer has the **right to audit S.M.A.R.T. Hawk annually**, on reasonable notice (typically 30 days), via:
 
 - **Remote audit** (default) — video call + screen-shared review of evidence pack
-- **On-site audit** (at customer cost) — visit to Hawkeye's office in `[HAWKEYE ADDRESS]`
+- **On-site audit** (at customer cost) — visit to S.M.A.R.T. Hawk's office in `[S.M.A.R.T. HAWK ADDRESS]`
 
 ### 19.2 Audit scope (annual)
 
@@ -775,21 +775,21 @@ Per the Data Processing Agreement and this document, the customer has the **righ
 
 ### 19.3 The Pre-Prepared Audit Pack
 
-To minimize customer audit-prep burden, Hawkeye maintains a **Pre-Prepared Audit Pack** updated annually. It contains all of the above evidence in one indexed PDF + supplementary files.
+To minimize customer audit-prep burden, S.M.A.R.T. Hawk maintains a **Pre-Prepared Audit Pack** updated annually. It contains all of the above evidence in one indexed PDF + supplementary files.
 
 The customer's auditor can typically complete a remote vendor audit in **4–6 hours** using the Pre-Prepared Audit Pack — versus 2–3 days from a cold start.
 
 ### 19.4 Audit findings & CAPA
 
-Audit findings are logged. Major findings trigger a Hawkeye CAPA tracked to closure with customer visibility.
+Audit findings are logged. Major findings trigger a S.M.A.R.T. Hawk CAPA tracked to closure with customer visibility.
 
 ---
 
 ## 20. Periodic Evaluation (Annex 11 §11)
 
-Annex 11 §11 requires the customer to periodically review the validated state of the computerized system. Hawkeye supports this by providing:
+Annex 11 §11 requires the customer to periodically review the validated state of the computerized system. S.M.A.R.T. Hawk supports this by providing:
 
-| Annual evaluation input | Hawkeye-supplied |
+| Annual evaluation input | S.M.A.R.T. Hawk-supplied |
 |---|---|
 | Validation status update | Confirmation of current Cat 4 classification + Validation Accelerator Package version |
 | Deviation log (vendor side) | Incident summary + CAPA closure status |
@@ -797,7 +797,7 @@ Annex 11 §11 requires the customer to periodically review the validated state o
 | Security incidents | Disclosed per DPA |
 | Access review | User provisioning audit log (customer pulls from tenant) |
 | Configuration drift | Configuration Spec snapshot vs prior year |
-| Backup / DR test outcomes | Hawkeye's monthly restore test reports |
+| Backup / DR test outcomes | S.M.A.R.T. Hawk's monthly restore test reports |
 
 The customer compiles this with their own internal evidence (training records, internal incidents, periodic reviews) into the annual Periodic Evaluation report.
 
@@ -840,11 +840,11 @@ Every P1/P2 incident triggers a Post-Incident Report shared with affected custom
 
 ## 22. 21 CFR Part 11 — Clause-by-Clause
 
-This section maps each 21 CFR Part 11 requirement to the Hawkeye implementation and the evidence the customer's auditor can request.
+This section maps each 21 CFR Part 11 requirement to the S.M.A.R.T. Hawk implementation and the evidence the customer's auditor can request.
 
 ### 22.1 Subpart B — Electronic Records
 
-| Clause | Requirement (verbatim/paraphrased) | Hawkeye implementation | Evidence available |
+| Clause | Requirement (verbatim/paraphrased) | S.M.A.R.T. Hawk implementation | Evidence available |
 |---|---|---|---|
 | §11.10(a) | Validation of systems for accuracy, reliability, consistent intended performance, ability to discern invalid/altered records | GAMP Cat 4 configured product per this document; vendor-side validation per §7; customer-side validation per Part 4 | Validation Accelerator Package items 1–11 |
 | §11.10(b) | Ability to generate accurate, complete human-readable + electronic copies for FDA | PDF + CSV + JSON export at record + audit level; audit-trail-grade PDF | Demo on demand |
@@ -854,43 +854,43 @@ This section maps each 21 CFR Part 11 requirement to the Hawkeye implementation 
 | §11.10(f) | Operational system checks to enforce sequence + permissions | State machine enforcement at workflow layer; cannot bypass via UI or API | Workflow definition evidence |
 | §11.10(g) | Authority checks — only authorized users sign/alter/operate | RBAC enforced at API + UI; tested per OQ | RBAC test evidence |
 | §11.10(h) | Device checks where appropriate | API + UI both authenticate every action | Auth log evidence |
-| §11.10(i) | Documented training of personnel | Hawkeye-side: engineer training records (§5.1, training §4); Customer-side: customer responsibility | Training records on request |
+| §11.10(i) | Documented training of personnel | S.M.A.R.T. Hawk-side: engineer training records (§5.1, training §4); Customer-side: customer responsibility | Training records on request |
 | §11.10(j) | Documented written policies for accountability | Vendor QM §1 (responsibilities); customer's own SOPs | Vendor QM |
 | §11.10(k) | Appropriate controls over systems documentation | Vendor QM §3 (document control); Validation Accelerator Package versioning | Version logs |
 
 ### 22.2 Subpart B — Open Systems (§11.30)
 
-| Clause | Requirement | Hawkeye implementation |
+| Clause | Requirement | S.M.A.R.T. Hawk implementation |
 |---|---|---|
-| §11.30 | Open-system controls = closed-system controls + encryption + digital signatures | Hawkeye is delivered as a **closed system** (only authorized users via SSO) so §11.30 enhancements are not strictly required, but TLS 1.3 + AES-256 + signature-record cryptographic linking are provided regardless |
+| §11.30 | Open-system controls = closed-system controls + encryption + digital signatures | S.M.A.R.T. Hawk is delivered as a **closed system** (only authorized users via SSO) so §11.30 enhancements are not strictly required, but TLS 1.3 + AES-256 + signature-record cryptographic linking are provided regardless |
 
 ### 22.3 Subpart C — Electronic Signatures
 
-| Clause | Requirement | Hawkeye implementation | Evidence |
+| Clause | Requirement | S.M.A.R.T. Hawk implementation | Evidence |
 |---|---|---|---|
 | §11.50(a) | Signed records show printed name + date/time + meaning | Every signed record displays printed name + UTC date/time + meaning (review/approval/authorship/responsibility) | Demo + sample export |
 | §11.50(b) | Subject to controls of §11.10 | Yes — signed records inherit §11.10 controls | — |
 | §11.70 | E-signature linked to record; cannot be excised/copied/transferred to falsify another record | E-signature cryptographically linked to SHA-256 snapshot hash of signed record | Cryptographic linking documentation |
 | §11.100(a) | Unique to one individual | One signature account per person, never reassigned | User provisioning policy |
 | §11.100(b) | Identity verified before issuance | SSO-based provisioning verifies via customer's IdP | SSO setup procedure |
-| §11.100(c) | Written certification to FDA equivalent to handwritten | Customer's responsibility (certification letter); Hawkeye supports with technical evidence | Customer's letter template available |
+| §11.100(c) | Written certification to FDA equivalent to handwritten | Customer's responsibility (certification letter); S.M.A.R.T. Hawk supports with technical evidence | Customer's letter template available |
 | §11.200(a)(1) | Non-biometric e-sigs use ≥2 distinct identification components | Password + Reason on every signing event | Demo + audit log sample |
 | §11.200(a)(2) | First signing of continuous session uses all components; subsequent signings in same session use one | Session-boundary rule enforced | Session log demo |
 | §11.200(a)(3) | When not in continuous session, use all components | Yes | — |
-| §11.200(b) | Biometric e-sigs only by genuine owner | Hawkeye does not currently offer biometric e-sig | — |
+| §11.200(b) | Biometric e-sigs only by genuine owner | S.M.A.R.T. Hawk does not currently offer biometric e-sig | — |
 | §11.300(a) | Maintain ID/password uniqueness | Enforced by user-provisioning service | — |
 | §11.300(b) | Periodic ID/password aging | Password expiry policy configurable per tenant | — |
 | §11.300(c) | Loss-management procedures | Password reset + account lockout procedures | — |
 | §11.300(d) | Unauthorized-use safeguards (lockout, alerting) | Failed-attempt audit log + lockout after configurable threshold | — |
-| §11.300(e) | Periodic testing of devices (tokens, cards) | Hawkeye does not currently use hardware tokens | — |
+| §11.300(e) | Periodic testing of devices (tokens, cards) | S.M.A.R.T. Hawk does not currently use hardware tokens | — |
 
 ---
 
 ## 23. EU GMP Annex 11 — All 17 Clauses
 
-| § | Requirement (paraphrased) | Hawkeye implementation |
+| § | Requirement (paraphrased) | S.M.A.R.T. Hawk implementation |
 |---|---|---|
-| 1 — Risk Management | Apply throughout lifecycle; scale validation to patient safety, data integrity, product quality | Documented risk management per ICH Q9; customer's risk assessment leverages Hawkeye Cat 4 classification |
+| 1 — Risk Management | Apply throughout lifecycle; scale validation to patient safety, data integrity, product quality | Documented risk management per ICH Q9; customer's risk assessment leverages S.M.A.R.T. Hawk Cat 4 classification |
 | 2 — Personnel | Defined roles and cooperation between process owners, system owners, QPs, IT | Vendor QM §1 + customer-side roles defined in URS |
 | 3 — Suppliers & Service Providers | Formal written agreement; assess competence and reliability; right to audit | DPA + Vendor Assessment Questionnaire + Annual Right to Audit (§19) |
 | 4 — Validation | URS · lifecycle · traceability · configuration management | Validation Accelerator Package (§9) |
@@ -910,7 +910,7 @@ This section maps each 21 CFR Part 11 requirement to the Hawkeye implementation 
 
 ### 23.1 Annex 11 — 2025 Draft Revision + Annex 22 (AI) — readiness
 
-The EC published a draft revision of Annex 11 on **7 July 2025**, with a new companion **Annex 22 — Artificial Intelligence** expected to be finalized alongside Annex 11 in 2026. Hawkeye's design anticipates the draft's tightened cloud/SaaS provisions and AI/ML governance requirements. Re-attestation against the final text will be issued via an updated version of this document.
+The EC published a draft revision of Annex 11 on **7 July 2025**, with a new companion **Annex 22 — Artificial Intelligence** expected to be finalized alongside Annex 11 in 2026. S.M.A.R.T. Hawk's design anticipates the draft's tightened cloud/SaaS provisions and AI/ML governance requirements. Re-attestation against the final text will be issued via an updated version of this document.
 
 ---
 
@@ -918,7 +918,7 @@ The EC published a draft revision of Annex 11 on **7 July 2025**, with a new com
 
 **Source:** MHRA *GxP Data Integrity Definitions and Guidance for Industry* (March 2018, Rev 1); WHO *TRS 1033 Annex 4* (2021).
 
-| Attribute | Definition | Hawkeye enforcement |
+| Attribute | Definition | S.M.A.R.T. Hawk enforcement |
 |---|---|---|
 | **A**ttributable | Data linked to the originator | Every action linked to unique user via SSO + audit log; no shared accounts permitted |
 | **L**egible | Data readable and permanent | Human-readable export at record + audit level; PDF + CSV formats |
@@ -934,7 +934,7 @@ The EC published a draft revision of Annex 11 on **7 July 2025**, with a new com
 
 Per MHRA 2018: "Metadata is data that describes the attributes of other data and provides context and meaning… the audit trail required for GxP-relevant records is one form of metadata."
 
-Hawkeye treats metadata (audit trail, e-signature manifestations, version history, AI Audit Trail entries) with the **same retention, integrity, and ALCOA+ enforcement as the underlying record**.
+S.M.A.R.T. Hawk treats metadata (audit trail, e-signature manifestations, version history, AI Audit Trail entries) with the **same retention, integrity, and ALCOA+ enforcement as the underlying record**.
 
 ---
 
@@ -948,17 +948,17 @@ CSA replaces the document-heavy CSV (Computer System Validation) mindset of the 
 
 ### 25.2 The 5-step decision
 
-| Step | Question | Hawkeye perspective |
+| Step | Question | S.M.A.R.T. Hawk perspective |
 |---|---|---|
-| 1 | Is the software used in production or QMS? | Yes — Hawkeye is an EQMS |
+| 1 | Is the software used in production or QMS? | Yes — S.M.A.R.T. Hawk is an EQMS |
 | 2 | What's the intended use + process risk? | Customer assesses per workflow |
 | 3 | High-risk function? → scripted testing | Per Cat 4 OQ/PQ for high-risk workflows |
-| 4 | Low/medium-risk function? → **unscripted/ad-hoc testing + vendor evidence** | Customer leverages Hawkeye Validation Accelerator Package |
+| 4 | Low/medium-risk function? → **unscripted/ad-hoc testing + vendor evidence** | Customer leverages S.M.A.R.T. Hawk Validation Accelerator Package |
 | 5 | Document only what's needed to support assurance | Per customer's risk-based decision |
 
-### 25.3 Why Hawkeye Cat 4 is a fit for CSA
+### 25.3 Why S.M.A.R.T. Hawk Cat 4 is a fit for CSA
 
-CSA explicitly encourages leveraging vendor SDLC evidence for low-risk functions. Hawkeye's Validation Accelerator Package (§9) was designed for exactly this leverage:
+CSA explicitly encourages leveraging vendor SDLC evidence for low-risk functions. S.M.A.R.T. Hawk's Validation Accelerator Package (§9) was designed for exactly this leverage:
 
 - Vendor QM + SDLC Evidence → satisfies CSA's "trusted vendor" criterion
 - Vendor-executed IQ/OQ → leveraged for low-risk functional validation
@@ -975,7 +975,7 @@ Industry-reported CSA adoption shows **30–80% reduction in validation cycle ti
 
 ### 26.1 ICH Q9 — Quality Risk Management
 
-Hawkeye's Risk Management module operationalizes ICH Q9 principles:
+S.M.A.R.T. Hawk's Risk Management module operationalizes ICH Q9 principles:
 
 - Risk register at site / process / product level
 - FMEA + risk matrix tools
@@ -984,9 +984,9 @@ Hawkeye's Risk Management module operationalizes ICH Q9 principles:
 
 ### 26.2 ICH Q10 — Pharmaceutical Quality System
 
-Hawkeye's 13 modules collectively implement ICH Q10 process elements:
+S.M.A.R.T. Hawk's 13 modules collectively implement ICH Q10 process elements:
 
-| ICH Q10 element | Hawkeye module |
+| ICH Q10 element | S.M.A.R.T. Hawk module |
 |---|---|
 | Process Performance & Product Quality Monitoring | Reports + dashboards across modules |
 | Corrective & Preventive Action | CAPA module |
@@ -999,7 +999,7 @@ Hawkeye's 13 modules collectively implement ICH Q10 process elements:
 
 ## 27. AI as a Cat 4 Configuration Element
 
-Hawkeye's AI Gateway (Layer 3) is part of the Cat 4 configured product. The AI features that affect customer workflows are **configurable** (Cat 4), not customizable (Cat 5):
+S.M.A.R.T. Hawk's AI Gateway (Layer 3) is part of the Cat 4 configured product. The AI features that affect customer workflows are **configurable** (Cat 4), not customizable (Cat 5):
 
 | Element | Cat 4 or Cat 5 | Notes |
 |---|---|---|
@@ -1060,12 +1060,12 @@ The customer's OQ for AI-enabled workflows includes:
 
 ### 29.1 FDA Good Machine Learning Practice — 10 Principles (Oct 2021)
 
-| # | Principle | Hawkeye alignment |
+| # | Principle | S.M.A.R.T. Hawk alignment |
 |---|---|---|
 | 1 | Multidisciplinary expertise throughout lifecycle | Engineering + Pharma SME + Compliance roles in product team |
 | 2 | Good software-engineering + security practices | §4 SDLC + §7 vendor-side validation |
-| 3 | Represent intended patient population in data | N/A directly — Hawkeye is process software, not patient-impacting ML |
-| 4 | Training data independent of test data | When/if Hawkeye trains its own models, this is enforced; current product uses third-party LLMs |
+| 3 | Represent intended patient population in data | N/A directly — S.M.A.R.T. Hawk is process software, not patient-impacting ML |
+| 4 | Training data independent of test data | When/if S.M.A.R.T. Hawk trains its own models, this is enforced; current product uses third-party LLMs |
 | 5 | Best-available methods for reference data | Customer data is retrieval source, not training; reference data is regulatory corpus |
 | 6 | Model design tailored to data + use | Cite-or-fallback design + per-workflow prompt configuration |
 | 7 | Focus on human–AI team performance | Human commits the record; AI is decision support |
@@ -1075,7 +1075,7 @@ The customer's OQ for AI-enabled workflows includes:
 
 ### 29.2 EMA AI Reflection Paper (CHMP/CVMP adopted Sept 2024)
 
-| EMA tenet | Hawkeye alignment |
+| EMA tenet | S.M.A.R.T. Hawk alignment |
 |---|---|
 | Human oversight | Human commits the record; AI is decision support |
 | Data integrity for model development | Customer data is not used for training; reference data is governed corpus |
@@ -1085,7 +1085,7 @@ The customer's OQ for AI-enabled workflows includes:
 
 ### 29.3 ISPE Validation 4.0 (Good Practice Guide: Digital Validation, April 2025)
 
-| ISPE V4.0 tenet | Hawkeye alignment |
+| ISPE V4.0 tenet | S.M.A.R.T. Hawk alignment |
 |---|---|
 | Pharma 4.0 operating model | Cloud-native, multi-tenant, API-first |
 | Critical thinking + risk-based | CSA + Cat 4 leverage |
@@ -1105,7 +1105,7 @@ This section walks the full V-model trace for the Audit Management module, demon
 
 - **Customer:** Tier-3 CDMO, 3 sites, 5 QA staff, 30 audits/year
 - **Module:** Audit Management
-- **Goal:** Validate the customer's Hawkeye Audit Management deployment for GxP production use
+- **Goal:** Validate the customer's S.M.A.R.T. Hawk Audit Management deployment for GxP production use
 
 ### 30.2 URS extract (customer authors)
 
@@ -1127,7 +1127,7 @@ URS-AUDIT-004: All actions shall be captured in an audit trail per 21 CFR
 
 ### 30.3 FRS trace
 
-| URS | Hawkeye Product FRS section | Customer Configuration-FRS section |
+| URS | S.M.A.R.T. Hawk Product FRS section | Customer Configuration-FRS section |
 |---|---|---|
 | URS-AUDIT-001 | FRS-AUDIT-§3 Lifecycle States | Config-FRS-§2 Customer State Map |
 | URS-AUDIT-002 | FRS-AUDIT-§5 Workflow Configuration Surface | Config-FRS-§3 Customer Approval Chain |
@@ -1146,7 +1146,7 @@ CONFIG-AUDIT-005: Retention: 10 years
 
 ### 30.5 IQ (customer environment)
 
-Re-execute Hawkeye's IQ template in customer tenant:
+Re-execute S.M.A.R.T. Hawk's IQ template in customer tenant:
 
 | Test | Result |
 |---|---|
@@ -1177,7 +1177,7 @@ Re-execute Hawkeye's IQ template in customer tenant:
 
 ### 30.7 PQ
 
-Customer's QA team executes 3 real audits end-to-end using their SOP. All 3 close successfully on Hawkeye. Customer-side audit-trail review at batch release executes per SOP.
+Customer's QA team executes 3 real audits end-to-end using their SOP. All 3 close successfully on S.M.A.R.T. Hawk. Customer-side audit-trail review at batch release executes per SOP.
 
 ### 30.8 Traceability Matrix extract
 
@@ -1190,7 +1190,7 @@ Customer's QA team executes 3 real audits end-to-end using their SOP. All 3 clos
 
 ### 30.9 Validation Summary Report — conclusion
 
-> "The Hawkeye Audit Management module deployment at [Customer Site] has been validated per the GAMP 5 Category 4 supplier-leveraged approach. All URS items trace through FRS, Configuration Specification, IQ, OQ, and PQ. Residual risks assessed and accepted. Approved for production GxP use."
+> "The S.M.A.R.T. Hawk Audit Management module deployment at [Customer Site] has been validated per the GAMP 5 Category 4 supplier-leveraged approach. All URS items trace through FRS, Configuration Specification, IQ, OQ, and PQ. Residual risks assessed and accepted. Approved for production GxP use."
 >
 > Signed by QA Director, Validation Lead, IT Compliance Lead.
 
@@ -1232,32 +1232,32 @@ The following templates are delivered as part of the Validation Accelerator Pack
 
 ## 32. Validation FAQ
 
-**Q1: Do we have to re-validate after every Hawkeye release?**
+**Q1: Do we have to re-validate after every S.M.A.R.T. Hawk release?**
 A: No. Risk-based per §18.4. Cosmetic releases require no action; security patches require smoke test only; functional releases require selective OQ re-execution for affected configured workflows.
 
 **Q2: How do we validate AI features?**
 A: AI is a Cat 4 configuration element (§27). Validate the AI Audit Trail per §28.1 and the cite-or-fallback behavior per §27.1. The AI itself does not commit records; the human always does — so the workflow validation gates remain the same as for non-AI workflows.
 
 **Q3: What if our regulator asks for source code review?**
-A: Source code review is a Cat 5 obligation, not a Cat 4 one. For Cat 4, regulators accept vendor SDLC evidence + supplier qualification (per ISPE GAMP 5 + FDA CSA). If a regulator specifically demands source review, Hawkeye can arrange a secure on-site review under NDA — but this is rare and is typically a misunderstanding of GAMP categorization.
+A: Source code review is a Cat 5 obligation, not a Cat 4 one. For Cat 4, regulators accept vendor SDLC evidence + supplier qualification (per ISPE GAMP 5 + FDA CSA). If a regulator specifically demands source review, S.M.A.R.T. Hawk can arrange a secure on-site review under NDA — but this is rare and is typically a misunderstanding of GAMP categorization.
 
-**Q4: Can we audit Hawkeye on-site?**
+**Q4: Can we audit S.M.A.R.T. Hawk on-site?**
 A: Yes — §19.1. Remote audit is default; on-site is at customer cost.
 
-**Q5: What happens if Hawkeye's SOC 2 certification slips?**
-A: Hawkeye's SOC 2 Type I is targeted Q3 2026, Type II Q1 2027. If timelines slip, customers are notified. SOC 2 is a complement to (not replacement for) the GAMP Cat 4 + Validation Accelerator Package evidence.
+**Q5: What happens if S.M.A.R.T. Hawk's SOC 2 certification slips?**
+A: S.M.A.R.T. Hawk's SOC 2 Type I is targeted Q3 2026, Type II Q1 2027. If timelines slip, customers are notified. SOC 2 is a complement to (not replacement for) the GAMP Cat 4 + Validation Accelerator Package evidence.
 
 **Q6: What if we want to use a custom AI model?**
-A: That moves the AI use case to Cat 5 and triggers a separate customization engagement. Discuss with Hawkeye Engineering before scoping.
+A: That moves the AI use case to Cat 5 and triggers a separate customization engagement. Discuss with S.M.A.R.T. Hawk Engineering before scoping.
 
-**Q7: Can we leverage Hawkeye's OQ scripts without re-executing them?**
+**Q7: Can we leverage S.M.A.R.T. Hawk's OQ scripts without re-executing them?**
 A: For low-risk functions per CSA, yes — the customer can leverage vendor-executed OQ as evidence with documented risk assessment. For high-risk functions (e-signature, audit trail, AI-assisted findings), the customer should re-execute the relevant subset of OQ scripts in their own environment.
 
-**Q8: What if Hawkeye stops supporting a module?**
+**Q8: What if S.M.A.R.T. Hawk stops supporting a module?**
 A: Per DPA + SLA: 12 months advance notice + data export + migration support. Customer's Validation Summary Report would need to be revised.
 
 **Q9: How do we handle data integrity for backups?**
-A: Hawkeye performs daily backups with monthly restore tests (§7.3). The customer's Periodic Evaluation (§20) can leverage Hawkeye's restore-test reports as evidence of backup integrity.
+A: S.M.A.R.T. Hawk performs daily backups with monthly restore tests (§7.3). The customer's Periodic Evaluation (§20) can leverage S.M.A.R.T. Hawk's restore-test reports as evidence of backup integrity.
 
 **Q10: What about validation for the multi-LLM gateway — does each LLM need separate validation?**
 A: No. The AI Gateway abstracts LLM choice into a configuration setting. The customer validates the **workflow** + the **AI Audit Trail**; the LLM choice itself is a configuration choice within the validated product surface.
@@ -1269,7 +1269,7 @@ A: No. The AI Gateway abstracts LLM choice into a configuration setting. The cus
 | Term | Definition |
 |---|---|
 | **GAMP** | Good Automated Manufacturing Practice — ISPE framework for computer system validation in regulated industries |
-| **GAMP Category 4** | Configured products (e.g., EQMS, ERP, LIMS); the classification for Hawkeye |
+| **GAMP Category 4** | Configured products (e.g., EQMS, ERP, LIMS); the classification for S.M.A.R.T. Hawk |
 | **GAMP Category 5** | Custom/bespoke software requiring full SDLC validation |
 | **ISPE** | International Society for Pharmaceutical Engineering — publisher of GAMP 5 |
 | **CSA** | Computer Software Assurance — FDA's risk-based replacement philosophy for traditional CSV |
@@ -1302,11 +1302,11 @@ A: No. The AI Gateway abstracts LLM choice into a configuration setting. The cus
 
 ## Annex A — Pre-Filled Vendor Assessment Questionnaire (Extract)
 
-The full Vendor Assessment Questionnaire contains 100+ standardized questions, all pre-filled by Hawkeye. Extract:
+The full Vendor Assessment Questionnaire contains 100+ standardized questions, all pre-filled by S.M.A.R.T. Hawk. Extract:
 
-| # | Question | Hawkeye answer |
+| # | Question | S.M.A.R.T. Hawk answer |
 |---|---|---|
-| 1 | What is the vendor's legal name + registration? | Hawkeye Transact Pvt. Ltd., registered in India |
+| 1 | What is the vendor's legal name + registration? | S.M.A.R.T. Hawk Transact Pvt. Ltd., registered in India |
 | 2 | Years in business | 2 (founded 2024) |
 | 3 | GAMP classification of the product | **Category 4 — Configured Product** per ISPE GAMP 5 2nd Ed (Jul 2022) |
 | 4 | Number of customers | [TO BE FILLED PER UPDATE] |
@@ -1375,7 +1375,7 @@ The full Vendor Assessment Questionnaire contains 100+ standardized questions, a
 
 | Version | Date | Author | Reviewer | Change |
 |---|---|---|---|---|
-| 1.0 | 2026-06-05 | Hawkeye Engineering + Compliance | Founder Lead | Initial issue — comprehensive GAMP 5 Cat 4 compliance reference |
+| 1.0 | 2026-06-05 | S.M.A.R.T. Hawk Engineering + Compliance | Founder Lead | Initial issue — comprehensive GAMP 5 Cat 4 compliance reference |
 
 **Review cycle:** Annual + on any material change to product, regulatory landscape, or compliance posture.
 
@@ -1401,4 +1401,4 @@ For questions on this document or to request the full Validation Accelerator Pac
 
 ---
 
-*Hawkeye Transact Pvt. Ltd. · GAMP 5 Category 4 Compliance Reference · v1.0 · 2026-06-05 · Confidential*
+*S.M.A.R.T. Hawk Transact Pvt. Ltd. · GAMP 5 Category 4 Compliance Reference · v1.0 · 2026-06-05 · Confidential*

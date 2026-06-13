@@ -10,7 +10,7 @@
 
 ## 1. Design philosophy in one paragraph
 
-> 💡 **Hawkeye is professional software for serious people doing serious work.** Quality teams running pharma audits don't need delight; they need clarity, speed, and confidence. The UI is dense (lots of data, fast scanning), the language is precise (regulatory vocabulary used correctly), and the AI is honest (citations + confidence visible, not hidden). We're closer to Bloomberg Terminal than Notion in spirit — but on a 21st-century stack.
+> 💡 **S.M.A.R.T. Hawk is professional software for serious people doing serious work.** Quality teams running pharma audits don't need delight; they need clarity, speed, and confidence. The UI is dense (lots of data, fast scanning), the language is precise (regulatory vocabulary used correctly), and the AI is honest (citations + confidence visible, not hidden). We're closer to Bloomberg Terminal than Notion in spirit — but on a 21st-century stack.
 
 ## 2. The 8 principles
 

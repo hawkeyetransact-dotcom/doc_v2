@@ -11,7 +11,7 @@
 
 ## 1. The AI strategy in one paragraph
 
-> 💡 **Hawkeye's AI is grounded, cited, confidence-scored, audit-trailed, and reproducible from day one.** Every LLM call produces a JSON-validated output with mandatory citations to KB chunks and a confidence score; below the floor (0.6), a skeleton fallback preserves citations only. Every call writes an audit-trail row with modelVersion, promptHash, retrievalSet, confidence, tokens, latency, and the user's disposition (accepted / edited / rejected). The architecture is multi-LLM gateway today (Anthropic + OpenAI + Gemini), with a sequenced path to fine-tuned open-source models (Llama-3 / Mistral) on our proprietary audit-domain corpus by M12-M18. The competing AI vendors retrofit LLMs into legacy stacks; Hawkeye's AI is native, defensible, and Part 11–grade.
+> 💡 **S.M.A.R.T. Hawk's AI is grounded, cited, confidence-scored, audit-trailed, and reproducible from day one.** Every LLM call produces a JSON-validated output with mandatory citations to KB chunks and a confidence score; below the floor (0.6), a skeleton fallback preserves citations only. Every call writes an audit-trail row with modelVersion, promptHash, retrievalSet, confidence, tokens, latency, and the user's disposition (accepted / edited / rejected). The architecture is multi-LLM gateway today (Anthropic + OpenAI + Gemini), with a sequenced path to fine-tuned open-source models (Llama-3 / Mistral) on our proprietary audit-domain corpus by M12-M18. The competing AI vendors retrofit LLMs into legacy stacks; S.M.A.R.T. Hawk's AI is native, defensible, and Part 11–grade.
 
 ## 2. Architecture overview
 
@@ -226,7 +226,7 @@ gantt
     PoC data collection (with consent) :2026-12, 6M
     section Phase 3: Fine-tune
     First fine-tune experiments :2027-01, 4M
-    First Hawkeye-tuned model :2027-04, 2M
+    First S.M.A.R.T. Hawk-tuned model :2027-04, 2M
     section Phase 4: Hybrid production
     Self-host fine-tuned for low-stakes :2027-06, 12M
     Larger fine-tune (Series A) :2028-06, 6M

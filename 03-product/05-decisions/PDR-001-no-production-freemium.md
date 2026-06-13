@@ -19,7 +19,7 @@ The counter-argument was that pharma EQMS is not consumer SaaS: customers cannot
 
 ## 2. Decision
 
-> 📜 **Hawkeye will NOT offer a production freemium tier.** Customer trial happens via a structured 60-day Proof of Concept (PoC) with written success criteria, on the customer's real audit data, at no cost. The PoC is the "try-before-buy". Paid contracts are Starter (₹3.5L) / Growth (₹10L) / Enterprise (₹20L+). No tier with real-audit production use is free, ever.
+> 📜 **S.M.A.R.T. Hawk will NOT offer a production freemium tier.** Customer trial happens via a structured 60-day Proof of Concept (PoC) with written success criteria, on the customer's real audit data, at no cost. The PoC is the "try-before-buy". Paid contracts are Starter (₹3.5L) / Growth (₹10L) / Enterprise (₹20L+). No tier with real-audit production use is free, ever.
 
 ## 3. Alternatives considered
 

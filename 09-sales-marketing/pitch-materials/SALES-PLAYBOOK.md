@@ -43,7 +43,7 @@ Before scheduling a demo, get answers to:
 | "What's your current spend on audit prep / consultants?" | ROI calc input |
 | "Any recent FDA-483 or EU GMP non-conformance?" | Compliance trigger |
 | "When is your next regulator inspection?" | Time pressure |
-| "How many QA staff?" | Hawkeye ACV per-user fee |
+| "How many QA staff?" | S.M.A.R.T. Hawk ACV per-user fee |
 | "What's your annual compliance/quality budget?" | Affordability check |
 
 If the prospect can't answer 5+ of these, they're not ready — schedule a follow-up educational call.
@@ -103,7 +103,7 @@ sequenceDiagram
 
 > 💡 **Lead with savings, close with structure.** Open the pricing slide with the ROI math:
 >
-> "For an organization your size, you're spending about ₹95L/year on audit prep, response, and findings. Hawkeye reduces that by 40% — about ₹38L of savings. We charge ₹9L. Your net annual benefit is ₹29L from year one, and the platform pays for itself in under 4 months."
+> "For an organization your size, you're spending about ₹95L/year on audit prep, response, and findings. S.M.A.R.T. Hawk reduces that by 40% — about ₹38L of savings. We charge ₹9L. Your net annual benefit is ₹29L from year one, and the platform pays for itself in under 4 months."
 >
 > [Then show structure: per-site + per-user + AI credits = ₹9L total]
 >

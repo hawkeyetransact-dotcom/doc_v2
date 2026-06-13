@@ -107,7 +107,7 @@ flowchart LR
 **Recommended path — Option B sequenced:**
 - M0-M6: Stay on API gateway (Anthropic/OpenAI/Gemini) — cheap, fast, no infra distraction
 - M6-M12: Collect fine-tune data from PoCs (with consent — this is the moat). Hire senior AI/ML M9.
-- M12-M18: Ship first "Hawkeye-tuned" Llama-3/Mistral model for low-stakes tasks (intake classification, similarity search). Continue API for high-stakes (cited reports). **Hybrid architecture wins on cost AND defensibility.**
+- M12-M18: Ship first "S.M.A.R.T. Hawk-tuned" Llama-3/Mistral model for low-stakes tasks (intake classification, similarity search). Continue API for high-stakes (cited reports). **Hybrid architecture wins on cost AND defensibility.**
 - M18+: Series A pays for the bigger fine-tune, on-prem proof-points, and ML platform team.
 
 **18-month AI line:** $115K total ($45K API + $25K compute + $30K self-host + $15K data).
@@ -116,9 +116,9 @@ flowchart LR
 
 Cross-reference [PRICING.md](../../01-strategy/pricing-and-packaging/PRICING.md).
 
-Representative Tier 3 CDMO baseline: **3 sites, 5 QA staff, 30 audits/yr** → **₹95L (~$115K) annual quality cost**. Hawkeye reduces by 40% blended = **₹38L (~$46K) savings**. Hawkeye charges **₹9L (~$10.8K)** = 24% of savings. **Payback < 4 months.**
+Representative Tier 3 CDMO baseline: **3 sites, 5 QA staff, 30 audits/yr** → **₹95L (~$115K) annual quality cost**. S.M.A.R.T. Hawk reduces by 40% blended = **₹38L (~$46K) savings**. S.M.A.R.T. Hawk charges **₹9L (~$10.8K)** = 24% of savings. **Payback < 4 months.**
 
-| Segment | Customer savings/yr | Hawkeye ACV | Payback |
+| Segment | Customer savings/yr | S.M.A.R.T. Hawk ACV | Payback |
 |---|---|---|---|
 | Tier 2 mid-pharma (3 sites) | ~₹40-60L | ₹10-15L ($12-18K) | 3-4 mo |
 | Tier 3 CDMO (2-3 sites) | ~₹30-45L | ₹8-12L ($10-14K) | 3-4 mo |
@@ -156,7 +156,7 @@ gantt
 
 | Round | Target close | Size | Use of funds | Milestones at close |
 |---|---|---|---|---|
-| **Angel / pre-seed (this round)** | Q2 2026 | $1.2–1.5M | Team build, product hardening, first 25-35 customers, Hawkeye-tuned AI in production | 0 customers today |
+| **Angel / pre-seed (this round)** | Q2 2026 | $1.2–1.5M | Team build, product hardening, first 25-35 customers, S.M.A.R.T. Hawk-tuned AI in production | 0 customers today |
 | **Seed** | M18 (Q4 2027) | $3–5M | Scale GTM, ship Food & Beverage pack, first non-pharma customers, SOC 2 | $250-400K ARR run-rate, 25-35 customers, 1 reference deployment |
 | **Series A** | M30-36 | $10–15M | US/EU expansion, second vertical at scale, enterprise tier, network play | $1.0-1.5M ARR run-rate, 100-150 customers, multi-vertical proof, 110%+ NDR |
 

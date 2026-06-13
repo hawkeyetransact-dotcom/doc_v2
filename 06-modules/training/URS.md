@@ -3,7 +3,7 @@
 | Field | Value |
 |---|---|
 | Module | Training |
-| Owner | Product (Hawkeye Platform) |
+| Owner | Product (S.M.A.R.T. Hawk Platform) |
 | Status | DRAFT (forward-spec) |
 | Version | 0.1 |
 | Last updated | 2026-06-01 |
@@ -14,7 +14,7 @@
 
 ## 1. Purpose and Scope
 
-**Purpose.** Hawkeye Training is the QMS module for **per-user training records, effectiveness verification, and the training matrix** that maps required training per role/persona. It is the source of truth for "is this person trained on this SOP?" — consumed real-time by Batch Records (step-entry gate) and Audit Management (auditor qualification).
+**Purpose.** S.M.A.R.T. Hawk Training is the QMS module for **per-user training records, effectiveness verification, and the training matrix** that maps required training per role/persona. It is the source of truth for "is this person trained on this SOP?" — consumed real-time by Batch Records (step-entry gate) and Audit Management (auditor qualification).
 
 **In scope:**
 - Training course catalog (linked to SOPs/policies in Doc Control)

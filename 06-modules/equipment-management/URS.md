@@ -3,7 +3,7 @@
 | Field | Value |
 |---|---|
 | Module | Equipment Management |
-| Owner | Product (Hawkeye Platform) |
+| Owner | Product (S.M.A.R.T. Hawk Platform) |
 | Status | DRAFT (forward-spec) |
 | Version | 0.1 |
 | Last updated | 2026-06-01 |
@@ -14,7 +14,7 @@
 
 ## 1. Purpose and Scope
 
-**Purpose.** Hawkeye Equipment Management is the QMS module for **equipment master records, calibration scheduling, maintenance records, and live status tracking** across manufacturing + lab assets. Calibration status is consumed real-time by Batch Records (out-of-cal blocks batch step execution).
+**Purpose.** S.M.A.R.T. Hawk Equipment Management is the QMS module for **equipment master records, calibration scheduling, maintenance records, and live status tracking** across manufacturing + lab assets. Calibration status is consumed real-time by Batch Records (out-of-cal blocks batch step execution).
 
 **In scope:**
 - Equipment master (specs, location, type, manufacturer, serial #, qualification status)
@@ -108,7 +108,7 @@
 | URS-B-002 | A **Calibration Schedule Optimizer** SHALL suggest cadence adjustments based on actual drift history per instance (longer for stable, shorter for drifty). | Cost optimization without compliance risk | SHOULD | ⏳ planned |
 | URS-B-003 | Equipment status SHALL be **batch-aware** — system SHALL surface "N batches in flight using this equipment" before scheduling cal or maintenance to minimize disruption. | Operational coordination | MUST | ⏳ planned |
 | URS-B-004 | Calibration impact analysis SHALL be **automated** — when a cal fails as-found, the system SHALL produce the impacted-batch list in < 5 sec (today: hours of manual review). | Inspector-ready, recall-ready | MUST | ⏳ planned |
-| URS-B-005 | Hawkeye SHALL bundle IoT sensor data ingest (planned vertical pack) for live equipment telemetry feeding both calibration drift detection AND batch real-time-release. | Future-proof for Industry 4.0 pharma | SHOULD | ⏳ planned (vertical pack) |
+| URS-B-005 | S.M.A.R.T. Hawk SHALL bundle IoT sensor data ingest (planned vertical pack) for live equipment telemetry feeding both calibration drift detection AND batch real-time-release. | Future-proof for Industry 4.0 pharma | SHOULD | ⏳ planned (vertical pack) |
 
 ---
 

@@ -106,10 +106,10 @@ flowchart TB
 
 | IP type | Approach |
 |---|---|
-| **Trademarks** | Register "Hawkeye" in India (filed); USA + EU at first revenue or first angel close (whichever first) |
+| **Trademarks** | Register "S.M.A.R.T. Hawk" in India (filed); USA + EU at first revenue or first angel close (whichever first) |
 | **Patents** | Generally not pursuing patent protection (SaaS + AI patents are weak + expensive). Defensive publications instead. |
 | **Trade secrets** | Customer corpus + fine-tuned model weights = trade secrets; protected via employee + customer agreements |
-| **Copyright** | Hawkeye code copyright the company; founders' contributions assigned via founders' agreement |
+| **Copyright** | S.M.A.R.T. Hawk code copyright the company; founders' contributions assigned via founders' agreement |
 | **Open source compliance** | Quarterly review of npm dependencies + license categories (MIT/Apache OK; GPL flagged) |
 
 ## 9. Data protection compliance

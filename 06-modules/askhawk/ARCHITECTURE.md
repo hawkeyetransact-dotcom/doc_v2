@@ -373,7 +373,7 @@ Cross-reference [DESIGN §4](DESIGN.md#4-state-machines).
 
 1. **Active-learning auto-tuning** (URS-B-005) — scaffolded; auto-variant proposal + A/B not wired; humans propose today. Roadmap Q1 2027.
 2. **Inspector surface** (URS-B-009) — read-only AskHawk persona for regulator visits not built. Roadmap Q2 2027.
-3. **Fine-tuned Hawkeye model** (URS-B-010) — roadmap M12+; PoC data collection ongoing.
+3. **Fine-tuned S.M.A.R.T. Hawk model** (URS-B-010) — roadmap M12+; PoC data collection ongoing.
 4. **DOCS-DRIFT banners on 3 legacy docs** in `backend/docs/askhawk/` predate Phase 3; cleanup pending.
 5. **pgvector migration** — Mongo cosine works to ~100K chunks; pgvector scaffolded but not in prod.
 6. **Cohere rerank-3** — not yet wired; planned for re-ranking top-K (M12).
@@ -426,7 +426,7 @@ Cross-reference [DESIGN §4](DESIGN.md#4-state-machines).
 
 ## 12. The Five-Pillar Walkthrough
 
-AskHawk is **the cross-cutting expression** of Hawkeye's universal 5-pillar pipeline (**COLLECT → PROCESS → VALIDATE → REPORT → SEAL**). Unlike a regulated workflow module (Audit, CAPA, Deviation) whose pillars walk a single business object end-to-end, AskHawk's pillars describe the **AI request-response cycle** that every other module borrows. This section narrates how an AskHawk turn (Q&A or wizard) walks the pillars, maps each pillar to the actual code, and notes the cross-module fan-out — because AskHawk both consumes content from every module's KB and spawns writes into every module's service layer. The same pillar shape is the canonical pattern; see MASTER-REFERENCE.
+AskHawk is **the cross-cutting expression** of S.M.A.R.T. Hawk's universal 5-pillar pipeline (**SOURCE → MODEL → ASSESS → REPORT → TRACE**). Unlike a regulated workflow module (Audit, CAPA, Deviation) whose pillars walk a single business object end-to-end, AskHawk's pillars describe the **AI request-response cycle** that every other module borrows. This section narrates how an AskHawk turn (Q&A or wizard) walks the pillars, maps each pillar to the actual code, and notes the cross-module fan-out — because AskHawk both consumes content from every module's KB and spawns writes into every module's service layer. The same pillar shape is the canonical pattern; see MASTER-REFERENCE.
 
 ### 12.1 Narrative
 

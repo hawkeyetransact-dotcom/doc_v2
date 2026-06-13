@@ -3,7 +3,7 @@
 | Field | Value |
 |---|---|
 | Module | Supplier Prequalification |
-| Owner | Product (Hawkeye Platform) |
+| Owner | Product (S.M.A.R.T. Hawk Platform) |
 | Status | DRAFT |
 | Version | 0.1 |
 | Last updated | 2026-06-01 |
@@ -14,7 +14,7 @@
 
 ## 1. Purpose and Scope
 
-**Purpose.** Hawkeye Supplier Prequalification onboards, evaluates, scores, and maintains the **Qualified Supplier List (QSL)** before any supplier can participate in audits, batches, or marketplace listings. It is the gatekeeper module — nothing flows downstream from an unqualified supplier.
+**Purpose.** S.M.A.R.T. Hawk Supplier Prequalification onboards, evaluates, scores, and maintains the **Qualified Supplier List (QSL)** before any supplier can participate in audits, batches, or marketplace listings. It is the gatekeeper module — nothing flows downstream from an unqualified supplier.
 
 **In scope:**
 - Supplier nomination + initiation
@@ -30,7 +30,7 @@
 - Supplier audits (post-qualification) → Audit Management module
 - Supplier marketplace listings → Marketplace module
 - CAPA execution for supplier issues → CAPA module
-- Procurement / PO workflow → not in Hawkeye scope (read-only via ERP integration future)
+- Procurement / PO workflow → not in S.M.A.R.T. Hawk scope (read-only via ERP integration future)
 - Quality agreement document storage → Document Control (HawkVault)
 
 ---

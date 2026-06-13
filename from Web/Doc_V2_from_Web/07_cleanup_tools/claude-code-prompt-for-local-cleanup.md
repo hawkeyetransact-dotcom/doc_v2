@@ -1,8 +1,8 @@
-# Hawkeye docs cleanup — task for Claude Code
+# S.M.A.R.T. Hawk docs cleanup — task for Claude Code
 
 ## Context
 
-I have a documentation folder at `C:\Users\debab\Code - Hawkeye\hawkeye-clean\backend\docs\` that has accumulated artifacts from many sessions. There are folder-numbering collisions, scattered fundraising/strategy materials across three folders, and likely duplicates from when files were saved in multiple places.
+I have a documentation folder at `C:\Users\debab\Code - S.M.A.R.T. Hawk\hawkeye-clean\backend\docs\` that has accumulated artifacts from many sessions. There are folder-numbering collisions, scattered fundraising/strategy materials across three folders, and likely duplicates from when files were saved in multiple places.
 
 I also have a zip of canonical artifacts produced in a recent Claude.ai chat that needs to be merged in **without creating duplicates**. The zip is at `C:\Users\debab\Downloads\hawkeye-chat-artifacts.zip` (or wherever you place it — confirm the path with me before starting).
 

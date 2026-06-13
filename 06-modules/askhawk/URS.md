@@ -3,7 +3,7 @@
 | Field | Value |
 |---|---|
 | Module | AskHawk (cross-cutting AI co-worker) |
-| Owner | Product (Hawkeye Platform) + AI Lead |
+| Owner | Product (S.M.A.R.T. Hawk Platform) + AI Lead |
 | Status | **LIVE — all 3 phases shipped May 2026** |
 | Version | 1.0 |
 | Last updated | 2026-06-01 |
@@ -14,7 +14,7 @@
 
 ## 1. Purpose and Scope
 
-**Purpose.** AskHawk is Hawkeye's **cross-cutting AI co-worker** — a persona-aware, grounded, cited, confidence-scored, audit-trailed assistant that:
+**Purpose.** AskHawk is S.M.A.R.T. Hawk's **cross-cutting AI co-worker** — a persona-aware, grounded, cited, confidence-scored, audit-trailed assistant that:
 - **Answers** regulatory questions (Phase 1)
 - **Surfaces** SOPs + workflow playbooks (Phase 2)
 - **Executes** approved multi-step actions across modules (Phase 3: App Wizard)
@@ -41,7 +41,7 @@ It is **not a chatbot retrofit**. It is native to the platform — every output 
 
 ## 2. Stakeholders and Personas
 
-AskHawk serves **all Hawkeye platform users** — persona is a first-class input to retrieval + answer generation.
+AskHawk serves **all S.M.A.R.T. Hawk platform users** — persona is a first-class input to retrieval + answer generation.
 
 | Persona | Role | Typical asks | Why persona matters |
 |---|---|---|---|
@@ -148,11 +148,11 @@ AskHawk serves **all Hawkeye platform users** — persona is a first-class input
 | URS-B-003 | **Persona-aware playbooks** — same question yields different responses per persona; not just retrieval ranking — actual content + tone differs. | Co-worker UX moat | MUST | ✅ live (38 playbooks × 9 personas) |
 | URS-B-004 | **App Wizard with single-e-sig multi-step execution** — buyer says "Create audit for Sanpras with Maria on Aug 15"; plan generated; single e-sig covers create + assign + notify. | Co-worker UX, not chatbot retrofit | MUST | ✅ live (Phase 3) |
 | URS-B-005 | **Active-learning loop** — every USER_EDITED / REJECTED disposition feeds prompt-variant A/B testing (human-approved promotion). | Compounding moat | SHOULD | ⚠️ Scaffolded; auto-tuning planned Q1 2027 |
-| URS-B-006 | **Cross-tenant regulatory canon** in `__platform__` scope — all tenants benefit from Hawkeye's curated 11 standards × 32 clauses; tenant content stays private. | Network value | MUST | ✅ live |
+| URS-B-006 | **Cross-tenant regulatory canon** in `__platform__` scope — all tenants benefit from S.M.A.R.T. Hawk's curated 11 standards × 32 clauses; tenant content stays private. | Network value | MUST | ✅ live |
 | URS-B-007 | **Multi-LLM gateway with cost-routing + skeleton fallback** — auto-routes Claude / GPT-4o / Gemini by task; all providers down → deterministic fallback. | Reliability differentiator | MUST | ✅ live |
 | URS-B-008 | **Cross-module AI delegation** — every module's AI feature (observation drafter, supplier intel, CAPA RCA, deviation classifier) consumes AskHawk's `groundedGenerationService` — one trusted pipeline, many features. | Engineering moat (no per-module AI debt) | MUST | ✅ live |
 | URS-B-009 | **AskHawk for inspectors** — read-only AskHawk surface that lets a regulator ask "show me every AI-generated observation in the last 12 months by model version" — cross-module audit-trail query. | Inspector-readiness | SHOULD | ⏳ Plan (Q2 2027) |
-| URS-B-010 | **Fine-tuned Hawkeye model on domain corpus** — long-term, fine-tune Llama-3 on PoC-collected accepted/edited drafts → lower cost + better domain accuracy for low-stakes tasks. | Build-vs-buy moat | COULD | 🚫 Roadmap M12+ (per AI-ARCHITECTURE.md §7) |
+| URS-B-010 | **Fine-tuned S.M.A.R.T. Hawk model on domain corpus** — long-term, fine-tune Llama-3 on PoC-collected accepted/edited drafts → lower cost + better domain accuracy for low-stakes tasks. | Build-vs-buy moat | COULD | 🚫 Roadmap M12+ (per AI-ARCHITECTURE.md §7) |
 
 ---
 

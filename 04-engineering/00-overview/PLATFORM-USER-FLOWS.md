@@ -75,7 +75,7 @@ sequenceDiagram
 
 ### What she'd say if asked
 
-> *"Pre-Hawkeye my Q2 audit program was 47 spreadsheet rows and 800 Slack messages. Now it's a dashboard, three e-sigs, and a CAPA loop that closes itself."*
+> *"Pre-S.M.A.R.T. Hawk my Q2 audit program was 47 spreadsheet rows and 800 Slack messages. Now it's a dashboard, three e-sigs, and a CAPA loop that closes itself."*
 
 ---
 
@@ -205,7 +205,7 @@ sequenceDiagram
 
 ### What she'd say if asked
 
-> *"Pre-Hawkeye my inbox was 800 messages a week — auditors asking the same questions in different formats. Now it's a clean inbox, structured questionnaires, my team owns their sections, and I sign acceptance once."*
+> *"Pre-S.M.A.R.T. Hawk my inbox was 800 messages a week — auditors asking the same questions in different formats. Now it's a clean inbox, structured questionnaires, my team owns their sections, and I sign acceptance once."*
 
 ---
 
@@ -221,7 +221,7 @@ sequenceDiagram
 sequenceDiagram
     actor Amit
     participant Email as Email notification
-    participant App as Hawkeye
+    participant App as S.M.A.R.T. Hawk
     participant Sec as Section view
     participant Upload as File upload
 
@@ -283,7 +283,7 @@ flowchart LR
 
 > 🚫 **For the practitioner reading this — what you won't get:**
 > - **Mobile-first experience** — desktop-first today; mobile companion planned post-Series A
-> - **Voice-driven workflows** — no Alexa-style "Hey Hawkeye"
+> - **Voice-driven workflows** — no Alexa-style "Hey S.M.A.R.T. Hawk"
 > - **Real-time collaborative editing** — like Google Docs; no, today it's lock-and-edit
 > - **Custom AI per tenant** — tenants share the platform AI; no per-tenant fine-tunes
 > - **Customizable dashboards** — not yet; planned Q1 2027

@@ -208,7 +208,7 @@ The canonical demo lives at `00-strategy-and-pitch/demo-assets/07-pharma-demo-sc
 
 ## 10. Pricing positioning
 
-| Anchor | Hawkeye | Veeva / MasterControl |
+| Anchor | S.M.A.R.T. Hawk | Veeva / MasterControl |
 |---|---|---|
 | Annual contract value | $4K–18K (per-segment) | $30K floor → $300K+ at scale |
 | Implementation cost | $0–5K | $50K-500K consultant-driven |

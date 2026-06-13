@@ -45,7 +45,7 @@ If you forget the sentence, the workflow still works — Claude will figure it o
 
 ### When you give an instruction to mobile Claude
 
-Open with: *"Per the Hawkeye PROJECT-STATE.md at `https://raw.githubusercontent.com/hawkeyetransact-dotcom/doc_v2/main/PROJECT-STATE.md` — please read that first. Then [your instruction]."*
+Open with: *"Per the S.M.A.R.T. Hawk PROJECT-STATE.md at `https://raw.githubusercontent.com/hawkeyetransact-dotcom/doc_v2/main/PROJECT-STATE.md` — please read that first. Then [your instruction]."*
 
 Then ask Claude to do **planning / drafting / ideation** — NOT execution. Examples that work well on mobile:
 
@@ -77,7 +77,7 @@ Then ask Claude to do **planning / drafting / ideation** — NOT execution. Exam
 
 ### Before you start
 
-1. Open Claude Code CLI in `c:/Users/debab/Code - Hawkeye/hawkeye-clean/`
+1. Open Claude Code CLI in `c:/Users/debab/Code - S.M.A.R.T. Hawk/hawkeye-clean/`
 2. Either:
    - **Fresh chat:** start with *"Per PROJECT-STATE.md, [your instruction]."*
    - **Resume work from a mobile session:** *"Per PROJECT-STATE.md, here's what I planned with mobile Claude this morning: [paste]. Please execute."*
@@ -107,7 +107,7 @@ A good closing instruction:
 
 ## The git push routine (after each desktop session)
 
-Run from `c:/Users/debab/Code - Hawkeye/hawkeye-clean/Doc_V2`:
+Run from `c:/Users/debab/Code - S.M.A.R.T. Hawk/hawkeye-clean/Doc_V2`:
 
 ```bash
 git add .                                  # stage all changes (customer-account folders are gitignored)

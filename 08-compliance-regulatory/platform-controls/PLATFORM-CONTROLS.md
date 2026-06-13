@@ -1,17 +1,17 @@
-# Platform Controls — How Hawkeye Implements Each Regulation
+# Platform Controls — How S.M.A.R.T. Hawk Implements Each Regulation
 
 | Field | Value |
 |---|---|
 | Owner | Compliance + Engineering |
 | Status | v1.0 |
 | Last updated | 2026-05-31 |
-| Purpose | Cross-regulation traceability — answer "where in Hawkeye does X get satisfied?" |
+| Purpose | Cross-regulation traceability — answer "where in S.M.A.R.T. Hawk does X get satisfied?" |
 
 ---
 
 ## 1. The control matrix
 
-Every regulatory requirement is implemented by one or more Hawkeye platform controls. This document is the **single source of truth** for "where does X get satisfied?"
+Every regulatory requirement is implemented by one or more S.M.A.R.T. Hawk platform controls. This document is the **single source of truth** for "where does X get satisfied?"
 
 ```mermaid
 flowchart TB
@@ -54,7 +54,7 @@ flowchart TB
 | **C3** | **State Machine** (forward-only + gate enforcement + reason for revert) | `auditPhaseService.canTransition()`; per-module service layer | Part 11 §11.10(f); ICH Q7 §13.12; ISO 9001 §8.5 |
 | **C4** | **RBAC + Tenant Isolation** (4-layer middleware + service guards + query helpers) | `authenticate` + `resolveTenant` + `permit` middleware; `canUserAccessAudit` etc. | Part 11 §11.10(d)(g)(h); Annex 11 §12; ISO 9001 §5.3 |
 | **C5** | **Document Control** (version + review + approve + retention) | Doc Control module | EU GMP Ch 4; Annex 11 §10; ISO 9001 §7.5; ISO 13485 §4.2.4 |
-| **C6** | **Validation Package** (per-tenant IQ/OQ/PQ + validation summary) | Customer-led per tenant; Hawkeye-provided templates | Part 11 §11.10(a); Annex 11 §4; GAMP 5 |
+| **C6** | **Validation Package** (per-tenant IQ/OQ/PQ + validation summary) | Customer-led per tenant; S.M.A.R.T. Hawk-provided templates | Part 11 §11.10(a); Annex 11 §4; GAMP 5 |
 | **C7** | **Risk Management** (FMEA + risk register + risk-weighted decisions) | Risk module | ICH Q9; ISO 9001 §6.1; ISO 31000 |
 | **C8** | **Change Control** (formal workflow + impact assessment + approval) | Change Control module | ICH Q7 §13; ISO 9001 §6.3, §8.5.6; EU Annex 11 §10 |
 | **C9** | **CAPA System** (intake + investigation + RCA + action + effectiveness + closure) | CAPA module | 21 CFR 820.100; ISO 9001 §10.2; ICH Q10 §3.2.2 |
@@ -145,17 +145,17 @@ flowchart LR
 
 ## 6. Customer-side controls (out of our scope, into theirs)
 
-Some regulatory requirements are **customer-policy-driven** even though Hawkeye provides the platform:
+Some regulatory requirements are **customer-policy-driven** even though S.M.A.R.T. Hawk provides the platform:
 
-| Customer responsibility | Hawkeye supports via |
+| Customer responsibility | S.M.A.R.T. Hawk supports via |
 |---|---|
 | Closed-system attestation (Part 11 §11.30) | Per-tenant declaration in config |
 | Acceptable Use Policy + password policy | Tenant-configurable settings |
 | Periodic password rotation | Per-tenant policy enforcement (planned) |
 | ID verification for new users beyond email | Customer's onboarding process |
 | Specific retention durations per record type | Per-tenant retention config (planned) |
-| Validation execution (IQ/OQ/PQ) per the customer's QMS | Hawkeye-provided templates |
-| Customer-side staff training on Hawkeye use | Training materials provided |
+| Validation execution (IQ/OQ/PQ) per the customer's QMS | S.M.A.R.T. Hawk-provided templates |
+| Customer-side staff training on S.M.A.R.T. Hawk use | Training materials provided |
 | Annual self-audit + management review of QMS | MRM module supports the process |
 
 ## 7. The audit-readiness "1-page answer"

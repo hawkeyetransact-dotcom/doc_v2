@@ -1,6 +1,6 @@
 # Frontend Architecture
 
-## Hawkeye Next.js Web Application
+## S.M.A.R.T. Hawk Next.js Web Application
 
 | Field | Value |
 |---|---|
@@ -68,7 +68,7 @@ frontend/
 
 ## 3. Routing model — App Router with route groups
 
-Hawkeye uses the **Next.js 15 App Router** (not the legacy Pages Router) with route groups for major sections:
+S.M.A.R.T. Hawk uses the **Next.js 15 App Router** (not the legacy Pages Router) with route groups for major sections:
 
 ```mermaid
 flowchart TB
@@ -112,7 +112,7 @@ flowchart TB
 
 ## 4. Rendering model — Server Components by default
 
-Hawkeye leverages **React 18 + Next.js 15 Server Components** as the default:
+S.M.A.R.T. Hawk leverages **React 18 + Next.js 15 Server Components** as the default:
 
 | Component type | When to use | How to mark |
 |---|---|---|
@@ -130,7 +130,7 @@ Hawkeye leverages **React 18 + Next.js 15 Server Components** as the default:
 
 ## 5. State management — React Context, no Redux
 
-Hawkeye uses **React Context** for client state, deliberately avoiding Redux/Zustand:
+S.M.A.R.T. Hawk uses **React Context** for client state, deliberately avoiding Redux/Zustand:
 
 | Context | Purpose | Hook |
 |---|---|---|
@@ -184,7 +184,7 @@ No tRPC, no codegen — manual axios + TypeScript types per domain.
 
 ## 7. Authentication flow
 
-Hawkeye uses **custom JWT + httpOnly cookie**, not NextAuth, for control over the auth ceremony:
+S.M.A.R.T. Hawk uses **custom JWT + httpOnly cookie**, not NextAuth, for control over the auth ceremony:
 
 ```mermaid
 sequenceDiagram
@@ -329,7 +329,7 @@ Detail: [ACCESSIBILITY.md](../../05-design/accessibility/ACCESSIBILITY.md).
 |---|---|
 | Local dev | `npm run dev` on port 3000 |
 | Type check | `tsc --noEmit` (CI on every PR) |
-| Lint | ESLint + custom Hawkeye rules |
+| Lint | ESLint + custom S.M.A.R.T. Hawk rules |
 | Build | `npm run build` (Next.js production build) |
 | Hosting | Vercel (Next.js Edge + serverless functions) |
 | CI | GitHub Actions: lint → type-check → unit tests → e2e (Playwright on key flows) |

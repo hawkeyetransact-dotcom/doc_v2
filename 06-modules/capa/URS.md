@@ -3,7 +3,7 @@
 | Field | Value |
 |---|---|
 | Module | CAPA |
-| Owner | Product (Hawkeye Platform) |
+| Owner | Product (S.M.A.R.T. Hawk Platform) |
 | Status | DRAFT (reverse-engineered from current code + canon) |
 | Version | 0.1 |
 | Last updated | 2026-06-01 |
@@ -14,7 +14,7 @@
 
 ## 1. Purpose and Scope
 
-**Purpose.** Hawkeye CAPA manages the end-to-end **corrective and preventive action lifecycle** — from initial intake (triggered by an audit observation, deviation, complaint, change-control review, or internal QMS review) through triage, investigation, root-cause analysis, action planning, execution, effectiveness verification, and signed closure. Every regulated action carries 21 CFR Part 11 e-signature + immutable audit trail.
+**Purpose.** S.M.A.R.T. Hawk CAPA manages the end-to-end **corrective and preventive action lifecycle** — from initial intake (triggered by an audit observation, deviation, complaint, change-control review, or internal QMS review) through triage, investigation, root-cause analysis, action planning, execution, effectiveness verification, and signed closure. Every regulated action carries 21 CFR Part 11 e-signature + immutable audit trail.
 
 **In scope:**
 - CAPA intake from all upstream trigger types (Audit, Deviation, Complaint, Change Control, Management Review)

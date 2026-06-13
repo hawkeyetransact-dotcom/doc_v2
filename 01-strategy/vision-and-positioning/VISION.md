@@ -133,16 +133,16 @@ flowchart LR
     CMMC --> SPINE
 ```
 
-Standards bodies are **deliberately harmonizing** quality, risk, and cybersecurity expectations onto a common ISO 9001 spine with vertical clause-packs on top. That is precisely the engine-plus-config architecture Hawkeye already has. **We're rowing with this current, not against it.**
+Standards bodies are **deliberately harmonizing** quality, risk, and cybersecurity expectations onto a common ISO 9001 spine with vertical clause-packs on top. That is precisely the engine-plus-config architecture S.M.A.R.T. Hawk already has. **We're rowing with this current, not against it.**
 
 ### 3d. The reframe that makes the strategy coherent
 
-Hawkeye is:
+S.M.A.R.T. Hawk is:
 - **Not a pharma tool** (though pharma is our beachhead)
 - **Not a horizontal platform** (the trap we name)
 - **Not Veeva-cheaper** (different game; Veeva owns vertical depth and we don't fight there)
 
-Hawkeye is the **regulated-supply-chain compliance engine** whose architecture is industry-agnostic, deployed beachhead-first and expanded ring by ring.
+S.M.A.R.T. Hawk is the **regulated-supply-chain compliance engine** whose architecture is industry-agnostic, deployed beachhead-first and expanded ring by ring.
 
 Competition redefined: not Veeva (different game), but (1) the vertical incumbent in each new market we enter, and (2) the horizontal platforms that could claim the cross-industry primitive but lack regulated-domain depth + reproducible AI.
 
@@ -150,9 +150,9 @@ Competition redefined: not Veeva (different game), but (1) the vertical incumben
 
 ## 4. How We Do It (the Architecture in Brief)
 
-### 4a. The Hawkeye 5-Layer Architecture
+### 4a. The S.M.A.R.T. Hawk 5-Layer Architecture
 
-Hawkeye is built as **five layers**, with **Trust · Security · Compliance as the foundation** (Layer 1) on which every higher layer depends. This ordering is deliberate: in a regulated industry, trust is not a feature — it is the substrate.
+S.M.A.R.T. Hawk is built as **five layers**, with **Trust · Security · Compliance as the foundation** (Layer 1) on which every higher layer depends. This ordering is deliberate: in a regulated industry, trust is not a feature — it is the substrate.
 
 ```mermaid
 flowchart TB
@@ -219,7 +219,7 @@ flowchart LR
 
 | # | Value | Quantified outcome | Validated by |
 |---|---|---|---|
-| 1 | **40% audit-prep cost reduction** | Payback < 4 months · ~₹38L savings on ₹95L baseline | Hawkeye PoC measurement on real audits |
+| 1 | **40% audit-prep cost reduction** | Payback < 4 months · ~₹38L savings on ₹95L baseline | S.M.A.R.T. Hawk PoC measurement on real audits |
 | 2 | **GAMP 5 Category 4 configured product** | ~60% less validation effort vs Cat 5 bespoke | ISPE *GAMP 5 Guide, 2nd Edition* (Jul 2022) · industry consultant consensus |
 | 3 | **Part 11 + Annex 11 + ALCOA+ by design** | 100% e-signature attribute coverage · all 9 ALCOA+ attributes designed-in · tamper-evident audit trail | 21 CFR §11.10 · §11.50 · §11.200 · EU GMP Annex 11 (2011 + 2025 draft) · MHRA 2018 · WHO TRS 1033 (2021) |
 | 4 | **Trust-First Layer 1 architecture** | Per-tenant isolation · zero model-training on customer data · DPDP/GDPR · IN/US/EU residency | India DPDP Act 2023 (deadline 13 May 2027) · IBM 2025 healthcare avg breach $7.42M |
@@ -250,7 +250,7 @@ flowchart LR
 
 ## 5. Positioning Statement (the one-paragraph version)
 
-> ℹ️ **For** regulated-supply-chain quality teams who today juggle siloed EQMS tools, email-based CAPAs, and audit-prep chaos, **Hawkeye is** an AI-native, industry-agnostic compliance engine **that** reduces audit-prep time by 50-60% and turns every regulator-facing artifact into a cited, e-signed, reproducible record. **Unlike** Veeva (premium pharma-only at $30K+/yr floor) or generic GRC tools (no domain depth), Hawkeye is built around the GxP "batch, audit, recall, validated record" motion and prices to win SMB pharma and the cross-industry buyer.
+> ℹ️ **For** regulated-supply-chain quality teams who today juggle siloed EQMS tools, email-based CAPAs, and audit-prep chaos, **S.M.A.R.T. Hawk is** an AI-native, industry-agnostic compliance engine **that** reduces audit-prep time by 50-60% and turns every regulator-facing artifact into a cited, e-signed, reproducible record. **Unlike** Veeva (premium pharma-only at $30K+/yr floor) or generic GRC tools (no domain depth), S.M.A.R.T. Hawk is built around the GxP "batch, audit, recall, validated record" motion and prices to win SMB pharma and the cross-industry buyer.
 
 ---
 
@@ -265,7 +265,7 @@ flowchart LR
 
 ### 6b. Not yet (the honest part)
 
-> ⚠️ **Pre-customer today.** 2 design-partner LOIs (Sanpras + Novex) in discovery; first paid customer pending. No SOC 2 Type 1 yet (target M12). Hawkeye-tuned Llama-3 in production planned M12. Remote-audit cockpit UI deferred. 7 URS open questions per module documented. Marketplace v2 is plan-stage. None of this is hidden — see [PRODUCT-OVERVIEW.md §3](../../03-product/00-overview/PRODUCT-OVERVIEW.md) and per-module URS.
+> ⚠️ **Pre-customer today.** 2 design-partner LOIs (Sanpras + Novex) in discovery; first paid customer pending. No SOC 2 Type 1 yet (target M12). S.M.A.R.T. Hawk-tuned Llama-3 in production planned M12. Remote-audit cockpit UI deferred. 7 URS open questions per module documented. Marketplace v2 is plan-stage. None of this is hidden — see [PRODUCT-OVERVIEW.md §3](../../03-product/00-overview/PRODUCT-OVERVIEW.md) and per-module URS.
 
 ---
 
@@ -294,7 +294,7 @@ Investors who want polished-pretend should skip us. Investors who want truth-wit
 
 ## See Also
 
-- [HAWKEYE-STORY.md](../../HAWKEYE-STORY.md) — the master narrative (this doc is one section of it)
+- [SMART-HAWK-STORY.md](../../SMART-HAWK-STORY.md) — the master narrative (this doc is one section of it)
 - [MARKET-ANALYSIS.md](../market-analysis/MARKET-ANALYSIS.md) — per-sector + TAM math
 - [GTM-PLAN.md](../gtm-strategy/GTM-PLAN.md) — how we win each ring
 - [PRICING.md](../pricing-and-packaging/PRICING.md) — value-share math

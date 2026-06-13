@@ -3,7 +3,7 @@
 | Field | Value |
 |---|---|
 | Module | Marketplace (v2 — two-sided: auditors + suppliers) |
-| Owner | Product (Hawkeye Platform) |
+| Owner | Product (S.M.A.R.T. Hawk Platform) |
 | Status | **PLAN STAGE** — design + partial backend scaffolding; most features TBD |
 | Version | 0.1 |
 | Last updated | 2026-06-01 |
@@ -16,10 +16,10 @@
 
 ## 1. Purpose and Scope
 
-**Purpose.** Hawkeye Marketplace is a **two-sided platform** connecting:
+**Purpose.** S.M.A.R.T. Hawk Marketplace is a **two-sided platform** connecting:
 - **Buyers** seeking qualified **auditors** (engagement-based; pay-per-audit) and/or **suppliers** (directory-based discovery)
 - **Auditors** offering services (listing fee or transaction fee on engagement)
-- **Suppliers** (prequalified via Hawkeye) appearing in a discoverable directory (free listing; premium tier planned)
+- **Suppliers** (prequalified via S.M.A.R.T. Hawk) appearing in a discoverable directory (free listing; premium tier planned)
 
 **In scope (planned):**
 - Auditor side: profile, credential verification, availability, listings, booking, reviews
@@ -136,7 +136,7 @@
 | URS-B-004 | **Cross-Buyer Audit Sharing (with consent)** SHALL allow one buyer's audit report to be shared with another buyer (supplier-consented + revenue-shared) — reduces redundant audits. | Largest network economics lever | COULD (post-Series-A) | 🚫 Long-term plan |
 | URS-B-005 | **Premium Supplier Discovery Tier** SHALL offer suppliers paid visibility boost + analytics dashboard. | Revenue stream | COULD | 🚫 Long-term plan |
 | URS-B-006 | **Auditor Reputation Score** SHALL aggregate review ratings + on-time delivery + report quality (auditorCoach metrics from Audit module) into a public score. | Differentiator over star-ratings only | SHOULD | ⏳ Plan |
-| URS-B-007 | **Two-sided cold-start solution** — Hawkeye SHALL seed the marketplace with: (a) auditors recruited from PoC partners; (b) suppliers auto-populated from Supplier Prequalification module qualified lists (opt-in). | Two-sided liquidity problem | MUST | ⏳ Plan |
+| URS-B-007 | **Two-sided cold-start solution** — S.M.A.R.T. Hawk SHALL seed the marketplace with: (a) auditors recruited from PoC partners; (b) suppliers auto-populated from Supplier Prequalification module qualified lists (opt-in). | Two-sided liquidity problem | MUST | ⏳ Plan |
 
 ---
 
@@ -187,7 +187,7 @@
 1. **MVP scope** — what's the smallest two-sided live experience that produces a useful demo? (Working hypothesis: 10 auditors + 50 suppliers + basic search + engagement booking)
 2. **Auditor onboarding incentive** — list fee, transaction fee, or free during cold-start?
 3. **Supplier consent model** — opt-in vs opt-out for directory listing? Granularity (which fields public)?
-4. **Cross-buyer audit sharing (URS-B-004)** — revenue split between Hawkeye / original auditor / original buyer / supplier? Legal review needed.
+4. **Cross-buyer audit sharing (URS-B-004)** — revenue split between S.M.A.R.T. Hawk / original auditor / original buyer / supplier? Legal review needed.
 5. **COI declaration depth** — self-declared vs verified (calls to disclose past engagements)?
 6. **Geography expansion order** — start US / EU / India?
 7. **Stripe Connect timing** — payments live at MVP, or post-MVP with manual invoicing?

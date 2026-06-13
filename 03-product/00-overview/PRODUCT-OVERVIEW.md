@@ -8,9 +8,9 @@
 
 ---
 
-## 1. What Hawkeye is, in product terms
+## 1. What S.M.A.R.T. Hawk is, in product terms
 
-Hawkeye is an **AI-native EQMS SaaS for regulated supply chains** — built around supplier audit as the wedge, expanding into the full EQMS suite (deviation, CAPA, change control, doc control, batches, training, risk, complaints, MRM).
+S.M.A.R.T. Hawk is an **AI-native EQMS SaaS for regulated supply chains** — built around supplier audit as the wedge, expanding into the full EQMS suite (deviation, CAPA, change control, doc control, batches, training, risk, complaints, MRM).
 
 ```mermaid
 flowchart TB

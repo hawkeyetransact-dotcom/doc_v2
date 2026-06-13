@@ -3,7 +3,7 @@
 | Field | Value |
 |---|---|
 | Module | Complaint Management |
-| Owner | Product (Hawkeye Platform) |
+| Owner | Product (S.M.A.R.T. Hawk Platform) |
 | Status | DRAFT (reverse-engineered from current code + planned wave-3 AI) |
 | Version | 0.1 |
 | Last updated | 2026-06-01 |
@@ -14,7 +14,7 @@
 
 ## 1. Purpose and Scope
 
-**Purpose.** Hawkeye Complaint Management is the **customer complaint lifecycle module** — intake from any channel (email, phone, web form, supplier report), structured triage (reportable vs non-reportable), investigation, resolution, and explicit cross-linkage to CAPA and Deviation modules when systemic issues are identified. Designed to meet 21 CFR 820.198 (medical device complaint handling) and equivalent ICH Q10 / EU GMP Ch.8 requirements.
+**Purpose.** S.M.A.R.T. Hawk Complaint Management is the **customer complaint lifecycle module** — intake from any channel (email, phone, web form, supplier report), structured triage (reportable vs non-reportable), investigation, resolution, and explicit cross-linkage to CAPA and Deviation modules when systemic issues are identified. Designed to meet 21 CFR 820.198 (medical device complaint handling) and equivalent ICH Q10 / EU GMP Ch.8 requirements.
 
 **In scope:**
 - Multi-channel intake: customer service portal, email ingestion (planned), phone log entry, web form, supplier-reported complaints
@@ -130,10 +130,10 @@
 
 | ID | Requirement | Strategic rationale | MoSCoW | Current state |
 |---|---|---|---|---|
-| URS-B-001 | Hawkeye SHALL provide **AI similarity finder** that surfaces historically similar complaints at triage time (same product + similar narrative) to enable trending detection. | Trending is regulator-required (820.198(e)) but no tool ships it well | SHOULD | ⏳ Planned wave-3 |
-| URS-B-002 | Hawkeye SHALL provide **AI reportability classifier** that suggests Reportable / Non-reportable / CS-only based on narrative + product class + jurisdiction, with confidence + citations to 21 CFR 803 / EU MDR articles. | Reportability decision is high-risk, often delayed; AI suggestion accelerates triage | SHOULD | ⏳ Planned wave-3 |
-| URS-B-003 | Hawkeye SHALL provide **AI root-cause hint generator** that proposes RCA paths (5-Why starting points) based on complaint narrative + linked batch/lot data. | Investigator accelerator; reduces blank-page paralysis | SHOULD | ⏳ Planned wave-3 |
-| URS-B-004 | Every AI output SHALL be **grounded + cited + confidence-scored + auditor-reviewable** with full reproducibility. | Part-11-grade AI traceability (canonical Hawkeye posture) | MUST | ✅ `groundedGenerationService` foundation |
+| URS-B-001 | S.M.A.R.T. Hawk SHALL provide **AI similarity finder** that surfaces historically similar complaints at triage time (same product + similar narrative) to enable trending detection. | Trending is regulator-required (820.198(e)) but no tool ships it well | SHOULD | ⏳ Planned wave-3 |
+| URS-B-002 | S.M.A.R.T. Hawk SHALL provide **AI reportability classifier** that suggests Reportable / Non-reportable / CS-only based on narrative + product class + jurisdiction, with confidence + citations to 21 CFR 803 / EU MDR articles. | Reportability decision is high-risk, often delayed; AI suggestion accelerates triage | SHOULD | ⏳ Planned wave-3 |
+| URS-B-003 | S.M.A.R.T. Hawk SHALL provide **AI root-cause hint generator** that proposes RCA paths (5-Why starting points) based on complaint narrative + linked batch/lot data. | Investigator accelerator; reduces blank-page paralysis | SHOULD | ⏳ Planned wave-3 |
+| URS-B-004 | Every AI output SHALL be **grounded + cited + confidence-scored + auditor-reviewable** with full reproducibility. | Part-11-grade AI traceability (canonical S.M.A.R.T. Hawk posture) | MUST | ✅ `groundedGenerationService` foundation |
 | URS-B-005 | A **single-pane complaint cockpit** SHALL show intake + triage + investigation + linkages + comms history in one screen (no tab-hopping). | UX wedge vs Veeva/MasterControl multi-screen flows | MUST | ✅ `ComplaintDetail` hub |
 | URS-B-006 | A **trending dashboard** SHALL roll up complaints per product per period with severity weighting; auto-flag emerging trends (>2σ above baseline). | Regulator-required (820.198(e)) and a real differentiator vs spreadsheet trending | SHOULD | ⚠️ Basic trending widget; auto-flag planned |
 | URS-B-007 | System SHALL **cross-link Complaint → Risk reassessment** when complaint reveals new risk or invalidates existing risk control. | Risk module integration; closes the QMS loop | SHOULD | ⚠️ Manual link today; auto-suggest planned |

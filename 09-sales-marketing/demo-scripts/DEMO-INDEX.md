@@ -97,7 +97,7 @@ Before any live demo:
 | "How is data isolated between tenants?" | Open service-layer guard code in /api docs; show tenant filter on every query |
 | "What happens if AI is wrong?" | Show skeleton fallback (low-confidence path); show user-disposition capture (USER_EDITED / USER_REJECTED) |
 | "Can I export everything?" | JSON / CSV / PDF export buttons on every list view |
-| "What if Hawkeye goes out of business?" | Source-code escrow + data export contract clause + multi-year contract option |
+| "What if S.M.A.R.T. Hawk goes out of business?" | Source-code escrow + data export contract clause + multi-year contract option |
 | "Is the AI making decisions OR helping?" | Always assists; user is in control; every AI action has user-disposition + audit trail |
 | "Can I customize the audit template?" | Per-tenant audit-type catalog; templates editable by tenant_admin |
 

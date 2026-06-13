@@ -3,7 +3,7 @@
 | Field | Value |
 |---|---|
 | Module | Audit Management |
-| Owner | Product (Hawkeye Platform) |
+| Owner | Product (S.M.A.R.T. Hawk Platform) |
 | Status | DRAFT (reverse-engineered from current code) |
 | Version | 0.1 |
 | Last updated | 2026-05-31 |
@@ -14,7 +14,7 @@
 
 ## 1. Purpose and Scope
 
-**Purpose.** Hawkeye Audit Management is the platform's primary workflow module for **end-to-end supplier audits** in regulated industries (pharma, med-device, food, automotive, aerospace). It orchestrates the full lifecycle from audit request creation through closure certificate, with 21 CFR Part 11–grade audit trail and e-signature enforcement on every regulated action.
+**Purpose.** S.M.A.R.T. Hawk Audit Management is the platform's primary workflow module for **end-to-end supplier audits** in regulated industries (pharma, med-device, food, automotive, aerospace). It orchestrates the full lifecycle from audit request creation through closure certificate, with 21 CFR Part 11–grade audit trail and e-signature enforcement on every regulated action.
 
 **In scope:**
 - Audit request lifecycle (initiation → surveillance) across 8 phases
@@ -152,12 +152,12 @@ These are the **must-meet** requirements derived from regulatory baselines + tab
 
 ## 4. Part B — Differentiator (White-Space) Requirements
 
-Where Hawkeye **competes and wins** beyond the regulatory baseline. Anchored to the strategic positioning in `00-strategy-and-pitch/MASTER-REFERENCE.pdf`.
+Where S.M.A.R.T. Hawk **competes and wins** beyond the regulatory baseline. Anchored to the strategic positioning in `00-strategy-and-pitch/MASTER-REFERENCE.pdf`.
 
 | ID | Requirement | Strategic rationale | MoSCoW | Current state |
 |---|---|---|---|---|
-| URS-B-001 | Hawkeye SHALL bundle **video session + screen-share + in-tool evidence annotation** in a single remote-audit cockpit (no incumbent does this). | Wedge vs Veeva/MasterControl ($30K+ floor, no remote tooling) and Qualifyze (marketplace, no annotation) | MUST | ⚠️ Foundation present (RemoteSession + recordingAssetId); cockpit UI deferred (gap G7) |
-| URS-B-002 | Hawkeye SHALL provide a **supplier-first portal** with single-inbox audit acceptance + section assignment + CAPA response (only Qualifyze advertises this; ours goes deeper). | Supplier-first is uncontested in incumbents | MUST | ✅ `/supplier/audits/*` pages |
+| URS-B-001 | S.M.A.R.T. Hawk SHALL bundle **video session + screen-share + in-tool evidence annotation** in a single remote-audit cockpit (no incumbent does this). | Wedge vs Veeva/MasterControl ($30K+ floor, no remote tooling) and Qualifyze (marketplace, no annotation) | MUST | ⚠️ Foundation present (RemoteSession + recordingAssetId); cockpit UI deferred (gap G7) |
+| URS-B-002 | S.M.A.R.T. Hawk SHALL provide a **supplier-first portal** with single-inbox audit acceptance + section assignment + CAPA response (only Qualifyze advertises this; ours goes deeper). | Supplier-first is uncontested in incumbents | MUST | ✅ `/supplier/audits/*` pages |
 | URS-B-003 | Every AI output SHALL be **grounded + cited + confidence-scored + auditor-reviewable** with full reproducibility (modelVersion, promptHash, retrievalSet, confidence captured in audit trail). | No competitor offers Part-11-grade AI traceability today | MUST | ✅ groundedGenerationService + AuditTrail.ai.* fields |
 | URS-B-004 | An **active-learning loop** SHALL capture user disposition of every AI draft, compute acceptance rates by feature, and propose prompt/retrieval variants for A/B testing (human-approved). | Compounding moat: every customer improves the model | SHOULD | ⚠️ Scaffolded in `activeLearningLoop.js`; auto-tuning not wired |
 | URS-B-005 | An **auditor coach panel** SHALL privately review draft observations (clarity / regulatory-alignment / evidence-coverage scores) + offer growth-plan trends across audits. | Career-development moat; auditor retention tool | MUST | ✅ AuditorCoachPanel + `/api/ai/coach/auditors/:id/growth-plan` |
@@ -165,7 +165,7 @@ Where Hawkeye **competes and wins** beyond the regulatory baseline. Anchored to 
 | URS-B-007 | A **predictive CAPA-effectiveness** model SHALL flag low-likelihood-of-success CAPA proposals at draft time. | Reduces re-litigation cycles | SHOULD | ⚠️ Exists in Wave 3; not yet wired to observation drafter |
 | URS-B-008 | A **plan-then-execute App Wizard** SHALL allow a buyer to express an audit goal in natural language ("Create an audit for Sanpras with Maria as lead auditor on Aug 15") and the system produces a reviewable plan that creates AuditRequest + assigns auditor + drafts intimation, gated by single e-signature. | Co-worker UX, not just Q&A | MUST | ✅ `wizard.create_audit` tool + `multiStepAgent.js` + WizardStepper UI |
 | URS-B-009 | A **cross-module audit-trail browser** SHALL let a regulator inspect "every change to every record" with field-level diffs in <2 sec across CAPA/Deviation/Change/Doc Control/Audit. | Inspector-readiness as a product feature | MUST | ✅ `GET /api/audit-trail/by-entity` cross-module |
-| URS-B-010 | Hawkeye SHALL price for SMB pharma (<$30K floor) — feature-complete, not stripped — to capture the white-space below Veeva. | Below-Veeva floor is uncontested | MUST | 🚫 Business model (not module feature) |
+| URS-B-010 | S.M.A.R.T. Hawk SHALL price for SMB pharma (<$30K floor) — feature-complete, not stripped — to capture the white-space below Veeva. | Below-Veeva floor is uncontested | MUST | 🚫 Business model (not module feature) |
 | URS-B-011 | An **observation drafter "honest fallback"** SHALL be invoked when retrieval/confidence is insufficient, producing a deterministic skeleton WITH citations rather than a hallucinated draft. | Anti-hallucination posture | MUST | ✅ groundedGenerationService skeleton path |
 | URS-B-012 | All audit-trail entries SHALL be **anchorable to a cryptographic timestamp authority** (TSA) for tamper-evidence beyond DB integrity. | Inspector trust beyond "we promise" | SHOULD | ⚠️ SHA-256 hash on reports exists; TSA integration not wired |
 | URS-B-013 | **Industry-agnostic engine** — same lifecycle/state-machine/RBAC SHALL serve med-device (ISO 13485), food (FSSC 22000), auto (IATF 16949), aerospace (AS9100) audits via configurable templates + clause libraries, not forking the code. | One platform, many vertical packs (canon strategy) | MUST | ✅ Core engine generic; vertical packs via `assessment-types` + clause libraries |

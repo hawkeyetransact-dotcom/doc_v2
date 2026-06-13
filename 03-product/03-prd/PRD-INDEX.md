@@ -11,7 +11,7 @@
 
 ## How PRDs are organized
 
-**Hawkeye uses a two-tier PRD model:**
+**S.M.A.R.T. Hawk uses a two-tier PRD model:**
 
 1. **Core PRD ([CORE-PRD.md](./CORE-PRD.md))** — platform-level requirements covering all 15 modules + cross-cutting capabilities
 2. **Feature PRDs (this index)** — focused PRDs for specific feature shipments or experiments

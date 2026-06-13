@@ -5,21 +5,21 @@
 | Owner | Compliance · Pharma SME · Engineering |
 | Status | v1.0 — 2026-06-08 |
 | Audience | QA / Compliance team members · Pharma SME consultants · Engineers writing compliance OQ scripts · Internal auditors preparing for customer audits |
-| Outcome | A repeatable, scripted protocol to verify that Hawkeye delivers what GAMP Cat 4, 21 CFR Part 11, EU GMP Annex 11, and MHRA ALCOA+ require — on a live tenant |
+| Outcome | A repeatable, scripted protocol to verify that S.M.A.R.T. Hawk delivers what GAMP Cat 4, 21 CFR Part 11, EU GMP Annex 11, and MHRA ALCOA+ require — on a live tenant |
 | Pairs with | [TEAM-ONBOARDING.md](./TEAM-ONBOARDING.md) (prerequisite for app access) · [GAMP-CAT-4-COMPLIANCE.md](../../08-compliance-regulatory/GAMP-CAT-4-COMPLIANCE.md) (canonical reference) · per-module URS files under [06-modules/](../../06-modules/) |
 
 ---
 
 ## 1. Purpose and intended use
 
-This document gives the Hawkeye QA · Compliance · Pharma SME team a **repeatable verification protocol** to confirm that the Hawkeye platform actually delivers the compliance posture documented in our customer-facing artifacts. Use this guide to:
+This document gives the S.M.A.R.T. Hawk QA · Compliance · Pharma SME team a **repeatable verification protocol** to confirm that the S.M.A.R.T. Hawk platform actually delivers the compliance posture documented in our customer-facing artifacts. Use this guide to:
 
 1. **Self-audit before a customer audit** — annual right-to-audit, periodic vendor audit (Annex 11 §3)
 2. **Smoke-test a release** — every functional release should pass these scenarios before notification to customers
 3. **Onboard a Pharma SME consultant** — give a new SME hire the verification tour so they can defend the platform to customers
 4. **Prepare evidence for customer's OQ** — the scenarios here are the conceptual template behind the OQ scripts shipped in the Validation Accelerator Package
 
-> ℹ️ **What this guide is NOT.** It is not the customer-side OQ. The customer-side OQ scripts live in the Validation Accelerator Package and are executed by the customer's validation team on the customer's own configured tenant. This guide is Hawkeye's internal verification protocol — broader in scope, lighter in formality.
+> ℹ️ **What this guide is NOT.** It is not the customer-side OQ. The customer-side OQ scripts live in the Validation Accelerator Package and are executed by the customer's validation team on the customer's own configured tenant. This guide is S.M.A.R.T. Hawk's internal verification protocol — broader in scope, lighter in formality.
 
 ---
 
@@ -32,7 +32,7 @@ Before you run any scenario:
 | ☐ | Working app access (Sandbox tenant or local dev) per [TEAM-ONBOARDING.md](./TEAM-ONBOARDING.md) §3 or §4 |
 | ☐ | At least two distinct user accounts available (Tenant Admin + one other persona) — for cross-persona tests |
 | ☐ | A second browser profile or incognito window — for the same |
-| ☐ | A small PDF file (1-2 pages) to use as evidence — e.g., any Hawkeye PDF from `Doc_V2/` |
+| ☐ | A small PDF file (1-2 pages) to use as evidence — e.g., any S.M.A.R.T. Hawk PDF from `Doc_V2/` |
 | ☐ | A timer / stopwatch — for latency measurements |
 | ☐ | (For tenant-isolation tests) A second Sandbox tenant (or two locally-seeded tenants) |
 | ☐ | (For SHA-256 tests) `sha256sum` available in your terminal |
@@ -166,7 +166,7 @@ Numbering: **CT-`<framework>`-NNN** (Compliance Test).
 | What to verify | DPA is signed; right-to-audit clause exists in DPA; Vendor Assessment Questionnaire is available |
 | Steps | (1) As Tenant Admin, navigate to Admin Console → Legal & Compliance → Documents; (2) Confirm presence of: signed DPA, executed NDA, current Validation Accelerator Package version |
 | Expected | All three documents present and downloadable; right-to-audit clause locatable in DPA |
-| Failure interpretation | Missing DPA = Annex 11 §3 non-conformance for the customer. Hawkeye must remediate before next contract. |
+| Failure interpretation | Missing DPA = Annex 11 §3 non-conformance for the customer. S.M.A.R.T. Hawk must remediate before next contract. |
 
 ### CT-A11-002 — §7 Backup integrity + restore tests
 
@@ -190,7 +190,7 @@ Numbering: **CT-`<framework>`-NNN** (Compliance Test).
 
 | Element | Detail |
 |---|---|
-| What to verify | Customer can perform periodic evaluation per §11 using Hawkeye-supplied inputs |
+| What to verify | Customer can perform periodic evaluation per §11 using S.M.A.R.T. Hawk-supplied inputs |
 | Steps | (1) Admin Console → Reports → Periodic Evaluation Report; (2) Generate report for last quarter; (3) Confirm report contains: validation status, deviation log summary, change log, security incidents, configuration drift, backup test outcomes |
 | Expected | Report generates within 60 seconds; contains all 6 input categories |
 | Failure interpretation | Missing input = customer cannot execute §11 periodic review properly. Compliance gap. |
@@ -217,7 +217,7 @@ Numbering: **CT-`<framework>`-NNN** (Compliance Test).
 
 | Element | Detail |
 |---|---|
-| What to verify | Annex 11 §15 requires the audit trail to be reviewed as part of batch release; Hawkeye enforces this as a hard gate |
+| What to verify | Annex 11 §15 requires the audit trail to be reviewed as part of batch release; S.M.A.R.T. Hawk enforces this as a hard gate |
 | Steps | (1) Open any batch record (or audit, in the absence of batch); (2) Attempt to click "Release" without reviewing the audit trail; (3) Observe block; (4) Click "Review Audit Trail" → render trail → e-sign as Reviewed; (5) Now click "Release" |
 | Expected | Step 3: block message visible; Step 5: works |
 | Failure interpretation | If release is possible without prior audit-trail review = §15 non-conformance and one of the top 4 FDA 483 themes (per [POC-PITCH-DECK.md slide 6](../../09-sales-marketing/pitch-materials/POC-PITCH-DECK.md)) |
@@ -318,7 +318,7 @@ For each attribute, the verification is brief — the substantive enforcement wa
 | Element | Detail |
 |---|---|
 | What to verify | The vendor configuration at each LLM provider has training opt-out enabled |
-| Steps | (1) Engineering Lead: confirm via vendor admin consoles (Anthropic · OpenAI · Gemini) that the Hawkeye production API keys have training opt-out enabled; (2) Verify the no-training contractual position is documented in the DPA template |
+| Steps | (1) Engineering Lead: confirm via vendor admin consoles (Anthropic · OpenAI · Gemini) that the S.M.A.R.T. Hawk production API keys have training opt-out enabled; (2) Verify the no-training contractual position is documented in the DPA template |
 | Expected | Both confirmed |
 | Failure interpretation | If training opt-out is NOT configured at vendor level, that's a breach of contractual position. Remediate same day. |
 
@@ -398,7 +398,7 @@ After running a verification session, file a report. Suggested template:
 | Tester | [Name] |
 | Date | [YYYY-MM-DD] |
 | Environment | Sandbox · Local Dev · Staging (which) |
-| Hawkeye version | [release tag — e.g., v0.45.2] |
+| S.M.A.R.T. Hawk version | [release tag — e.g., v0.45.2] |
 | Scenarios run | [list IDs — e.g., CT-P11-001 through CT-P11-011] |
 
 ## Summary

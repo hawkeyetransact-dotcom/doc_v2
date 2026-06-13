@@ -16,7 +16,7 @@
 | [PROJECT-STATE.md](./PROJECT-STATE.md) | **Read first.** Canonical state: corrected numbers · honesty register · canonical docs per topic · open work items · change log. |
 | [WORKFLOW.md](./WORKFLOW.md) | **Read second.** Mobile + desktop operating rules. Prevents redundant instructions. |
 | [README.md](./README.md) | Repo intro for new readers. |
-| [HAWKEYE-STORY.md](./HAWKEYE-STORY.md) | Long-form narrative version of the company's story (strategic, not operational). |
+| [SMART-HAWK-STORY.md](./SMART-HAWK-STORY.md) | Long-form narrative version of the company's story (strategic, not operational). |
 | [INDEX.md](./INDEX.md) | This file. |
 
 ---
@@ -85,7 +85,7 @@ Per-module deep specs (URS · DESIGN · ARCHITECTURE · STORYBOOK per module).
 - `frameworks/` — `PART-11.md` · `EU-GMP.md` · `ICH-Q-SERIES.md` · `ISO-9001.md`
 - `validation/` — `DESIGN-AND-DEVELOPMENT-PLAN.md` (GAMP Cat 4 · 820.30 · IEC 62304 · Part 11) · CSV/CSA approach · IQ/OQ/PQ templates · VSR
 - `data-integrity/` — ALCOA+ controls · audit-trail design
-- `platform-controls/` — `PLATFORM-CONTROLS.md` (Hawkeye control matrix)
+- `platform-controls/` — `PLATFORM-CONTROLS.md` (S.M.A.R.T. Hawk control matrix)
 
 ## 09-sales-marketing/
 - `pitch-materials/` — `GAMP-CAT-4-BRIEF.md` (customer 8-page summary) · `CFO-DECK.md` · `CTO-DECK.md` · `QA-HEAD-DECK.md` · `POC-PROPOSAL.md` · `POC-PITCH-DECK.md` · `POC-IMPLEMENTATION-PLAN.md` · `POC-AGREEMENT.md` · `SALES-PLAYBOOK.md`
@@ -124,7 +124,7 @@ Bundle delivered by web-Claude sessions through 11 June 2026. Treat as **canonic
 - `07_cleanup_tools/` — earlier cleanup artifacts (gitignored)
 
 ## _assets/
-- `hero-svgs/` — original Hawkeye SVG artwork
+- `hero-svgs/` — original S.M.A.R.T. Hawk SVG artwork
 
 ## _archive/
 Anything moved aside. Currently empty.

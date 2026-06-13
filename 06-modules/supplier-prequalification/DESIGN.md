@@ -85,7 +85,7 @@ flowchart LR
 1. Nominate supplier         → /suppliers (new) → form: name, country, product scope
 2. Track status              → /suppliers (filter: my-nominated)
 3. View qualification record → /suppliers/[id]
-4. (Later) Issue PO          → external ERP (Hawkeye is not the PO system)
+4. (Later) Issue PO          → external ERP (S.M.A.R.T. Hawk is not the PO system)
 ```
 
 #### QA Prequal Specialist (Anita)

@@ -32,7 +32,7 @@ What the module **must** do to meet the baseline (regulatory + table-stakes indu
 
 ## 4. Part B — Differentiator (White-Space) Requirements
 
-Requirements that go beyond the baseline — where Hawkeye competes/wins.
+Requirements that go beyond the baseline — where S.M.A.R.T. Hawk competes/wins.
 
 | ID | Requirement | Persona | Strategic rationale | MoSCoW |
 |---|---|---|---|---|

@@ -10,7 +10,7 @@
 
 ## 1. Persona families
 
-Hawkeye serves **3 organization types** × **4-7 personas each** = 14 named personas across 3 categories:
+S.M.A.R.T. Hawk serves **3 organization types** × **4-7 personas each** = 14 named personas across 3 categories:
 
 ```mermaid
 flowchart LR
@@ -30,7 +30,7 @@ flowchart LR
 - **Org:** Mid-pharma (e.g., Tier 2 formulations)
 - **Goals:** Run audit programme across 200-1,200 suppliers; demonstrate compliance to regulators; reduce CAPAs-in-email
 - **Pain:** In-person audit bandwidth ~30-60/yr; rest paper-screened, late; tracking in spreadsheets
-- **Hawkeye for Priya:** Audit list with phase visibility; one-click auditor assignment; cross-audit dashboard
+- **S.M.A.R.T. Hawk for Priya:** Audit list with phase visibility; one-click auditor assignment; cross-audit dashboard
 - **Quote:** *"I want to see at a glance which audits are stuck and why."*
 
 ### Dr. Elena Vasquez — VP Quality
@@ -38,7 +38,7 @@ flowchart LR
 - **Org:** Mid- to large pharma
 - **Goals:** Programme oversight; board-level reporting; closure approvals on critical audits
 - **Pain:** Annual board QMS reviews built from disparate spreadsheets
-- **Hawkeye for Elena:** Compliance Health Score dashboard; closure cert e-sig; MRM module
+- **S.M.A.R.T. Hawk for Elena:** Compliance Health Score dashboard; closure cert e-sig; MRM module
 - **Quote:** *"Give me a single source of truth for the next FDA inspection."*
 
 ### Karan Mehta — Procurement (Buyer-side)
@@ -46,19 +46,19 @@ flowchart LR
 - **Org:** Mid-pharma
 - **Goals:** Onboard new suppliers fast; track prequalification status
 - **Pain:** Supplier onboarding is a 6-month dance across QA + procurement + legal
-- **Hawkeye for Karan:** Supplier Prequal module; checklist-driven onboarding workflow
+- **S.M.A.R.T. Hawk for Karan:** Supplier Prequal module; checklist-driven onboarding workflow
 
 ### Doc Control Officer
 - **Title:** Document Control Specialist
 - **Goals:** Keep document master current; route reviews; ensure retention compliance
 - **Pain:** Email reminders + spreadsheet tracking + missed deadlines
-- **Hawkeye:** Doc Control module + AI bulk upload + scheduled review reminders
+- **S.M.A.R.T. Hawk:** Doc Control module + AI bulk upload + scheduled review reminders
 
 ### Regulatory Affairs Manager
 - **Title:** Reg Affairs Specialist
 - **Goals:** Map product changes to filings; respond to regulator questions fast
 - **Pain:** Reg Affairs gets pulled into every audit + change review without a structured input
-- **Hawkeye:** AskHawk regulations Q&A + cross-module audit trail + reg-affairs view filter
+- **S.M.A.R.T. Hawk:** AskHawk regulations Q&A + cross-module audit trail + reg-affairs view filter
 
 ## 3. Auditor personas (Auditing firms OR internal auditors)
 
@@ -67,13 +67,13 @@ flowchart LR
 - **Cross-tenant scenario:** Works for multiple buyer pharma cos via `Affiliation` records
 - **Goals:** Draft regulator-grade observations w/ citations; reuse prior findings; consistent severity
 - **Pain:** Manual report drafting in Word; no citation tooling; inconsistent language across team
-- **Hawkeye for Maria:** ObservationDrafterButton (AI with citations + confidence); AuditorCoachPanel (private review); report assembler with integrity hash
+- **S.M.A.R.T. Hawk for Maria:** ObservationDrafterButton (AI with citations + confidence); AuditorCoachPanel (private review); report assembler with integrity hash
 - **Quote:** *"AI drafts get me to a regulator-quality observation in 5 minutes instead of 45."*
 
 ### Rahul Kapoor — Co-Auditor
 - **Role:** Witness + notes; no signing authority
 - **Pain:** Pass-the-docs-via-email coordination with lead auditor
-- **Hawkeye:** Auditor notes thread on artifacts + questions; view-only access to closure cert
+- **S.M.A.R.T. Hawk:** Auditor notes thread on artifacts + questions; view-only access to closure cert
 
 ## 4. Supplier personas (CDMOs, ingredient vendors, etc.)
 
@@ -82,25 +82,25 @@ flowchart LR
 - **Org:** CDMO / formulation contract manufacturer
 - **Goals:** Single inbox for incoming audits; auditable acceptance ceremony; structured PAQ response; assignable sections
 - **Pain:** Email chaos across 30+ audits/year; lost evidence files; CAPA tracking in spreadsheets
-- **Hawkeye for Asha:** Supplier inbox view; SignatureDialog acceptance; assign-sections workflow; PAQ progress tracker
-- **Quote:** *"Pre-Hawkeye my Slack was 800 messages a week with auditors. Now it's a clean inbox."*
+- **S.M.A.R.T. Hawk for Asha:** Supplier inbox view; SignatureDialog acceptance; assign-sections workflow; PAQ progress tracker
+- **Quote:** *"Pre-S.M.A.R.T. Hawk my Slack was 800 messages a week with auditors. Now it's a clean inbox."*
 
 ### Supplier Operations (Amit, Deepa, Raj, Meera)
 - **Roles:** Production Manager, Maintenance Lead, QC Manager, Document Officer
 - **Goals:** Respond to assigned questionnaire sections; upload evidence; mark complete
 - **Pain:** "Whole questionnaire" forwarded by Asha; unclear which parts apply to me
-- **Hawkeye:** Per-section assignment; SmartQuestion form with attachment upload; section status board
+- **S.M.A.R.T. Hawk:** Per-section assignment; SmartQuestion form with attachment upload; section status board
 
 ## 5. Platform / admin personas
 
 ### Tenant Admin
 - **Goals:** Configure audit types; manage RBAC; set e-sig policy; invite users
 - **Pain:** No standardized tenant onboarding playbook
-- **Hawkeye:** Tenant admin console (still building); user invitation flow; audit-type catalog
+- **S.M.A.R.T. Hawk:** Tenant admin console (still building); user invitation flow; audit-type catalog
 
-### Hawkeye Superadmin (platform side)
+### S.M.A.R.T. Hawk Superadmin (platform side)
 - **Goals:** Multi-tenant oversight; platform-wide AI/SOP/playbook content management
-- **Hawkeye:** Internal-admin AI Ops dashboard + KB sync + telemetry
+- **S.M.A.R.T. Hawk:** Internal-admin AI Ops dashboard + KB sync + telemetry
 
 ## 6. Personas-by-module matrix
 
@@ -141,7 +141,7 @@ AskHawk uses persona-aware retrieval — the answer to "how do I do X?" differs 
 - **Patient personas** — irrelevant; we're B2B SaaS
 - **CFO at customer org** — they sign POs but don't use the product directly
 - **End consumers** — out of scope
-- **Lawyer at customer org** — uses Hawkeye-generated artifacts but doesn't operate the product
+- **Lawyer at customer org** — uses S.M.A.R.T. Hawk-generated artifacts but doesn't operate the product
 
 ---
 

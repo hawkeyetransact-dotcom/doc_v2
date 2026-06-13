@@ -12,7 +12,7 @@
 
 ## 1. Context
 
-Hawkeye's product positions itself as "AI-native", meaning AI assistance appears in every module (audit finding drafting, CAPA RCA, deviation analysis, document classification, AskHawk chat, etc.). The earliest prototype hard-coded Anthropic's Claude SDK directly into each module that needed AI.
+S.M.A.R.T. Hawk's product positions itself as "AI-native", meaning AI assistance appears in every module (audit finding drafting, CAPA RCA, deviation analysis, document classification, AskHawk chat, etc.). The earliest prototype hard-coded Anthropic's Claude SDK directly into each module that needed AI.
 
 This created several problems as we added a second provider (OpenAI) for specific tasks:
 
@@ -26,7 +26,7 @@ This created several problems as we added a second provider (OpenAI) for specifi
 
 ## 2. Decision
 
-> 📜 **Hawkeye adopts a Multi-LLM Gateway pattern: a single service (`services/ai/gateway/llmGateway.js`) is the only code path that talks to any LLM provider.** All AI features (modules, agents, AskHawk) invoke the gateway with a normalized envelope; the gateway routes to the appropriate provider per tenant config + per-task override.
+> 📜 **S.M.A.R.T. Hawk adopts a Multi-LLM Gateway pattern: a single service (`services/ai/gateway/llmGateway.js`) is the only code path that talks to any LLM provider.** All AI features (modules, agents, AskHawk) invoke the gateway with a normalized envelope; the gateway routes to the appropriate provider per tenant config + per-task override.
 
 **Architectural rule:** no controller or service may import a provider SDK directly. Imports of `anthropic`, `openai`, `@google/generative-ai` etc. are restricted to `services/ai/gateway/` by code-review convention (enforced by lint rule under development).
 
@@ -40,14 +40,14 @@ This created several problems as we added a second provider (OpenAI) for specifi
 
 ### Option B: Use a third-party LLM router (Portkey, Helicone, LiteLLM)
 - **Pros:** Off-the-shelf; battle-tested
-- **Cons:** External dependency in the AI critical path; data leaves Hawkeye servers; conflicts with Layer 1 "no third-party data sharing" commitment; tenant-residency complications; vendor lock-in
+- **Cons:** External dependency in the AI critical path; data leaves S.M.A.R.T. Hawk servers; conflicts with Layer 1 "no third-party data sharing" commitment; tenant-residency complications; vendor lock-in
 
 ### Option C: LangChain abstraction
 - **Pros:** Well-known framework; community models
-- **Cons:** Heavy framework; opinions don't match Hawkeye's grounded-generation approach; debugging is harder; framework upgrades break consumers
+- **Cons:** Heavy framework; opinions don't match S.M.A.R.T. Hawk's grounded-generation approach; debugging is harder; framework upgrades break consumers
 
 ### Option D: Selected — Custom in-house Gateway
-- **Pros:** Full control over routing, retry, logging, AI Audit Trail; data never leaves Hawkeye; aligns to Layer 1 commitments; can implement Hawkeye-specific patterns (cite-or-fallback, prompt hash, model version pinning, drift monitoring)
+- **Pros:** Full control over routing, retry, logging, AI Audit Trail; data never leaves S.M.A.R.T. Hawk; aligns to Layer 1 commitments; can implement S.M.A.R.T. Hawk-specific patterns (cite-or-fallback, prompt hash, model version pinning, drift monitoring)
 - **Cons:** Maintenance burden; we must implement multi-provider features ourselves (streaming, tool-calling, function-calling per provider's API shape)
 
 ---

@@ -3,7 +3,7 @@
 | Field | Value |
 |---|---|
 | Module | Batch Records (Pharma Manufacturing) |
-| Owner | Product (Hawkeye Platform) |
+| Owner | Product (S.M.A.R.T. Hawk Platform) |
 | Status | DRAFT (forward-spec; partial code present) |
 | Version | 0.1 |
 | Last updated | 2026-06-01 |
@@ -14,7 +14,7 @@
 
 ## 1. Purpose and Scope
 
-**Purpose.** Hawkeye Batch Records is the pharma manufacturing workflow module for **end-to-end electronic batch records (eBR)** — from formulation through packaging through QA review and Qualified Person (QP) release. Implements 21 CFR 211.188/194 and EU GMP Annex 16 with Part-11-grade audit trail and e-signature gates at every regulated step.
+**Purpose.** S.M.A.R.T. Hawk Batch Records is the pharma manufacturing workflow module for **end-to-end electronic batch records (eBR)** — from formulation through packaging through QA review and Qualified Person (QP) release. Implements 21 CFR 211.188/194 and EU GMP Annex 16 with Part-11-grade audit trail and e-signature gates at every regulated step.
 
 **In scope:**
 - Batch record lifecycle (initiation → release/disposition) across 8 states
@@ -120,7 +120,7 @@
 | URS-B-002 | A **QP Decision Support panel** SHALL pre-populate the Annex 16 checklist by pulling status from all linked records (deviations, equipment, training, MA conditions) and surface gaps with one click. | QPs save hours per release; reduces legal liability | MUST | ⏳ planned |
 | URS-B-003 | The batch record SHALL be **inspector-readable** — a regulator opening any batch SHALL see linked records (deviations, CAPAs, equipment cal certs, operator training records) in < 2 sec from a single page. | Inspector-readiness as a product feature | MUST | ⏳ planned |
 | URS-B-004 | Every AI prediction SHALL be **grounded + cited + confidence-scored + audit-trailed** with full reproducibility (modelVersion, promptHash, confidence, retrievalSet). | Part-11-grade AI traceability | MUST | ✅ (reuses platform `groundedGenerationService`) |
-| URS-B-005 | Hawkeye SHALL price batch-record functionality within the SMB pharma envelope (<$30K floor) — feature-complete with Annex 16 support, not stripped. | Below-Veeva white-space | MUST | 🚫 business model |
+| URS-B-005 | S.M.A.R.T. Hawk SHALL price batch-record functionality within the SMB pharma envelope (<$30K floor) — feature-complete with Annex 16 support, not stripped. | Below-Veeva white-space | MUST | 🚫 business model |
 
 ---
 

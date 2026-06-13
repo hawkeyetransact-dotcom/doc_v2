@@ -3,7 +3,7 @@
 | Field | Value |
 |---|---|
 | Module | Management Review |
-| Owner | Product (Hawkeye Platform) |
+| Owner | Product (S.M.A.R.T. Hawk Platform) |
 | Status | DRAFT (forward-spec) |
 | Version | 0.1 |
 | Last updated | 2026-06-01 |
@@ -14,7 +14,7 @@
 
 ## 1. Purpose and Scope
 
-**Purpose.** Hawkeye Management Review (MRM) is the QMS module for **periodic, structured review of QMS performance by senior management**, with formally compiled inputs, documented decisions, action items tracked to closure, and chair sign-off. Implements ICH Q10 §1.6 (PQS management responsibility) + ISO 9001 §9.3 (management review).
+**Purpose.** S.M.A.R.T. Hawk Management Review (MRM) is the QMS module for **periodic, structured review of QMS performance by senior management**, with formally compiled inputs, documented decisions, action items tracked to closure, and chair sign-off. Implements ICH Q10 §1.6 (PQS management responsibility) + ISO 9001 §9.3 (management review).
 
 **In scope:**
 - MRM lifecycle (scheduled → inputs compiled → meeting → minutes → approval → action tracking → closed)

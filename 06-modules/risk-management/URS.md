@@ -3,7 +3,7 @@
 | Field | Value |
 |---|---|
 | Module | Risk Management |
-| Owner | Product (Hawkeye Platform) |
+| Owner | Product (S.M.A.R.T. Hawk Platform) |
 | Status | DRAFT (reverse-engineered from current code + planned wave) |
 | Version | 0.1 |
 | Last updated | 2026-06-01 |
@@ -14,7 +14,7 @@
 
 ## 1. Purpose and Scope
 
-**Purpose.** Hawkeye Risk Management is the **enterprise risk register + FMEA engine** for regulated quality systems. It manages identification, assessment (Severity × Occurrence × Detectability = RPN), control (mitigation planning), periodic review, and closure (or ongoing monitoring) for all five risk categories (Product, Process, Supplier, Regulatory, Operational). Risk scores feed cross-module prioritization (Audit scope weighting, CAPA prioritization, Change Control impact assessment, Doc Control review cadence).
+**Purpose.** S.M.A.R.T. Hawk Risk Management is the **enterprise risk register + FMEA engine** for regulated quality systems. It manages identification, assessment (Severity × Occurrence × Detectability = RPN), control (mitigation planning), periodic review, and closure (or ongoing monitoring) for all five risk categories (Product, Process, Supplier, Regulatory, Operational). Risk scores feed cross-module prioritization (Audit scope weighting, CAPA prioritization, Change Control impact assessment, Doc Control review cadence).
 
 **In scope:**
 - Risk register CRUD with five risk types: Product, Process, Supplier, Regulatory, Operational
@@ -129,9 +129,9 @@
 
 | ID | Requirement | Strategic rationale | MoSCoW | Current state |
 |---|---|---|---|---|
-| URS-B-001 | Hawkeye SHALL provide an **AI risk scenario brainstormer** (`riskScenarioAgent`) that generates risk scenarios for a new process / product / supplier from regulatory corpus + historical cross-tenant patterns. | Blank-page paralysis killer; net-new value vs spreadsheet FMEA | SHOULD | ⏳ Planned Q1 2027 |
+| URS-B-001 | S.M.A.R.T. Hawk SHALL provide an **AI risk scenario brainstormer** (`riskScenarioAgent`) that generates risk scenarios for a new process / product / supplier from regulatory corpus + historical cross-tenant patterns. | Blank-page paralysis killer; net-new value vs spreadsheet FMEA | SHOULD | ⏳ Planned Q1 2027 |
 | URS-B-002 | **Risk-weighted decision support** SHALL be exposed across modules: Audit scope weighting, CAPA prioritization, Change Control impact, Doc Control review cadence — all sourced from this module's RPN scores. | The risk register becomes the strategic nervous system of the QMS | MUST | ✅ API live; partial consumer wiring |
-| URS-B-003 | Every AI output SHALL be **grounded + cited + confidence-scored + reviewable** with full reproducibility. | Part-11-grade AI traceability (canonical Hawkeye posture) | MUST | ✅ `groundedGenerationService` |
+| URS-B-003 | Every AI output SHALL be **grounded + cited + confidence-scored + reviewable** with full reproducibility. | Part-11-grade AI traceability (canonical S.M.A.R.T. Hawk posture) | MUST | ✅ `groundedGenerationService` |
 | URS-B-004 | A **risk heat map** SHALL visualize all active risks on Severity × Occurrence axes with Detectability as bubble size, color-coded by band. | Inspector and exec-friendly visualization (no incumbent ships well) | MUST | ✅ `RiskHeatMap` component |
 | URS-B-005 | A **risk trend dashboard** SHALL show RPN evolution over time per risk, surfacing risks where residual RPN is increasing despite mitigation. | Indicates failing controls; high-signal management view | SHOULD | ⚠️ Per-risk trend live; aggregate trend dashboard partial |
 | URS-B-006 | System SHALL **auto-suggest** mitigation actions from a library of proven controls (per risk type + per industry) using AI matching. | Accelerator; reduces reliance on tribal knowledge | SHOULD | ⏳ Planned Q2 2027 |

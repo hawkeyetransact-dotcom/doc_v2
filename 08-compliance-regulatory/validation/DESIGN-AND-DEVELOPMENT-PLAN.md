@@ -1,28 +1,28 @@
 # Design & Development Plan (DDP)
 
-## Hawkeye AI-Native EQMS Platform
+## S.M.A.R.T. Hawk AI-Native EQMS Platform
 
 ---
 
 > **Prepared for**
-> The QA Director, Validation Lead, IT Compliance Lead, Regulatory Affairs Lead, and Supplier-Qualification team of any customer evaluating or deploying Hawkeye.
+> The QA Director, Validation Lead, IT Compliance Lead, Regulatory Affairs Lead, and Supplier-Qualification team of any customer evaluating or deploying S.M.A.R.T. Hawk.
 >
 > **Prepared by**
-> Hawkeye Transact Pvt. Ltd. — Platform Engineering & Quality / Regulatory Compliance, authored jointly by the Principal Software Architect (AI engineering) and the Pharma Quality Subject-Matter Expert (SME).
+> S.M.A.R.T. Hawk Transact Pvt. Ltd. — Platform Engineering & Quality / Regulatory Compliance, authored jointly by the Principal Software Architect (AI engineering) and the Pharma Quality Subject-Matter Expert (SME).
 >
 > **Document reference:** `HK-DDP-v1.0`
 > **Issued:** 2026-06-13
-> **Status:** Canonical — this is the authoritative Design & Development Plan for the Hawkeye platform as a GAMP 5 Category 4 configured software product.
+> **Status:** Canonical — this is the authoritative Design & Development Plan for the S.M.A.R.T. Hawk platform as a GAMP 5 Category 4 configured software product.
 > **Classification:** Confidential — for the sole use of the addressee under NDA.
 
 ---
 
 ## How to read this document
 
-This Design & Development Plan (DDP) is the **master planning artifact** that governs how the Hawkeye platform is designed, developed, verified, validated, transferred to operations, and changed under control. It is written to satisfy **two audiences simultaneously**:
+This Design & Development Plan (DDP) is the **master planning artifact** that governs how the S.M.A.R.T. Hawk platform is designed, developed, verified, validated, transferred to operations, and changed under control. It is written to satisfy **two audiences simultaneously**:
 
-1. **Hawkeye's own design controls** — Hawkeye is a software product built under a design-controlled, GAMP-aligned SDLC. This DDP *is* the §820.30(b) / ISO 13485 §7.3.2 design-and-development plan for the product.
-2. **The customer's supplier-qualification and CSV teams** — pharma and medical-device customers procuring Hawkeye need vendor evidence that the product is designed under recognised design controls. This DDP is delivered as part of the **Validation Accelerator Package** (see [GAMP-CAT-4-COMPLIANCE.md §9](../GAMP-CAT-4-COMPLIANCE.md)).
+1. **S.M.A.R.T. Hawk's own design controls** — S.M.A.R.T. Hawk is a software product built under a design-controlled, GAMP-aligned SDLC. This DDP *is* the §820.30(b) / ISO 13485 §7.3.2 design-and-development plan for the product.
+2. **The customer's supplier-qualification and CSV teams** — pharma and medical-device customers procuring S.M.A.R.T. Hawk need vendor evidence that the product is designed under recognised design controls. This DDP is delivered as part of the **Validation Accelerator Package** (see [GAMP-CAT-4-COMPLIANCE.md §9](../GAMP-CAT-4-COMPLIANCE.md)).
 
 > 💡 **Format note.** This plan follows the canonical pharma **Design & Development Plan** structure (Approval → Project Overview → Product Overview → Objectives → Scope → References → Constraints → Deliverables → Revision History), and **elevates it for a GAMP Category 4 software product** by mapping every section to FDA 21 CFR 820.30 (Design Controls), the 2026 QMSR / ISO 13485 §7.3, IEC 62304 (medical-device software lifecycle), ISO 14971 (risk management), IEC 62366-1 (usability engineering), 21 CFR Part 11 (electronic records/signatures), EU GMP Annex 11, EU MDR 2017/745, and ISPE GAMP 5 (2nd Ed., 2022).
 
@@ -30,7 +30,7 @@ This Design & Development Plan (DDP) is the **master planning artifact** that go
 
 ## 1.0 APPROVAL
 
-This Design & Development Plan is not effective until reviewed and approved by all functions below. Approval is captured under **21 CFR Part 11–grade electronic signature** in the Hawkeye Document Control module (record type `DDP`, document number `HK-DDP-v1.0`); wet-ink signatures below are reproduced for offline review only.
+This Design & Development Plan is not effective until reviewed and approved by all functions below. Approval is captured under **21 CFR Part 11–grade electronic signature** in the S.M.A.R.T. Hawk Document Control module (record type `DDP`, document number `HK-DDP-v1.0`); wet-ink signatures below are reproduced for offline review only.
 
 | Function | Department | Name / Role | Responsibility on this plan | Signature | Date |
 |---|---|---|---|---|---|
@@ -55,17 +55,17 @@ This Design & Development Plan is not effective until reviewed and approved by a
 | Owner | Head of QA (Quality Unit) — accountable; Platform Engineering — responsible |
 | Review cycle | Annual, and on any material change to product architecture, the regulatory landscape, or the GAMP classification |
 | Retention | Life of product + 10 years (configurable; ≥ retention of the longest-lived record the product manages) |
-| Storage | Hawkeye Document Control (HawkVault), S3-backed, SHA-256 integrity-hashed; mirrored in Git (`Doc_V2`) |
+| Storage | S.M.A.R.T. Hawk Document Control (HawkVault), S3-backed, SHA-256 integrity-hashed; mirrored in Git (`Doc_V2`) |
 | Distribution | Controlled — internal design team + customers under NDA; read receipts tracked |
 | Supersedes | None (initial issue) |
 
-This DDP is itself a **controlled document of external origin to the customer** and an **internal controlled document to Hawkeye** — it is managed under the same controls it describes (eat-your-own-dogfood: the plan lives in the product's own Document Control module).
+This DDP is itself a **controlled document of external origin to the customer** and an **internal controlled document to S.M.A.R.T. Hawk** — it is managed under the same controls it describes (eat-your-own-dogfood: the plan lives in the product's own Document Control module).
 
 ---
 
 ## 3.0 PROJECT OVERVIEW
 
-Hawkeye Transact Pvt. Ltd. designs and develops the **Hawkeye AI-Native EQMS Platform** — an industry-agnostic, AI-native electronic quality management system for regulated supply chains, with pharmaceuticals and medical devices as the forcing-function verticals. As a software manufacturer supplying GxP-impacting computerized systems, Hawkeye maintains **established design and development plans that describe and reference the design and development activities and define responsibility for implementation**, and that **identify and describe the interfaces** between the engineering, quality, security, AI-governance, regulatory, and customer-success groups that provide input to, or receive output from, the design process. These plans are **reviewed, updated, and approved as design and development evolves** (per §820.30(b) and ISO 13485 §7.3.2).
+S.M.A.R.T. Hawk Transact Pvt. Ltd. designs and develops the **S.M.A.R.T. Hawk AI-Native EQMS Platform** — an industry-agnostic, AI-native electronic quality management system for regulated supply chains, with pharmaceuticals and medical devices as the forcing-function verticals. As a software manufacturer supplying GxP-impacting computerized systems, S.M.A.R.T. Hawk maintains **established design and development plans that describe and reference the design and development activities and define responsibility for implementation**, and that **identify and describe the interfaces** between the engineering, quality, security, AI-governance, regulatory, and customer-success groups that provide input to, or receive output from, the design process. These plans are **reviewed, updated, and approved as design and development evolves** (per §820.30(b) and ISO 13485 §7.3.2).
 
 This DDP governs the platform as a whole and is the parent of the per-module design-control records (each EQMS module has a URS, ARCHITECTURE, and DESIGN document; see `06-modules/`). It is harmonised with:
 
@@ -83,15 +83,15 @@ A conventional SDLC document describes *how engineers build software*. A **Desig
 - Controls **design transfer** to operations and **design changes** post-release (820.30(h),(i)).
 - Maintains a **Design History File (DHF)** as objective evidence the plan was followed (820.30(j)).
 
-This DDP imposes all of the above on Hawkeye's own product development — which is precisely the evidence a customer's GAMP Cat 4 supplier-leverage relies on.
+This DDP imposes all of the above on S.M.A.R.T. Hawk's own product development — which is precisely the evidence a customer's GAMP Cat 4 supplier-leverage relies on.
 
 ---
 
 ## 4.0 PRODUCT OVERVIEW
 
-### 4.1 What Hawkeye is
+### 4.1 What S.M.A.R.T. Hawk is
 
-The Hawkeye platform is a **multi-tenant, cloud-delivered (with sovereign-deployment option), AI-native EQMS**. It is a **GAMP 5 Category 4 configured product**: a common code base supplied to all customers, tailored per tenant through built-in configuration tools (vocabulary, standards registry, workflow definitions, RBAC, templates, AI prompt templates) **without source-code modification** (full classification basis in [GAMP-CAT-4-COMPLIANCE.md §1](../GAMP-CAT-4-COMPLIANCE.md)).
+The S.M.A.R.T. Hawk platform is a **multi-tenant, cloud-delivered (with sovereign-deployment option), AI-native EQMS**. It is a **GAMP 5 Category 4 configured product**: a common code base supplied to all customers, tailored per tenant through built-in configuration tools (vocabulary, standards registry, workflow definitions, RBAC, templates, AI prompt templates) **without source-code modification** (full classification basis in [GAMP-CAT-4-COMPLIANCE.md §1](../GAMP-CAT-4-COMPLIANCE.md)).
 
 ### 4.2 Five-layer reference architecture
 
@@ -130,8 +130,8 @@ The platform satisfies many regulators with a small set of unified controls (ful
 
 | Component | Technology | Qualification basis |
 |---|---|---|
-| Backend services | Node.js / Express (JS strict mode) | Hawkeye SDLC; SAST (CodeQL), dependency scanning |
-| Frontend console | Next.js / React (TypeScript strict) | Hawkeye SDLC; E2E (Playwright) |
+| Backend services | Node.js / Express (JS strict mode) | S.M.A.R.T. Hawk SDLC; SAST (CodeQL), dependency scanning |
+| Frontend console | Next.js / React (TypeScript strict) | S.M.A.R.T. Hawk SDLC; E2E (Playwright) |
 | Primary datastore | MongoDB Atlas | Vendor-qualified hyperscaler; PITR backups |
 | Evidence/object store | S3-compatible (lifecycle + versioning) | Hyperscaler-qualified; SHA-256 integrity |
 | AI inference | Multi-LLM via AI Gateway (default: Anthropic Claude — most-capable model class) | Layer-3 AI governance; grounding + cite-or-fallback; AI audit trail |
@@ -149,7 +149,7 @@ The objectives of the design and development effort governed by this plan are to
 4. **Is data-integrity sound by design** — ALCOA+ attributes are designed-in, not bolted on (cross-cuts C1+C2+C4+C5).
 5. **Carries customer-side validation effort to ~30–40% of a bespoke build** by supplying pre-executed vendor evidence (this DDP, the FRS, IQ/OQ scripts, traceability) under the GAMP 5 supplier-leverage clause and FDA CSA's risk-based assurance.
 6. **Governs AI as a Category-4 configuration element** — AI augments human decisions but never makes an unattributable or ungrounded GxP decision; every AI invocation is logged with model version, prompt hash, retrieval set, confidence, and human disposition.
-7. **Is accepted by a customer's QA / CSV / supplier-qualification team on first pass** — i.e., the deliverables of this plan are sufficient evidence for supplier qualification without source-code review (a Cat 5 obligation Hawkeye is explicitly not subject to).
+7. **Is accepted by a customer's QA / CSV / supplier-qualification team on first pass** — i.e., the deliverables of this plan are sufficient evidence for supplier qualification without source-code review (a Cat 5 obligation S.M.A.R.T. Hawk is explicitly not subject to).
 
 ---
 
@@ -157,7 +157,7 @@ The objectives of the design and development effort governed by this plan are to
 
 ### 6.1 In scope
 
-- The Hawkeye SaaS platform across all five architectural layers (Trust · Data · AI Gateway · Domain Engine · Experience).
+- The S.M.A.R.T. Hawk SaaS platform across all five architectural layers (Trust · Data · AI Gateway · Domain Engine · Experience).
 - All 15 default EQMS modules and their per-module design-control records.
 - The end-to-end design-and-development lifecycle: planning → design input → architectural & detailed design → implementation → verification → validation → transfer → change control → DHF maintenance.
 - The Part 11 / Annex 11 / ALCOA+ controls that the design must implement.
@@ -168,9 +168,9 @@ The objectives of the design and development effort governed by this plan are to
 
 | Out of scope | Owner / handoff |
 |---|---|
-| Customer infrastructure and non-Hawkeye systems | Customer IT |
+| Customer infrastructure and non-S.M.A.R.T. Hawk systems | Customer IT |
 | Customer-specific configuration validation (config-specific OQ/PQ) | Customer Validation Lead (templates provided) |
-| Workflows the customer builds outside Hawkeye's configuration surface (would be Cat 5) | Customer; scoped separately by Hawkeye Engineering |
+| Workflows the customer builds outside S.M.A.R.T. Hawk's configuration surface (would be Cat 5) | Customer; scoped separately by S.M.A.R.T. Hawk Engineering |
 | Hardware / hyperscaler infrastructure qualification | Cloud provider (qualified by hyperscaler) |
 | Customer-side staff training and SOP authoring | Customer (Training module + materials provided) |
 | Clinical evaluation / PMS for the customer's own device | Customer (Design Control module supports the DHF) |
@@ -246,7 +246,7 @@ The objectives of the design and development effort governed by this plan are to
 
 ## 9.0 ROLES, RESPONSIBILITIES & INTERFACES
 
-### 9.1 Design team (Hawkeye)
+### 9.1 Design team (S.M.A.R.T. Hawk)
 
 | Role | Functional area | Responsibility | Design-control authority |
 |---|---|---|---|
@@ -301,7 +301,7 @@ flowchart LR
 
 ### 10.1 The unified lifecycle model
 
-Hawkeye runs a **GAMP 5 V-model** for the product, overlaid with the **IEC 62304 software lifecycle** and gated by **21 CFR 820.30 design-control stages**. The three frameworks reconcile cleanly:
+S.M.A.R.T. Hawk runs a **GAMP 5 V-model** for the product, overlaid with the **IEC 62304 software lifecycle** and gated by **21 CFR 820.30 design-control stages**. The three frameworks reconcile cleanly:
 
 ```mermaid
 flowchart TB
@@ -332,11 +332,11 @@ flowchart TB
 
 ### 10.2 IEC 62304 software safety classification
 
-Per IEC 62304 §4.3, software items are classified by the severity of harm a failure could cause. Because Hawkeye is an EQMS that records and gates GxP decisions (but is not itself a patient-contacting/therapeutic device), the platform is classified at the **system level as Class B** (non-serious injury possible if a quality decision is wrongly recorded/gated), with **safety-relevant items (audit trail integrity, e-signature binding, access control, AI grounding) treated to Class C rigour** as a conservative measure. Class is reviewed per release and per the customer's intended use (a customer using Hawkeye's Design Control module for a Class III device's DHF inherits stricter expectations, addressed via configuration + the customer's own validation).
+Per IEC 62304 §4.3, software items are classified by the severity of harm a failure could cause. Because S.M.A.R.T. Hawk is an EQMS that records and gates GxP decisions (but is not itself a patient-contacting/therapeutic device), the platform is classified at the **system level as Class B** (non-serious injury possible if a quality decision is wrongly recorded/gated), with **safety-relevant items (audit trail integrity, e-signature binding, access control, AI grounding) treated to Class C rigour** as a conservative measure. Class is reviewed per release and per the customer's intended use (a customer using S.M.A.R.T. Hawk's Design Control module for a Class III device's DHF inherits stricter expectations, addressed via configuration + the customer's own validation).
 
-### 10.3 Mapping of 820.30 stages to Hawkeye execution
+### 10.3 Mapping of 820.30 stages to S.M.A.R.T. Hawk execution
 
-| §820.30 | ISO 13485 §7.3 | IEC 62304 | Hawkeye execution | Gate |
+| §820.30 | ISO 13485 §7.3 | IEC 62304 | S.M.A.R.T. Hawk execution | Gate |
 |---|---|---|---|---|
 | (b) Planning | 7.3.2 | §5.1 | This DDP + per-release plan | G-PLAN |
 | (c) Design input | 7.3.3 | §5.2 | URS per module + regulatory requirements register | G-INPUT |

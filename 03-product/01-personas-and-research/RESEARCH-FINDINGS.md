@@ -95,7 +95,7 @@ flowchart TB
 | Mobile-first audit prep | Audit prep happens at desks; mobile companion needed only on audit days |
 | AI that writes the entire SOP | They trust AI to draft, not author; "draft + I edit" is the right ratio |
 | Auto-closing CAPAs based on AI confidence | They never want this; human commits the closure, always |
-| Single sign-on with a Hawkeye account | Customer's IdP is non-negotiable; SSO is mandatory, not optional |
+| Single sign-on with a S.M.A.R.T. Hawk account | Customer's IdP is non-negotiable; SSO is mandatory, not optional |
 
 ---
 
@@ -105,7 +105,7 @@ flowchart TB
 
 > *"We have 4 different quality tools — one for documents, one for CAPAs, one for training, one for audits. Each was bought to solve a problem and now they're 4 silos with no cross-trail."* — QA Head, Tier-2 mid-pharma
 
-**Implication:** Hawkeye's go-to-market is not "replace your QMS" (incumbent inertia); it is "start with audit, expand into the silos one by one". The platform's cross-module audit trail is the differentiator.
+**Implication:** S.M.A.R.T. Hawk's go-to-market is not "replace your QMS" (incumbent inertia); it is "start with audit, expand into the silos one by one". The platform's cross-module audit trail is the differentiator.
 
 ### Insight 2: AI fear is real and specific
 
@@ -147,9 +147,9 @@ flowchart TB
 
 ## 6. Anti-patterns we observed
 
-Common workflow anti-patterns in current customer environments that Hawkeye explicitly designs against:
+Common workflow anti-patterns in current customer environments that S.M.A.R.T. Hawk explicitly designs against:
 
-| Anti-pattern | Frequency | Hawkeye's response |
+| Anti-pattern | Frequency | S.M.A.R.T. Hawk's response |
 |---|---|---|
 | Shared QA login ("QA1"); no individual attribution | 9 of 18 orgs | SSO mandatory; named users; no shared accounts |
 | CAPAs tracked in a spreadsheet emailed monthly | 14 of 18 | CAPA module with state machine + audit trail |
@@ -157,7 +157,7 @@ Common workflow anti-patterns in current customer environments that Hawkeye expl
 | E-signature is "QA Head's email approval" attached to PDF | 11 of 18 | Part 11 §11.50 e-sig ceremony in-platform |
 | Audit trail is "look in the SAP transaction log" | 7 of 18 | Cross-module audit trail with <2s query |
 | Critical findings closed without effectiveness check | 12 of 18 | CAPA closure workflow requires effectiveness check gate |
-| AI used informally (ChatGPT) for finding text | 6 of 18 | Grounded AI with cite-or-fallback in Hawkeye AI Gateway |
+| AI used informally (ChatGPT) for finding text | 6 of 18 | Grounded AI with cite-or-fallback in S.M.A.R.T. Hawk AI Gateway |
 | Same document existing in 4 versions across 4 systems | 13 of 18 | Document Control with versioning + change-control linkage |
 
 ---
@@ -222,7 +222,7 @@ Common workflow anti-patterns in current customer environments that Hawkeye expl
 
 This research was conducted between Oct 2025 and May 2026 by the founding team during the design-partner and pre-customer phases. Findings here are qualitative and directional, not statistically representative. Quantitative validation will come from:
 
-- Hawkeye PoC measurement (Criterion 1: audit-prep time reduction)
+- S.M.A.R.T. Hawk PoC measurement (Criterion 1: audit-prep time reduction)
 - Customer NPS surveys post-M6
 - Win/loss interview cadence quarterly post-first-10-customers
 

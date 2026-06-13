@@ -1,6 +1,6 @@
 # System Architecture
 
-## Hawkeye AI-Native EQMS Platform
+## S.M.A.R.T. Hawk AI-Native EQMS Platform
 
 | Field | Value |
 |---|---|
@@ -89,7 +89,7 @@ backend/src/
 
 ## 3. Architectural patterns
 
-Seven core patterns govern the Hawkeye backend:
+Seven core patterns govern the S.M.A.R.T. Hawk backend:
 
 ### 3.1 Multi-Provider LLM Gateway (Adapter + Service Locator)
 
@@ -173,7 +173,7 @@ The remaining 9 EQMS module concerns (audit, deviation, change control, document
 
 ### 3.4 Multi-Tenant Isolation (Middleware + Schema Pattern)
 
-Every Hawkeye-deployed tenant runs on a shared code base with logical isolation:
+Every S.M.A.R.T. Hawk-deployed tenant runs on a shared code base with logical isolation:
 
 ```mermaid
 flowchart LR
@@ -244,7 +244,7 @@ flowchart LR
 
 ### 3.7 Agentic AI Tool-Calling Runtime (Wave 2)
 
-Beyond raw LLM calls, Hawkeye runs multi-step agents that compose tool calls:
+Beyond raw LLM calls, S.M.A.R.T. Hawk runs multi-step agents that compose tool calls:
 
 - `services/ai/wave2/toolCallingRuntime.js` — orchestrates LLM → tool call → result → LLM loop
 - `services/ai/wave2/multiStepAgent.js` — Wave 2 generic agent base

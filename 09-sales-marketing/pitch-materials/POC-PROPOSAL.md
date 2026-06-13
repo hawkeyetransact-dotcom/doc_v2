@@ -1,6 +1,6 @@
 # Proof of Concept Proposal
 
-## Hawkeye AI-Native EQMS Platform
+## S.M.A.R.T. Hawk AI-Native EQMS Platform
 
 ---
 
@@ -9,8 +9,8 @@
 > `[CUSTOMER ADDRESS]`
 >
 > **Prepared by**
-> Hawkeye Transact Pvt. Ltd.
-> `[HAWKEYE ADDRESS]`
+> S.M.A.R.T. Hawk Transact Pvt. Ltd.
+> `[S.M.A.R.T. HAWK ADDRESS]`
 >
 > **Proposal reference:** `HK-POC-[YYYY-MM]-[NNN]`
 > **Date issued:** `[DATE]`
@@ -23,7 +23,7 @@
 
 Dear `[CUSTOMER SIGNATORY NAME]`,
 
-Thank you for the time your team has invested in evaluating the Hawkeye platform. Following our recent technical demonstration on `[DEMO DATE]` and the discovery conversations preceding it, we are pleased to submit this proposal for a 60-day Proof of Concept ("PoC") deployment at `[CUSTOMER NAME]`.
+Thank you for the time your team has invested in evaluating the S.M.A.R.T. Hawk platform. Following our recent technical demonstration on `[DEMO DATE]` and the discovery conversations preceding it, we are pleased to submit this proposal for a 60-day Proof of Concept ("PoC") deployment at `[CUSTOMER NAME]`.
 
 We have designed this PoC around three principles:
 
@@ -31,7 +31,7 @@ We have designed this PoC around three principles:
 
 2. **Success is measured by your criteria, not ours.** Six measurable success criteria are agreed jointly at kickoff (Section 8). If we fail to meet them, you exit at Day 60 with all your data exported and no obligation.
 
-3. **The PoC mirrors your real operating environment.** This is not a sandbox demonstration. Within 60 days, your team will run one to two of your actual supplier audits on Hawkeye, end-to-end, in a fully validated environment compliant with 21 CFR Part 11, EU GMP Annex 11, and ALCOA+ data integrity principles.
+3. **The PoC mirrors your real operating environment.** This is not a sandbox demonstration. Within 60 days, your team will run one to two of your actual supplier audits on S.M.A.R.T. Hawk, end-to-end, in a fully validated environment compliant with 21 CFR Part 11, EU GMP Annex 11, and ALCOA+ data integrity principles.
 
 This proposal is accompanied by two further documents:
 - A detailed **Implementation Plan** describing the week-by-week schedule, deliverables, and responsibilities
@@ -42,7 +42,7 @@ We would welcome the opportunity to walk you through this proposal in person or 
 Yours sincerely,
 
 `[FOUNDER NAME]`
-Founder & CEO, Hawkeye Transact Pvt. Ltd.
+Founder & CEO, S.M.A.R.T. Hawk Transact Pvt. Ltd.
 `[FOUNDER EMAIL]` · `[FOUNDER PHONE]`
 
 ---
@@ -51,10 +51,10 @@ Founder & CEO, Hawkeye Transact Pvt. Ltd.
 
 1. Executive Summary
 2. Understanding Your Situation
-3. The Hawkeye Platform — 5-Layer Architecture
+3. The S.M.A.R.T. Hawk Platform — 5-Layer Architecture
 4. The Five Value Propositions
 5. Compliance & Validation Posture (GAMP Cat 4 · Part 11 · Annex 11)
-6. Why Hawkeye
+6. Why S.M.A.R.T. Hawk
 7. Scope of the Proof of Concept
 8. Implementation Approach
 9. Project Team & Responsibilities
@@ -72,7 +72,7 @@ Founder & CEO, Hawkeye Transact Pvt. Ltd.
 
 | Element | Detail |
 |---|---|
-| **Engagement** | 60-day Proof of Concept of the Hawkeye AI-Native EQMS Platform |
+| **Engagement** | 60-day Proof of Concept of the S.M.A.R.T. Hawk AI-Native EQMS Platform |
 | **Modules in scope** | Audit Management + one additional module (Document Control, CAPA, or Deviation) selected at kickoff |
 | **Sites in scope** | 1 site, designated by `[CUSTOMER NAME]` at kickoff |
 | **Users in scope** | Up to 5 named full-edit users + unlimited view-only users |
@@ -84,7 +84,7 @@ Founder & CEO, Hawkeye Transact Pvt. Ltd.
 | **Conversion path** | If successful, paid contract per Section 13 with PoC-conversion benefits |
 | **Exit path** | If unsuccessful or unwanted, full data export within 7 days · zero liability |
 
-> **The asymmetry.** `[CUSTOMER NAME]` invests time and trust. Hawkeye invests capital and expertise. If the platform does not earn its place against your own success criteria, Hawkeye absorbs the cost.
+> **The asymmetry.** `[CUSTOMER NAME]` invests time and trust. S.M.A.R.T. Hawk invests capital and expertise. If the platform does not earn its place against your own success criteria, S.M.A.R.T. Hawk absorbs the cost.
 
 ---
 
@@ -122,9 +122,9 @@ Independent customer interviews and analogous deployments indicate that an AI-na
 
 ---
 
-## 3. The Hawkeye Platform — 5-Layer Architecture
+## 3. The S.M.A.R.T. Hawk Platform — 5-Layer Architecture
 
-Hawkeye is an AI-native Enterprise Quality Management System (EQMS) built as **five layers, with Trust · Security · Compliance as the foundation (Layer 1)** on which every higher layer depends. In a regulated industry, trust is not a feature — it is the substrate.
+S.M.A.R.T. Hawk is an AI-native Enterprise Quality Management System (EQMS) built as **five layers, with Trust · Security · Compliance as the foundation (Layer 1)** on which every higher layer depends. In a regulated industry, trust is not a feature — it is the substrate.
 
 ```mermaid
 flowchart TB
@@ -205,7 +205,7 @@ flowchart LR
 
 | # | Value | Quantified outcome | Validated by |
 |---|---|---|---|
-| 1 | **40% audit-prep cost reduction** | Payback < 4 months · ~₹38L savings on ₹95L baseline | Hawkeye PoC measurement on `[CUSTOMER NAME]`'s real audits |
+| 1 | **40% audit-prep cost reduction** | Payback < 4 months · ~₹38L savings on ₹95L baseline | S.M.A.R.T. Hawk PoC measurement on `[CUSTOMER NAME]`'s real audits |
 | 2 | **GAMP 5 Category 4 configured product** | ~60% less validation effort vs Cat 5 bespoke; supplier-leveraged validation | ISPE *GAMP 5 Guide, 2nd Edition* (Jul 2022) · FDA CSA (Final Sep 2025) |
 | 3 | **Part 11 + Annex 11 + ALCOA+ by design** | 100% e-signature attribute coverage · all 9 ALCOA+ attributes designed-in · tamper-evident audit trail | 21 CFR §11.10 · §11.50 · §11.200 · EU GMP Annex 11 · MHRA 2018 · WHO TRS 1033 (2021) |
 | 4 | **Trust-First Layer 1 architecture** | Per-tenant isolation · zero AI-training on your data · DPDP/GDPR · IN/US/EU residency | India DPDP Act 2023 (hard deadline 13 May 2027) · IBM 2025 healthcare breach avg $7.42M |
@@ -219,16 +219,16 @@ flowchart LR
 
 ### 5.1 GAMP 5 Category 4 — what you save vs Category 5
 
-Hawkeye is built as a **GAMP 5 Category 4 configured product** (ISPE *GAMP 5 Guide, 2nd Edition*, Jul 2022). The same category as Veeva Vault QMS, MasterControl, and TrackWise. Your validation effort focuses on your configuration, not on Hawkeye's source code.
+S.M.A.R.T. Hawk is built as a **GAMP 5 Category 4 configured product** (ISPE *GAMP 5 Guide, 2nd Edition*, Jul 2022). The same category as Veeva Vault QMS, MasterControl, and TrackWise. Your validation effort focuses on your configuration, not on S.M.A.R.T. Hawk's source code.
 
-| | Cat 3 — non-configured | **Cat 4 — Hawkeye** | Cat 5 — custom/bespoke |
+| | Cat 3 — non-configured | **Cat 4 — S.M.A.R.T. Hawk** | Cat 5 — custom/bespoke |
 |---|---|---|---|
 | Validation effort | Install + UAT | **URS + risk + IQ/OQ/PQ of your configuration** | Full SDLC + source review + V-model |
 | Vendor SDLC evidence leveraged | Minimal | **Extensive** (per GAMP 5 supplier-leverage + FDA CSA) | Limited |
 | Customer effort vs Cat 5 | n/a | **~60% less** *(industry consultant consensus)* | Baseline |
 | Examples | Simple instrument firmware | **EQMS / ERP / LIMS / EDMS** | Custom-built modules |
 
-**The Validation Accelerator Package Hawkeye ships to you** (which your team uses to satisfy GAMP Cat 4 supplier-leveraged validation):
+**The Validation Accelerator Package S.M.A.R.T. Hawk ships to you** (which your team uses to satisfy GAMP Cat 4 supplier-leveraged validation):
 
 | Deliverable | Purpose |
 |---|---|
@@ -243,7 +243,7 @@ Hawkeye is built as a **GAMP 5 Category 4 configured product** (ISPE *GAMP 5 Gui
 
 ### 5.2 21 CFR Part 11 — clause-level conformance
 
-| Subpart / clause | Requirement | Hawkeye implementation |
+| Subpart / clause | Requirement | S.M.A.R.T. Hawk implementation |
 |---|---|---|
 | §11.10(a) | Validation | GAMP Cat 4 configured product per §5.1 |
 | §11.10(b) | Accurate human-readable + electronic copies for FDA | PDF + CSV + JSON export at record + audit level |
@@ -256,13 +256,13 @@ Hawkeye is built as a **GAMP 5 Category 4 configured product** (ISPE *GAMP 5 Gui
 | §11.200 | **Two distinct components** | Password + Reason on every signing event; session boundaries enforce the regulation |
 | §11.300 | ID/password controls | Password aging, complexity, lockout, audit log of failed attempts |
 
-> 💡 **Why this matters in 2026.** ~60% of CDER Warning Letters 2021–2024 cite data-integrity deficiencies, the bulk of which map to Part 11. The most common 483 themes — missing audit trails, shared logins, deletable raw data, audit trails not reviewed at batch release — are all addressed by Hawkeye's Layer 1 enforcement, which cannot be turned off by any user role.
+> 💡 **Why this matters in 2026.** ~60% of CDER Warning Letters 2021–2024 cite data-integrity deficiencies, the bulk of which map to Part 11. The most common 483 themes — missing audit trails, shared logins, deletable raw data, audit trails not reviewed at batch release — are all addressed by S.M.A.R.T. Hawk's Layer 1 enforcement, which cannot be turned off by any user role.
 
 ### 5.3 EU GMP Annex 11 — all 17 clauses addressed
 
 Highlights of the 17-clause framework (current 2011 text; revised draft published 7 July 2025, final expected 2026 alongside new **Annex 22 — Artificial Intelligence**):
 
-| Clause | Requirement | Hawkeye implementation |
+| Clause | Requirement | S.M.A.R.T. Hawk implementation |
 |---|---|---|
 | 3 — Suppliers & service providers | Written supplier agreement; audit basis | DPA + Vendor Assessment + annual right-to-audit |
 | 4 — Validation | URS, lifecycle, traceability, config management | Validation Accelerator Package per §5.1 |
@@ -275,7 +275,7 @@ Highlights of the 17-clause framework (current 2011 text; revised draft publishe
 
 ### 5.4 MHRA / WHO ALCOA+ — 9 attributes by design
 
-| Attribute | How Hawkeye enforces it |
+| Attribute | How S.M.A.R.T. Hawk enforces it |
 |---|---|
 | **A**ttributable | Every action linked to unique user via SSO + audit log |
 | **L**egible | Human-readable export at record + audit level |
@@ -289,7 +289,7 @@ Highlights of the 17-clause framework (current 2011 text; revised draft publishe
 
 ### 5.5 FDA Computer Software Assurance (CSA)
 
-CSA — final guidance **issued 24 September 2025**, re-issued 3 February 2026 alongside the QMSR Final Rule — shifts validation from document-heavy CSV to risk-based assurance, and explicitly encourages **leveraging vendor SDLC evidence** for low-risk functions. As a GAMP Cat 4 vendor, Hawkeye's Validation Accelerator Package was designed for exactly this leverage, materially shortening your validation cycle time.
+CSA — final guidance **issued 24 September 2025**, re-issued 3 February 2026 alongside the QMSR Final Rule — shifts validation from document-heavy CSV to risk-based assurance, and explicitly encourages **leveraging vendor SDLC evidence** for low-risk functions. As a GAMP Cat 4 vendor, S.M.A.R.T. Hawk's Validation Accelerator Package was designed for exactly this leverage, materially shortening your validation cycle time.
 
 ### 5.6 Detailed compliance documentation
 
@@ -299,13 +299,13 @@ CSA — final guidance **issued 24 September 2025**, re-issued 3 February 2026 a
 
 ---
 
-## 6. Why Hawkeye
+## 6. Why S.M.A.R.T. Hawk
 
-| Decision criterion | How Hawkeye compares |
+| Decision criterion | How S.M.A.R.T. Hawk compares |
 |---|---|
-| **Total cost of ownership** | Hawkeye Growth tier ACV of ~₹10L (~$12K) versus Veeva Vault QMS ~$50-100K, MasterControl ~$40-80K, or TrackWise ~$40-90K. Per-audit delivered cost of ~$400 versus competitor range of $2,500-5,000. |
+| **Total cost of ownership** | S.M.A.R.T. Hawk Growth tier ACV of ~₹10L (~$12K) versus Veeva Vault QMS ~$50-100K, MasterControl ~$40-80K, or TrackWise ~$40-90K. Per-audit delivered cost of ~$400 versus competitor range of $2,500-5,000. |
 | **Time to value** | Production-ready in under 30 days versus 6-12 months for tier-one incumbents. |
-| **AI-native, not AI-retrofit** | Hawkeye is designed from the ground up around grounded generation, multi-LLM routing, and cite-or-fallback. Incumbents are bolting AI onto 15-year-old architectures. |
+| **AI-native, not AI-retrofit** | S.M.A.R.T. Hawk is designed from the ground up around grounded generation, multi-LLM routing, and cite-or-fallback. Incumbents are bolting AI onto 15-year-old architectures. |
 | **Pharma-domain depth** | Pharma SME consultancy (former regulatory inspectors) embedded in every PoC. Templates aligned to ICH Q7/Q9/Q10 and WHO PQ requirements out of the box. |
 | **Emerging-markets pricing reality** | Built for the SMB/mid-pharma segment underserved by tier-one incumbents. Pricing model accommodates 3 to 8-figure annual revenues. |
 | **Modern technical stack** | Cloud-native, multi-tenant, API-first. Vercel + Cloudflare + MongoDB Atlas. No legacy database lock-in. |
@@ -348,7 +348,7 @@ This proposal assumes that `[CUSTOMER NAME]`:
 - Can designate the named PoC team (Section 7) within 5 business days of agreement signing
 - Will provide its IT/InfoSec contact for SSO setup within Week 1
 - Will provide historical baseline data per Section 8.1 within 7 days of kickoff
-- Has the authority to share the in-scope audit data with Hawkeye under the executed NDA and Data Processing Agreement
+- Has the authority to share the in-scope audit data with S.M.A.R.T. Hawk under the executed NDA and Data Processing Agreement
 
 ---
 
@@ -391,7 +391,7 @@ flowchart LR
 | Named Users (3-5) | Use the platform for designated audits · provide feedback · complete end-of-PoC survey | Variable (audit days) |
 | IT / InfoSec Contact | Support SSO configuration · approve security posture | ~4 hours (Week 1) |
 
-### 9.2 Hawkeye team
+### 9.2 S.M.A.R.T. Hawk team
 
 | Role | Responsibilities | Engagement model |
 |---|---|---|
@@ -425,7 +425,7 @@ To enable measurement of Criterion 1, `[CUSTOMER NAME]` will provide within 7 da
 
 ### 10.2 Asymmetry guarantee
 
-If any non-adjustable success criterion (#2, #3, or #6) is failed, or if more than two adjustable criteria fail to meet their agreed floor, `[CUSTOMER NAME]` owes Hawkeye nothing and may exit per Section 16.
+If any non-adjustable success criterion (#2, #3, or #6) is failed, or if more than two adjustable criteria fail to meet their agreed floor, `[CUSTOMER NAME]` owes S.M.A.R.T. Hawk nothing and may exit per Section 16.
 
 ---
 
@@ -468,7 +468,7 @@ Conversion after Day 74 is at list pricing without conversion benefits.
 
 | Cost line | Year 1 (₹) | Year 1 ($) |
 |---|---|---|
-| Hawkeye Growth tier ACV | 10,00,000 | 12,000 |
+| S.M.A.R.T. Hawk Growth tier ACV | 10,00,000 | 12,000 |
 | Estimated implementation effort (`[CUSTOMER NAME]` internal time) | 5,00,000 | 6,000 |
 | **Total Year-1 investment** | **15,00,000** | **18,000** |
 | Estimated annual savings (40% of current ₹95L cost) | 38,00,000 | 46,000 |
@@ -485,7 +485,7 @@ Conversion after Day 74 is at list pricing without conversion benefits.
 | `[CUSTOMER NAME]` IT/InfoSec rejects deployment | Low | High | InfoSec questionnaire pre-completed · SOC 2 Type 1 attestation · architecture review call within 48 hours of request |
 | AI generation produces inaccurate citation | Very Low | Very High | Cite-or-fallback by design — AI returns "human input required" rather than fabricated citations |
 | Platform outage during scheduled audit day | Very Low | High | 99.5% uptime SLA · emergency hotline · backup PDF export available at any moment |
-| Regulator questions Hawkeye-generated evidence | Low | High | Written regulator-defense brief provided at no cost for any inspection within 90 days of PoC end |
+| Regulator questions S.M.A.R.T. Hawk-generated evidence | Low | High | Written regulator-defense brief provided at no cost for any inspection within 90 days of PoC end |
 | Named users underutilize the platform | Medium | Medium | Weekly checkpoints surface usage gaps early · Customer Success Engineer drives adoption |
 | Conversion decision delayed past Day 74 | Medium | Medium (loss of conversion benefits) | 60-day proposal validity · early indication preferred but not required |
 
@@ -547,7 +547,7 @@ This section expands the Layer 1 (Trust · Security · Compliance) commitments s
 
 ### 14.4 AI safety — the data privacy commitment
 
-| Concern | Hawkeye contractual position |
+| Concern | S.M.A.R.T. Hawk contractual position |
 |---|---|
 | Customer data used to train AI models | **NEVER** without explicit written consent. Default contractual: zero training-data use. |
 | Customer data sent to third-party LLM APIs | Only when explicitly invoked by user action; per-tenant API isolation; provider-side training opt-out enforced at vendor configuration |
@@ -566,7 +566,7 @@ This section expands the Layer 1 (Trust · Security · Compliance) commitments s
 
 ### 14.6 Data lifecycle
 
-| Stage | Hawkeye commitment |
+| Stage | S.M.A.R.T. Hawk commitment |
 |---|---|
 | In use (during PoC) | Customer data never used for AI training without consent · never shared with or sold to third parties |
 | At PoC end | Full data export (PDF + CSV + audit-trail manifest + JSON) delivered within 7 business days |
@@ -603,7 +603,7 @@ flowchart LR
 | Day-60 review and decision | Joint | 1 day |
 | Tier selection and Order Form | `[CUSTOMER NAME]` | 2-5 days |
 | Master Services Agreement signature | Joint (legal) | 3-7 days |
-| Tenant promoted to production | Hawkeye | 1 day |
+| Tenant promoted to production | S.M.A.R.T. Hawk | 1 day |
 | Additional user onboarding | Joint | Ongoing |
 
 Customers typically reach full production usage within 30 days of the Day-60 review.
@@ -631,7 +631,7 @@ We are happy to:
 
 By signing below, `[CUSTOMER NAME]` indicates intent to proceed with the PoC as described in this proposal. This signature is not a binding contract; the binding terms are contained in the accompanying PoC Agreement.
 
-| For `[CUSTOMER NAME]` | For Hawkeye Transact Pvt. Ltd. |
+| For `[CUSTOMER NAME]` | For S.M.A.R.T. Hawk Transact Pvt. Ltd. |
 |---|---|
 | **Name:** `[SIGNATORY NAME]` | **Name:** `[FOUNDER NAME]` |
 | **Title:** `[SIGNATORY TITLE]` | **Title:** Founder & CEO |
@@ -654,12 +654,12 @@ Mutual Non-Disclosure Agreement and Data Processing Agreement are provided as se
 
 ## Contact
 
-**Hawkeye Transact Pvt. Ltd.**
-`[HAWKEYE ADDRESS]`
-Website: `[HAWKEYE WEBSITE]`
+**S.M.A.R.T. Hawk Transact Pvt. Ltd.**
+`[S.M.A.R.T. HAWK ADDRESS]`
+Website: `[S.M.A.R.T. HAWK WEBSITE]`
 General: `[GENERAL EMAIL]`
 Founder direct: `[FOUNDER EMAIL]` · `[FOUNDER PHONE]`
 
 ---
 
-*Hawkeye Transact Pvt. Ltd. · Proposal HK-POC-`[YYYY-MM]`-`[NNN]` · `[DATE ISSUED]` · Confidential*
+*S.M.A.R.T. Hawk Transact Pvt. Ltd. · Proposal HK-POC-`[YYYY-MM]`-`[NNN]` · `[DATE ISSUED]` · Confidential*

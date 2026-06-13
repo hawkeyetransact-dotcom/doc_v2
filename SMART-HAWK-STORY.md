@@ -1,4 +1,4 @@
-# The Hawkeye Story
+# The S.M.A.R.T. Hawk Story
 
 | Field | Value |
 |---|---|
@@ -7,7 +7,7 @@
 | Length | 12 pages · ~15 min read |
 | Last updated | 2026-05-31 |
 
-> 💡 **What this document is.** The single canonical narrative for Hawkeye. Everything else in `Doc_V2/` is reference material that supports this story. Read this first.
+> 💡 **What this document is.** The single canonical narrative for S.M.A.R.T. Hawk. Everything else in `Doc_V2/` is reference material that supports this story. Read this first.
 
 ---
 
@@ -74,7 +74,7 @@ This is what every pharma in India is paying — and what every CDMO is bleeding
 
 ### 2a. The white space — who serves whom
 
-![Market positioning — pharma EQMS premium (Veeva/MasterControl) is deep but priced for tier-1; horizontal platforms (ServiceNow/SAP) are broad but lack GxP depth. Hawkeye lives in the genuinely unoccupied top-right: pharma-grade depth + multi-industry breadth + reproducible AI.](_assets/hero-svgs/05-market-positioning.svg)
+![Market positioning — pharma EQMS premium (Veeva/MasterControl) is deep but priced for tier-1; horizontal platforms (ServiceNow/SAP) are broad but lack GxP depth. S.M.A.R.T. Hawk lives in the genuinely unoccupied top-right: pharma-grade depth + multi-industry breadth + reproducible AI.](_assets/hero-svgs/05-market-positioning.svg)
 
 ### 2b. The 4 categories of incumbent — and what each cedes
 
@@ -132,16 +132,16 @@ flowchart LR
     IATF --> SPINE
     CMMC --> SPINE
 ```
-*Standards bodies are deliberately converging on a common ISO 9001 spine with vertical clause-packs on top. That is precisely the engine-plus-config architecture Hawkeye already has. We're rowing with this current, not against it.*
+*Standards bodies are deliberately converging on a common ISO 9001 spine with vertical clause-packs on top. That is precisely the engine-plus-config architecture S.M.A.R.T. Hawk already has. We're rowing with this current, not against it.*
 
 ### 3d. The reframe that makes this coherent
 
-Hawkeye is:
+S.M.A.R.T. Hawk is:
 - **Not a pharma tool** (though that's our beachhead)
 - **Not a horizontal platform** (the trap)
 - **Not Veeva-cheaper** (different game)
 
-Hawkeye is the **regulated-supply-chain compliance engine** whose architecture is industry-agnostic, deployed beachhead-first and expanded ring by ring.
+S.M.A.R.T. Hawk is the **regulated-supply-chain compliance engine** whose architecture is industry-agnostic, deployed beachhead-first and expanded ring by ring.
 
 Competition redefined:
 - Not Veeva (different game)
@@ -154,9 +154,9 @@ Competition redefined:
 
 ### 4a. The architecture (three layers, code-verified)
 
-Hawkeye is not just a five-pillar pipeline — it's a **three-layer architecture** that makes the pipeline genuinely industry-agnostic by design. Every box is traced to actual files in the codebase.
+S.M.A.R.T. Hawk is not just a five-pillar pipeline — it's a **three-layer architecture** that makes the pipeline genuinely industry-agnostic by design. Every box is traced to actual files in the codebase.
 
-![Hawkeye Platform Architecture — Configuration Layer (top) wraps the Five-Pillar Pipeline (middle) which is plugged into the AI Gateway (bottom). Pillars 1-2 are the Python data-platform; pillars 3-5 are the Node application.](_assets/hero-svgs/01-platform-architecture.svg)
+![S.M.A.R.T. Hawk Platform Architecture — Configuration Layer (top) wraps the Five-Pillar Pipeline (middle) which is plugged into the AI Gateway (bottom). Pillars 1-2 are the Python data-platform; pillars 3-5 are the Node application.](_assets/hero-svgs/01-platform-architecture.svg)
 
 ### 4b. Two honesty callouts the code forces
 
@@ -235,7 +235,7 @@ flowchart TB
     classDef live fill:#DCFCE7,stroke:#15803D,color:#14532D
     classDef cross fill:#F3E8FF,stroke:#7C3AED,color:#581C87
 
-    CORE["<b>Hawkeye Platform</b><br/>5-pillar engine + audit trail + RBAC"]:::core
+    CORE["<b>S.M.A.R.T. Hawk Platform</b><br/>5-pillar engine + audit trail + RBAC"]:::core
 
     M1["Audit Mgmt<br/><i>the wedge</i>"]:::live
     M2["CAPA"]:::live
@@ -312,7 +312,7 @@ For the audit deep-dive (storybook with 4 audience cuts): [06-modules/audit-mana
 > - Paid customers (LOIs in discovery with 2 design partners — Sanpras + Novex)
 > - SOC 2 Type 1 (target M12)
 > - Validation packages per-tenant (template exists; tenant-specific delivery starts at first customer)
-> - Hawkeye-tuned Llama-3 in production (planned M12)
+> - S.M.A.R.T. Hawk-tuned Llama-3 in production (planned M12)
 > - Cross-tenant supplier intel UI (URS-B-006; deferred)
 > - 7 other URS open questions across modules
 
@@ -348,7 +348,7 @@ For the audit deep-dive (storybook with 4 audience cuts): [06-modules/audit-mana
 | **Post-money** | ~$7M |
 | **Use of funds** | 65% team build · 10% AI infra · 10% compliance/SOC 2 · 8% GTM · 7% buffer/ops |
 | **Runway** | 18 months |
-| **Milestones at close** | 25-35 paying customers · $250-400K ARR · Hawkeye-tuned AI in production · 1+ ring-1 customer signed |
+| **Milestones at close** | 25-35 paying customers · $250-400K ARR · S.M.A.R.T. Hawk-tuned AI in production · 1+ ring-1 customer signed |
 
 > ⚠️ **Note for the deck.** The current `pitch-deck.pdf` says $3M. **The plan revised to $1.5M based on bottom-up India-cost-team analysis.** Re-render before sending externally.
 
@@ -402,4 +402,4 @@ After this story:
 
 ---
 
-*Hawkeye · Doc_V2 · The Story · 2026-05-31*
+*S.M.A.R.T. Hawk · Doc_V2 · The Story · 2026-05-31*

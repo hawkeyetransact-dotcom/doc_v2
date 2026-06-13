@@ -9,7 +9,7 @@
 
 ---
 
-## 1. What Hawkeye is, technically
+## 1. What S.M.A.R.T. Hawk is, technically
 
 ```mermaid
 flowchart TB
@@ -38,9 +38,9 @@ flowchart TB
     AI --> EXT
 ```
 
-## 2. The Hawkeye 5-Layer Architecture
+## 2. The S.M.A.R.T. Hawk 5-Layer Architecture
 
-Hawkeye is built as **five layers**, with **Trust · Security · Compliance as Layer 1 — the foundation** on which every higher layer depends. This ordering is deliberate: in a regulated industry, trust is not a feature — it is the substrate.
+S.M.A.R.T. Hawk is built as **five layers**, with **Trust · Security · Compliance as Layer 1 — the foundation** on which every higher layer depends. This ordering is deliberate: in a regulated industry, trust is not a feature — it is the substrate.
 
 ```mermaid
 flowchart TB
@@ -79,9 +79,21 @@ flowchart TB
 | **2 — Data & Evidence** | Multi-tenant DB · S3-compatible evidence store · versioned documents · tamper-evident audit log | System of record where every state change is captured forever | MongoDB Atlas (170+ Mongoose models) · `utils/s3Upload.js` · `auditTrailService.js` |
 | **1 — Trust · Security · Compliance** | GAMP Cat 4 · Part 11 · Annex 11 · ALCOA+ · data residency · encryption · zero AI training on customer data | Foundation everything stands on — not bolt-on, designed-in | `middleware/auth.js` · `electronicSignatureModel` · `services/security/*` · tenant isolation at query layer |
 
-### 2b. The 5-pillar runtime (lives inside Layer 4)
+### 2b. The 5-pillar runtime (lives inside Layer 4) — the **S.M.A.R.T.** pipeline
 
-The Domain Engine (Layer 4) houses the original **3-internal-components** that make the platform industry-agnostic — a Configuration Layer (top) that tunes the engine per tenant/industry, a Five-Pillar Pipeline (middle) that does the universal motion every module follows, and an AI Gateway hook (bottom) that plugs into each pillar but never commits a record.
+> 🦅 **The brand *is* the architecture.** The five runtime pillars spell **S.M.A.R.T.** — the platform name **S.M.A.R.T. Hawk** is the five-pillar pipeline every module walks:
+>
+> | Pillar | S.M.A.R.T. | What it does | Stack |
+> |---|---|---|---|
+> | **S** | **Source** | Ingest evidence/data (crawlers · parsers · pdf_extract · docIntel) | Python |
+> | **M** | **Model** | Normalize · entity-resolve · structure into records | Python |
+> | **A** | **Assess** | Compliance evaluation · standards · risk scoring | Node |
+> | **R** | **Report** | Report assembly · audit-report agents · e-signature | Node |
+> | **T** | **Trace** | Immutable audit trail · SHA-256 + ALCOA+ seal | Node |
+>
+> *(Formerly labelled Collect · Process · Validate · Report · Seal; renamed to the S.M.A.R.T. pillars in the 2026 rebrand. The runtime motion is unchanged.)*
+
+The Domain Engine (Layer 4) houses the original **3-internal-components** that make the platform industry-agnostic — a Configuration Layer (top) that tunes the engine per tenant/industry, the **S.M.A.R.T. Five-Pillar Pipeline** (middle) that does the universal motion every module follows, and an AI Gateway hook (bottom) that plugs into each pillar but never commits a record.
 
 ```mermaid
 flowchart TB
@@ -102,11 +114,11 @@ flowchart TB
 
     subgraph PIPE["🔬 FIVE-PILLAR RUNTIME PIPELINE"]
         direction LR
-        P1["<b>1·COLLECT</b><br/><i>Python</i><br/>crawlers · parsers<br/>pdf_extract · publicIntel<br/>docIntelService"]:::py
-        P2["<b>2·PROCESS</b><br/><i>Python</i><br/>normalize<br/>entity_resolution<br/>170 Mongoose models"]:::py
-        P3["<b>3·VALIDATE</b><br/><i>Node</i><br/>complianceEvaluation<br/>standardRegistry<br/>risk/scoring"]:::node
+        P1["<b>1·SOURCE</b><br/><i>Python</i><br/>crawlers · parsers<br/>pdf_extract · publicIntel<br/>docIntelService"]:::py
+        P2["<b>2·MODEL</b><br/><i>Python</i><br/>normalize<br/>entity_resolution<br/>170 Mongoose models"]:::py
+        P3["<b>3·ASSESS</b><br/><i>Node</i><br/>complianceEvaluation<br/>standardRegistry<br/>risk/scoring"]:::node
         P4["<b>4·REPORT</b><br/><i>Node</i><br/>reportDataService<br/>auditReportAgent<br/>electronicSignature"]:::node
-        P5["<b>5·SEAL</b><br/><i>Node</i><br/>auditTrailService<br/>SHA-256 + ALCOA+<br/>aiAuditTrail"]:::seal
+        P5["<b>5·TRACE</b><br/><i>Node</i><br/>auditTrailService<br/>SHA-256 + ALCOA+<br/>aiAuditTrail"]:::seal
 
         P1 --> P2 --> P3 --> P4 --> P5
     end
@@ -127,9 +139,9 @@ What varies per module/industry is the **configuration**: vocabulary (batch / lo
 
 ### 2c. Compliance & security posture (Layer 1 detail)
 
-Hawkeye is built as a **GAMP 5 Category 4 configured product** (ISPE *GAMP 5 Guide, 2nd Edition*, Jul 2022). Customers focus their validation on the configuration of their tenant, not on bespoke source-code review.
+S.M.A.R.T. Hawk is built as a **GAMP 5 Category 4 configured product** (ISPE *GAMP 5 Guide, 2nd Edition*, Jul 2022). Customers focus their validation on the configuration of their tenant, not on bespoke source-code review.
 
-| | Cat 3 — non-configured | **Cat 4 — configured (Hawkeye)** | Cat 5 — custom/bespoke |
+| | Cat 3 — non-configured | **Cat 4 — configured (S.M.A.R.T. Hawk)** | Cat 5 — custom/bespoke |
 |---|---|---|---|
 | Validation effort | Install + UAT | **URS + risk assessment + IQ/OQ/PQ of configuration** | Full SDLC + source review + V-model |
 | Vendor evidence leveraged | Minimal | **Extensive** (per GAMP 5 supplier-leverage clause + FDA CSA) | Limited |
@@ -138,7 +150,7 @@ Hawkeye is built as a **GAMP 5 Category 4 configured product** (ISPE *GAMP 5 Gui
 
 Layer-1 controls map to specific regulatory clauses:
 
-| Clause | Requirement | Hawkeye implementation |
+| Clause | Requirement | S.M.A.R.T. Hawk implementation |
 |---|---|---|
 | **21 CFR §11.10(e)** | Secure, computer-generated, time-stamped audit trails retained for record lifetime | `auditTrailService.js` writes immutable rows: user · UTC timestamp · session · IP · reason |
 | **21 CFR §11.50** | Signed records show printed name + date/time + meaning | `electronicSignatureModel` captures name, UTC, and meaning string on every signed object |

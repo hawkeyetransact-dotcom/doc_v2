@@ -1,9 +1,9 @@
 # 60-Day Proof of Concept
 
-## Hawkeye AI-Native EQMS Platform
+## S.M.A.R.T. Hawk AI-Native EQMS Platform
 
 > **Prepared for:** `[CUSTOMER NAME]`
-> **Prepared by:** Hawkeye Transact Pvt. Ltd.
+> **Prepared by:** S.M.A.R.T. Hawk Transact Pvt. Ltd.
 > **Date:** `[DATE]`
 > **Companion documents:** Proposal · Implementation Plan · PoC Agreement
 > **Confidential** — for the sole use of the addressee
@@ -12,7 +12,7 @@
 
 ## 1. Stop Demoing. Start Proving.
 
-> 💡 **The opener.** You've seen the demo. You've seen the screens. You probably have one question left: *will this actually work on MY audits, with MY suppliers, in MY regulator's eyes?* That is not a question we can answer with another demo. It is a question we answer with **one of your real audits, on Hawkeye, in the next 60 days — at zero cost to you.**
+> 💡 **The opener.** You've seen the demo. You've seen the screens. You probably have one question left: *will this actually work on MY audits, with MY suppliers, in MY regulator's eyes?* That is not a question we can answer with another demo. It is a question we answer with **one of your real audits, on S.M.A.R.T. Hawk, in the next 60 days — at zero cost to you.**
 
 This deck is the proposal for that. By slide 18, you'll have:
 
@@ -28,7 +28,7 @@ This deck is the proposal for that. By slide 18, you'll have:
 
 ---
 
-## 2. The Three Ways to Try Hawkeye
+## 2. The Three Ways to Try S.M.A.R.T. Hawk
 
 ```mermaid
 flowchart LR
@@ -74,7 +74,7 @@ A representative Tier-3 CDMO — your size, your audit volume:
 
 ---
 
-## 4. What Hawkeye Is — the 5-Layer Architecture
+## 4. What S.M.A.R.T. Hawk Is — the 5-Layer Architecture
 
 > 💡 **Trust is Layer 1.** In a regulated industry, security is not a feature — it is the substrate. Everything higher in the stack depends on it.
 
@@ -105,7 +105,7 @@ flowchart TB
     L5 --> L4 --> L3 --> L2 --> L1
 ```
 
-The 5-pillar runtime (orthogonal — lives inside Layer 4): every module walks **Collect → Process → Validate → Report → Seal** end to end, with cite-or-fallback at every AI touchpoint and a human e-signature gating every record commit.
+The 5-pillar runtime (orthogonal — lives inside Layer 4): every module walks **Source → Model → Assess → Report → Trace** end to end, with cite-or-fallback at every AI touchpoint and a human e-signature gating every record commit.
 
 *Slide 4 / 18*
 
@@ -129,15 +129,15 @@ The 5-pillar runtime (orthogonal — lives inside Layer 4): every module walks *
 
 ## 6. GAMP Cat 4 — Why This Saves You ~60% Validation Effort
 
-Hawkeye is a **GAMP 5 Category 4 configured product** (ISPE *GAMP 5 Guide, 2nd Edition*, Jul 2022). The same category as Veeva Vault QMS, MasterControl, TrackWise.
+S.M.A.R.T. Hawk is a **GAMP 5 Category 4 configured product** (ISPE *GAMP 5 Guide, 2nd Edition*, Jul 2022). The same category as Veeva Vault QMS, MasterControl, TrackWise.
 
-| | Cat 3 — non-configured | **Cat 4 — Hawkeye** | Cat 5 — custom/bespoke |
+| | Cat 3 — non-configured | **Cat 4 — S.M.A.R.T. Hawk** | Cat 5 — custom/bespoke |
 |---|---|---|---|
 | Validation effort | Install + UAT | **URS + risk + IQ/OQ/PQ of configuration** | Full SDLC + source review + V-model |
 | Vendor SDLC evidence leveraged | Minimal | **Extensive** (per GAMP supplier-leverage + FDA CSA) | Limited |
 | YOUR effort vs Cat 5 | n/a | **~60% less** | Baseline |
 
-**The Validation Accelerator Package Hawkeye ships to you** — used to satisfy GAMP Cat 4 supplier-leveraged validation:
+**The Validation Accelerator Package S.M.A.R.T. Hawk ships to you** — used to satisfy GAMP Cat 4 supplier-leveraged validation:
 
 | | Deliverable |
 |---|---|
@@ -152,14 +152,14 @@ Hawkeye is a **GAMP 5 Category 4 configured product** (ISPE *GAMP 5 Guide, 2nd E
 
 **Part 11 clause-level conformance — the four most-cited 483 themes addressed by design:**
 
-| 483 theme (top FDA observations 2023–2025) | Hawkeye built-in defence |
+| 483 theme (top FDA observations 2023–2025) | S.M.A.R.T. Hawk built-in defence |
 |---|---|
 | Missing / disabled / non-reviewed audit trails | §11.10(e) audit trail cannot be disabled by any role; reviewer prompt at batch release |
 | Shared / generic logins | §11.100 unique-to-individual; SSO + MFA from Day 1 |
 | Deletable / overwriteable raw data | Versions append, never overwrite; per-record SHA-256 + ALCOA+ append-only |
 | Audit trail not reviewed at batch release | "Review audit trail" e-signature gate built into release workflow |
 
-> 💡 **Industry context (FDA enforcement 2024):** 105 drug-quality Warning Letters — up 11% YoY. ~60% of CDER WLs 2021-2024 cite data integrity, the bulk mapping to Part 11. **This is the #1 inspection risk your team faces. Hawkeye's Layer 1 enforcement is your defence.**
+> 💡 **Industry context (FDA enforcement 2024):** 105 drug-quality Warning Letters — up 11% YoY. ~60% of CDER WLs 2021-2024 cite data integrity, the bulk mapping to Part 11. **This is the #1 inspection risk your team faces. S.M.A.R.T. Hawk's Layer 1 enforcement is your defence.**
 
 > 📘 **Detailed compliance evidence available.** See **[GAMP-CAT-4-BRIEF.md](./GAMP-CAT-4-BRIEF.md)** (8-page customer brief) and the full **[GAMP-CAT-4-COMPLIANCE.md](../../08-compliance-regulatory/GAMP-CAT-4-COMPLIANCE.md)** (~25-page canonical reference) — both delivered with this proposal.
 
@@ -177,7 +177,7 @@ flowchart TB
     G1["Goal 1<br/><b>Audit prep time cut by ≥40%</b>"]:::goal
     G2["Goal 2<br/><b>Every observation regulator-grade<br/>(cited, e-signed, audit-trailed)</b>"]:::goal
     G3["Goal 3<br/><b>One platform replaces<br/>≥3 of your current tools</b>"]:::goal
-    G4["Goal 4<br/><b>QA team prefers Hawkeye<br/>over the status quo (survey ≥7/10)</b>"]:::goal
+    G4["Goal 4<br/><b>QA team prefers S.M.A.R.T. Hawk<br/>over the status quo (survey ≥7/10)</b>"]:::goal
 
     M1["Measured: stopwatch on 1 PoC audit<br/>vs your historical baseline"]:::metric
     M2["Measured: 100% citations on AI-drafted text·<br/>21 CFR Part 11 e-sig + audit log inspection"]:::metric
@@ -234,7 +234,7 @@ flowchart TB
         C3["<b>End Users</b><br/>3-4 QA analysts<br/>varies (audit days)"]:::cust
     end
 
-    subgraph US["HAWKEYE SIDE"]
+    subgraph US["S.M.A.R.T. HAWK SIDE"]
         H1["<b>Founder Lead</b><br/>Direct line · kickoff + close<br/>1 named founder"]:::hk
         H2["<b>Customer Success</b><br/>Daily Slack · weekly checkpoint<br/>1 named CS engineer"]:::hk
         H3["<b>Pharma SME</b><br/>Compliance & regulator-grade review<br/>2 sessions"]:::hk
@@ -293,9 +293,9 @@ gantt
 | Week | Milestone | Owner |
 |---|---|---|
 | 0 | SOW signed · kickoff scheduled | Joint |
-| 1–2 | Tenant live · users onboarded · 1 historical audit imported as benchmark | Hawkeye |
-| 3–6 | Real audit runs end-to-end on Hawkeye | Joint |
-| 7 | Measurement: stopwatch, survey, validation summary | Hawkeye |
+| 1–2 | Tenant live · users onboarded · 1 historical audit imported as benchmark | S.M.A.R.T. Hawk |
+| 3–6 | Real audit runs end-to-end on S.M.A.R.T. Hawk | Joint |
+| 7 | Measurement: stopwatch, survey, validation summary | S.M.A.R.T. Hawk |
 | 8 | Success criteria review → go / no-go → contract paperwork if go | Joint |
 
 *Slide 10 / 18*
@@ -355,7 +355,7 @@ flowchart LR
 
 ## 13. Data, Privacy, Security, Compliance — During Your PoC
 
-> 💡 **Why this matters.** IBM 2025 reports healthcare-sector breaches average **$7.42M** — highest of any sector for 14 years running. Cencora's Feb 2024 incident affected 15+ pharma giants. Layer 1 of Hawkeye is the architectural answer.
+> 💡 **Why this matters.** IBM 2025 reports healthcare-sector breaches average **$7.42M** — highest of any sector for 14 years running. Cencora's Feb 2024 incident affected 15+ pharma giants. Layer 1 of S.M.A.R.T. Hawk is the architectural answer.
 
 | Concern | How we handle it during PoC |
 |---|---|
@@ -388,7 +388,7 @@ flowchart LR
     classDef good fill:#DCFCE7,stroke:#15803D,color:#14532D
     classDef walk fill:#FEE2E2,stroke:#B91C1C,color:#7F1D1D
 
-    M["<b>Day 60 Review Meeting</b><br/>90 min · joint<br/>QA Head + Hawkeye founders"]:::meeting
+    M["<b>Day 60 Review Meeting</b><br/>90 min · joint<br/>QA Head + S.M.A.R.T. Hawk founders"]:::meeting
 
     M --> SC["Walk through<br/>6 success criteria"]
     SC --> Pass{"All met?"}
@@ -429,8 +429,8 @@ flowchart LR
 | For a Tier-3 CDMO like you | The math |
 |---|---|
 | Your current annual quality cost | ~₹95L |
-| Hawkeye Growth tier ACV | ₹10L |
-| Hawkeye-driven savings (40%) | ~₹38L |
+| S.M.A.R.T. Hawk Growth tier ACV | ₹10L |
+| S.M.A.R.T. Hawk-driven savings (40%) | ~₹38L |
 | **Net annual benefit (Y1)** | **~₹28L** |
 | **Payback period** | **< 4 months** |
 
@@ -466,7 +466,7 @@ flowchart LR
 | "What if your AI hallucinates an observation citation?" | **Cite-or-fallback** by design. Every AI-drafted finding must cite source; if no source, AI returns "draft requires human input" — never a fabricated citation. |
 | "What if your platform goes down during my audit?" | 99.5% SLA during PoC · 24-hr emergency hotline · backup PDF export of all evidence at any moment. |
 | "What if your team doesn't know pharma?" | Pharma SME (ex-USFDA inspector consultant) joins kickoff + 2 review sessions during PoC. |
-| "What if a regulator questions Hawkeye-generated evidence?" | We provide written **regulator-defense brief** for any inspection within 90 days of PoC end — at no cost. |
+| "What if a regulator questions S.M.A.R.T. Hawk-generated evidence?" | We provide written **regulator-defense brief** for any inspection within 90 days of PoC end — at no cost. |
 | "What if my IT/InfoSec rejects the deployment?" | InfoSec questionnaire pre-filled · SOC 2 Type 1 attestation · architecture review call within 48 hrs of request. |
 | "What if we hate it?" | Walk away on Day 60. Free data export. Zero invoice. |
 
@@ -494,7 +494,7 @@ flowchart LR
 
 | | |
 |---|---|
-| **For the Customer** | **For Hawkeye** |
+| **For the Customer** | **For S.M.A.R.T. Hawk** |
 | Name: ____________________ | Name: ____________________ |
 | Title: ____________________ | Title: ____________________ |
 | Signature: _______________ | Signature: _______________ |
@@ -513,10 +513,10 @@ flowchart LR
 
 ## Contact
 
-**Hawkeye Transact Pvt. Ltd.**
-`[HAWKEYE ADDRESS]` · `[HAWKEYE WEBSITE]`
+**S.M.A.R.T. Hawk Transact Pvt. Ltd.**
+`[S.M.A.R.T. HAWK ADDRESS]` · `[S.M.A.R.T. HAWK WEBSITE]`
 `[FOUNDER NAME]`, Founder & CEO — `[FOUNDER EMAIL]` · `[FOUNDER PHONE]`
 
 ---
 
-*Hawkeye Transact Pvt. Ltd. · 60-Day PoC Pitch Deck · `[DATE]` · Confidential*
+*S.M.A.R.T. Hawk Transact Pvt. Ltd. · 60-Day PoC Pitch Deck · `[DATE]` · Confidential*

@@ -1,6 +1,6 @@
 # Core Product Requirements Document
 
-## Hawkeye AI-Native EQMS Platform
+## S.M.A.R.T. Hawk AI-Native EQMS Platform
 
 | Field | Value |
 |---|---|
@@ -13,7 +13,7 @@
 
 ## 1. The product in one paragraph
 
-> 💡 **Hawkeye is an AI-native Enterprise Quality Management System (EQMS) for pharmaceutical manufacturers and contract manufacturing organisations (CDMOs).** It replaces the spreadsheet-email-sharedrive sprawl that today consumes 60% of a QA team's time on audit prep, response, and remediation. The platform is built as a GAMP 5 Category 4 configured product across five architectural layers — Trust · Data · AI · Domain · Experience — with grounded AI (cite-or-fallback) at every touchpoint and a human always committing the record.
+> 💡 **S.M.A.R.T. Hawk is an AI-native Enterprise Quality Management System (EQMS) for pharmaceutical manufacturers and contract manufacturing organisations (CDMOs).** It replaces the spreadsheet-email-sharedrive sprawl that today consumes 60% of a QA team's time on audit prep, response, and remediation. The platform is built as a GAMP 5 Category 4 configured product across five architectural layers — Trust · Data · AI · Domain · Experience — with grounded AI (cite-or-fallback) at every touchpoint and a human always committing the record.
 
 ## 2. Problem statement
 
@@ -31,7 +31,7 @@ The qualitative burden is heavier: weekend war-rooms before regulatory inspectio
 
 ## 3. Vision
 
-> 📜 Hawkeye is the **regulated-supply-chain compliance engine** whose architecture is industry-agnostic, deployed pharma-first and expanded ring by ring. By 2030 we are the EQMS standard for SMB/mid-pharma globally (10,000+ customers) and have begun to convert into adjacent regulated verticals (food, medical devices, automotive aerospace).
+> 📜 S.M.A.R.T. Hawk is the **regulated-supply-chain compliance engine** whose architecture is industry-agnostic, deployed pharma-first and expanded ring by ring. By 2030 we are the EQMS standard for SMB/mid-pharma globally (10,000+ customers) and have begun to convert into adjacent regulated verticals (food, medical devices, automotive aerospace).
 
 ## 4. Target users
 
@@ -138,9 +138,9 @@ Per-module detailed URS/DESIGN/ARCHITECTURE: [URS-INDEX.md](../02-urs/URS-INDEX.
 | Out of scope | Why |
 |---|---|
 | Clinical trial management (CTMS) | Different regulatory regime (GCP); not our beachhead |
-| Drug development workflow | Hawkeye is downstream of R&D; we serve manufacturing + supply chain |
-| Manufacturing execution (MES) | Adjacent but distinct — Hawkeye integrates with MES, doesn't replace it |
-| Laboratory information management (LIMS) | Adjacent — Hawkeye integrates with LIMS |
+| Drug development workflow | S.M.A.R.T. Hawk is downstream of R&D; we serve manufacturing + supply chain |
+| Manufacturing execution (MES) | Adjacent but distinct — S.M.A.R.T. Hawk integrates with MES, doesn't replace it |
+| Laboratory information management (LIMS) | Adjacent — S.M.A.R.T. Hawk integrates with LIMS |
 | Patient-facing applications | Regulatory regime differs (SaMD); not our beachhead |
 | Custom on-prem deployments at Tier 4 SME tier | TCO doesn't work below Enterprise tier |
 

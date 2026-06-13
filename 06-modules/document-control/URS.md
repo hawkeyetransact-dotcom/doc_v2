@@ -3,7 +3,7 @@
 | Field | Value |
 |---|---|
 | Module | Document Control |
-| Owner | Product (Hawkeye Platform) |
+| Owner | Product (S.M.A.R.T. Hawk Platform) |
 | Status | DRAFT (reverse-engineered from current code + planned wave) |
 | Version | 0.1 |
 | Last updated | 2026-06-01 |
@@ -14,7 +14,7 @@
 
 ## 1. Purpose and Scope
 
-**Purpose.** Hawkeye Document Control (a.k.a. HawkVault) is the platform's **controlled-document vault** — the system of record for every SOP, Procedure, Work Instruction, Form, Specification, and Record that any other module references. It enforces versioned authoring, multi-step review and approval, distribution, periodic review, and retention, all under 21 CFR Part 11–grade audit trail and e-signature.
+**Purpose.** S.M.A.R.T. Hawk Document Control (a.k.a. HawkVault) is the platform's **controlled-document vault** — the system of record for every SOP, Procedure, Work Instruction, Form, Specification, and Record that any other module references. It enforces versioned authoring, multi-step review and approval, distribution, periodic review, and retention, all under 21 CFR Part 11–grade audit trail and e-signature.
 
 **In scope:**
 - Document lifecycle: DRAFT → IN_REVIEW → APPROVED → EFFECTIVE → SUPERSEDED → ARCHIVED
@@ -126,10 +126,10 @@
 
 | ID | Requirement | Strategic rationale | MoSCoW | Current state |
 |---|---|---|---|---|
-| URS-B-001 | Hawkeye SHALL provide **AI-assisted bulk upload** that classifies, tags, and proposes approval chains for hundreds of docs in one operation, with a single signed batch import — incumbents require one-at-a-time entry. | Bulk SOP migration is the #1 onboarding blocker for new tenants | MUST | ✅ `docBulkUploadOrchestrator` wizard live |
+| URS-B-001 | S.M.A.R.T. Hawk SHALL provide **AI-assisted bulk upload** that classifies, tags, and proposes approval chains for hundreds of docs in one operation, with a single signed batch import — incumbents require one-at-a-time entry. | Bulk SOP migration is the #1 onboarding blocker for new tenants | MUST | ✅ `docBulkUploadOrchestrator` wizard live |
 | URS-B-002 | Document tags SHALL be **persona-aware and module-aware** — surfacing the same SOP differently to a Production Operator vs a QA Reviewer (filtered "must-know" inbox). | UX wedge: SOPs surface contextually rather than as filing cabinet | SHOULD | ⚠️ Tagger exists; persona-filter UI partial |
 | URS-B-003 | Every approval-chain change SHALL be **versioned and audit-trailed** so regulators can answer "which chain was active when SOP v2.0 was approved on date X". | Inspector-readiness | MUST | ✅ `ApprovalChainTemplate` versioning |
-| URS-B-004 | Hawkeye SHALL surface **cross-module reference counts** for each document ("this SOP is cited by 12 CAPA records, 4 audits, 3 risks") so DCO understands blast radius of revision. | Change-impact visibility no incumbent ships | SHOULD | ⚠️ Reference index scaffolded; UI partial |
+| URS-B-004 | S.M.A.R.T. Hawk SHALL surface **cross-module reference counts** for each document ("this SOP is cited by 12 CAPA records, 4 audits, 3 risks") so DCO understands blast radius of revision. | Change-impact visibility no incumbent ships | SHOULD | ⚠️ Reference index scaffolded; UI partial |
 | URS-B-005 | Periodic-review reminders SHALL be **risk-weighted** — high-risk SOPs (linked to high-RPN risks) reviewed more frequently than tenant default. | Cross-module signal: Risk module feeds review cadence | SHOULD | ⚠️ Risk-weight planned; today flat per-category cadence |
 | URS-B-006 | An **AI summarizer** SHALL produce a 3-line change summary for v(n+1) ("what changed vs v(n), why it matters") for reviewer's review queue. | Reviewer cognitive load reducer | SHOULD | ⏳ Planned Q1 2027 |
 

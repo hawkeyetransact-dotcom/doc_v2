@@ -15,7 +15,7 @@
 
 ---
 
-## 1. The white space (where Hawkeye lives)
+## 1. The white space (where S.M.A.R.T. Hawk lives)
 
 ### 1a. The market today, in four boxes
 
@@ -25,7 +25,7 @@ quadrantChart
     x-axis Low industry breadth --> High industry breadth
     y-axis Low regulated-domain depth --> High regulated-domain depth
     quadrant-1 Right but not deep
-    quadrant-2 The white space → Hawkeye
+    quadrant-2 The white space → S.M.A.R.T. Hawk
     quadrant-3 Generic
     quadrant-4 Deep but priced for tier-1
     Veeva: [0.20, 0.95]
@@ -38,9 +38,9 @@ quadrantChart
     ServiceNow: [0.85, 0.40]
     SAP: [0.80, 0.45]
     Salesforce: [0.85, 0.30]
-    Hawkeye: [0.65, 0.85]
+    S.M.A.R.T. Hawk: [0.65, 0.85]
 ```
-*Hawkeye's target quadrant: pharma-grade depth at a price the SMB + emerging market can pay, with architectural breadth to expand into adjacent regulated industries.*
+*S.M.A.R.T. Hawk's target quadrant: pharma-grade depth at a price the SMB + emerging market can pay, with architectural breadth to expand into adjacent regulated industries.*
 
 ### 1b. The four incumbent types — and what each cedes
 
@@ -226,7 +226,7 @@ quadrantChart
     x-axis Low industry breadth --> High industry breadth
     y-axis Low regulated-domain depth --> High regulated-domain depth
     quadrant-1 Right but not deep
-    quadrant-2 Hawkeye target
+    quadrant-2 S.M.A.R.T. Hawk target
     quadrant-3 Generic
     quadrant-4 Deep but narrow
     Veeva: [0.20, 0.95]
@@ -239,7 +239,7 @@ quadrantChart
     ServiceNow: [0.85, 0.40]
     SAP: [0.80, 0.45]
     Salesforce: [0.85, 0.30]
-    Hawkeye: [0.65, 0.85]
+    S.M.A.R.T. Hawk: [0.65, 0.85]
 ```
 
 ### Competitor categorization
@@ -252,9 +252,9 @@ quadrantChart
 | **Horizontal platforms** | ServiceNow, SAP, Salesforce, IBM OpenPages | Distribution, ecosystem | Regulated-domain depth; GxP credibility; AI grounded in standards |
 | **AI-feature additions** | Vendors retrofitting LLMs into legacy stacks | Existing customer base | Native AI architecture; Part-11-grade traceability; honesty about confidence |
 
-## 12. Why Hawkeye wins each entry battle
+## 12. Why S.M.A.R.T. Hawk wins each entry battle
 
-| Competitor type | Why Hawkeye wins (in CORE + Ring 1 entry) |
+| Competitor type | Why S.M.A.R.T. Hawk wins (in CORE + Ring 1 entry) |
 |---|---|
 | Pharma EQMS premium (Veeva et al.) | We are below their price floor; we offer AI grounded with citations they don't ship; we cover supplier-audit they don't own |
 | Pharma audit-network (Qualifyze) | We cover internal EQMS, not just network audits; we ship AI-grounded observation drafting and reproducible audit-trail of AI decisions |

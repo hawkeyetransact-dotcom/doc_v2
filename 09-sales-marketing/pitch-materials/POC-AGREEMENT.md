@@ -1,6 +1,6 @@
 # Proof of Concept Agreement
 
-## Hawkeye AI-Native EQMS Platform · 60-Day Engagement
+## S.M.A.R.T. Hawk AI-Native EQMS Platform · 60-Day Engagement
 
 ---
 
@@ -9,8 +9,8 @@
 > `[CUSTOMER ADDRESS]`
 >
 > **Prepared by**
-> Hawkeye Transact Pvt. Ltd.
-> `[HAWKEYE ADDRESS]`
+> S.M.A.R.T. Hawk Transact Pvt. Ltd.
+> `[S.M.A.R.T. HAWK ADDRESS]`
 >
 > **Agreement reference:** `HK-POC-AGR-[YYYY-MM]-[NNN]`
 > **Effective Date:** `[YYYY-MM-DD]`
@@ -23,7 +23,7 @@
 | Party | Name & Address |
 |---|---|
 | **Customer** ("Client") | `[CUSTOMER LEGAL NAME]`<br/>`[CUSTOMER REGISTERED ADDRESS]`<br/>`[CUSTOMER GSTIN / TAX ID]` |
-| **Provider** ("Hawkeye") | Hawkeye Transact Pvt. Ltd.<br/>`[HAWKEYE REGISTERED ADDRESS]`<br/>`[HAWKEYE GSTIN]` |
+| **Provider** ("S.M.A.R.T. Hawk") | S.M.A.R.T. Hawk Transact Pvt. Ltd.<br/>`[S.M.A.R.T. HAWK REGISTERED ADDRESS]`<br/>`[S.M.A.R.T. HAWK GSTIN]` |
 
 This Proof of Concept Agreement ("Agreement") is entered into on `[EFFECTIVE DATE]` ("Effective Date") between the parties named above.
 
@@ -31,7 +31,7 @@ This Proof of Concept Agreement ("Agreement") is entered into on `[EFFECTIVE DAT
 
 ## §2. Purpose & Background
 
-The Client wishes to evaluate the Hawkeye AI-native EQMS platform ("Platform") for potential adoption in its Quality Management operations. Hawkeye wishes to demonstrate the Platform's fit for the Client's audit-management and EQMS workflows under real operating conditions.
+The Client wishes to evaluate the S.M.A.R.T. Hawk AI-native EQMS platform ("Platform") for potential adoption in its Quality Management operations. S.M.A.R.T. Hawk wishes to demonstrate the Platform's fit for the Client's audit-management and EQMS workflows under real operating conditions.
 
 This Agreement governs a **60-day Proof of Concept** ("PoC") whose purpose is:
 1. To validate the Platform's return-on-investment claims against the Client's actual audit workload.
@@ -71,7 +71,7 @@ This Agreement governs a **60-day Proof of Concept** ("PoC") whose purpose is:
 
 | Allowance | 25,000 credits (≈ 25 audit-grade AI generations) |
 |---|---|
-| Overage | Hawkeye absorbs first 10,000 of overage at no cost; further overage triggers renegotiation, not invoice |
+| Overage | S.M.A.R.T. Hawk absorbs first 10,000 of overage at no cost; further overage triggers renegotiation, not invoice |
 
 ### 3.5 Integrations
 
@@ -117,7 +117,7 @@ The following success criteria are agreed jointly. Targets may be adjusted by mu
 | 5 | End-user preference vs status quo | ≥7 / 10 average | 6 / 10 | Anonymous survey of all PoC users |
 | 6 | QA-Head go/no-go subjective assessment | "Yes" | Not adjustable | Sponsor interview at Day-60 review |
 
-> ✅ **Asymmetry clause.** If any non-adjustable criterion is failed, or if more than two adjustable criteria fail to meet even their adjusted floor, the Client owes Hawkeye **nothing** and may exit per §11.
+> ✅ **Asymmetry clause.** If any non-adjustable criterion is failed, or if more than two adjustable criteria fail to meet even their adjusted floor, the Client owes S.M.A.R.T. Hawk **nothing** and may exit per §11.
 
 ---
 
@@ -127,20 +127,20 @@ The following success criteria are agreed jointly. Targets may be adjusted by mu
 |---|---|---|---|
 | 0 | Agreement signed · kickoff scheduled | Joint | Signed Agreement |
 | 0 | Kickoff workshop · success criteria locked | Joint | Kickoff minutes signed |
-| 1 | Tenant provisioned · SSO live | Hawkeye | Client login confirmed |
-| 1–2 | Users invited · onboarding training (1 hour) | Hawkeye | All 5 named users active |
-| 2 | Historical audit benchmark imported | Hawkeye | Benchmark report shared |
+| 1 | Tenant provisioned · SSO live | S.M.A.R.T. Hawk | Client login confirmed |
+| 1–2 | Users invited · onboarding training (1 hour) | S.M.A.R.T. Hawk | All 5 named users active |
+| 2 | Historical audit benchmark imported | S.M.A.R.T. Hawk | Benchmark report shared |
 | 3–6 | First real audit runs end-to-end | Joint | Audit closeout |
 | 5–7 | Second real audit (optional) | Joint | Audit closeout |
-| 7 | Validation summary report delivered | Hawkeye | Report signed off |
-| 7 | User survey + sponsor interview | Hawkeye | Results documented |
+| 7 | Validation summary report delivered | S.M.A.R.T. Hawk | Report signed off |
+| 7 | User survey + sponsor interview | S.M.A.R.T. Hawk | Results documented |
 | 8 | Day-60 review meeting · go/no-go decision | Joint | Decision document signed |
 | 8–9 | (If go) Commercial contract paperwork | Joint | Master Services Agreement signed |
-| 8–9 | (If no-go) Data export + offboarding | Hawkeye | Export receipt signed |
+| 8–9 | (If no-go) Data export + offboarding | S.M.A.R.T. Hawk | Export receipt signed |
 
 **Effective Date:** `[YYYY-MM-DD]` · **Day 60:** `[YYYY-MM-DD]` (60 calendar days from Effective Date)
 
-> ⚠️ **Slippage handling.** If a scheduled real audit is rescheduled by the Client for reasons outside Hawkeye's control, the PoC end date shifts by the slippage amount, up to a maximum 30-day extension. Further extensions require mutual written agreement.
+> ⚠️ **Slippage handling.** If a scheduled real audit is rescheduled by the Client for reasons outside S.M.A.R.T. Hawk's control, the PoC end date shifts by the slippage amount, up to a maximum 30-day extension. Further extensions require mutual written agreement.
 
 ---
 
@@ -148,7 +148,7 @@ The following success criteria are agreed jointly. Targets may be adjusted by mu
 
 ### 6.1 PoC fees
 
-**The PoC is provided at no cost to the Client.** No fees, setup charges, training fees, validation report fees, or other compensation are payable by the Client to Hawkeye during the PoC term.
+**The PoC is provided at no cost to the Client.** No fees, setup charges, training fees, validation report fees, or other compensation are payable by the Client to S.M.A.R.T. Hawk during the PoC term.
 
 ### 6.2 What the Client provides at no cost
 
@@ -212,9 +212,9 @@ Conversion after Day 74 is at list pricing without conversion benefits.
 
 ### 8.3 Regulatory compliance — clause-level
 
-| Standard | Hawkeye conformance |
+| Standard | S.M.A.R.T. Hawk conformance |
 |---|---|
-| **GAMP 5 Category 4** (ISPE *GAMP 5 Guide, 2nd Edition*, Jul 2022) | Hawkeye is built and supplied as a Cat 4 configured product. Vendor SDLC evidence, IQ/OQ scripts, Functional Specification, Configuration Specification, security testing summary, periodic vendor audit pack — all included in the Validation Accelerator Package delivered to the Client at kickoff. |
+| **GAMP 5 Category 4** (ISPE *GAMP 5 Guide, 2nd Edition*, Jul 2022) | S.M.A.R.T. Hawk is built and supplied as a Cat 4 configured product. Vendor SDLC evidence, IQ/OQ scripts, Functional Specification, Configuration Specification, security testing summary, periodic vendor audit pack — all included in the Validation Accelerator Package delivered to the Client at kickoff. |
 | **21 CFR Part 11** — §11.10 (closed-system controls) | Validation per Cat 4; human-readable + electronic export; access limits via SSO/MFA/RBAC; tamper-evident time-stamped audit trail per §11.10(e) cannot be disabled by any user role; authority checks per §11.10(g). |
 | **21 CFR Part 11** — §11.50 (signature manifestations) | Every signed record displays printed name + UTC date/time + meaning (review/approval/authorship/responsibility). |
 | **21 CFR Part 11** — §11.70 (signature/record linking) | E-signature cryptographically linked to SHA-256 snapshot hash of the signed record. |
@@ -231,7 +231,7 @@ Conversion after Day 74 is at list pricing without conversion benefits.
 
 ### 8.4 Data export at PoC end
 
-Within **7 business days** of PoC closure (regardless of go/no-go outcome), Hawkeye shall provide the Client with:
+Within **7 business days** of PoC closure (regardless of go/no-go outcome), S.M.A.R.T. Hawk shall provide the Client with:
 - All Client-uploaded documents in their original format
 - All Client-created records as a CSV bundle + JSON bundle
 - An audit-trail PDF export for every signed object (regulator-grade)
@@ -241,7 +241,7 @@ The export package is delivered via SFTP or secure download link, retained for 3
 
 ### 8.5 Data deletion at PoC end
 
-If the Client elects no-go (per §11) and requests hard deletion in writing, Hawkeye shall hard-delete all Client data (including backups) within **30 calendar days** of the request and provide a signed certificate of deletion.
+If the Client elects no-go (per §11) and requests hard deletion in writing, S.M.A.R.T. Hawk shall hard-delete all Client data (including backups) within **30 calendar days** of the request and provide a signed certificate of deletion.
 
 If the Client converts to paid (per §6.3), data remains in place and is migrated to the paid tenant.
 
@@ -255,19 +255,19 @@ A separate mutual Non-Disclosure Agreement ("NDA") is signed concurrent with thi
 
 ### 9.2 Customer data
 
-All audit data, documents, findings, and other content uploaded or created by the Client during the PoC ("Customer Data") is and remains the sole property of the Client. Hawkeye claims no right, title, or interest in Customer Data.
+All audit data, documents, findings, and other content uploaded or created by the Client during the PoC ("Customer Data") is and remains the sole property of the Client. S.M.A.R.T. Hawk claims no right, title, or interest in Customer Data.
 
 ### 9.3 Platform IP
 
-The Platform (including software, AI models, workflows, templates, and documentation) is and remains the sole property of Hawkeye. No license is granted to the Client beyond use of the Platform during the PoC term.
+The Platform (including software, AI models, workflows, templates, and documentation) is and remains the sole property of S.M.A.R.T. Hawk. No license is granted to the Client beyond use of the Platform during the PoC term.
 
 ### 9.4 Feedback
 
-Feedback provided by the Client during the PoC may be incorporated by Hawkeye into the Platform without restriction or obligation, provided such incorporation does not disclose Customer Data or Client identity without written consent.
+Feedback provided by the Client during the PoC may be incorporated by S.M.A.R.T. Hawk into the Platform without restriction or obligation, provided such incorporation does not disclose Customer Data or Client identity without written consent.
 
 ### 9.5 Case-study rights
 
-Hawkeye may NOT publish a case study, customer logo, quote, or other marketing reference about the Client without the Client's prior written consent. Such consent is requested separately, post-conversion, as part of the reference-status discount option per §6.3.
+S.M.A.R.T. Hawk may NOT publish a case study, customer logo, quote, or other marketing reference about the Client without the Client's prior written consent. Such consent is requested separately, post-conversion, as part of the reference-status discount option per §6.3.
 
 ---
 
@@ -277,7 +277,7 @@ Hawkeye may NOT publish a case study, customer logo, quote, or other marketing r
 
 A joint review meeting shall be held on or about Day 60 (the "Day-60 Review"). Required attendees:
 
-| From the Client | From Hawkeye |
+| From the Client | From S.M.A.R.T. Hawk |
 |---|---|
 | Executive Sponsor (QA Head / Quality Director) | Founder / CEO |
 | PoC Lead (QA Manager) | Customer Success Engineer assigned to PoC |
@@ -321,7 +321,7 @@ The following sections survive termination: §8.4, §8.5, §9, §13, §14.
 
 ## §12. Service Provider Obligations During PoC
 
-Hawkeye agrees to:
+S.M.A.R.T. Hawk agrees to:
 1. Provide the Platform per §3 at no cost.
 2. Provide named personnel per §3.6 at no cost.
 3. Honor service levels per §7.
@@ -360,11 +360,11 @@ EACH PARTY'S TOTAL LIABILITY UNDER THIS AGREEMENT SHALL NOT EXCEED ₹1,00,000 (
 
 ### 14.3 Warranties
 
-Each party represents that it has the authority to enter into this Agreement. Hawkeye warrants that the Platform will perform substantially as described in §3 and in the accompanying Proposal. Hawkeye disclaims all other warranties, express or implied, including merchantability and fitness for a particular purpose.
+Each party represents that it has the authority to enter into this Agreement. S.M.A.R.T. Hawk warrants that the Platform will perform substantially as described in §3 and in the accompanying Proposal. S.M.A.R.T. Hawk disclaims all other warranties, express or implied, including merchantability and fitness for a particular purpose.
 
 ### 14.4 Indemnification
 
-Hawkeye shall indemnify the Client against third-party IP infringement claims arising from use of the Platform per this Agreement. Client shall indemnify Hawkeye against claims arising from Customer Data or Client's misuse of the Platform.
+S.M.A.R.T. Hawk shall indemnify the Client against third-party IP infringement claims arising from use of the Platform per this Agreement. Client shall indemnify S.M.A.R.T. Hawk against claims arising from Customer Data or Client's misuse of the Platform.
 
 ### 14.5 Governing law & dispute resolution
 
@@ -377,7 +377,7 @@ Notices shall be in writing and delivered via email with read receipt to:
 | Party | Email |
 |---|---|
 | Client | `[CUSTOMER NOTICE EMAIL]` |
-| Hawkeye | `[HAWKEYE LEGAL EMAIL]` (with copy to founder email) |
+| S.M.A.R.T. Hawk | `[S.M.A.R.T. HAWK LEGAL EMAIL]` (with copy to founder email) |
 
 ### 14.7 Entire agreement
 
@@ -389,9 +389,9 @@ This Agreement, together with the NDA and Data Processing Agreement executed con
 
 By signing below, each party agrees to be bound by the terms of this Agreement.
 
-| For the Client | For Hawkeye |
+| For the Client | For S.M.A.R.T. Hawk |
 |---|---|
-| **Name:** `[CUSTOMER SIGNATORY NAME]` | **Name:** `[HAWKEYE SIGNATORY NAME]` |
+| **Name:** `[CUSTOMER SIGNATORY NAME]` | **Name:** `[S.M.A.R.T. HAWK SIGNATORY NAME]` |
 | **Title:** `[CUSTOMER SIGNATORY TITLE]` | **Title:** Founder & CEO |
 | **Signature:** ________________________ | **Signature:** ________________________ |
 | **Date:** ____________________________ | **Date:** ____________________________ |
@@ -413,7 +413,7 @@ By signing below, each party agrees to be bound by the terms of this Agreement.
 | Named user 5 | `[NAME]` | `[EMAIL]` | Audit days only |
 | IT/InfoSec contact (SSO setup) | `[NAME]` | `[EMAIL]` | ~4 hrs (Week 1) |
 
-### A.2 Hawkeye team
+### A.2 S.M.A.R.T. Hawk team
 
 | Role | Name | Email | Time commitment |
 |---|---|---|---|
@@ -457,4 +457,4 @@ This Agreement is delivered together with the following documents:
 
 ---
 
-*Hawkeye Transact Pvt. Ltd. · Agreement HK-POC-AGR-`[YYYY-MM]`-`[NNN]` · `[EFFECTIVE DATE]` · Confidential*
+*S.M.A.R.T. Hawk Transact Pvt. Ltd. · Agreement HK-POC-AGR-`[YYYY-MM]`-`[NNN]` · `[EFFECTIVE DATE]` · Confidential*

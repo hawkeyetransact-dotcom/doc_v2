@@ -1,4 +1,4 @@
-# Hawkeye — QA Head Deck
+# S.M.A.R.T. Hawk — QA Head Deck
 
 | Field | Value |
 |---|---|
@@ -43,7 +43,7 @@ Plus the un-quantifiable: weekend war rooms before WHO-PQ audits · the dread of
 
 ---
 
-## 3. Your Week With Hawkeye — Storyboard
+## 3. Your Week With S.M.A.R.T. Hawk — Storyboard
 
 ```mermaid
 flowchart LR
@@ -70,7 +70,7 @@ One platform. Five personas (QA Head · QA Analyst · Operations · Auditor · A
 
 ## 4. The Single Inbox — Supplier Portal
 
-| Today | With Hawkeye |
+| Today | With S.M.A.R.T. Hawk |
 |---|---|
 | Email from Cipla auditor on Monday | One incoming audit on your supplier portal |
 | Attachment chain across 11 emails | One audit object · all evidence linked |
@@ -147,7 +147,7 @@ sequenceDiagram
 
 **The regulator's next question:** *"Show me from the audit finding to evidence of training completion."*
 **Today:** 4 people · 3 days · 6 spreadsheets.
-**With Hawkeye:** 1 click · 2 seconds.
+**With S.M.A.R.T. Hawk:** 1 click · 2 seconds.
 
 *Slide 7 / 15*
 
@@ -155,11 +155,11 @@ sequenceDiagram
 
 ## 8. Compliance Spine — Part 11 / Annex 11 / ALCOA+ at Clause Level
 
-Hawkeye is a **GAMP 5 Category 4 configured product** (ISPE 2nd Ed, Jul 2022). The same category as Veeva Vault QMS, MasterControl, and TrackWise. Your validation effort drops by ~60% versus a Cat 5 custom build — and the Validation Accelerator Package we ship at kickoff is designed to be plugged straight into your own validation lifecycle.
+S.M.A.R.T. Hawk is a **GAMP 5 Category 4 configured product** (ISPE 2nd Ed, Jul 2022). The same category as Veeva Vault QMS, MasterControl, and TrackWise. Your validation effort drops by ~60% versus a Cat 5 custom build — and the Validation Accelerator Package we ship at kickoff is designed to be plugged straight into your own validation lifecycle.
 
 ### 21 CFR Part 11 — clause-by-clause defence (the top 4 FDA-483 themes addressed)
 
-| 483 theme (top observations 2023–2025) | Hawkeye built-in defence | Clause |
+| 483 theme (top observations 2023–2025) | S.M.A.R.T. Hawk built-in defence | Clause |
 |---|---|---|
 | Missing / disabled / non-reviewed audit trails | `auditTrailService` cannot be disabled by any user role; "review audit trail" gate built into batch-release workflow | §11.10(e) |
 | Shared / generic logins | One signature account per person, never reassigned, identity verified at provisioning; SSO + MFA | §11.100 |
@@ -169,7 +169,7 @@ Hawkeye is a **GAMP 5 Category 4 configured product** (ISPE 2nd Ed, Jul 2022). T
 
 ### EU GMP Annex 11 (2011 + 2025 draft revision; new Annex 22 for AI expected 2026)
 
-| Clause | Requirement | Hawkeye |
+| Clause | Requirement | S.M.A.R.T. Hawk |
 |---|---|---|
 | §3 — Suppliers & service providers | Written agreement + audit basis | DPA + Vendor Assessment Questionnaire + annual right-to-audit |
 | §4 — Validation | URS · lifecycle · traceability · config management | Validation Accelerator Package |
@@ -182,7 +182,7 @@ Hawkeye is a **GAMP 5 Category 4 configured product** (ISPE 2nd Ed, Jul 2022). T
 
 ### MHRA / WHO ALCOA+ — 9 attributes (Mar 2018 + WHO TRS 1033, 2021)
 
-| Attribute | How Hawkeye enforces it |
+| Attribute | How S.M.A.R.T. Hawk enforces it |
 |---|---|
 | **A**ttributable | Every action linked to unique user via SSO + audit log |
 | **L**egible | Human-readable export at record + audit level |
@@ -194,7 +194,7 @@ Hawkeye is a **GAMP 5 Category 4 configured product** (ISPE 2nd Ed, Jul 2022). T
 | **E**nduring | Per-record SHA-256 + ≥10-year retention configurable |
 | **A**vailable | 24×7 access · offline export on demand |
 
-> 💡 **The bigger picture.** ~60% of CDER Warning Letters (2021–2024) cite data-integrity deficiencies — the bulk mapping to Part 11. **This is the #1 inspection risk your team faces.** Hawkeye's Layer 1 enforcement is your defence.
+> 💡 **The bigger picture.** ~60% of CDER Warning Letters (2021–2024) cite data-integrity deficiencies — the bulk mapping to Part 11. **This is the #1 inspection risk your team faces.** S.M.A.R.T. Hawk's Layer 1 enforcement is your defence.
 
 > 💡 **Also satisfied by the same implementation:** ICH Q7 / Q9 / Q10 · ISO 9001 · ISO 13485 (med-device customers) · WHO-GMP / PIC/S. One audit trail, many regulators.
 
@@ -213,14 +213,14 @@ flowchart LR
 
     D0["<b>Day 0</b><br/>PoC contract signed<br/>(no $$ commitment)"]:::step
     D7["<b>Day 7</b><br/>Tenant provisioned<br/>+ team trained"]:::step
-    D21["<b>Day 21</b><br/>First production audit<br/>hosted on Hawkeye"]:::step
+    D21["<b>Day 21</b><br/>First production audit<br/>hosted on S.M.A.R.T. Hawk"]:::step
     D45["<b>Day 45</b><br/>Second audit<br/>+ CAPA cycle live"]:::step
     D60["<b>Day 60</b><br/>Joint success-criteria review<br/>+ paid conversion decision"]:::win
 ```
 
 | PoC inclusion | What you get |
 |---|---|
-| Hawkeye tenant | Full EQMS · 30-day access · your data |
+| S.M.A.R.T. Hawk tenant | Full EQMS · 30-day access · your data |
 | Onboarding training | 2 sessions × 2 hours · your QA team |
 | 2 real audits hosted | Not demo data — your actual customer audits |
 | Joint success criteria | Defined Day 0 · measured Day 60 · written |
@@ -235,8 +235,8 @@ flowchart LR
 
 | Day | Milestone | Owner |
 |---|---|---|
-| 0 | Contract signed · tenant provisioned | Hawkeye |
-| 7 | QA team trained · users active | Hawkeye + Customer |
+| 0 | Contract signed · tenant provisioned | S.M.A.R.T. Hawk |
+| 7 | QA team trained · users active | S.M.A.R.T. Hawk + Customer |
 | 14 | First evidence imported · doc control live | Customer |
 | 21 | **First production audit hosted** | Customer |
 | 30 | Audit closed · CAPA cycle running | Customer |
@@ -257,7 +257,7 @@ flowchart LR
     classDef hw fill:#DCFCE7,stroke:#15803D,color:#14532D
     classDef cust fill:#DBEAFE,stroke:#1E40AF,color:#1E3A8A
 
-    H1["<b>Hawkeye provides</b><br/>Validation Summary<br/>IQ scripts<br/>OQ scripts<br/>PQ template"]:::hw
+    H1["<b>S.M.A.R.T. Hawk provides</b><br/>Validation Summary<br/>IQ scripts<br/>OQ scripts<br/>PQ template"]:::hw
     C1["<b>You execute</b><br/>IQ + OQ in your env<br/>PQ on real audits"]:::cust
     J1["<b>Joint sign-off</b><br/>Validation pack<br/>e-signed both sides"]:::hw
     A1["<b>Annual</b><br/>Revalidation summary<br/>+ change-impact reports"]:::hw
@@ -268,7 +268,7 @@ flowchart LR
 - **Standard templates** — Part 11 / Annex 11 mapped · ALCOA+ traced · GAMP 5 risk-based
 - **Customer-led execution** — you run IQ/OQ in your environment with our scripts
 - **Joint sign-off** — co-signed by your QA Head + our compliance lead
-- **Annual revalidation** — release-by-release impact assessments delivered by Hawkeye
+- **Annual revalidation** — release-by-release impact assessments delivered by S.M.A.R.T. Hawk
 
 *Slide 11 / 15*
 
@@ -281,8 +281,8 @@ flowchart LR
 | Cost / Saving | Annual |
 |---|---|
 | Today's quality cost (audit prep + response + consultants + findings) | ~₹95L |
-| Hawkeye reduces by 40% blended | **savings: ~₹38L** |
-| Hawkeye annual contract value | ~₹9L |
+| S.M.A.R.T. Hawk reduces by 40% blended | **savings: ~₹38L** |
+| S.M.A.R.T. Hawk annual contract value | ~₹9L |
 | **Net annual benefit** | **~₹29L** |
 | **Payback period** | **<4 months** |
 
@@ -342,7 +342,7 @@ If any of these are dealbreakers, tell us now — we'd rather lose a deal than o
 
 | Step | Who attends | Outcome |
 |---|---|---|
-| Today | You + Hawkeye founder | Decision: schedule technical demo? |
+| Today | You + S.M.A.R.T. Hawk founder | Decision: schedule technical demo? |
 | Week 1 | + Your QA analyst + IT lead | 60-min technical demo + Q&A · live module walk |
 | Week 2 | + Your CFO + CTO | Pricing + contract review · validation pack preview |
 | Week 3 | + Procurement | PoC contract signed · Day 0 begins |

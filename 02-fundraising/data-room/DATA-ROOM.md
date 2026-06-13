@@ -203,7 +203,7 @@ flowchart LR
 Monthly newsletter template (TBD). Suggested structure:
 
 ```
-HAWKEYE INVESTOR UPDATE — [Month Year]
+S.M.A.R.T. HAWK INVESTOR UPDATE — [Month Year]
 ─────────────────────────────────────
 
 🎯 THE ONE THING THIS MONTH

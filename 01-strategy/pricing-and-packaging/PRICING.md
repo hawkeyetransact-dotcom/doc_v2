@@ -35,8 +35,8 @@ flowchart LR
     C3 --> TOTAL
     C4 --> TOTAL
 
-    SAVE["Hawkeye-driven savings<br/>40% blended<br/>~₹38L (~$46K) / yr"]:::save
-    PRICE["Hawkeye ACV<br/>~₹9L (~$10.8K) / yr<br/>= 24% of savings"]:::price
+    SAVE["S.M.A.R.T. Hawk-driven savings<br/>40% blended<br/>~₹38L (~$46K) / yr"]:::save
+    PRICE["S.M.A.R.T. Hawk ACV<br/>~₹9L (~$10.8K) / yr<br/>= 24% of savings"]:::price
     NET["Customer net benefit<br/>~₹29L / yr<br/>Payback < 4 months"]:::save
 
     TOTAL --> SAVE
@@ -44,16 +44,16 @@ flowchart LR
     SAVE --> NET
 ```
 
-### Cost breakdown — the customer's spend today (without Hawkeye)
+### Cost breakdown — the customer's spend today (without S.M.A.R.T. Hawk)
 
-| Cost line | Annual cost | How Hawkeye reduces it |
+| Cost line | Annual cost | How S.M.A.R.T. Hawk reduces it |
 |---|---|---|
 | Audit preparation time (5 QA × 30 audits × 4 days × ₹10K/day loaded cost) | ₹60L | 50–60% time reduction via AI prep, autofill, evidence reuse |
 | Audit response & CAPA tracking (manual coordination) | ₹18L | 30–40% time reduction via cross-module wiring |
 | External audit-prep consultants | ₹6–15L | Reduced reliance; not eliminated |
 | Cost of audit findings & remediation (variable, ~1 critical/yr) | ₹5–25L | Reduced via earlier risk detection & public-data fusion |
 | **Total addressable cost / year** | **~₹95L (~$115K)** | — |
-| **Hawkeye-driven savings (conservative, 40% blended)** | **~₹38L (~$46K)** | |
+| **S.M.A.R.T. Hawk-driven savings (conservative, 40% blended)** | **~₹38L (~$46K)** | |
 
 ## 3. The pricing structure — what they pay
 
@@ -85,7 +85,7 @@ flowchart TB
 
 ## 5. Per-segment pricing summary
 
-| Segment | Customer savings / yr | Hawkeye ACV | Payback | Notes |
+| Segment | Customer savings / yr | S.M.A.R.T. Hawk ACV | Payback | Notes |
 |---|---|---|---|---|
 | **Tier 2 mid-pharma** (3 sites) | ~₹40-60L | ₹10-15L ($12-18K) | 3-4 months | Multiple sites; full EQMS |
 | **Tier 3 CDMO** (2-3 sites) | ~₹30-45L | ₹8-12L ($10-14K) | 3-4 months | Audit pain dominant |
@@ -191,8 +191,8 @@ Outputs:
 | Output | Calculation |
 |---|---|
 | Total today annual cost | Sum of all line items |
-| Hawkeye savings | 40% blended × total cost |
-| Hawkeye ACV | Per packaging table (sites × ₹2L + users × ₹40K + AI credits tier) |
+| S.M.A.R.T. Hawk savings | 40% blended × total cost |
+| S.M.A.R.T. Hawk ACV | Per packaging table (sites × ₹2L + users × ₹40K + AI credits tier) |
 | Net annual benefit | Savings − ACV |
 | Payback period | ACV / monthly savings = months |
 | 3-year cumulative net benefit | (Savings × 3) − (ACV × 3, escalated 5%/yr) |
@@ -212,7 +212,7 @@ Outputs:
 
 | Vendor | ACV (small/mid pharma) | Implementation | Time-to-value | Per-audit delivered cost |
 |---|---|---|---|---|
-| **Hawkeye** (Growth tier) | $10-12K | $0-5K | < 30 days | ~$400 |
+| **S.M.A.R.T. Hawk** (Growth tier) | $10-12K | $0-5K | < 30 days | ~$400 |
 | **Veeva Vault QMS** | $50-100K+ | $50-200K | 6-12 months | ~$3,000-5,000 |
 | **MasterControl** | $40-80K+ | $40-150K | 6-12 months | ~$2,500-4,000 |
 | **ComplianceQuest** | $25-60K | $15-50K | 3-6 months | ~$1,500-2,500 |
@@ -260,7 +260,7 @@ Outputs:
 >
 > 1. **Lead with value, close with structure.** Always.
 > 2. **Don't price by competitor.** Price by customer ROI; reference competitors only to confirm anchor.
-> 3. **No production freemium.** The Sandbox tier exists for top-of-funnel discovery (synthetic data, watermarked, 14-day expiry) but is NOT a free production tier. The 60-day PoC is the qualified trial — structured, time-boxed, real audit data, exit-criteria-driven. No customer runs their real audit program on Hawkeye for free, ever.
+> 3. **No production freemium.** The Sandbox tier exists for top-of-funnel discovery (synthetic data, watermarked, 14-day expiry) but is NOT a free production tier. The 60-day PoC is the qualified trial — structured, time-boxed, real audit data, exit-criteria-driven. No customer runs their real audit program on S.M.A.R.T. Hawk for free, ever.
 > 4. **No price erosion without justification.** Every discount > 10% requires a lever (multi-year, multi-site, reference status, or competitive displacement).
 > 5. **Transparency to existing customers.** When list prices change, give 90-day notice and grandfather one renewal cycle.
 > 6. **No surprise overage.** AI credit overage notifications at 50% / 80% / 100% with auto-suspend option, not auto-charge.

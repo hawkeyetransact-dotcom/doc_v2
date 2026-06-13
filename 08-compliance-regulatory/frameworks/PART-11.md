@@ -5,7 +5,7 @@
 | Owner | Compliance + Engineering |
 | Status | v1.0 (self-assessed; customer-led validation per tenant) |
 | Last updated | 2026-05-31 |
-| Scope | Hawkeye platform; all modules with electronic records or e-signatures |
+| Scope | S.M.A.R.T. Hawk platform; all modules with electronic records or e-signatures |
 
 ---
 
@@ -24,7 +24,7 @@ flowchart LR
 
 ## 2. Compliance matrix — Subpart B (Electronic Records)
 
-| Section | Requirement | Hawkeye control | Status |
+| Section | Requirement | S.M.A.R.T. Hawk control | Status |
 |---|---|---|---|
 | **§11.10(a)** | Validation: ensure accuracy, reliability, consistent intended performance, and discern invalid/altered records | Per-tenant validation summary (CSV/IQ/OQ/PQ); schema validation; integrity hashes on PDF artifacts | ✅ Self-assessed; customer-led CSV per tenant |
 | **§11.10(b)** | Generation of accurate and complete copies (human-readable + electronic form) | Export to JSON/CSV/PDF supported; audit-trail browser cross-module | ✅ |
@@ -38,11 +38,11 @@ flowchart LR
 | **§11.10(j)** | Establishment of and adherence to written policies that hold individuals accountable for actions initiated under their electronic signatures, deterring record falsification | Customer-side acceptable-use policy template provided; mandatory `reasonForChange` on every state change | ✅ template provided; tenant-specific enforcement is customer's |
 | **§11.10(k)(1)** | Use of appropriate controls over systems documentation (distribution of, and access to, documentation) | Doc_V2 + per-tenant validation packs; access-controlled | ✅ |
 | **§11.10(k)(2)** | Revision and change-control procedures to maintain an audit trail that documents time-sequenced development and modification of systems documentation | Git history + per-doc changelog in frontmatter; semantic versioning | ✅ |
-| **§11.30** | Closed-system attestation: persons using closed systems shall employ procedures and controls designed to ensure authenticity, integrity, and confidentiality of electronic records | Customer-side attestation supported via per-tenant configuration + validation summary | ⚠️ Tenant declares closed-system status; Hawkeye provides infrastructure |
+| **§11.30** | Closed-system attestation: persons using closed systems shall employ procedures and controls designed to ensure authenticity, integrity, and confidentiality of electronic records | Customer-side attestation supported via per-tenant configuration + validation summary | ⚠️ Tenant declares closed-system status; S.M.A.R.T. Hawk provides infrastructure |
 
 ## 3. Compliance matrix — Subpart C (Electronic Signatures)
 
-| Section | Requirement | Hawkeye control | Status |
+| Section | Requirement | S.M.A.R.T. Hawk control | Status |
 |---|---|---|---|
 | **§11.50(a)** | Signed electronic records shall contain information indicating: printed name of signer, date+time of signature, meaning of signature (e.g., review, approval) | `ElectronicSignature` schema captures signerId → name, signedAt, signatureMeaning enum (APPROVED / AUTHORED / WITNESSED / REVIEWED / REJECTED) | ✅ |
 | **§11.50(b)** | Above info shall be subject to same controls as electronic records and included as part of any human-readable form of the electronic record | E-sig fields rendered in PDF artifacts (audit-closure cert, signed reports); preserved in audit trail | ✅ |
@@ -95,7 +95,7 @@ flowchart LR
     classDef step fill:#dbeafe,stroke:#1e40af,color:#1e3a8a
 
     A["<b>Customer onboarding</b><br/>Validation kickoff meeting"]:::step
-    B["<b>Hawkeye provides</b><br/>Validation Summary doc<br/>IQ test scripts<br/>OQ test scripts<br/>PQ template"]:::step
+    B["<b>S.M.A.R.T. Hawk provides</b><br/>Validation Summary doc<br/>IQ test scripts<br/>OQ test scripts<br/>PQ template"]:::step
     C["<b>Customer executes</b><br/>IQ/OQ in their environment<br/>PQ with real audits"]:::step
     D["<b>Joint sign-off</b><br/>Validation summary signed<br/>Audit-trail of validation activities preserved"]:::step
     E["<b>Ongoing</b><br/>Annual revalidation<br/>Change impact assessments per release"]:::step
@@ -108,9 +108,9 @@ flowchart LR
 | Validation Summary doc | Per-tenant generated from template | Included in implementation |
 | IQ (Installation Qualification) scripts | Standard template | Included |
 | OQ (Operational Qualification) scripts | Standard template | Included |
-| PQ (Performance Qualification) template | Customer-led with Hawkeye support | Customer effort |
+| PQ (Performance Qualification) template | Customer-led with S.M.A.R.T. Hawk support | Customer effort |
 | Validation Sign-Off Certificate | Joint sign-off | Joint |
-| Annual revalidation summary | Hawkeye provides change log | Annual review |
+| Annual revalidation summary | S.M.A.R.T. Hawk provides change log | Annual review |
 
 ## 7. What's NOT in Part 11 scope (often confused)
 
@@ -134,7 +134,7 @@ flowchart LR
 
 ## See also
 
-- [PLATFORM-CONTROLS.md](../platform-controls/PLATFORM-CONTROLS.md) — how Hawkeye implements each requirement
+- [PLATFORM-CONTROLS.md](../platform-controls/PLATFORM-CONTROLS.md) — how S.M.A.R.T. Hawk implements each requirement
 - [SECURITY.md](../../04-engineering/06-security/SECURITY.md) — auth + RBAC + e-sig details
 - [DATA-INTEGRITY](../data-integrity/) (ALCOA+) — TBD
 - [DESIGN-AND-DEVELOPMENT-PLAN.md](../validation/DESIGN-AND-DEVELOPMENT-PLAN.md) — GAMP Cat 4 design-control plan (820.30 / IEC 62304 / Part 11)

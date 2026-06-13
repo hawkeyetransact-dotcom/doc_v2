@@ -11,7 +11,7 @@
 
 ## What is an ADR?
 
-An **Architecture Decision Record** captures a significant engineering decision: the context, what was decided, alternatives considered, and consequences. Inspired by Michael Nygard's ADR pattern (2011) and adapted to Hawkeye's compliance posture.
+An **Architecture Decision Record** captures a significant engineering decision: the context, what was decided, alternatives considered, and consequences. Inspired by Michael Nygard's ADR pattern (2011) and adapted to S.M.A.R.T. Hawk's compliance posture.
 
 | | ADR (this folder) | PDR (`03-product/05-decisions/`) |
 |---|---|---|

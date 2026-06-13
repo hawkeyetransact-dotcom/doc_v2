@@ -22,7 +22,7 @@ gantt
     AskHawk drift catchup :2026-06, 2M
     section NEXT (M6-M12)
     SOC 2 Type 1 :2026-12, 3M
-    Hawkeye-tuned Llama-3 in production :2026-12, 4M
+    S.M.A.R.T. Hawk-tuned Llama-3 in production :2026-12, 4M
     Active learning UI :2027-02, 3M
     MFA + SSO :2026-09, 4M
     e-sig hard mode default :2026-11, 1M
@@ -57,7 +57,7 @@ Theme: **AI defensibility + security maturity + Seed-trigger milestones.**
 | # | Deliverable | Owner | Why |
 |---|---|---|---|
 | 1 | SOC 2 Type 1 certified | Security | Enterprise prospect prerequisite |
-| 2 | Hawkeye-tuned Llama-3 in production (low-stakes tasks) | AI Eng | The fine-tune moat path |
+| 2 | S.M.A.R.T. Hawk-tuned Llama-3 in production (low-stakes tasks) | AI Eng | The fine-tune moat path |
 | 3 | Active-learning loop UI (variant proposal + A/B test) | AI Eng | Continuous improvement |
 | 4 | MFA + SSO (TOTP + SAML/Okta/Azure AD) | Security | Enterprise + Part 11 §11.200(a)(1) |
 | 5 | E-sig hard mode default for production tenants | Eng | Part 11 §11.10(j) production-readiness |

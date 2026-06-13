@@ -1,6 +1,6 @@
 # Infrastructure & Operations
 
-## Hawkeye Platform Deployment, CI/CD, Observability
+## S.M.A.R.T. Hawk Platform Deployment, CI/CD, Observability
 
 | Field | Value |
 |---|---|
@@ -322,7 +322,7 @@ PagerDuty (or equivalent) triggers paging based on Sentry severity + uptime moni
 
 ## 12. AWS decommission status (as of 2026-06-05)
 
-Hawkeye historically used AWS (S3 + SES) but has migrated to provider-agnostic S3 + SMTP. See [AWS-DECOMMISSION.md](./AWS-DECOMMISSION.md) for the full migration runbook.
+S.M.A.R.T. Hawk historically used AWS (S3 + SES) but has migrated to provider-agnostic S3 + SMTP. See [AWS-DECOMMISSION.md](./AWS-DECOMMISSION.md) for the full migration runbook.
 
 Current status: code is provider-agnostic; default deployment uses Cloudflare R2 + Resend.
 

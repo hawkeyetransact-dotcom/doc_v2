@@ -11,7 +11,7 @@
 
 ## 1. Security posture in one paragraph
 
-> 💡 **Hawkeye implements Part 11 / Annex 11–grade access control + audit trail + e-signature as the platform's primary security spine.** Every protected request runs through a 4-layer middleware chain (auth → tenant → RBAC → e-sig). Every state change writes an immutable audit-trail row with mandatory reason-for-change. Every signed action mints an `ElectronicSignature` record with bcrypt-verified password + IP + UA + intent. Multi-tenancy is service-layer enforced, not just route-layer. AI is grounded + reproducible, with model version + prompt hash captured in audit trail. The goal: a regulator can ask "what changed, when, by whom, why, with what evidence" and get an answer in <2 sec.
+> 💡 **S.M.A.R.T. Hawk implements Part 11 / Annex 11–grade access control + audit trail + e-signature as the platform's primary security spine.** Every protected request runs through a 4-layer middleware chain (auth → tenant → RBAC → e-sig). Every state change writes an immutable audit-trail row with mandatory reason-for-change. Every signed action mints an `ElectronicSignature` record with bcrypt-verified password + IP + UA + intent. Multi-tenancy is service-layer enforced, not just route-layer. AI is grounded + reproducible, with model version + prompt hash captured in audit trail. The goal: a regulator can ask "what changed, when, by whom, why, with what evidence" and get an answer in <2 sec.
 
 ## 2. The 4-layer security chain
 
@@ -58,7 +58,7 @@ flowchart LR
 | `supplierUser` | Supplier ops staff (fills assigned sections) |
 | `tenant_admin` | Manages users + RBAC + tenant config within their tenant |
 | `admin` | Platform-side admin (limited; legacy) |
-| `superadmin` | Platform-wide admin (Hawkeye staff only) |
+| `superadmin` | Platform-wide admin (S.M.A.R.T. Hawk staff only) |
 
 ### RBAC enforcement points
 
@@ -191,7 +191,7 @@ sequenceDiagram
 
 ## 8. Data integrity (ALCOA+)
 
-Hawkeye implements all 9 ALCOA+ principles:
+S.M.A.R.T. Hawk implements all 9 ALCOA+ principles:
 
 | Principle | Implementation |
 |---|---|
@@ -242,7 +242,7 @@ Hawkeye implements all 9 ALCOA+ principles:
 | Customer data (audit findings, CAPAs, etc.) | Tenant-isolated; no cross-tenant access without affiliation |
 | AI prompts/responses | Logged in audit trail with prompt hash (not plaintext); LLM provider data-retention disabled where supported (Anthropic + OpenAI enterprise) |
 | Voice/video recordings (remote audits) | S3 with tenant-prefixed bucket; encrypted at rest; per-tenant retention rules |
-| Payment data | Stripe-tokenized; NEVER touches Hawkeye servers |
+| Payment data | Stripe-tokenized; NEVER touches S.M.A.R.T. Hawk servers |
 
 ### Data subject rights
 
@@ -275,7 +275,7 @@ Hawkeye implements all 9 ALCOA+ principles:
 | **JWT compromise** | Medium | High | Short expiry (24h); MFA roadmap; planned denylist with MFA rollout |
 | **LLM prompt injection** (user input manipulates AI to do bad things) | Medium | Medium | Grounded gen requires citations; structured output; user reviews AI drafts |
 | **DDoS / rate-limit bypass** | Medium | Medium | Provider-level + endpoint-level rate limits |
-| **Insider threat** (Hawkeye staff misuse) | Low | Critical | Superadmin access logged in audit trail; least-privilege roles |
+| **Insider threat** (S.M.A.R.T. Hawk staff misuse) | Low | Critical | Superadmin access logged in audit trail; least-privilege roles |
 | **Dependency vulnerability** (npm package CVE) | High | Medium | `npm audit` in CI; Dependabot; quarterly review |
 | **Customer data exfiltration via legitimate API** | Medium | Medium | Rate limits + per-user usage monitoring + alerting on anomalies |
 

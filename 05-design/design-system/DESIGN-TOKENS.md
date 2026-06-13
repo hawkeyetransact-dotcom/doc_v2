@@ -1,12 +1,12 @@
 # Design Tokens
 
-## Hawkeye Design System — Color · Typography · Spacing · Elevation · Motion
+## S.M.A.R.T. Hawk Design System — Color · Typography · Spacing · Elevation · Motion
 
 | Field | Value |
 |---|---|
 | Owner | Design · Frontend Engineering |
 | Status | v1.0 — 2026-06-05 |
-| Scope | The authoritative token spec used across all Hawkeye UI surfaces |
+| Scope | The authoritative token spec used across all S.M.A.R.T. Hawk UI surfaces |
 | Pairs with | [DESIGN-PRINCIPLES.md](./DESIGN-PRINCIPLES.md) · [COMPONENT-INVENTORY.md](../wireframes/COMPONENT-INVENTORY.md) · [ACCESSIBILITY.md](../accessibility/ACCESSIBILITY.md) · [FRONTEND.md](../../04-engineering/04-frontend/FRONTEND.md) |
 | Code home | `frontend/lib/theme.ts` |
 
@@ -182,7 +182,7 @@ Spacing is on a 4-pixel base scale. Use semantic spacing tokens for layout inten
 | `elevation.3` | `0 10px 15px rgba(0,0,0,0.10)` | Modals · drawers |
 | `elevation.4` | `0 20px 25px rgba(0,0,0,0.10)` | Toast notifications · floating overlays |
 
-Hawkeye uses elevation sparingly — density over delight means most surfaces are flat with subtle dividers, not layered with shadows.
+S.M.A.R.T. Hawk uses elevation sparingly — density over delight means most surfaces are flat with subtle dividers, not layered with shadows.
 
 ---
 
@@ -212,7 +212,7 @@ Hawkeye uses elevation sparingly — density over delight means most surfaces ar
 | `bp.xl` | 1280px | Desktops |
 | `bp.2xl` | 1536px | Large desktops · QA work stations |
 
-Hawkeye web is responsive from 360px upward. Most QA work happens at ≥1280px (data density is the priority); mobile companion app (M9) handles smaller form factors natively.
+S.M.A.R.T. Hawk web is responsive from 360px upward. Most QA work happens at ≥1280px (data density is the priority); mobile companion app (M9) handles smaller form factors natively.
 
 ---
 
@@ -234,12 +234,12 @@ Hawkeye web is responsive from 360px upward. Most QA work happens at ≥1280px (
 
 | Aspect | Spec |
 |---|---|
-| Library | Material Icons (via `@mui/icons-material`) + custom Hawkeye-specific icons |
+| Library | Material Icons (via `@mui/icons-material`) + custom S.M.A.R.T. Hawk-specific icons |
 | Standard size | 20px (matches `text.lg` line-height) |
 | Inline-in-text size | 14px (matches `text.base`) |
 | Always paired with text label for status semantics | per [ACCESSIBILITY.md §6](../accessibility/ACCESSIBILITY.md) |
 | Stroke / fill | Material default (filled for primary actions, outlined for secondary) |
-| Custom Hawkeye icons | `frontend/components/ui/icons/` — Phase stepper · Pillar markers · Confidence badge · AI sparkle |
+| Custom S.M.A.R.T. Hawk icons | `frontend/components/ui/icons/` — Phase stepper · Pillar markers · Confidence badge · AI sparkle |
 
 ---
 

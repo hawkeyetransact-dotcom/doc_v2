@@ -405,7 +405,7 @@ Maps platform features to the regulatory clauses they implement. Full URS-level 
 
 ## 12. The Five-Pillar Walkthrough
 
-Audit Management is one expression of Hawkeye's universal 5-pillar pipeline (**COLLECT → PROCESS → VALIDATE → REPORT → SEAL**). This section narrates how an audit walks the pillars end-to-end, maps each pillar to the actual code, and notes the cross-module spawn at close. The same shape applies to every regulated workflow on the platform — see the MASTER-REFERENCE for the canonical pattern.
+Audit Management is one expression of S.M.A.R.T. Hawk's universal 5-pillar pipeline (**SOURCE → MODEL → ASSESS → REPORT → TRACE**). This section narrates how an audit walks the pillars end-to-end, maps each pillar to the actual code, and notes the cross-module spawn at close. The same shape applies to every regulated workflow on the platform — see the MASTER-REFERENCE for the canonical pattern.
 
 ### 12.1 Narrative
 

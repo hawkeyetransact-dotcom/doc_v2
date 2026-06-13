@@ -1,16 +1,16 @@
-# Hawkeye — Investor Deck
+# S.M.A.R.T. Hawk — Investor Deck
 
 | Field | Value |
 |---|---|
 | Audience | Angel investors + early-stage VCs |
 | Round | Pre-seed / Angel — $1.2–1.5M (target $1.5M) |
 | Status | v1.0 — 2026-06-01 |
-| Pairs with | [HAWKEYE-STORY.md](../../HAWKEYE-STORY.md) · [BUSINESS-PLAN.md](../business-plan/BUSINESS-PLAN.md) · [PITCH-DECK.md](PITCH-DECK.md) |
+| Pairs with | [SMART-HAWK-STORY.md](../../SMART-HAWK-STORY.md) · [BUSINESS-PLAN.md](../business-plan/BUSINESS-PLAN.md) · [PITCH-DECK.md](PITCH-DECK.md) |
 | Format | 15 slides · 12-15 min delivery |
 
 ---
 
-## 1. Hawkeye — The Regulated-Supply-Chain Compliance Engine
+## 1. S.M.A.R.T. Hawk — The Regulated-Supply-Chain Compliance Engine
 
 > 💡 **The one line.** An industry-agnostic compliance engine that wins regulated supply chains one vertical at a time. Pharma today, food + med-device tomorrow, every standards-governed industry over time.
 
@@ -51,7 +51,7 @@ flowchart LR
 
     V["Veeva · MasterControl<br/>Tier-1 pharma<br/>$50-100K+ ACV"]:::veeva
     M["Tier-2/3 SMB pharma<br/>900-1,400 accounts India<br/>cannot afford Veeva"]:::gap
-    H["<b>Hawkeye</b><br/>$8-14K ACV<br/>full EQMS + native AI"]:::hawk
+    H["<b>S.M.A.R.T. Hawk</b><br/>$8-14K ACV<br/>full EQMS + native AI"]:::hawk
 
     V -. ignores .-> M
     M --> H
@@ -164,7 +164,7 @@ flowchart LR
 > - Paid customers (2 design partners in active discovery: Sanpras + Novex)
 > - SOC 2 Type 1 (target M12)
 > - Per-tenant validation packs (template ready; first execution at first customer)
-> - Hawkeye-tuned Llama-3 in production (M12)
+> - S.M.A.R.T. Hawk-tuned Llama-3 in production (M12)
 
 *Slide 7 / 15*
 
@@ -179,8 +179,8 @@ flowchart LR
     classDef price fill:#DBEAFE,stroke:#1E40AF,color:#1E3A8A
 
     C["Customer cost today<br/>~₹95L / $115K"]:::cost
-    S["Hawkeye savings<br/>~₹38L / $46K<br/>(40% blended)"]:::save
-    P["Hawkeye ACV<br/>~₹9L / $11K<br/>= 24% of savings"]:::price
+    S["S.M.A.R.T. Hawk savings<br/>~₹38L / $46K<br/>(40% blended)"]:::save
+    P["S.M.A.R.T. Hawk ACV<br/>~₹9L / $11K<br/>= 24% of savings"]:::price
     N["Net annual benefit<br/>~₹29L<br/>Payback < 4 months"]:::save
 
     C --> S --> P --> N
@@ -264,7 +264,7 @@ flowchart LR
 - 8% GTM (events, content, tools)
 - 7% buffer + ops
 
-**Milestones at close:** 25-35 paying customers · $250-400K ARR · Hawkeye-tuned AI in production · 1+ ring-1 customer signed.
+**Milestones at close:** 25-35 paying customers · $250-400K ARR · S.M.A.R.T. Hawk-tuned AI in production · 1+ ring-1 customer signed.
 
 *Slide 12 / 15*
 
@@ -325,6 +325,6 @@ flowchart LR
 
 **Contact:** founders@hawkeye.app · `[insert Calendly]`
 
-Read next: [HAWKEYE-STORY.md](../../HAWKEYE-STORY.md) for the full narrative · [BUSINESS-PLAN.md](../business-plan/BUSINESS-PLAN.md) for the bottom-up financials.
+Read next: [SMART-HAWK-STORY.md](../../SMART-HAWK-STORY.md) for the full narrative · [BUSINESS-PLAN.md](../business-plan/BUSINESS-PLAN.md) for the bottom-up financials.
 
 *Slide 15 / 15 · Thank you · Q&A*

@@ -1,6 +1,6 @@
 # PROJECT-STATE
 
-> 🛑 **READ THIS FIRST** — Before any Claude (mobile or desktop) takes an action on Hawkeye work, read this document. It is the canonical "what's been decided · what's true now · where to look" state. It is **deliberately short** so it stays accurate.
+> 🛑 **READ THIS FIRST** — Before any Claude (mobile or desktop) takes an action on S.M.A.R.T. Hawk work, read this document. It is the canonical "what's been decided · what's true now · where to look" state. It is **deliberately short** so it stays accurate.
 
 | Field | Value |
 |---|---|
@@ -15,7 +15,7 @@
 
 ## 1. The thesis (one paragraph)
 
-Hawkeye is an **industry-agnostic AI-native compliance engine for regulated supply chains** — pharma is the **forcing function, not the destination.** Pharma produces the hardest regulatory bar (GxP · 21 CFR Part 11 · ALCOA+ · validated AI · on-prem sovereignty) which forces an architecture every other regulated supply chain (food, devices, automotive, aerospace, chemicals) can inherit by configuration.
+S.M.A.R.T. Hawk is an **industry-agnostic AI-native compliance engine for regulated supply chains** — pharma is the **forcing function, not the destination.** Pharma produces the hardest regulatory bar (GxP · 21 CFR Part 11 · ALCOA+ · validated AI · on-prem sovereignty) which forces an architecture every other regulated supply chain (food, devices, automotive, aerospace, chemicals) can inherit by configuration.
 
 ---
 
@@ -176,7 +176,7 @@ Hawkeye is an **industry-agnostic AI-native compliance engine for regulated supp
 
 | # | Value | Quantified outcome | Validated by |
 |---|---|---|---|
-| 1 | **40% audit-prep cost reduction** | Payback < 4 months · ~₹38L savings on ₹95L baseline | Hawkeye PoC measurement on real audits |
+| 1 | **40% audit-prep cost reduction** | Payback < 4 months · ~₹38L savings on ₹95L baseline | S.M.A.R.T. Hawk PoC measurement on real audits |
 | 2 | **GAMP 5 Category 4 configured product** | ~60% less validation effort vs Cat 5 bespoke | ISPE GAMP 5 2nd Ed (Jul 2022) · FDA CSA |
 | 3 | **Part 11 + Annex 11 + ALCOA+ by design** | 100% e-sig attribute coverage · 9 ALCOA+ attributes designed-in · tamper-evident audit trail | 21 CFR §11.10/§11.50/§11.200 · EU GMP Annex 11 · MHRA 2018 · WHO TRS 1033 |
 | 4 | **Trust-First Layer 1 architecture** | Per-tenant isolation · zero AI-training on customer data · IN/US/EU residency | India DPDP Act 2023 · IBM 2025 healthcare avg breach $7.42M |
@@ -197,7 +197,7 @@ Hawkeye is an **industry-agnostic AI-native compliance engine for regulated supp
 
 - [WORKFLOW.md](./WORKFLOW.md) — operating rules · what to say to mobile vs desktop Claude
 - [INDEX.md](./INDEX.md) — folder tree
-- [HAWKEYE-STORY.md](./HAWKEYE-STORY.md) — narrative version
+- [SMART-HAWK-STORY.md](./SMART-HAWK-STORY.md) — narrative version
 - [README.md](./README.md) — repo-level read-me
 - [from Web/Doc_V2_from_Web/00_README_AND_SUMMARY.md](./from%20Web/Doc_V2_from_Web/00_README_AND_SUMMARY.md) — full web-bundle index
 

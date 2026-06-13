@@ -23,7 +23,7 @@ flowchart TB
     classDef tech fill:#fef3c7,stroke:#92400e,color:#78350f
     classDef advisory fill:#f3e8ff,stroke:#7c3aed,color:#581c87
 
-    H["<b>HAWKEYE</b>"]
+    H["<b>S.M.A.R.T. HAWK</b>"]
 
     CH["<b>1. CHANNEL PARTNERS</b><br/>Resell, co-sell, refer<br/>Pharma consultants<br/>Regional SIs<br/>Industry associations"]:::channel
 
@@ -45,7 +45,7 @@ flowchart TB
 
 | Type | Profile | Why it fits | Where to find |
 |---|---|---|---|
-| **Pharma quality consultancies** | Mid-size firms doing audit-prep + CSV validation for SMB pharma | They sell hours; we sell software. Bundle Hawkeye to scale their service. | India: Sandstone Bio, Q-Quality, mid-tier validation firms. US/EU: post-Series-A. |
+| **Pharma quality consultancies** | Mid-size firms doing audit-prep + CSV validation for SMB pharma | They sell hours; we sell software. Bundle S.M.A.R.T. Hawk to scale their service. | India: Sandstone Bio, Q-Quality, mid-tier validation firms. US/EU: post-Series-A. |
 | **Regional system integrators** | India SIs with pharma vertical practice | Have existing customer relationships in our ICP | Wipro Pharma, TCS Life Sciences (selective), boutique firms |
 | **Industry associations / clusters** | IPA, IDMA, CDMO associations, pharma export councils | Reach into Tier 2/3 directly; member newsletters + events | Industry events; founder networking |
 | **Audit-management consultancies** | Firms specializing in third-party audit programs | Refer customers who need software to manage their audit workload | LinkedIn + targeted outreach |
@@ -56,7 +56,7 @@ flowchart TB
 |---|---|---|
 | **Referral** (lowest commitment) | 10% Y1 revenue share on closed deals | Warm intros to qualified prospects |
 | **Co-sell** | 15% Y1 revenue share + co-marketing collateral | Joint sales meetings; partner team trained on demo |
-| **Resell** (post-Series-A) | 25% Y1, 15% Y2 revenue share + reseller discount | Partner closes + supports customer; Hawkeye provides product + L2 support |
+| **Resell** (post-Series-A) | 25% Y1, 15% Y2 revenue share + reseller discount | Partner closes + supports customer; S.M.A.R.T. Hawk provides product + L2 support |
 
 > ⚠️ **Not now: full reseller programs.** Reseller arrangements need product maturity, support depth, and partner enablement we don't have at pre-seed. Start with **referral + co-sell** only. Reseller programs are a Series A activity.
 
@@ -78,7 +78,7 @@ flowchart LR
     classDef should fill:#fef3c7,stroke:#92400e,color:#78350f
     classDef later fill:#f1f5f9,stroke:#475569,color:#334155
 
-    H["Hawkeye Integration<br/>Layer"]
+    H["S.M.A.R.T. Hawk Integration<br/>Layer"]
 
     M1["LabWare LIMS"]:::must
     M2["SAP S/4HANA<br/>(quality module)"]:::must
@@ -230,7 +230,7 @@ gantt
 | Risk | Mitigation |
 |---|---|
 | **Partner over-commits, under-delivers** | 90-day evaluation period; no exclusivity until proven; clear KPIs (leads, demos, closed deals) |
-| **Partner brand dilutes Hawkeye message** | Co-marketing materials require Hawkeye approval; partner-led demos co-presented with Hawkeye for first N customers |
+| **Partner brand dilutes S.M.A.R.T. Hawk message** | Co-marketing materials require S.M.A.R.T. Hawk approval; partner-led demos co-presented with S.M.A.R.T. Hawk for first N customers |
 | **Channel conflict** with direct sales | Define clear territory rules (segment, geography, account list); register-the-deal process from day one |
 | **Integration partner sunsets product** (e.g., a LIMS vendor we depend on) | Build vendor-agnostic abstractions; integrations are nice-to-have, not lock-in |
 | **Equity stake to advisor doesn't justify value** | Vest over 4 years; clear engagement deliverables; pause vesting if disengaged |

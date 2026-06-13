@@ -8,7 +8,7 @@
 | Last updated | 2026-06-01 |
 | Companion (reference) docs | [URS.md](URS.md) · [DESIGN.md](DESIGN.md) · [ARCHITECTURE.md](ARCHITECTURE.md) |
 
-> ⚠️ **Honesty up front.** Marketplace is the youngest, least-built module in Hawkeye. This storybook describes the **vision and the cold-start plan** — not what ships today. Backend scaffolding exists for catalog v2, org directory, and engagement layer; the differentiator features (auditor matching, semantic supplier search, network economics) are **plan-stage**. We chose to write the story now because it's how we explain *why we're not building it yet* — and what we will build, in what order, once the platform earns the right.
+> ⚠️ **Honesty up front.** Marketplace is the youngest, least-built module in S.M.A.R.T. Hawk. This storybook describes the **vision and the cold-start plan** — not what ships today. Backend scaffolding exists for catalog v2, org directory, and engagement layer; the differentiator features (auditor matching, semantic supplier search, network economics) are **plan-stage**. We chose to write the story now because it's how we explain *why we're not building it yet* — and what we will build, in what order, once the platform earns the right.
 
 ---
 
@@ -61,7 +61,7 @@ flowchart LR
 | **Trade directories (PharmaCompass, Drugbank)** | Supplier discovery | No qualification status; no capability semantic search; static listings |
 | **Veeva** | EQMS workflow | No marketplace at all |
 
-> 🚫 **The honest framing.** No platform today bridges buyer demand, auditor supply, and supplier visibility on top of a real qualification system. Hawkeye can — because we already run the qualification workflow upstream. The marketplace is the network layer **on top of** something we already have to be good at.
+> 🚫 **The honest framing.** No platform today bridges buyer demand, auditor supply, and supplier visibility on top of a real qualification system. S.M.A.R.T. Hawk can — because we already run the qualification workflow upstream. The marketplace is the network layer **on top of** something we already have to be good at.
 
 ---
 
@@ -71,7 +71,7 @@ flowchart LR
 
 ## §2. What Marketplace v2 will be
 
-A two-sided platform with three discoverability surfaces, all powered by the qualification + COI data already running in Hawkeye's other modules:
+A two-sided platform with three discoverability surfaces, all powered by the qualification + COI data already running in S.M.A.R.T. Hawk's other modules:
 
 ```mermaid
 flowchart TB
@@ -88,7 +88,7 @@ flowchart TB
         L["Supplier directory<br/>(seeded from Prequal)"]:::plan
     end
 
-    subgraph Engine["Hawkeye Platform (built today)"]
+    subgraph Engine["S.M.A.R.T. Hawk Platform (built today)"]
         Q["Supplier Prequalification<br/>(qualification status)"]:::build
         F["Auditor Affiliation<br/>(COI graph)"]:::build
         AM["Audit Management<br/>(engagement to audit)"]:::build
@@ -244,9 +244,9 @@ flowchart TB
 
 ## §4b. The two-sided liquidity challenge
 
-Every two-sided marketplace fails without both supply and demand at launch. Hawkeye's path through this:
+Every two-sided marketplace fails without both supply and demand at launch. S.M.A.R.T. Hawk's path through this:
 
-| Problem | Hawkeye's lever |
+| Problem | S.M.A.R.T. Hawk's lever |
 |---|---|
 | **Cold-start supply (auditors)** | Recruit 10-20 auditors from PoC partners; pay-per-engagement model; no listing fee at cold-start |
 | **Cold-start supply (suppliers)** | Auto-populate from Supplier Prequalification — every qualified supplier in a paying customer's tenant becomes eligible (opt-in) |
@@ -276,7 +276,7 @@ flowchart LR
     G2 --> G3
 ```
 
-> ✅ **The harvest model.** Hawkeye doesn't need a "marketplace launch event" with paid acquisition. Every paying audit-module customer brings their qualified suppliers and used auditors with them. The marketplace **emerges** from the EQMS install base.
+> ✅ **The harvest model.** S.M.A.R.T. Hawk doesn't need a "marketplace launch event" with paid acquisition. Every paying audit-module customer brings their qualified suppliers and used auditors with them. The marketplace **emerges** from the EQMS install base.
 
 ---
 
@@ -313,7 +313,7 @@ flowchart LR
 
     L1["<b>Layer 1 · Matching fees</b><br/>Transaction fee on auditor engagement<br/>5-10% of engagement value<br/><i>Year 2 onward</i>"]:::l1
     L2["<b>Layer 2 · Premium tier</b><br/>Supplier-discovery boost<br/>Analytics dashboard<br/><i>Year 2-3</i>"]:::l2
-    L3["<b>Layer 3 · Cross-buyer audit sharing</b><br/>Consent-based audit-report reuse<br/>Revenue split: Hawkeye + auditor + buyer + supplier<br/><i>Year 3+ · the moat</i>"]:::l3
+    L3["<b>Layer 3 · Cross-buyer audit sharing</b><br/>Consent-based audit-report reuse<br/>Revenue split: S.M.A.R.T. Hawk + auditor + buyer + supplier<br/><i>Year 3+ · the moat</i>"]:::l3
 
     L1 --> L2 --> L3
 ```
@@ -328,9 +328,9 @@ Suppliers pay for visibility boost in buyer searches + an analytics dashboard (w
 
 ### Layer 3 — Cross-buyer audit sharing (URS-B-004) — *the moat*
 
-The vision is simple, the legal complexity is real: if Cipla audits Sanpras in Q1, and Lupin needs the same audit data in Q2, the platform can broker a **consented** share. The original auditor stays in the loop. The supplier consents. Hawkeye takes a share. Lupin saves the cost of a redundant audit. Cipla optionally recovers cost.
+The vision is simple, the legal complexity is real: if Cipla audits Sanpras in Q1, and Lupin needs the same audit data in Q2, the platform can broker a **consented** share. The original auditor stays in the loop. The supplier consents. S.M.A.R.T. Hawk takes a share. Lupin saves the cost of a redundant audit. Cipla optionally recovers cost.
 
-**Why this only works with Hawkeye:**
+**Why this only works with S.M.A.R.T. Hawk:**
 - Audit reports come signed + integrity-hashed (Part 11 native)
 - Supplier consent UI is part of the platform
 - Auditor identity is verified
@@ -432,7 +432,7 @@ Goal: network economics.
 | The wedge module that funds marketplace | [../audit-management/STORYBOOK.md](../audit-management/STORYBOOK.md) |
 | The upstream module that seeds supplier directory | [../supplier-prequalification/URS.md](../supplier-prequalification/URS.md) |
 | Pre-code analysis (backend legacy) | `backend/docs/marketplace-v2/IMPLEMENTATION_PLAN.md` |
-| The full Hawkeye narrative | [../../HAWKEYE-STORY.md](../../HAWKEYE-STORY.md) |
+| The full S.M.A.R.T. Hawk narrative | [../../SMART-HAWK-STORY.md](../../SMART-HAWK-STORY.md) |
 | The platform-wide architecture (CTO) | [../../04-engineering/00-overview/PLATFORM-ENGINEERING.md](../../04-engineering/00-overview/PLATFORM-ENGINEERING.md) |
 
 ---

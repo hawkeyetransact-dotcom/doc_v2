@@ -53,9 +53,9 @@ sequenceDiagram
     autonumber
     participant U as User
     participant E as Email
-    participant FE as Hawkeye Frontend
+    participant FE as S.M.A.R.T. Hawk Frontend
     participant IDP as Customer IdP - Okta or Azure AD
-    participant BE as Hawkeye Backend
+    participant BE as S.M.A.R.T. Hawk Backend
 
     U->>E: Receives invitation email
     E->>U: Link to invitation acceptance URL
@@ -65,8 +65,8 @@ sequenceDiagram
     FE->>IDP: SAML or OIDC redirect
     U->>IDP: Authenticates with password and MFA per IdP policy
     IDP-->>FE: SAML or OIDC assertion
-    FE->>BE: Exchange assertion for Hawkeye JWT
-    BE->>BE: Provision user record and link IdP identity to Hawkeye userId
+    FE->>BE: Exchange assertion for S.M.A.R.T. Hawk JWT
+    BE->>BE: Provision user record and link IdP identity to S.M.A.R.T. Hawk userId
     BE-->>FE: JWT in httpOnly cookie
     FE->>U: Redirect to onboarding first-time or dashboard subsequent
 ```
@@ -75,7 +75,7 @@ sequenceDiagram
 
 **Success criteria:**
 - User reaches /dashboard within 30 seconds of clicking invitation
-- No password ever entered on Hawkeye (all auth via IdP)
+- No password ever entered on S.M.A.R.T. Hawk (all auth via IdP)
 - Audit-trail row: `USER_PROVISIONED` with IdP identity, IP, UTC
 
 ---
@@ -96,7 +96,7 @@ This is the headline flow — the one PoC measurement compares against the custo
 sequenceDiagram
     autonumber
     participant QM as QA Manager
-    participant FE as Hawkeye UI
+    participant FE as S.M.A.R.T. Hawk UI
     participant AI as AI Gateway
     participant DB as Data Layer
     participant AT as Audit Trail
@@ -203,7 +203,7 @@ This flow is invoked from every signed action: finding signoff, CAPA approval, d
 sequenceDiagram
     autonumber
     participant U as User
-    participant FE as Hawkeye UI
+    participant FE as S.M.A.R.T. Hawk UI
     participant BE as Backend
     participant DB as Data Layer
     participant AT as Audit Trail
@@ -382,13 +382,13 @@ The QA Head opens the Inspection-Readiness module, selects the inspection scope 
 | Layers touched | Layer 5 (UI) · Layer 2 (audit-trail query) |
 | Compliance | Annex 11 §9 (audit trails reviewed regularly) · §15 (batch release) |
 
-Per [GAMP-CAT-4-COMPLIANCE.md §22](../../08-compliance-regulatory/GAMP-CAT-4-COMPLIANCE.md), one of the top FDA-483 themes is "audit trails not reviewed as part of batch release." Hawkeye addresses this with a dedicated gate:
+Per [GAMP-CAT-4-COMPLIANCE.md §22](../../08-compliance-regulatory/GAMP-CAT-4-COMPLIANCE.md), one of the top FDA-483 themes is "audit trails not reviewed as part of batch release." S.M.A.R.T. Hawk addresses this with a dedicated gate:
 
 ```mermaid
 sequenceDiagram
     autonumber
     participant QM as QA Manager
-    participant FE as Hawkeye UI
+    participant FE as S.M.A.R.T. Hawk UI
 
     QM->>FE: Open batch record for release
     FE->>QM: Show required Audit-Trail Review gate

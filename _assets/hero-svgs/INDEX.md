@@ -5,7 +5,7 @@
 | Owner | Founders + Design |
 | Status | v1.0 |
 | Last updated | 2026-05-31 |
-| Audience | Anyone presenting / pitching / explaining Hawkeye |
+| Audience | Anyone presenting / pitching / explaining S.M.A.R.T. Hawk |
 
 > 💡 **What these are.** Five hand-crafted SVG diagrams that get used across decks, docs, and presentations. AWS-architecture-poster style — layered, annotated, code-traced. Each one is the canonical visual for its concept and should be reused (not redrawn in Mermaid each time).
 
@@ -15,10 +15,10 @@
 
 | # | File | Use it for | Used in |
 |---|---|---|---|
-| 1 | [`01-platform-architecture.svg`](01-platform-architecture.svg) | The 3-layer engine (Config + 5 pillars + AI Gateway) | HAWKEYE-STORY · PLATFORM-EXECUTIVE · VISION · Investor deck · CTO deck |
+| 1 | [`01-platform-architecture.svg`](01-platform-architecture.svg) | The 3-layer engine (Config + 5 pillars + AI Gateway) | SMART-HAWK-STORY · PLATFORM-EXECUTIVE · VISION · Investor deck · CTO deck |
 | 2 | [`02-audit-lifecycle.svg`](02-audit-lifecycle.svg) | Audit Management 8-phase swim-lane | Audit STORYBOOK · QA Head deck · Demo materials |
 | 3 | [`03-askhawk-3-phase.svg`](03-askhawk-3-phase.svg) | AskHawk Regulations + SOPs + Wizard | AskHawk STORYBOOK · Investor deck · CTO deck |
-| 4 | [`04-chain-of-evidence.svg`](04-chain-of-evidence.svg) | Cross-module record flow (FDA-483 traversing 7 modules) | HAWKEYE-STORY · Regulator collateral · CTO deck |
+| 4 | [`04-chain-of-evidence.svg`](04-chain-of-evidence.svg) | Cross-module record flow (FDA-483 traversing 7 modules) | SMART-HAWK-STORY · Regulator collateral · CTO deck |
 | 5 | [`05-market-positioning.svg`](05-market-positioning.svg) | Competitive quadrant | VISION · MARKET-ANALYSIS · Investor deck |
 
 ---
@@ -58,9 +58,9 @@ If you create a 6th hero diagram, add it to this index and link from wherever it
 ## Open in browser
 
 ```
-file:///C:/Users/debab/Code - Hawkeye/hawkeye-clean/Doc_V2/_assets/hero-svgs/01-platform-architecture.svg
-file:///C:/Users/debab/Code - Hawkeye/hawkeye-clean/Doc_V2/_assets/hero-svgs/02-audit-lifecycle.svg
-file:///C:/Users/debab/Code - Hawkeye/hawkeye-clean/Doc_V2/_assets/hero-svgs/03-askhawk-3-phase.svg
-file:///C:/Users/debab/Code - Hawkeye/hawkeye-clean/Doc_V2/_assets/hero-svgs/04-chain-of-evidence.svg
-file:///C:/Users/debab/Code - Hawkeye/hawkeye-clean/Doc_V2/_assets/hero-svgs/05-market-positioning.svg
+file:///C:/Users/debab/Code - S.M.A.R.T. Hawk/hawkeye-clean/Doc_V2/_assets/hero-svgs/01-platform-architecture.svg
+file:///C:/Users/debab/Code - S.M.A.R.T. Hawk/hawkeye-clean/Doc_V2/_assets/hero-svgs/02-audit-lifecycle.svg
+file:///C:/Users/debab/Code - S.M.A.R.T. Hawk/hawkeye-clean/Doc_V2/_assets/hero-svgs/03-askhawk-3-phase.svg
+file:///C:/Users/debab/Code - S.M.A.R.T. Hawk/hawkeye-clean/Doc_V2/_assets/hero-svgs/04-chain-of-evidence.svg
+file:///C:/Users/debab/Code - S.M.A.R.T. Hawk/hawkeye-clean/Doc_V2/_assets/hero-svgs/05-market-positioning.svg
 ```

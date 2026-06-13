@@ -11,7 +11,7 @@
 
 ## 1. Commitment statement
 
-> 📜 **Hawkeye targets WCAG 2.2 AA conformance across all customer-facing surfaces.** Accessibility is treated as a non-negotiable design constraint, not a remediation backlog. Every new component, flow, and feature ships with keyboard navigation, ARIA semantics, and screen-reader support from day one.
+> 📜 **S.M.A.R.T. Hawk targets WCAG 2.2 AA conformance across all customer-facing surfaces.** Accessibility is treated as a non-negotiable design constraint, not a remediation backlog. Every new component, flow, and feature ships with keyboard navigation, ARIA semantics, and screen-reader support from day one.
 
 This commitment exists for three reasons:
 
@@ -21,7 +21,7 @@ This commitment exists for three reasons:
 
 ---
 
-## 2. The four WCAG 2.2 principles applied to Hawkeye
+## 2. The four WCAG 2.2 principles applied to S.M.A.R.T. Hawk
 
 ```mermaid
 flowchart TB
@@ -33,7 +33,7 @@ flowchart TB
     P4["<b>R · Robust</b><br/>Compatible with assistive tech ·<br/>ARIA semantics · valid HTML"]:::p
 ```
 
-| Principle | How Hawkeye delivers |
+| Principle | How S.M.A.R.T. Hawk delivers |
 |---|---|
 | **Perceivable** | All meaningful images have alt text; videos have captions (when used); color contrast min 4.5:1 for text + 3:1 for UI; never color-only signaling (status chips have icons + labels); responsive design for screen-magnification users |
 | **Operable** | Every interactive element reachable via Tab; focus always visible (no `outline: none`); skip links to main content; no time limits on workflows (audit data never expires mid-edit); no flashing > 3Hz; keyboard shortcut catalog (⌘K palette, ⇧/ help, etc.); supports mouse, keyboard, touch, voice |
@@ -42,7 +42,7 @@ flowchart TB
 
 ---
 
-## 3. WCAG 2.2 AA — Hawkeye conformance status (Jun 2026)
+## 3. WCAG 2.2 AA — S.M.A.R.T. Hawk conformance status (Jun 2026)
 
 WCAG 2.2 AA has 50 Success Criteria. Current status per group:
 
@@ -69,7 +69,7 @@ Audit cadence: quarterly internal accessibility audit; annual external audit. Ne
 
 ## 4. Keyboard navigation — the canonical patterns
 
-Every interactive element on Hawkeye is reachable via keyboard. Standard patterns:
+Every interactive element on S.M.A.R.T. Hawk is reachable via keyboard. Standard patterns:
 
 | Action | Keys |
 |---|---|
@@ -110,7 +110,7 @@ The complete shortcut catalog is documented in-app via `?` and as a printable ch
 
 ## 6. Color and contrast
 
-| Element | Min contrast | Hawkeye delivers |
+| Element | Min contrast | S.M.A.R.T. Hawk delivers |
 |---|---|---|
 | Body text on background | 4.5 : 1 | ≥ 4.5 : 1 (most are 7 : 1+ for readability) |
 | Large text (≥ 18pt or 14pt bold) | 3 : 1 | ≥ 4.5 : 1 |
@@ -131,7 +131,7 @@ Color tokens documented in [DESIGN-TOKENS.md](../design-system/DESIGN-TOKENS.md)
 
 ## 7. The e-signature ceremony — accessibility-critical
 
-The Part 11 e-signature ceremony is **the single most accessibility-critical flow** in Hawkeye. A user who cannot complete the e-sig cannot do their job. Special accommodations:
+The Part 11 e-signature ceremony is **the single most accessibility-critical flow** in S.M.A.R.T. Hawk. A user who cannot complete the e-sig cannot do their job. Special accommodations:
 
 | Concern | Accommodation |
 |---|---|
@@ -166,7 +166,7 @@ Per WCAG 2.2 SC 3.3 (Input Assistance):
 
 ## 9. Mobile + small screen
 
-Hawkeye web is responsive down to 360px width. The mobile companion app (planned M9) will follow:
+S.M.A.R.T. Hawk web is responsive down to 360px width. The mobile companion app (planned M9) will follow:
 
 | Standard | Detail |
 |---|---|
@@ -238,7 +238,7 @@ Updated quarterly.
 
 ## 14. Accessibility statement
 
-The customer-facing **Hawkeye Accessibility Statement** is published at `app.hawkeye.io/accessibility` (will be added at first public launch). It contains:
+The customer-facing **S.M.A.R.T. Hawk Accessibility Statement** is published at `app.hawkeye.io/accessibility` (will be added at first public launch). It contains:
 
 - Conformance commitment (WCAG 2.2 AA)
 - Last audit date

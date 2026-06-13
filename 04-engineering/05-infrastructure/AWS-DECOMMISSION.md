@@ -9,7 +9,7 @@
 | Pre-customer | Yes — safe to execute now |
 | Rollback time if needed | ~5 min (flip env vars back) |
 
-> 💡 **What this is.** Step-by-step runbook to remove every active AWS dependency from Hawkeye, while keeping all functionality working. The destination state is: Cloudflare R2 for file storage, Resend (or any SMTP) for email, AWS account fully terminable.
+> 💡 **What this is.** Step-by-step runbook to remove every active AWS dependency from S.M.A.R.T. Hawk, while keeping all functionality working. The destination state is: Cloudflare R2 for file storage, Resend (or any SMTP) for email, AWS account fully terminable.
 
 > ⚠️ **Read this once end-to-end before starting.** The code changes are already merged (see §0); your job is provisioning + env vars + smoke tests + cutover.
 
