@@ -29,7 +29,7 @@ Two principles govern token design:
 
 | Token | Hex | RGB | Used for |
 |---|---|---|---|
-| `brand.primary` | `#1E3A6E` | `30, 58, 110` | Primary actions · key brand surfaces · `Seal` pillar |
+| `brand.primary` | `#1E3A6E` | `30, 58, 110` | Primary actions · key brand surfaces · `Trace` pillar |
 | `brand.primaryHover` | `#172E58` | — | Primary button hover state |
 | `brand.primaryActive` | `#0F2042` | — | Primary button active state |
 | `brand.accent` | `#7C3AED` | — | Secondary highlights · AI-touched UI · AskHawk |

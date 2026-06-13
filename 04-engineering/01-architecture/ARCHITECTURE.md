@@ -25,7 +25,7 @@ flowchart TB
         E["Next.js 15 (App Router) · MUI 6 · TypeScript · AskHawk · Mobile"]:::l5
     end
     subgraph L4["LAYER 4 · DOMAIN ENGINE"]
-        D["15 EQMS modules · Configuration Layer · 5-pillar runtime<br/>(Collect · Process · Validate · Report · Seal)"]:::l4
+        D["15 EQMS modules · Configuration Layer · 5-pillar runtime<br/>(Sense · Monitor · Analyze · Record · Trace)"]:::l4
     end
     subgraph L3["LAYER 3 · AI GATEWAY"]
         AI["Multi-LLM (Anthropic · OpenAI · Gemini · local-vLLM)<br/>Grounded generation · cite-or-fallback · AI Audit Trail · Wave 2 (tool-calling) · Wave 3 (predictive)"]:::l3

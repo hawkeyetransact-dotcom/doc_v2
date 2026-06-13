@@ -63,7 +63,7 @@ S.M.A.R.T. Hawk is an **industry-agnostic AI-native compliance engine for regula
 - **95+ route files**
 - **15 default EQMS modules** (verified against `src/models/ModuleConfigModel.js`):
   AUDIT_MANAGEMENT · DOCUMENT_CONTROL · CAPA_MANAGEMENT · CHANGE_CONTROL · EVENT_MANAGEMENT · TRAINING_MANAGEMENT · RISK_MANAGEMENT · SUPPLIER_QUALITY · MANAGEMENT_REVIEW · ASSET_MANAGEMENT · CHAIN_OF_CUSTODY · TRANSACTION_REVIEW · REGULATORY_INTEL · AI_ASSISTANT (AskHawk) · RFQ_PROCUREMENT
-- **5-pillar runtime:** Collect → Process → Validate → Generate Report → Seal Record
+- **5-pillar runtime:** Sense → Monitor → Analyze → Record → Trace
   - Pillar 3: `compliance/standardRegistryService` · `complianceEvaluationService` · `complianceRules.js`
   - Pillar 5: `auditTrailService.js` · `buildSnapshotHash` (SHA-256)
 - **Configuration layer:** `vocabularyService` · `universalModuleConfigService` (industryProfile='PHARMA_GMP') · `defaultStandards.js` · `modulePacks.js` · `WorkflowDefinitionService.js`

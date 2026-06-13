@@ -58,7 +58,7 @@ flowchart TB
         E["Next.js App Router · React 19 · MUI 6<br/>AskHawk chat · Phase stepper · Mobile · Admin"]:::l5
     end
     subgraph L4["LAYER 4 · DOMAIN ENGINE"]
-        D["15 EQMS modules · Configuration Layer (vocabularyService · standardRegistryService · WorkflowDefinitionService)<br/>5-pillar runtime: Collect · Process · Validate · Report · Seal · Industry-agnostic · Pharma-proven"]:::l4
+        D["15 EQMS modules · Configuration Layer (vocabularyService · standardRegistryService · WorkflowDefinitionService)<br/>5-pillar runtime: Sense · Monitor · Analyze · Record · Trace · Industry-agnostic · Pharma-proven"]:::l4
     end
     subgraph L3["LAYER 3 · AI GATEWAY"]
         AI["ai/gateway/ · multi-LLM routing (Anthropic · OpenAI · Gemini)<br/>groundedGeneration · cite-or-fallback · aiAuditTrail<br/>Drift monitoring · prompt-injection defence · per-call promptHash + modelVersion + retrievalSet"]:::l3

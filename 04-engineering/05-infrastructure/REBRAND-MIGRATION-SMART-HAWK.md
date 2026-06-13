@@ -18,7 +18,7 @@
 | **Hawkeye Transact Pvt. Ltd.** (entity) | **S.M.A.R.T. Hawk Transact Pvt. Ltd.** | Legal entity |
 | **DigiLocker** (internal vault feature name) | **HawkVault** | Feature brand |
 
-**S.M.A.R.T.** is an acronym for the five-pillar runtime pipeline: **S**ource · **M**odel · **A**ssess · **R**eport · **T**race (formerly Collect · Process · Validate · Report · Seal).
+**S.M.A.R.T.** is an acronym for the five-pillar runtime pipeline: **S**ense · **M**onitor · **A**nalyze · **R**ecord · **T**race (formerly Collect · Process · Validate · Report · Seal).
 
 ### Guiding strategy — **display-only rebrand**
 
@@ -129,7 +129,7 @@ Out of scope for the display rebrand; track as a cutover checklist:
 ---
 
 ## 8. The S.M.A.R.T. five-pillar pipeline (conceptual)
-Docs now relabel the pipeline **Source · Model · Assess · Report · Trace** (was Collect · Process · Validate · Report · Seal). In code these are largely **conceptual stage names**, not literal identifiers, so usually no code change is needed. If any service/log explicitly prints the old pillar names to users, update the string only. Internal service names (`auditTrailService`, etc.) are unaffected.
+Docs now relabel the pipeline **Sense · Monitor · Analyze · Record · Trace** (was Collect · Process · Validate · Report · Seal). In code these are largely **conceptual stage names**, not literal identifiers, so usually no code change is needed. If any service/log explicitly prints the old pillar names to users, update the string only. Internal service names (`auditTrailService`, etc.) are unaffected.
 
 ---
 
@@ -137,7 +137,7 @@ Docs now relabel the pipeline **Source · Model · Assess · Report · Trace** (
 For reference, the documentation rebrand is **complete** on branch `claude/documentation-coverage-review-dv820k`:
 - 959 "Hawkeye → S.M.A.R.T. Hawk" replacements across 105 `.md` files (incl. legal entity).
 - `HAWKEYE-STORY.md` → `SMART-HAWK-STORY.md` (+ all links fixed).
-- Five-pillar pipeline relabelled to S.M.A.R.T. (Source·Model·Assess·Report·Trace) across 15 files; acronym defined in `PLATFORM-OVERVIEW.md`.
+- Five-pillar pipeline relabelled to S.M.A.R.T. (Sense·Monitor·Analyze·Record·Trace) across 15 files; acronym defined in `PLATFORM-OVERVIEW.md`.
 - "DigiLocker" left unchanged in docs (all references are sense (b) / code paths — §1).
 - Domains/emails/handles preserved.
 

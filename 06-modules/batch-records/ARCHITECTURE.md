@@ -95,11 +95,11 @@ flowchart LR
 
 | Pillar | Code path | What it does |
 |---|---|---|
-| 1 · Collect | `backend/src/controllers/batchStepController.js`, `services/batchRecordIntakeService.js` (planned), `frontend/components/batch/SmartParameterInput.tsx` | Operator entry · equipment + training preCheck |
-| 2 · Process | `backend/src/models/{BatchRecord,BatchStep,BatchAttributeValue}.js`, `services/batchPhaseService.js` | Normalize to durable model · pin MBR version + lots |
-| 3 · Validate | `backend/src/services/batchToleranceService.js`, `services/batchPhaseService.js`, `controllers/batchReviewController.js` | Spec check · auto-deviation · QA e-sig review |
-| 4 · Report | `backend/src/services/annex16ChecklistService.js`, `services/releaseCertificateService.js`, `controllers/batchReleaseController.js` | Annex 16 aggregation · QP release certificate |
-| 5 · Seal | `backend/src/services/auditTrailService.js`, `models/{AuditTrail,BatchRelease}.js` | Per-value trail · SHA-256 of record · immutable certificate |
+| 1 · Sense | `backend/src/controllers/batchStepController.js`, `services/batchRecordIntakeService.js` (planned), `frontend/components/batch/SmartParameterInput.tsx` | Operator entry · equipment + training preCheck |
+| 2 · Monitor | `backend/src/models/{BatchRecord,BatchStep,BatchAttributeValue}.js`, `services/batchPhaseService.js` | Normalize to durable model · pin MBR version + lots |
+| 3 · Analyze | `backend/src/services/batchToleranceService.js`, `services/batchPhaseService.js`, `controllers/batchReviewController.js` | Spec check · auto-deviation · QA e-sig review |
+| 4 · Record | `backend/src/services/annex16ChecklistService.js`, `services/releaseCertificateService.js`, `controllers/batchReleaseController.js` | Annex 16 aggregation · QP release certificate |
+| 5 · Trace | `backend/src/services/auditTrailService.js`, `models/{AuditTrail,BatchRelease}.js` | Per-value trail · SHA-256 of record · immutable certificate |
 
 ---
 

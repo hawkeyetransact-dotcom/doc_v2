@@ -105,7 +105,7 @@ flowchart TB
     L5 --> L4 --> L3 --> L2 --> L1
 ```
 
-The 5-pillar runtime (orthogonal — lives inside Layer 4): every module walks **Source → Model → Assess → Report → Trace** end to end, with cite-or-fallback at every AI touchpoint and a human e-signature gating every record commit.
+The 5-pillar runtime (orthogonal — lives inside Layer 4): every module walks **Sense → Monitor → Analyze → Record → Trace** end to end, with cite-or-fallback at every AI touchpoint and a human e-signature gating every record commit.
 
 *Slide 4 / 18*
 

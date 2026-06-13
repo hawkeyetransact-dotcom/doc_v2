@@ -155,7 +155,7 @@ The Audit Management module is delivered from a common code base to all customer
 
 ### Product description
 
-The S.M.A.R.T. Hawk Audit Management module is the principal computerized system supporting the GxP audit lifecycle for pharmaceutical manufacturers, CDMOs, and other regulated-supply-chain organisations. It implements the universal 5-pillar runtime pipeline of the S.M.A.R.T. Hawk Domain Engine (Layer 4 of the 5-layer architecture) — Source → Model → Assess → Report → Trace — applied to the audit domain, with grounded AI assistance at every step and human electronic signature at every record commit.
+The S.M.A.R.T. Hawk Audit Management module is the principal computerized system supporting the GxP audit lifecycle for pharmaceutical manufacturers, CDMOs, and other regulated-supply-chain organisations. It implements the universal 5-pillar runtime pipeline of the S.M.A.R.T. Hawk Domain Engine (Layer 4 of the 5-layer architecture) — Sense → Monitor → Analyze → Record → Trace — applied to the audit domain, with grounded AI assistance at every step and human electronic signature at every record commit.
 
 The module supports three audit types out of the box:
 
@@ -236,7 +236,7 @@ The module integrates inseparably with the S.M.A.R.T. Hawk platform's cross-cutt
 | 1. | The module shall implement end-to-end audit lifecycle management for the customer's regulated quality system. | Module shall support audit creation, prep, on-site execution, finding capture, CAPA spawning, closeout, and post-closeout audit-trail review without external tooling. | Lifecycle traceability from create → close with audit-trail rows for every transition; no out-of-system handoff required. | X | |
 | 2. | The module shall be delivered as a multi-tenant Software-as-a-Service product within the S.M.A.R.T. Hawk platform. | Multi-tenant logical isolation enforced at the query layer; row-level tenant filter on every Mongoose query; tested per OQ. | Multi-tenant isolation tested OQ-AUDIT-INFRA-001 passes for every release. | X | |
 | 3. | The module shall conform to the S.M.A.R.T. Hawk 5-layer architecture, residing within Layer 4 (Domain Engine) and consuming Layer 3 (AI Gateway), Layer 2 (Data & Evidence), and Layer 1 (Trust · Security · Compliance). | Module shall not bypass Layer 3 AI Gateway for any LLM call; shall not bypass Layer 1 audit trail for any state change; shall not bypass Layer 2 tenant isolation for any query. | Architectural rules enforced per ARCHITECTURE.md §11; verified by code review and integration tests. | X | |
-| 4. | The module shall implement the universal 5-pillar runtime pipeline of the S.M.A.R.T. Hawk Domain Engine. | Every audit shall traverse Source → Model → Assess → Report → Trace pillars; pillar transitions captured in audit trail. | 5-pillar transitions visible in phase stepper; audit-trail rows tagged with pillar. | X | |
+| 4. | The module shall implement the universal 5-pillar runtime pipeline of the S.M.A.R.T. Hawk Domain Engine. | Every audit shall traverse Sense → Monitor → Analyze → Record → Trace pillars; pillar transitions captured in audit trail. | 5-pillar transitions visible in phase stepper; audit-trail rows tagged with pillar. | X | |
 | 5. | The module shall integrate with the other twelve EQMS modules of the S.M.A.R.T. Hawk platform for cross-module traceability. | Audit findings shall spawn CAPAs in the CAPA module; deviations may be linked; documents cited from Document Control module; supplier master read from Supplier Management module. | Cross-module link verified by integration tests; cross-module audit-trail query returns related records under 2 seconds at p95. | X | |
 | 6. | The module shall be classified as a GAMP 5 Category 4 — Configured Product per ISPE GAMP 5, 2nd Edition (Jul 2022). | Vendor SDLC evidence shall be shipped to customers; customer validation effort focuses on configuration, not source code; supplier-leverage clause applies. | GAMP Cat 4 classification declared in customer-facing documents; Validation Accelerator Package delivered at PoC kickoff per GAMP-CAT-4-COMPLIANCE.md §9. | X | |
 | 7. | The module shall be accessible through a browser-based web user interface. | Supported browsers: Chrome ≥ 120, Edge ≥ 120, Safari ≥ 17, Firefox ≥ 120 (latest two major versions of each). | UI renders functionally equivalent across supported browsers; E2E Playwright tests run against Chromium per release. | X | |
@@ -482,7 +482,7 @@ The S.M.A.R.T. Hawk Audit Management module shall comply with the regulatory and
 
 a) **5-Layer Architecture** (S.M.A.R.T. Hawk platform canonical) — Trust · Security · Compliance (foundation) → Data & Evidence → AI Gateway → Domain Engine (where this module lives) → Experience. Per ADR-001 and PLATFORM-OVERVIEW.md §2.
 
-b) **5-Pillar Runtime Pipeline** (universal across all 15 EQMS modules) — Source → Model → Assess → Report → Trace. The Audit Management module instantiates this pipeline for the audit lifecycle.
+b) **5-Pillar Runtime Pipeline** (universal across all 15 EQMS modules) — Sense → Monitor → Analyze → Record → Trace. The Audit Management module instantiates this pipeline for the audit lifecycle.
 
 c) **GAMP 5 Category 4 Configured Product** classification per PDR-002 and GAMP-CAT-4-COMPLIANCE.md, with Validation Accelerator Package shipped at PoC kickoff.
 

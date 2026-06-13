@@ -365,7 +365,7 @@ Cross-reference [DESIGN §4](DESIGN.md#4-state-machine).
 
 ## 12. The Five-Pillar Walkthrough
 
-Management Review is the closed-loop apex of S.M.A.R.T. Hawk's PQS: it is the one module that consumes KPIs from every other module and re-emits actions back into them. The five pillars walk as follows: **Source** happens via the `mrmCadenceService` cron that schedules periodic MRMs (typically quarterly per ICH Q10 §1.6) and the `mrmInputCompilerService` which aggregates inputs from every operating module — audit findings, CAPA effectiveness, complaint trends, deviation trends, risk register, training KPIs, supplier performance, change-control summary, regulatory updates (auto-compilation planned Q2 2027; manual today). **Model** normalizes each input into an `MRMInput` row tagged with ICH Q10 §1.6 / ISO 9001 §9.3 category enums, and records `MRMAttendance` per invitee. **Assess** is the meeting itself: the chair walks the locked input set, decisions are recorded as `MRMOutput` rows, and action items get owners + due dates in `MRMAction`. **Report** assembles the minutes (auto-drafter from recording planned Wave-3), which the Chair signs with an APPROVED e-signature. **Trace** writes an `AuditTrail` row per input, output, attendance attestation, and Chair sign-off; the minutes PDF is hashed (`minutesSha256`) and stored immutably, and `mrmActionSpawnerService` distributes action items as live CAPA / Change Control / Risk records.
+Management Review is the closed-loop apex of S.M.A.R.T. Hawk's PQS: it is the one module that consumes KPIs from every other module and re-emits actions back into them. The five pillars walk as follows: **Sense** happens via the `mrmCadenceService` cron that schedules periodic MRMs (typically quarterly per ICH Q10 §1.6) and the `mrmInputCompilerService` which aggregates inputs from every operating module — audit findings, CAPA effectiveness, complaint trends, deviation trends, risk register, training KPIs, supplier performance, change-control summary, regulatory updates (auto-compilation planned Q2 2027; manual today). **Monitor** normalizes each input into an `MRMInput` row tagged with ICH Q10 §1.6 / ISO 9001 §9.3 category enums, and records `MRMAttendance` per invitee. **Analyze** is the meeting itself: the chair walks the locked input set, decisions are recorded as `MRMOutput` rows, and action items get owners + due dates in `MRMAction`. **Record** assembles the minutes (auto-drafter from recording planned Wave-3), which the Chair signs with an APPROVED e-signature. **Trace** writes an `AuditTrail` row per input, output, attendance attestation, and Chair sign-off; the minutes PDF is hashed (`minutesSha256`) and stored immutably, and `mrmActionSpawnerService` distributes action items as live CAPA / Change Control / Risk records.
 
 ```mermaid
 flowchart LR
@@ -397,13 +397,13 @@ flowchart LR
 
 | Pillar | Code path | What it does |
 |---|---|---|
-| 1 · Collect | `backend/src/jobs/mrmCadenceJob.js` · `backend/src/services/mrmCadenceService.js` | Nightly cron creates SCHEDULED MRMs per tenant cadence |
-| 1 · Collect | `backend/src/services/mrmInputCompilerService.js` · `backend/src/clients/mrmInputClient/*.js` | Aggregates KPIs from each operating module's input endpoint |
-| 2 · Process | `backend/src/controllers/mrmInputController.js` · `backend/src/models/MRMInput.js` | Normalizes inputs into MRMInput rows; categories per `constants/mrmInputCategories.js` |
-| 2 · Process | `backend/src/controllers/mrmMeetingController.js` · `backend/src/models/MRMAttendance.js` | Records per-attendee attestation with e-sig |
-| 3 · Validate | `backend/src/controllers/mrmMeetingController.js` · `backend/src/models/MRMOutput.js` · `MRMAction.js` | Captures decisions and action items during meeting |
-| 4 · Report | `backend/src/controllers/mrmMinutesController.js` · `backend/src/services/ai/mrmMinutesDrafterAgent.js` | Drafts minutes (manual or AI-assisted from recording) |
-| 4 · Report | `backend/src/middlewares/requireESignature.js` (`signatureMeaning='APPROVED'`) | Chair e-signature on minutes (G-Approve gate) |
-| 5 · Seal | `backend/src/services/auditTrailService.js` | Writes AuditTrail row per input · output · attendance · sign-off |
-| 5 · Seal | `backend/src/services/mrmActionSpawnerService.js` | Spawns CAPA · CR · Risk · Training records from MRMAction rows |
-| 5 · Seal | `backend/src/services/mrmPhaseService.js → applyTransition()` (CLOSED) | Immutable closure with `minutesSha256` hash captured |
+| 1 · Sense | `backend/src/jobs/mrmCadenceJob.js` · `backend/src/services/mrmCadenceService.js` | Nightly cron creates SCHEDULED MRMs per tenant cadence |
+| 1 · Sense | `backend/src/services/mrmInputCompilerService.js` · `backend/src/clients/mrmInputClient/*.js` | Aggregates KPIs from each operating module's input endpoint |
+| 2 · Monitor | `backend/src/controllers/mrmInputController.js` · `backend/src/models/MRMInput.js` | Normalizes inputs into MRMInput rows; categories per `constants/mrmInputCategories.js` |
+| 2 · Monitor | `backend/src/controllers/mrmMeetingController.js` · `backend/src/models/MRMAttendance.js` | Records per-attendee attestation with e-sig |
+| 3 · Analyze | `backend/src/controllers/mrmMeetingController.js` · `backend/src/models/MRMOutput.js` · `MRMAction.js` | Captures decisions and action items during meeting |
+| 4 · Record | `backend/src/controllers/mrmMinutesController.js` · `backend/src/services/ai/mrmMinutesDrafterAgent.js` | Drafts minutes (manual or AI-assisted from recording) |
+| 4 · Record | `backend/src/middlewares/requireESignature.js` (`signatureMeaning='APPROVED'`) | Chair e-signature on minutes (G-Approve gate) |
+| 5 · Trace | `backend/src/services/auditTrailService.js` | Writes AuditTrail row per input · output · attendance · sign-off |
+| 5 · Trace | `backend/src/services/mrmActionSpawnerService.js` | Spawns CAPA · CR · Risk · Training records from MRMAction rows |
+| 5 · Trace | `backend/src/services/mrmPhaseService.js → applyTransition()` (CLOSED) | Immutable closure with `minutesSha256` hash captured |

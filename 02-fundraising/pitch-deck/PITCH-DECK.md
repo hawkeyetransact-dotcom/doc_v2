@@ -49,7 +49,7 @@ flowchart LR
 
 ### 3 · Solution
 - **Industry-agnostic compliance engine, deployed beachhead-first**
-- The 5-pillar engine: Source → Model → Assess → Report → Trace
+- The 5-pillar engine: Sense → Monitor → Analyze → Record → Trace
 - Same architecture serves pharma → food → med-device → auto over time
 - *Not* a pharma tool; *not* a horizontal platform; the **regulated-supply-chain compliance primitive**
 

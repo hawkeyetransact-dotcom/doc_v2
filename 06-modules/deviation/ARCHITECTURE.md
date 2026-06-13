@@ -333,7 +333,7 @@ Cross-reference [DESIGN §4](DESIGN.md#4-state-machine).
 
 ## 12. The Five-Pillar Walkthrough
 
-Deviation is one expression of S.M.A.R.T. Hawk's universal 5-pillar pipeline (**SOURCE → MODEL → ASSESS → REPORT → TRACE**). This section narrates how a deviation walks the pillars from shop-floor intake to CAPA hand-off, maps each pillar to the actual code, and notes the cross-module spawn at close. The same shape applies to every regulated workflow on the platform — see the MASTER-REFERENCE for the canonical pattern.
+Deviation is one expression of S.M.A.R.T. Hawk's universal 5-pillar pipeline (**SENSE → MONITOR → ANALYZE → RECORD → TRACE**). This section narrates how a deviation walks the pillars from shop-floor intake to CAPA hand-off, maps each pillar to the actual code, and notes the cross-module spawn at close. The same shape applies to every regulated workflow on the platform — see the MASTER-REFERENCE for the canonical pattern.
 
 ### 12.1 Narrative
 

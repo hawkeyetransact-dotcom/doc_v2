@@ -90,11 +90,11 @@ flowchart LR
 
 | Pillar | Code path | What it does |
 |---|---|---|
-| 1 · Collect | `backend/src/controllers/documentBulkUploadController.js`, `services/ai/docBulkUploadOrchestrator.js`, `services/ai/docIntelClassifier.js`, `services/ai/docIntelTagger.js` | Single upload or bulk wizard · AI classify and tag |
-| 2 · Process | `backend/src/services/documentLifecycleService.js`, `services/documentRevisionService.js`, `models/{Document,DocumentVersion,DocumentRevision}.js` | Normalize to Document + Version · per-save revision diff |
-| 3 · Validate | `backend/src/services/documentReviewService.js`, `middlewares/requireStepApprover.js`, `models/ApprovalChainTemplate.js` | Chain walk · SoD guard · per-tenant matrix |
-| 4 · Report | `backend/src/controllers/documentApprovalController.js`, `controllers/documentDistributionController.js`, `middlewares/requireESignature.js` | Per-step e-sig · distribute · read receipts |
-| 5 · Seal | `backend/src/services/auditTrailService.js`, `models/{AuditTrail,DocumentRevision}.js` | AuditTrail row per event · SHA-256 of body · append-only history |
+| 1 · Sense | `backend/src/controllers/documentBulkUploadController.js`, `services/ai/docBulkUploadOrchestrator.js`, `services/ai/docIntelClassifier.js`, `services/ai/docIntelTagger.js` | Single upload or bulk wizard · AI classify and tag |
+| 2 · Monitor | `backend/src/services/documentLifecycleService.js`, `services/documentRevisionService.js`, `models/{Document,DocumentVersion,DocumentRevision}.js` | Normalize to Document + Version · per-save revision diff |
+| 3 · Analyze | `backend/src/services/documentReviewService.js`, `middlewares/requireStepApprover.js`, `models/ApprovalChainTemplate.js` | Chain walk · SoD guard · per-tenant matrix |
+| 4 · Record | `backend/src/controllers/documentApprovalController.js`, `controllers/documentDistributionController.js`, `middlewares/requireESignature.js` | Per-step e-sig · distribute · read receipts |
+| 5 · Trace | `backend/src/services/auditTrailService.js`, `models/{AuditTrail,DocumentRevision}.js` | AuditTrail row per event · SHA-256 of body · append-only history |
 
 ---
 

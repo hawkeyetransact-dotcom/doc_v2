@@ -54,7 +54,7 @@ flowchart TB
         E["Multi-persona UI · AskHawk chat · Phase stepper · Mobile · Admin console"]:::l5
     end
     subgraph L4["LAYER 4 · DOMAIN ENGINE"]
-        D["15 EQMS modules · Configuration Layer · 5-pillar runtime<br/>(Collect · Process · Validate · Report · Seal) · Industry-agnostic · Pharma-proven"]:::l4
+        D["15 EQMS modules · Configuration Layer · 5-pillar runtime<br/>(Sense · Monitor · Analyze · Record · Trace) · Industry-agnostic · Pharma-proven"]:::l4
     end
     subgraph L3["LAYER 3 · AI GATEWAY"]
         AI["Multi-LLM routing (Anthropic · OpenAI · Gemini) · Grounded generation · Cite-or-fallback · AI audit trail · Drift monitoring · Prompt-injection defence"]:::l3
@@ -85,10 +85,10 @@ flowchart TB
 >
 > | Pillar | S.M.A.R.T. | What it does | Stack |
 > |---|---|---|---|
-> | **S** | **Source** | Ingest evidence/data (crawlers · parsers · pdf_extract · docIntel) | Python |
-> | **M** | **Model** | Normalize · entity-resolve · structure into records | Python |
-> | **A** | **Assess** | Compliance evaluation · standards · risk scoring | Node |
-> | **R** | **Report** | Report assembly · audit-report agents · e-signature | Node |
+> | **S** | **Sense** | Ingest evidence/data (crawlers · parsers · pdf_extract · docIntel) | Python |
+> | **M** | **Monitor** | Normalize · entity-resolve · structure into records | Python |
+> | **A** | **Analyze** | Compliance evaluation · standards · risk scoring | Node |
+> | **R** | **Record** | Report assembly · audit-report agents · e-signature | Node |
 > | **T** | **Trace** | Immutable audit trail · SHA-256 + ALCOA+ seal | Node |
 >
 > *(Formerly labelled Collect · Process · Validate · Report · Seal; renamed to the S.M.A.R.T. pillars in the 2026 rebrand. The runtime motion is unchanged.)*
@@ -114,10 +114,10 @@ flowchart TB
 
     subgraph PIPE["🔬 FIVE-PILLAR RUNTIME PIPELINE"]
         direction LR
-        P1["<b>1·SOURCE</b><br/><i>Python</i><br/>crawlers · parsers<br/>pdf_extract · publicIntel<br/>docIntelService"]:::py
-        P2["<b>2·MODEL</b><br/><i>Python</i><br/>normalize<br/>entity_resolution<br/>170 Mongoose models"]:::py
-        P3["<b>3·ASSESS</b><br/><i>Node</i><br/>complianceEvaluation<br/>standardRegistry<br/>risk/scoring"]:::node
-        P4["<b>4·REPORT</b><br/><i>Node</i><br/>reportDataService<br/>auditReportAgent<br/>electronicSignature"]:::node
+        P1["<b>1·SENSE</b><br/><i>Python</i><br/>crawlers · parsers<br/>pdf_extract · publicIntel<br/>docIntelService"]:::py
+        P2["<b>2·MONITOR</b><br/><i>Python</i><br/>normalize<br/>entity_resolution<br/>170 Mongoose models"]:::py
+        P3["<b>3·ANALYZE</b><br/><i>Node</i><br/>complianceEvaluation<br/>standardRegistry<br/>risk/scoring"]:::node
+        P4["<b>4·RECORD</b><br/><i>Node</i><br/>reportDataService<br/>auditReportAgent<br/>electronicSignature"]:::node
         P5["<b>5·TRACE</b><br/><i>Node</i><br/>auditTrailService<br/>SHA-256 + ALCOA+<br/>aiAuditTrail"]:::seal
 
         P1 --> P2 --> P3 --> P4 --> P5
@@ -166,7 +166,7 @@ Layer-1 controls map to specific regulatory clauses:
 
 ### 2b. Per-module consistency (every module walks the same 5 pillars)
 
-| Module | Collect | Process | Validate | Report | Seal |
+| Module | Sense | Monitor | Analyze | Record | Trace |
 |---|---|---|---|---|---|
 | **Audit** | PAQ + intimation + evidence | Audit aggregate + phaseState | Standard's controls + scope lock | Report + closure cert | E-sig + audit trail |
 | **Deviation** | Intake event (auto-classify) | Linked + normalized | 5-Why scaffolder + impact | Disposition + RCA | E-sig + audit trail |

@@ -94,11 +94,11 @@ flowchart LR
 
 | Pillar | Code path | What it does |
 |---|---|---|
-| 1 · Collect | `backend/src/controllers/changeControlController.js`, `controllers/classifyController.js` | Accepts intake form · sets classification + triggers |
-| 2 · Process | `backend/src/services/changeImpactGraphService.js`, `services/changeApprovalMatrixService.js` | Computes per-area impact · resolves approval chain |
-| 3 · Validate | `backend/src/services/changePhaseService.js`, `constants/changeStatuses.js` | `canTransition()` enforces gates · validation-required flag |
-| 4 · Report | `backend/src/controllers/approvalController.js`, `controllers/pirController.js`, `middlewares/requireESignature.js` | Per-step e-sig · PIR sign-off |
-| 5 · Seal | `backend/src/services/auditTrailService.js`, `models/AuditTrail.js`, `controllers/changeControlController.js#spawnCapa` | Field-level diff trail · optional CAPA spawn |
+| 1 · Sense | `backend/src/controllers/changeControlController.js`, `controllers/classifyController.js` | Accepts intake form · sets classification + triggers |
+| 2 · Monitor | `backend/src/services/changeImpactGraphService.js`, `services/changeApprovalMatrixService.js` | Computes per-area impact · resolves approval chain |
+| 3 · Analyze | `backend/src/services/changePhaseService.js`, `constants/changeStatuses.js` | `canTransition()` enforces gates · validation-required flag |
+| 4 · Record | `backend/src/controllers/approvalController.js`, `controllers/pirController.js`, `middlewares/requireESignature.js` | Per-step e-sig · PIR sign-off |
+| 5 · Trace | `backend/src/services/auditTrailService.js`, `models/AuditTrail.js`, `controllers/changeControlController.js#spawnCapa` | Field-level diff trail · optional CAPA spawn |
 
 ---
 

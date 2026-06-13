@@ -46,7 +46,7 @@ S.M.A.R.T. Hawk is an **AI-native EQMS (Enterprise Quality Management System)** 
 | Layer | What it provides | Code lives in |
 |---|---|---|
 | **5 — Experience** | Multi-persona UI · AskHawk chat · phase stepper · admin console | `frontend/app/` + `frontend/components/` |
-| **4 — Domain Engine** | 13 EQMS modules · Configuration Layer · 5-pillar runtime (Collect · Process · Validate · Report · Seal) | `backend/src/modules/` + `backend/src/services/` |
+| **4 — Domain Engine** | 13 EQMS modules · Configuration Layer · 5-pillar runtime (Sense · Monitor · Analyze · Record · Trace) | `backend/src/modules/` + `backend/src/services/` |
 | **3 — AI Gateway** | Multi-LLM routing (Anthropic · OpenAI · Gemini · local vLLM) · grounded generation · cite-or-fallback · AI Audit Trail | `backend/src/services/ai/gateway/` |
 | **2 — Data & Evidence** | Multi-tenant MongoDB · S3-compatible evidence store · SHA-256 record hashing · tamper-evident audit log | `backend/src/models/` + `backend/src/utils/s3Upload.js` |
 | **1 — Trust · Security · Compliance (foundation)** | GAMP Cat 4 · 21 CFR Part 11 · EU GMP Annex 11 · ALCOA+ · TLS · AES-256 · SSO/MFA · RBAC · tenant isolation · IN/US/EU residency · no AI training on customer data | `backend/src/middleware/` + `backend/src/services/compliance/` |
@@ -281,7 +281,7 @@ Goal: log in → create an audit → upload evidence → generate an AI-drafted 
 | 14 | Logout (top-right profile menu → Sign out) | Land on `/auth/login` |
 
 **What you just verified:**
-- The 5-pillar runtime (Source → Model → Assess → Report → Trace) actually executes
+- The 5-pillar runtime (Sense → Monitor → Analyze → Record → Trace) actually executes
 - AI grounding works (you saw citations)
 - E-signature ceremony works per Part 11 §11.50 + §11.200
 - Audit trail captures every state change with the right metadata
@@ -440,7 +440,7 @@ Full architectural reference: [ARCHITECTURE.md](../../04-engineering/01-architec
 | **PoC** | Proof of Concept — S.M.A.R.T. Hawk's 60-day customer trial structure |
 | **Sandbox** | S.M.A.R.T. Hawk's self-serve free discovery tier (synthetic data · 14-day expiry) |
 | **5-layer architecture** | S.M.A.R.T. Hawk's canonical architectural framing — see §2 |
-| **5-pillar runtime** | Source → Model → Assess → Report → Trace — the universal motion every module follows |
+| **5-pillar runtime** | Sense → Monitor → Analyze → Record → Trace — the universal motion every module follows |
 | **Cite-or-fallback** | Architectural guarantee — every AI output cites a source or returns "Insufficient evidence" |
 | **AskHawk** | S.M.A.R.T. Hawk's conversational AI agent (cross-cutting feature across all modules) |
 | **Validation Accelerator Package** | S.M.A.R.T. Hawk's bundle of vendor evidence shipped to customers at PoC kickoff to support GAMP Cat 4 supplier-leveraged validation |

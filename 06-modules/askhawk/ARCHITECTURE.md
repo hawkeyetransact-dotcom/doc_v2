@@ -426,7 +426,7 @@ Cross-reference [DESIGN §4](DESIGN.md#4-state-machines).
 
 ## 12. The Five-Pillar Walkthrough
 
-AskHawk is **the cross-cutting expression** of S.M.A.R.T. Hawk's universal 5-pillar pipeline (**SOURCE → MODEL → ASSESS → REPORT → TRACE**). Unlike a regulated workflow module (Audit, CAPA, Deviation) whose pillars walk a single business object end-to-end, AskHawk's pillars describe the **AI request-response cycle** that every other module borrows. This section narrates how an AskHawk turn (Q&A or wizard) walks the pillars, maps each pillar to the actual code, and notes the cross-module fan-out — because AskHawk both consumes content from every module's KB and spawns writes into every module's service layer. The same pillar shape is the canonical pattern; see MASTER-REFERENCE.
+AskHawk is **the cross-cutting expression** of S.M.A.R.T. Hawk's universal 5-pillar pipeline (**SENSE → MONITOR → ANALYZE → RECORD → TRACE**). Unlike a regulated workflow module (Audit, CAPA, Deviation) whose pillars walk a single business object end-to-end, AskHawk's pillars describe the **AI request-response cycle** that every other module borrows. This section narrates how an AskHawk turn (Q&A or wizard) walks the pillars, maps each pillar to the actual code, and notes the cross-module fan-out — because AskHawk both consumes content from every module's KB and spawns writes into every module's service layer. The same pillar shape is the canonical pattern; see MASTER-REFERENCE.
 
 ### 12.1 Narrative
 
@@ -473,4 +473,4 @@ AskHawk is **cross-cutting** — it sits in both directions of every module's AI
 See also:
 - [Doc_V2/02-platform/MASTER-REFERENCE.md](../../02-platform/MASTER-REFERENCE.md) — the canonical 5-pillar pattern
 - [Doc_V2/04-engineering/07-ai/AI-ARCHITECTURE.md §3](../../04-engineering/07-ai/AI-ARCHITECTURE.md#3-the-grounded-generation-pattern-the-core-moat) — the grounded-generation pattern AskHawk implements
-- [Doc_V2/06-modules/audit-management/ARCHITECTURE.md §12](../audit-management/ARCHITECTURE.md#12-the-five-pillar-walkthrough) — sibling walkthrough showing how a module consumes AskHawk's AI pipeline at Pillar 4 (REPORT)
+- [Doc_V2/06-modules/audit-management/ARCHITECTURE.md §12](../audit-management/ARCHITECTURE.md#12-the-five-pillar-walkthrough) — sibling walkthrough showing how a module consumes AskHawk's AI pipeline at Pillar 4 (RECORD)

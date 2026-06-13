@@ -80,7 +80,7 @@ These URS items apply across all modules and are referenced by the Core PRD:
 | URS-PLT-011 | No customer data used for AI training without explicit written consent | Layer 3 | Contractual + vendor config |
 | URS-PLT-012 | Human always commits the record; AI never commits a record-state-change action | Layer 3 + Layer 4 | Workflow-OQ |
 | URS-PLT-013 | Configuration Layer (vocabularyService, standardRegistryService, WorkflowDefinitionService, universalModuleConfigService) supports per-tenant configuration without code change | Layer 4 | Config-OQ |
-| URS-PLT-014 | 5-pillar runtime (Source → Model → Assess → Report → Trace) consistent across all 15 modules | Layer 4 | Per-module OQ |
+| URS-PLT-014 | 5-pillar runtime (Sense → Monitor → Analyze → Record → Trace) consistent across all 15 modules | Layer 4 | Per-module OQ |
 | URS-PLT-015 | Multi-persona UI (Buyer · Supplier · Auditor · Auditee · SME · Admin) with role-aware rendering | Layer 5 | UI-OQ |
 | URS-PLT-016 | AskHawk conversational agent scoped to tenant; grounded in tenant data + regulatory corpus | Layer 5 + Layer 3 | AskHawk-OQ |
 | URS-PLT-017 | WCAG 2.2 AA accessibility target; keyboard-first; screen-reader compatible | Layer 5 | Accessibility-OQ |

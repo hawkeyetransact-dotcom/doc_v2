@@ -138,7 +138,7 @@ flowchart TB
         E["Multi-persona UI · AskHawk chat · Phase stepper · Mobile · Admin console"]:::l5
     end
     subgraph L4["LAYER 4 · DOMAIN ENGINE"]
-        D["15 EQMS modules · Configuration Layer · 5-pillar runtime<br/>(Collect · Process · Validate · Report · Seal) · Industry-agnostic · Pharma-proven"]:::l4
+        D["15 EQMS modules · Configuration Layer · 5-pillar runtime<br/>(Sense · Monitor · Analyze · Record · Trace) · Industry-agnostic · Pharma-proven"]:::l4
     end
     subgraph L3["LAYER 3 · AI GATEWAY"]
         AI["Multi-LLM routing (Anthropic · OpenAI · Gemini) · Grounded generation · Cite-or-fallback · AI audit trail · Drift monitoring · Prompt-injection defence"]:::l3

@@ -166,7 +166,7 @@ flowchart TB
         E["Multi-persona UI · AskHawk chat · Phase stepper · Mobile · Admin console"]:::l5
     end
     subgraph L4["LAYER 4 · DOMAIN ENGINE"]
-        D["15 EQMS modules · Configuration Layer · 5-pillar runtime<br/>(Collect · Process · Validate · Report · Seal) · Industry-agnostic engine · Pharma-proven"]:::l4
+        D["15 EQMS modules · Configuration Layer · 5-pillar runtime<br/>(Sense · Monitor · Analyze · Record · Trace) · Industry-agnostic engine · Pharma-proven"]:::l4
     end
     subgraph L3["LAYER 3 · AI GATEWAY"]
         AI["Multi-LLM routing (Anthropic · OpenAI · Gemini) · Grounded generation · Cite-or-fallback · AI audit trail · Drift monitoring · Prompt-injection defence"]:::l3
@@ -209,11 +209,11 @@ flowchart LR
 
 | Pillar | What it does | Code evidence |
 |---|---|---|
-| **1 Collect** | Ingest structured + unstructured + public-data + human input | `crawlers/` · `parsers/` · `pdf_extract/` · `publicIntel/connectors` · `docIntelService.js` |
-| **2 Process** | Canonicalize to common model; resolve entities; store + index | `normalize/` · `entity_resolution/` · 170 Mongoose models · vector services |
-| **3 Validate** | Load standard's controls → compare data → verdicts + risk weighting | `compliance/standardRegistryService.js` · `complianceEvaluationService.js` · `risk/scoring` |
-| **4 Report** | Assemble cited compliance artifact → human e-sign | `reportDataService.js` · `auditReportAgent.js` · `electronicSignatureModel` |
-| **5 Seal** | Per-record SHA-256 + append-only ALCOA+ trail + AI decision record | `auditTrailService.js` (Part-11 / Annex-11 writer) · `buildSnapshotHash = SHA-256` |
+| **1 Sense** | Ingest structured + unstructured + public-data + human input | `crawlers/` · `parsers/` · `pdf_extract/` · `publicIntel/connectors` · `docIntelService.js` |
+| **2 Monitor** | Canonicalize to common model; resolve entities; store + index | `normalize/` · `entity_resolution/` · 170 Mongoose models · vector services |
+| **3 Analyze** | Load standard's controls → compare data → verdicts + risk weighting | `compliance/standardRegistryService.js` · `complianceEvaluationService.js` · `risk/scoring` |
+| **4 Record** | Assemble cited compliance artifact → human e-sign | `reportDataService.js` · `auditReportAgent.js` · `electronicSignatureModel` |
+| **5 Trace** | Per-record SHA-256 + append-only ALCOA+ trail + AI decision record | `auditTrailService.js` (Part-11 / Annex-11 writer) · `buildSnapshotHash = SHA-256` |
 
 ### 4c. The five sharpened value propositions
 

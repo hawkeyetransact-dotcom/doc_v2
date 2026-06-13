@@ -55,7 +55,7 @@ The work spans many sessions but lands on a coherent thesis. Here it is.
 - **170 Mongoose models** in `codex_backend_01` (public GitHub: `github.com/hawkeyetransact-dotcom/codex_backend_01`)
 - **Two runtimes:** Python data-platform (crawlers, parsers, PDF extraction, entity resolution) FEEDS Node application
 - **15 default modules:** AUDIT_MGMT, DOC_CONTROL, CAPA, CHANGE, EVENT, TRAINING, RISK, SUPPLIER_QUALITY, MGMT_REVIEW, ASSET, CHAIN_OF_CUSTODY, TRANSACTION_REVIEW, REGULATORY_INTEL, AI_ASSISTANT, RFQ_PROCUREMENT
-- **Five-pillar architecture:** Collect → Process → Validate → Generate Report → Seal Record. Pillar 3 is `compliance/standardRegistryService` + `complianceEvaluationService` + `complianceRules.js`. Pillar 5 is `auditTrailService.js` + `buildSnapshotHash` (SHA-256).
+- **Five-pillar architecture:** Sense → Monitor → Analyze → Record → Trace. Pillar 3 is `compliance/standardRegistryService` + `complianceEvaluationService` + `complianceRules.js`. Pillar 5 is `auditTrailService.js` + `buildSnapshotHash` (SHA-256).
 - **Configuration layer:** `vocabularyService`, `universalModuleConfigService` (industryProfile='PHARMA_GMP'), `defaultStandards.js`, `modulePacks.js`, `WorkflowDefinitionService.js` — real, not vaporware
 - **AI:** multi-LLM gateway (Anthropic/OpenAI/Gemini/local-vLLM), grounded generation, redaction, governance, 6 audit-agents, wave 2 (multi-step agent, custom tool-calling runtime — NOT MCP), wave 3 (on-prem LLM deploy with frozen `ONPREM_VALIDATION_REQUIREMENTS` IQ/OQ/PQ passThreshold 0.95)
 - **SupplierRiskSnapshot:** 12-dimensional, fused continuously from public + internal data

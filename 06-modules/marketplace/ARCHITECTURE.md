@@ -370,7 +370,7 @@ Already scaffolded (partial today):
 
 ## 12. The Five-Pillar Walkthrough
 
-Marketplace is the **plan-stage** network layer that sits on top of three already-real S.M.A.R.T. Hawk capabilities — supplier qualification, auditor affiliation, and audit execution — and turns them into a two-sided discovery + booking surface. Today this module is mostly **vision**: backend scaffolding exists for catalog v2, org directory, and engagement layer, but the differentiator surfaces (auditor matching, semantic supplier search, reputation, network economics) are unbuilt. The five-pillar walk below describes the **target state** of how a marketplace transaction will flow once the wedge modules earn the right by carrying paying customers; each pillar reuses platform plumbing (audit trail, e-sig, AskHawk grounded generation, RBAC) that's already real in other modules. **Source** captures supply (auditor profile + credentials, supplier listing opt-in) and demand (buyer search query); **Model** runs the matching algorithm and semantic search; **Assess** enforces credential verification, supplier-qualification gate, and COI screening; **Report** generates the engagement contract, surfaces the listing in discovery results, and records the post-engagement review; **Trace** writes a `MarketplaceTransaction` plus full `AuditTrail` and immutable review record.
+Marketplace is the **plan-stage** network layer that sits on top of three already-real S.M.A.R.T. Hawk capabilities — supplier qualification, auditor affiliation, and audit execution — and turns them into a two-sided discovery + booking surface. Today this module is mostly **vision**: backend scaffolding exists for catalog v2, org directory, and engagement layer, but the differentiator surfaces (auditor matching, semantic supplier search, reputation, network economics) are unbuilt. The five-pillar walk below describes the **target state** of how a marketplace transaction will flow once the wedge modules earn the right by carrying paying customers; each pillar reuses platform plumbing (audit trail, e-sig, AskHawk grounded generation, RBAC) that's already real in other modules. **Sense** captures supply (auditor profile + credentials, supplier listing opt-in) and demand (buyer search query); **Monitor** runs the matching algorithm and semantic search; **Analyze** enforces credential verification, supplier-qualification gate, and COI screening; **Record** generates the engagement contract, surfaces the listing in discovery results, and records the post-engagement review; **Trace** writes a `MarketplaceTransaction` plus full `AuditTrail` and immutable review record.
 
 ```mermaid
 flowchart LR
@@ -402,20 +402,20 @@ flowchart LR
 
 | Pillar | Code path (planned · partial scaffolding noted) | What it does |
 |---|---|---|
-| 1 · Collect | `backend/src/models/AuditorProfile.js` · `AuditorCredential.js` (⏳ Plan) | Auditor profile creation + credential document records |
-| 1 · Collect | `backend/src/models/SupplierListing.js` (⏳ Plan) · reads from `Supplier` (Prequal) | Supplier listing record with per-field visibility |
-| 1 · Collect | `backend/src/routes/orgDirectoryRoutes.js` · `engagementRoutes.js` (⚠️ Partial scaffolding) | Org + engagement surface that the new marketplace endpoints will extend |
-| 1 · Collect | `backend/src/models/productCatalogV2Models.js` (⚠️ Partial scaffolding) | Canonical product + variant + claim + offer models reused by supplier listings |
-| 2 · Process | `backend/src/services/ai/auditorMatchingAgent.js` (⏳ Plan) | Ranks auditors by qualification fit + availability + COI clearance + reputation + price |
-| 2 · Process | `backend/src/services/ai/supplierSemanticSearchAgent.js` (⏳ Plan) | Embedding-based natural-language query to supplier listings |
-| 2 · Process | `backend/src/services/ai/recommendationEngine.js` (⏳ Plan, post-Series-A) | Collaborative filtering across similar-buyer choices |
-| 2 · Process | `backend/src/services/marketplaceSearchService.js` (⏳ Plan) | Filter pipeline + ranking dispatch; delegates AI calls to AskHawk groundedGen |
-| 3 · Validate | `backend/src/controllers/marketplaceAdminController.js` (⏳ Plan) | Marketplace Admin verifies auditor credentials at G-VER gate |
-| 3 · Validate | `services/marketplaceSupplierDirectoryService.js → ensureQualified()` (⏳ Plan) | Gate: only `Supplier.status === 'APPROVED'` can be listed |
-| 3 · Validate | COI filter via `AuditorAffiliation` model lookup (⚠️ Partial · model exists in Audit Mgmt) | Auditors with active engagements at the buyer's org filtered out of search results |
-| 4 · Report | `backend/src/controllers/marketplaceEngagementController.js` · `middlewares/requireESignature.js` (⏳ Plan) | G-ENG · buyer + auditor dual e-sig on Marketplace MSA + scope addendum |
-| 4 · Report | Cross-module hand-off to `services/auditRequestService.js` (existing) | Signed engagement creates `AuditRequest` with `auditor_id` pre-assigned |
-| 4 · Report | `backend/src/models/MarketplaceReview.js` (⏳ Plan) · `marketplaceReviewController.js` (⏳ Plan) | Post-engagement review submission + moderation pipeline |
-| 5 · Seal | `backend/src/models/MarketplaceTransaction.js` (⏳ Plan) · Stripe Connect (post-MVP) | Transaction record · amount · currency · status |
-| 5 · Seal | `backend/src/services/auditTrailService.js` (shared · existing) | AuditTrail row per engagement state change · admin action · review moderation · delisting |
-| 5 · Seal | `MarketplaceReview.moderationStatus === 'PUBLISHED'` (⏳ Plan) | Once published, review is immutable; disputes route to Marketplace Admin without rewriting the record |
+| 1 · Sense | `backend/src/models/AuditorProfile.js` · `AuditorCredential.js` (⏳ Plan) | Auditor profile creation + credential document records |
+| 1 · Sense | `backend/src/models/SupplierListing.js` (⏳ Plan) · reads from `Supplier` (Prequal) | Supplier listing record with per-field visibility |
+| 1 · Sense | `backend/src/routes/orgDirectoryRoutes.js` · `engagementRoutes.js` (⚠️ Partial scaffolding) | Org + engagement surface that the new marketplace endpoints will extend |
+| 1 · Sense | `backend/src/models/productCatalogV2Models.js` (⚠️ Partial scaffolding) | Canonical product + variant + claim + offer models reused by supplier listings |
+| 2 · Monitor | `backend/src/services/ai/auditorMatchingAgent.js` (⏳ Plan) | Ranks auditors by qualification fit + availability + COI clearance + reputation + price |
+| 2 · Monitor | `backend/src/services/ai/supplierSemanticSearchAgent.js` (⏳ Plan) | Embedding-based natural-language query to supplier listings |
+| 2 · Monitor | `backend/src/services/ai/recommendationEngine.js` (⏳ Plan, post-Series-A) | Collaborative filtering across similar-buyer choices |
+| 2 · Monitor | `backend/src/services/marketplaceSearchService.js` (⏳ Plan) | Filter pipeline + ranking dispatch; delegates AI calls to AskHawk groundedGen |
+| 3 · Analyze | `backend/src/controllers/marketplaceAdminController.js` (⏳ Plan) | Marketplace Admin verifies auditor credentials at G-VER gate |
+| 3 · Analyze | `services/marketplaceSupplierDirectoryService.js → ensureQualified()` (⏳ Plan) | Gate: only `Supplier.status === 'APPROVED'` can be listed |
+| 3 · Analyze | COI filter via `AuditorAffiliation` model lookup (⚠️ Partial · model exists in Audit Mgmt) | Auditors with active engagements at the buyer's org filtered out of search results |
+| 4 · Record | `backend/src/controllers/marketplaceEngagementController.js` · `middlewares/requireESignature.js` (⏳ Plan) | G-ENG · buyer + auditor dual e-sig on Marketplace MSA + scope addendum |
+| 4 · Record | Cross-module hand-off to `services/auditRequestService.js` (existing) | Signed engagement creates `AuditRequest` with `auditor_id` pre-assigned |
+| 4 · Record | `backend/src/models/MarketplaceReview.js` (⏳ Plan) · `marketplaceReviewController.js` (⏳ Plan) | Post-engagement review submission + moderation pipeline |
+| 5 · Trace | `backend/src/models/MarketplaceTransaction.js` (⏳ Plan) · Stripe Connect (post-MVP) | Transaction record · amount · currency · status |
+| 5 · Trace | `backend/src/services/auditTrailService.js` (shared · existing) | AuditTrail row per engagement state change · admin action · review moderation · delisting |
+| 5 · Trace | `MarketplaceReview.moderationStatus === 'PUBLISHED'` (⏳ Plan) | Once published, review is immutable; disputes route to Marketplace Admin without rewriting the record |
