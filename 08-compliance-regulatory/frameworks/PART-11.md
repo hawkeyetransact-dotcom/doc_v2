@@ -137,5 +137,5 @@ flowchart LR
 - [PLATFORM-CONTROLS.md](../platform-controls/PLATFORM-CONTROLS.md) — how Hawkeye implements each requirement
 - [SECURITY.md](../../04-engineering/06-security/SECURITY.md) — auth + RBAC + e-sig details
 - [DATA-INTEGRITY](../data-integrity/) (ALCOA+) — TBD
-- [VALIDATION](../validation/) — TBD
+- [DESIGN-AND-DEVELOPMENT-PLAN.md](../validation/DESIGN-AND-DEVELOPMENT-PLAN.md) — GAMP Cat 4 design-control plan (820.30 / IEC 62304 / Part 11)
 - [06-modules/audit-management/ARCHITECTURE.md §7](../../06-modules/audit-management/ARCHITECTURE.md#7-compliance-traceability) — per-feature compliance trace

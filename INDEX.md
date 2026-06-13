@@ -83,7 +83,7 @@ Per-module deep specs (URS · DESIGN · ARCHITECTURE · STORYBOOK per module).
 ## 08-compliance-regulatory/
 - `GAMP-CAT-4-COMPLIANCE.md` — **canonical 25-page reference**
 - `frameworks/` — `PART-11.md` · `EU-GMP.md` · `ICH-Q-SERIES.md` · `ISO-9001.md`
-- `validation/` — CSV/CSA approach · IQ/OQ/PQ templates · VSR
+- `validation/` — `DESIGN-AND-DEVELOPMENT-PLAN.md` (GAMP Cat 4 · 820.30 · IEC 62304 · Part 11) · CSV/CSA approach · IQ/OQ/PQ templates · VSR
 - `data-integrity/` — ALCOA+ controls · audit-trail design
 - `platform-controls/` — `PLATFORM-CONTROLS.md` (Hawkeye control matrix)
 

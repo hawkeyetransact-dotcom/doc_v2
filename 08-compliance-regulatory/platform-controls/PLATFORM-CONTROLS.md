@@ -184,6 +184,6 @@ flowchart LR
 - [EU-GMP.md](../frameworks/EU-GMP.md)
 - [ISO-9001.md](../frameworks/ISO-9001.md)
 - [DATA-INTEGRITY](../data-integrity/) (ALCOA+) — TBD
-- [VALIDATION](../validation/) (CSV / GAMP 5) — TBD
+- [VALIDATION / DESIGN-AND-DEVELOPMENT-PLAN.md](../validation/DESIGN-AND-DEVELOPMENT-PLAN.md) (CSV / GAMP 5 / 820.30 design controls)
 - [04-engineering/06-security/SECURITY.md](../../04-engineering/06-security/SECURITY.md)
 - [06-modules/audit-management/ARCHITECTURE.md §7](../../06-modules/audit-management/ARCHITECTURE.md#7-compliance-traceability)
