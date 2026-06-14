@@ -138,6 +138,20 @@ A positioning built on overstatement is destroyed by a single failed PoC or vend
 
 ---
 
+### 3.5 Self-assessed domain coverage (the 80 / 30 / 50)
+
+> 📐 **Interpretation:** these percentages are **S.M.A.R.T. Hawk's own completeness against a notional 100%-complete solution in each domain** — i.e., how much of what a buyer expects in that domain we deliver today. They are a *self-assessment to guide build priorities*, not a market-share or competitor claim. (If you meant "how much of each domain the *incumbent market* covers," flag it and I'll re-frame.)
+
+| Domain | Self-assessed coverage | What's covered | The gap (what's missing) | Plan to close |
+|---|---|---|---|---|
+| **Supplier Audit** | **~80%** | Full 8-phase lifecycle, PAQ + section assignment, AI observation drafting (cited), auditor coach, e-sig gates, compliance evaluation | Remote-audit cockpit UX; some internal/contractor/lab audit configs; cross-tenant intel surfacing | Phase NOW–LATER (remote cockpit, audit-type configs) |
+| **Supplier Qualification** | **~30%** | Prequal lifecycle, PQQ, transparent risk scoring, public-data intel, periodic requal | Depth of the ongoing-qualification regime: up-to-50-document collection workflow, scorecards, full requalification document lifecycle, supplier-master integrations | Phase LATER (qualification depth); partner/API where faster |
+| **EQMS (breadth)** | **~50%** | CAPA, Deviation, Change, Document Control, Risk, Training, MRM — live core on one evidence spine | Batch Records, Complaint Management, Design Control (model-only today); DMS/LMS breadth | Phase LATER (ship Batch/Complaint/Design); DMS/LMS = horizon |
+
+**Positioning consequence:** the coverage profile **confirms the strategy** — we are deepest where the wedge is (audit, ~80%), thinner where expansion lies (qualification ~30%, EQMS ~50%). Lead with audit, expand along the spine, and be honest about the qualification/EQMS depth still being built. This is exactly why we position as *"supplier-quality system of record (audit-led)"* rather than *"complete EQMS."*
+
+---
+
 ## 4. The architecture — and why it *is* the positioning
 
 The architecture is not back-office detail; it is the proof that the "one spine, many modules" claim is *true* rather than aspirational. This section is the technical backbone of the positioning.
