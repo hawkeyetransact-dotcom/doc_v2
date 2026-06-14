@@ -84,6 +84,7 @@ Per-module deep specs (URS · DESIGN · ARCHITECTURE · STORYBOOK per module).
 - `GAMP-CAT-4-COMPLIANCE.md` — **canonical 25-page reference**
 - `frameworks/` — `PART-11.md` · `EU-GMP.md` · `ICH-Q-SERIES.md` · `ISO-9001.md`
 - `validation/` — `DESIGN-AND-DEVELOPMENT-PLAN.md` (GAMP Cat 4 · 820.30 · IEC 62304 · Part 11) · CSV/CSA approach · IQ/OQ/PQ templates · VSR
+- `sdlc/` — `SDLC-PROCESS-AND-DOCUMENTATION-STANDARD.md` (controlled SDLC for SOX ITGC · SOC 1/2 · GAMP/CSA · Part 11; per-step input→output document map)
 - `data-integrity/` — ALCOA+ controls · audit-trail design
 - `platform-controls/` — `PLATFORM-CONTROLS.md` (S.M.A.R.T. Hawk control matrix)
 
