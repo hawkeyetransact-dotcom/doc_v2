@@ -117,6 +117,68 @@ flowchart LR
 
 ---
 
+## 5.2 Product & software risk assessment (PHA · DFMEA · PFMEA · AFMEA)
+
+The SDLC distinguishes **two complementary risk lenses**, and both are mandatory:
+
+| Lens | Question | Method | Standard | Where recorded |
+|---|---|---|---|---|
+| **QMS process risk** | "Can our *process* (SDLC, change, access, operations) fail and harm quality/financial-reporting integrity?" | Process risk analysis | ICH Q9(R1) · ISO 31000 | Risk Management Plan SOP; this §8 ITGC matrix |
+| **Product / software risk** | "Can our *software product* fail and harm the patient, data integrity, product quality or the user's GxP decision?" | **PHA → DFMEA → PFMEA → AFMEA** | ISO 14971 · IEC 62304 · ICH Q9 | This section + [DDP §11.5](../validation/DESIGN-AND-DEVELOPMENT-PLAN.md) + Risk module |
+
+All four product-risk analyses use a common **RPN = Severity (S) × Occurrence (O) × Detectability (D)**, each 1–5; **RPN ≥ 36 or any Severity = 5** requires a documented control and residual-risk acceptance by the QMS Head. They are **living documents** — re-scored on each functional change and each AI model/prompt change, and reviewed at Management Review.
+
+### 5.2.1 PHA — Preliminary Hazard Analysis (concept / Phase 2)
+Top-down, performed early (Phase 2) to surface hazards before design hardens. Hazard categories for a GxP EQMS: **patient-safety impact** (indirect — a wrong quality decision reaches product), **data integrity** (ALCOA+ breach), **product-quality decision** (mis-recorded audit/CAPA), **security/privacy**, **availability**, **financial-reporting integrity (SOX)**.
+
+| Hazard | Cause | Effect | S | Control direction |
+|---|---|---|---|---|
+| Wrong quality decision recorded | Defect or AI false negative misleads reviewer | Non-conforming product released | 5 | Human-commit gate; design verification; AFMEA |
+| Audit-trail loss/alteration | Bug, access misuse | Loss of ALCOA+ evidence | 5 | Immutable append-only trail; integrity hash; access SoD |
+| Cross-tenant data exposure | Isolation defect | Confidentiality breach, regulatory exposure | 5 | Query-layer tenant scoping; DFMEA; pen-test |
+
+### 5.2.2 DFMEA — Design FMEA (architecture & feature design, Phase 3)
+Failure modes of the **software design** — the highest-value analysis for a platform whose "essential outputs" are the audit trail, e-signature, access control and AI grounding.
+
+| Item / function | Failure mode | Effect | S | O | D | RPN | Design control |
+|---|---|---|---|---|---|---|---|
+| Immutable audit trail | Record mutable/deletable | ALCOA+ breach | 5 | 1 | 2 | 10 | Append-only at service layer; no update/delete API; DB constraints |
+| E-signature binding | Signature detachable from record | Repudiation; Part-11 fail | 5 | 1 | 2 | 10 | `recordType+recordId` FK; content SHA-256 in sig record |
+| Tenant isolation | Query returns other tenant's data | Confidentiality breach | 5 | 2 | 2 | 20 | `tenantOrgId` scope helper at service+query layer; tests |
+| AI observation drafter | **False negative** (misses critical finding) | Critical issue uncaught | 5 | 3 | 3 | 45 | Human review mandatory; confidence floor→fallback; independent reviewer; ground-truth recall threshold (AI Validation Plan) |
+| Integrity hashing | Hash not recomputed on export | Tamper undetected | 4 | 2 | 2 | 16 | `buildSnapshotHash` on every export; hash-mismatch CRITICAL alert |
+| State machine | Gate skippable via API | Out-of-sequence record | 4 | 2 | 2 | 16 | `canTransition()` enforced service-side, not UI |
+
+### 5.2.3 PFMEA — Process FMEA (the SDLC/build/release/operate process, Phase 5–9)
+Failure modes of **how we build and run** the software (overlaps the ITGC matrix; quantified here).
+
+| Process step | Failure mode | Effect | S | O | D | RPN | Control |
+|---|---|---|---|---|---|---|---|
+| Code merge | Unreviewed/self-approved merge | Untested change to prod | 5 | 2 | 1 | 10 | Branch protection ≥2 reviewers; SoD-1 |
+| DB migration | Destructive/irreversible migration | Data loss/corruption | 5 | 2 | 2 | 20 | Forward-compatible migrations; backup pre-deploy; rollback plan |
+| Deployment | Wrong artifact/config to prod | Outage / integrity risk | 4 | 2 | 2 | 16 | CI/CD from approved release record; SoD-2; deploy log |
+| Secrets handling | Secret committed/leaked | Security breach | 5 | 2 | 2 | 20 | Secret scanning; vault; no secrets in repo |
+| Backup | Backup runs but unrestorable | Unrecoverable on incident | 5 | 2 | 3 | 30 | **Periodic restore test (CO-1)** |
+| AI model update | Provider model change degrades quality | Silent quality drift | 4 | 3 | 3 | 36 | Pinned versions; regression on eval sets; drift monitoring |
+
+### 5.2.4 AFMEA — Application / Use FMEA (how users apply the software, Phase 6 UAT + IEC 62366)
+Failure modes of **use** — use-related hazards an auditor and a usability engineer both care about.
+
+| Use scenario | Use error | Effect | S | O | D | RPN | Mitigation (UI / training / process) |
+|---|---|---|---|---|---|---|---|
+| Signing a record | Signs wrong record / wrong meaning | Invalid attestation | 4 | 2 | 2 | 16 | SignatureDialog confirms record id + meaning + reason; SoD |
+| Reviewing AI draft | **Over-trusts AI; accepts without checking** | False negative reaches record | 5 | 3 | 3 | 45 | Evidence shown beside draft; confidence visible; "AI is a draft" UX; reviewer accountability; training |
+| Configuring workflow | Mis-configures gate/role | Control weakened | 4 | 2 | 3 | 24 | Config validation; safe defaults; config-spec review |
+| Bulk import | Imports unverified docs at scale | Uncontrolled documents effective | 4 | 2 | 2 | 16 | Plan-then-approve wizard; single batch e-sig with reason |
+| Reading SOP | Reads superseded version | Acts on obsolete instruction | 4 | 2 | 2 | 16 | EFFECTIVE-only surfacing; superseded watermark; read receipts |
+
+### 5.2.5 Governance of the four analyses
+- **Ownership:** Security/Architect (PHA, DFMEA), Eng Lead/DevOps (PFMEA), Product/UAT-Uma + AI Lead (AFMEA); QMS Head accepts residual risk.
+- **Linkage:** high-RPN items **drive test rigor** (CSA risk-based assurance) and **feed the AI Validation Plan** (all AI false-negative modes) and the **DDP risk-management deliverable §11.5**.
+- **Records:** the four FMEA worksheets are controlled records (Risk module / Document Control), re-scored on change, reviewed at MRM.
+
+---
+
 ## 6. Per-step process — Input → Activity → Control → Output (the core)
 
 For each phase: the **input documents** consumed, the **activities** performed, the **controls** that make it auditable, the **output documents/records** produced, and the **frameworks** each output satisfies. Output IDs reference the Master Document Register (§7).

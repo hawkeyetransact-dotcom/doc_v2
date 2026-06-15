@@ -5,9 +5,10 @@
 
 | Field | Value |
 |---|---|
-| Document | `HK-POS-v2.0` — Strategic Positioning & Market Study (detailed) |
+| Document | `HK-POS-v3.0` — Strategic Positioning & Market Study (consulting-grade) |
 | Owner | Strategy / Founder |
-| Status | v2.0 — extended advisory report |
+| Status | v3.0 — extended advisory report (adds the pharma automation-ecosystem coverage map, audit-type taxonomy & scope, per-module catalog cross-link, and a Gantt roadmap) |
+| Pairs with | [MODULE-FEATURE-POSITIONING-CATALOG.md](../../03-product/00-overview/MODULE-FEATURE-POSITIONING-CATALOG.md) — per-module feature lists & positioning |
 | Date | 2026-06-14 |
 | Audience | Founder, Product, GTM leadership, prospective investors, board |
 | Classification | Confidential |
@@ -284,6 +285,75 @@ The enterprise pole can't profitably serve sub-$30K ACV; the SMB pole can't deli
 
 ---
 
+## 5A. The pharma automation ecosystem — coverage & focus areas
+
+> 🗺️ Synthesizing the client-provided **Automation Interlinkage (Pharma)** map with industry research on connected-quality / Pharma 4.0. The pharma digital-quality estate spans ~40 interlinked systems. The strategic question is **not** "can we build it all?" (no one should) — it is **"what do we OWN, what do we INTEGRATE with, and what do we deliberately leave OUT?"** Getting this boundary right is the difference between a focused category leader and a diffuse me-too.
+
+### 5A.1 The estate, by domain
+
+```mermaid
+flowchart TB
+    classDef own fill:#1e3a6e,stroke:#0f2042,color:#fff
+    classDef integ fill:#dcfce7,stroke:#15803d,color:#14532d
+    classDef out fill:#f1f5f9,stroke:#94a3b8,color:#475569
+
+    subgraph EQMS["① QUALITY EVENT MGMT — OWN (core)"]
+        A1["Audit / Compliance"]:::own
+        A2["CAPA"]:::own
+        A3["Deviation / Incident"]:::own
+        A4["Change Control (perm + planned-dev)"]:::own
+        A5["Investigation / RCA"]:::own
+        A6["Complaint · Return · Recall"]:::own
+        A7["Self-Inspection"]:::own
+        A8["Management Review"]:::own
+        A9["Supplier Qualification"]:::own
+        A10["QRM / Risk"]:::own
+    end
+    subgraph DOC["② DOCS & TRAINING — OWN"]
+        D1["EDMS / Master-doc repository (HawkVault)"]:::own
+        D2["ELMS / Training"]:::own
+    end
+    subgraph EQ["③ EQUIPMENT — OWN-partial / INTEGRATE"]
+        E1["Asset · Calibration · QC-Equip-Cal · PM/Breakdown"]:::own
+    end
+    subgraph MFG["④ MANUFACTURING — SELECTIVE / INTEGRATE"]
+        M1["MES / EBMR (Batch Records)"]:::own
+        M2["ERP · SCADA · EMS · BMS · Product-Dev/TT"]:::integ
+    end
+    subgraph LAB["⑤ LAB / QC — INTEGRATE (do not build)"]
+        L1["LIMS · CDS · ELN · Instrument Data"]:::integ
+        L2["OOS/OOT · Sample · Stability · Standard · Env-Mon (Viable/Non-viable)"]:::integ
+    end
+    subgraph VAL["⑥ VALIDATION — INTEGRATE / FUTURE"]
+        V1["Process Val · CPV/Trending · Cleaning Val"]:::integ
+    end
+    subgraph REG["⑦ REGULATORY (RIM) — INTEGRATE / OUT"]
+        R1["RIMS · Dossier / E-CTD"]:::out
+    end
+```
+
+### 5A.2 Coverage & focus decision (the rulebook)
+
+| Domain | Components (from the interlinkage map) | Posture | Rationale |
+|---|---|---|---|
+| **① Quality Event Mgmt (EQMS)** | Audit, CAPA, Deviation/Incident, Change Control (permanent + planned-deviation), Investigation/RCA, Complaint, Return, Recall, Self-Inspection, Management Review, Supplier Qualification, QRM | **🟦 OWN — core** | This *is* our product. Audit + supplier-quality is the wedge; the rest is the connected EQMS on one spine. |
+| **② Documents & Training** | EDMS / master-doc repository / doc-control workflows; ELMS (training) | **🟦 OWN** | HawkVault is live; Training is forward-spec. Required for a credible EQMS and for the "connected quality" story. |
+| **③ Equipment & Calibration** | Asset mgmt, Calibration, QC-equipment calibration, Preventive/Breakdown maintenance | **🟦 OWN-partial / 🟩 INTEGRATE** | Build calibration/maintenance records (Equipment module, 2027) for the GxP gating (out-of-cal blocks batch step); integrate with dedicated CMMS where customers have one. |
+| **④ Manufacturing & Batch** | MES/EBMR; ERP; SCADA; EMS; BMS; Product Dev & Tech Transfer | **🟦 SELECTIVE (Batch Records) / 🟩 INTEGRATE (rest)** | Build the **electronic batch record** (overlaps EBMR) for the pharma vertical; **integrate** — never rebuild — MES/ERP/SCADA/EMS/BMS. |
+| **⑤ Lab / QC (LIMS estate)** | LIMS, CDS, ELN, Instrument data, Sample/Stability/Standard mgmt, OOS/OOT, Lab incidents, Environmental monitoring | **🟩 INTEGRATE — do NOT build** | A separate, mature, capital-intensive category. We *consume* OOS/OOT/lab-incident events into deviation/CAPA; we do not become a LIMS. |
+| **⑥ Validation** | Process validation, CPV/trending, Cleaning validation | **🟩 INTEGRATE / FUTURE** | Adjacent; consume validation status; possible future module, not near-term. |
+| **⑦ Regulatory (RIM)** | RIMS, Dossier / E-CTD | **⬜ OUT (for now)** | Distinct category (Veeva RIM, etc.); integrate at the document/submission boundary only. |
+
+### 5A.3 Focus areas (where to invest, in order)
+1. **Deepen the EQMS event suite we already lead** — finish Complaint, add Return/Recall, harden Audit + Supplier-Quality (the 80/30/50 from §3.5).
+2. **Ship the four forward-spec modules** — Training, Equipment/Calibration, Batch Records (EBMR), Management Review — to make "connected EQMS" *true*.
+3. **Build the integration fabric** — published APIs + connectors to **LIMS, MES, ERP, CDS** so we are the **quality spine** of the customer's estate, not an island. This is the single highest-leverage differentiator in a "connected quality" market.
+4. **Explicitly do NOT build** LIMS, CDS, ELN, RIMS, SCADA, BMS/EMS — integrate. Saying "no" here is what keeps us focused and fundable.
+
+> 💡 **The connected-quality thesis:** incumbents and analysts increasingly frame the win as *connected quality* — QMS as the orchestration spine that interlinks LIMS, MES, ERP, DMS, LMS. S.M.A.R.T. Hawk's **one-evidence-spine architecture is purpose-built to be that orchestrator** for the mid-market — provided we build the integration fabric (focus area #3) rather than trying to absorb every box on the map.
+
+---
+
 ## 6. Competitor deep-profiles
 
 For each, I give the honest read a buyer's consultant would give — strengths, weaknesses, where they win, and where they cede to you.
@@ -366,6 +436,29 @@ For each category: what you do, real-vs-planned, the gap you exploit, and — cr
 - **You do:** end-to-end supplier-audit lifecycle (8 phases), PAQ + section assignment, **AI observation drafting (cited, confidence-scored)**, auditor coach, e-sig gates, compliance evaluation against selected standards. **Live.**
 - **Gap exploited:** suites price out SMB and lack a supplier-first portal/remote cockpit; networks sell reports not workflow.
 - **Boundary:** you are **not** an audit *network/library* — you do not sell pre-existing third-party reports. Position *with* Qualifyze/Rephine.
+
+### 7.1.1 Audit module scope — the audit-type taxonomy (clarified)
+
+The client's interlinkage map enumerates a realistic audit spread. Mapping it to the standard GxP audit taxonomy and to S.M.A.R.T. Hawk's coverage resolves the "which audits do we actually do?" question:
+
+| Audit type (map + industry) | Party | S.M.A.R.T. Hawk coverage |
+|---|---|---|
+| **Self-inspection / Internal audit** | First-party | ✅ `internal` type |
+| **Supplier/vendor site audit** — API site · Excipient · Packaging-material (PM) · Finished-product (FP) · GxP-misc item | Second-party (conducted/outbound) | ✅ `conducted` type + per-subtype template |
+| **External service-provider audit** (laundry, calibration, IT, sterilization) | Second-party | ✅ `conducted` + service-provider template |
+| **External testing-lab audit** | Second-party | ✅ `conducted` |
+| **Hosted/customer audit** (a customer audits you) | Second-party (inbound) | ✅ `hosted` type |
+| **Regulatory inspection** (FDA/EMA/MHRA/WHO/PIC-S; PAI · routine · follow-up · **for-cause**) | Third-party | ⚠️ **inspection-readiness + record** (`hosted-regulatory` config) — we are the auditee's tool, *not* the inspector's |
+| **In-licensing / Out-licensing (due-diligence) audit** | Second-party | ⚠️ configurable (`conducted` + due-diligence template) |
+| **PSCI / ESG audit** | Second-party (sustainability) | ⚠️ configurable template |
+| **For-cause audit** | (trigger) | ✅ any type, event/CAPA-triggered |
+| **CAPA / follow-up audit** | (trigger) | ✅ `surveillance` phase / re-audit |
+| **Certification audit** (ISO) | Third-party | `hosted` config |
+
+**Scope statement (recommended positioning of the Audit module):**
+> S.M.A.R.T. Hawk runs **internal audits, all second-party audits (supplier/vendor, API/excipient/PM/FP, service-provider, testing-lab, licensing due-diligence, PSCI/ESG), and inspection-readiness for regulatory audits** — with **for-cause** and **CAPA-follow-up** triggers and a **surveillance** phase. It is the **auditee/host and auditor workflow**, not the regulator's inspection tool.
+
+**Product gap to close:** today the module ships **three base types** (hosted / conducted / internal). Recommendation: expose **audit subtypes + templates** (API-site, excipient, PM, FP, service-provider, testing-lab, regulatory-readiness, licensing, PSCI) layered on the three base types, plus explicit **for-cause** and **CAPA-follow-up** trigger flags. This converts "3 generic types" into the full taxonomy above without new core architecture (configuration, not code) — preserving Cat 4.
 
 ### 7.2 Supplier Qualification
 - **You do:** gatekeeper module — 8-state lifecycle, PQQ, **transparent risk-weighted scoring**, `supplierIntelAgent` (FDA/EMA/WHO fusion), on-site auto-trigger, e-sig approval, **automated periodic requalification**. **Live.**
@@ -555,6 +648,41 @@ flowchart LR
     L["LATER<br/>EQMS breadth<br/>Batch/Complaint/Design"]:::p
     H["HORIZON<br/>network + verticals<br/>marketplace · US/EU"]:::p
     N --> X --> L --> H
+```
+
+---
+
+### 15.1 Roadmap Gantt
+
+```mermaid
+gantt
+    title S.M.A.R.T. Hawk — strategic roadmap (positioning → proof)
+    dateFormat YYYY-MM-DD
+    axisFormat %b '%y
+    section NOW · wedge + trust
+    First 3–5 reference customers      :a1, 2026-06-01, 150d
+    Hard e-sig default + MFA/SSO       :a2, 2026-07-01, 120d
+    Per-tenant validation kit + restore test :a3, 2026-08-01, 120d
+    SOC 2 Type I                       :a4, 2026-07-15, 120d
+    AI Validation Plan + eval sets     :a5, 2026-06-15, 160d
+    section NEXT · AI defensibility + refs
+    Fine-tuned model (low-stakes) prod :b1, 2026-11-01, 150d
+    Active-learning loop wired         :b2, 2026-12-01, 120d
+    10 paying customers + 3 named refs :b3, 2026-10-01, 180d
+    SOC 2 Type II                      :b4, 2027-01-01, 120d
+    section LATER · EQMS breadth + integration
+    Ship Complaint (GA) + Return/Recall:c1, 2027-01-01, 120d
+    Ship Batch Records (EBMR)          :c2, 2027-02-01, 150d
+    Ship Training + Equipment/Cal      :c3, 2027-02-01, 150d
+    Ship Management Review             :c4, 2027-04-01, 90d
+    Integration fabric (LIMS/MES/ERP)  :c5, 2027-03-01, 180d
+    Audit subtypes/templates + triggers:c6, 2027-01-15, 90d
+    First non-pharma ref (Food/HACCP)  :c7, 2027-05-01, 120d
+    section HORIZON · network + verticals
+    Design Control (med-device pack)   :d1, 2027-07-01, 180d
+    Marketplace liquidity (network)    :d2, 2027-09-01, 240d
+    US/EU expansion                    :d3, 2028-01-01, 240d
+    ISO 9001 certification             :d4, 2027-01-01, 365d
 ```
 
 ---

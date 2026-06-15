@@ -43,7 +43,7 @@
 - `investor-updates/` — monthly/quarterly cadence
 
 ## 03-product/
-- `00-overview/` — `PRODUCT-OVERVIEW.md`
+- `00-overview/` — `PRODUCT-OVERVIEW.md` · `MODULE-FEATURE-POSITIONING-CATALOG.md` (per-module feature lists, positioning & status)
 - `01-personas-and-research/` — `PERSONAS.md` · `RESEARCH-FINDINGS.md` (n=24 discovery interviews)
 - `02-urs/` — `URS-INDEX.md` (master catalog) — per-module URS lives in [06-modules/](./06-modules/)
 - `03-prd/` — `CORE-PRD.md` (canonical platform PRD · 15 modules) · `PRD-INDEX.md` (feature PRD catalog)
