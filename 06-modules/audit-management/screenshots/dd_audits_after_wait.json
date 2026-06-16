@@ -1,0 +1,21 @@
+{
+  "url": "https://hawkeye-frontend-dev-chi.vercel.app/auth/signin",
+  "title": "Login page | Dashboard Theme",
+  "h": [
+    "H1: Sign In to"
+  ],
+  "visibleLinks": [
+    {
+      "t": "Forgot Password?",
+      "h": "/auth/recover"
+    },
+    {
+      "t": "Create an Account",
+      "h": "/auth/signup"
+    }
+  ],
+  "visibleButtons": [
+    "Sign in"
+  ],
+  "selectOpts": []
+}

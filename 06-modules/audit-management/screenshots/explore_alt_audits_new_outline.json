@@ -1,0 +1,34 @@
+{
+  "url": "https://hawkeye-frontend-dev-chi.vercel.app/audits/new",
+  "title": "Dashboard Theme",
+  "navItems": [],
+  "buttons": [
+    "🏪Marketplace",
+    "🤝Supplier Collaboration",
+    "📋EQMS",
+    "New chat",
+    "Retrieve",
+    "Mark all read",
+    "Load more",
+    "Logout"
+  ],
+  "headings": [
+    "H4: Audit Request Details"
+  ],
+  "inputs": [
+    {
+      "tag": "INPUT",
+      "type": "file",
+      "name": null,
+      "placeholder": null,
+      "ariaLabel": null
+    },
+    {
+      "tag": "INPUT",
+      "type": "text",
+      "name": null,
+      "placeholder": "Ask a question",
+      "ariaLabel": null
+    }
+  ]
+}

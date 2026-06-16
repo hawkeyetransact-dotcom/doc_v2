@@ -1,0 +1,46 @@
+{
+  "url": "https://hawkeye-frontend-dev-chi.vercel.app/audits",
+  "title": "Dashboard Theme",
+  "navItems": [],
+  "buttons": [
+    "🏪Marketplace",
+    "🤝Supplier Collaboration",
+    "📋EQMS",
+    "Archive selected",
+    "Archive all on page",
+    "Clear selection",
+    "New chat",
+    "Retrieve",
+    "Mark all read",
+    "Load more",
+    "Logout",
+    "Cancel",
+    "Delete"
+  ],
+  "headings": [
+    "H4: Audit Summary"
+  ],
+  "inputs": [
+    {
+      "tag": "INPUT",
+      "type": null,
+      "name": null,
+      "placeholder": null,
+      "ariaLabel": null
+    },
+    {
+      "tag": "INPUT",
+      "type": "file",
+      "name": null,
+      "placeholder": null,
+      "ariaLabel": null
+    },
+    {
+      "tag": "INPUT",
+      "type": "text",
+      "name": null,
+      "placeholder": "Ask a question",
+      "ariaLabel": null
+    }
+  ]
+}
