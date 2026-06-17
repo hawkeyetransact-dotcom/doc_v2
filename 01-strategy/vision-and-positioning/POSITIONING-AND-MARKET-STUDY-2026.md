@@ -455,6 +455,25 @@ The client's interlinkage map enumerates a realistic audit spread. Mapping it to
 | **CAPA / follow-up audit** | (trigger) | ✅ `surveillance` phase / re-audit |
 | **Certification audit** (ISO) | Third-party | `hosted` config |
 
+**Coverage against the client's audit list (verbatim, one-to-one).** From the *Automation Interlinkage* map: *"Regulatory Audits, Internal Audits, Inlicensing Audit, Outlicensing Audit, API site Audit, Excipient site audit, PM site audit, FP site audit, GxP Misc item site audit, External service provider site audit (Laundry, Calibration), External Testing Lab audit, PSCI audits (ESG)."*
+
+| # | Client term (verbatim) | S.M.A.R.T. Hawk | Status |
+|---|---|---|---|
+| 1 | Regulatory Audits | `hosted-regulatory` (inspection-readiness) | ⚠️ Readiness/record (auditee tool, not inspector's) |
+| 2 | Internal Audits | `internal` type | ✅ Live |
+| 3 | Inlicensing Audit | `conducted` + due-diligence template | ⚠️ Configurable |
+| 4 | Outlicensing Audit | `conducted` + due-diligence template | ⚠️ Configurable |
+| 5 | API site Audit | `conducted` + API-site template | ✅ Live (base type; subtype = backlog) |
+| 6 | Excipient site audit | `conducted` + excipient template | ✅ Live (base type; subtype = backlog) |
+| 7 | PM site audit | `conducted` + packaging-material template | ✅ Live (base type; subtype = backlog) |
+| 8 | FP site audit | `conducted` + finished-product template | ✅ Live (base type; subtype = backlog) |
+| 9 | GxP Misc item site audit | `conducted` + GxP-misc template | ✅ Live (base type; subtype = backlog) |
+| 10 | External service provider site audit (Laundry, Calibration) | `conducted` + service-provider template | ✅ Live (base type; subtype = backlog) |
+| 11 | External Testing Lab audit | `conducted` + testing-lab template | ✅ Live (base type; subtype = backlog) |
+| 12 | PSCI audits (ESG) | `conducted` + PSCI/ESG template | ⚠️ Configurable |
+
+**Result: 12/12 addressed** — 8 via the live `conducted`/`internal` flow, 4 as configurable templates / inspection-readiness. The per-subtype templates (rows 3–12) are specified as a groomed backlog item: [`06-modules/audit-management/AUDIT-SUBTYPES-BACKLOG-SPEC.md`](../../06-modules/audit-management/AUDIT-SUBTYPES-BACKLOG-SPEC.md).
+
 **Scope statement (recommended positioning of the Audit module):**
 > S.M.A.R.T. Hawk runs **internal audits, all second-party audits (supplier/vendor, API/excipient/PM/FP, service-provider, testing-lab, licensing due-diligence, PSCI/ESG), and inspection-readiness for regulatory audits** — with **for-cause** and **CAPA-follow-up** triggers and a **surveillance** phase. It is the **auditee/host and auditor workflow**, not the regulator's inspection tool.
 
