@@ -1,0 +1,148 @@
+{
+  "label": "audit_details_warm",
+  "elapsed": 4258,
+  "navTiming": {
+    "dnsMs": 0,
+    "tcpMs": 0,
+    "requestMs": 63.10000002384186,
+    "responseMs": 427.39999997615814,
+    "domContentLoadedMs": 565.6999999284744,
+    "loadEventMs": 753.1000000238419,
+    "ttfbMs": 66.89999997615814
+  },
+  "apiOnly": [
+    {
+      "url": "https://hawkeye-frontend-dev-chi.vercel.app/api/next/notifications/unread-count",
+      "method": "GET",
+      "status": 200,
+      "contentType": "application/json",
+      "contentLengthBytes": 0,
+      "timing": {
+        "startTime": 1781707757118.02,
+        "domainLookupStart": -1,
+        "domainLookupEnd": -1,
+        "connectStart": -1,
+        "secureConnectionStart": -1,
+        "connectEnd": -1,
+        "requestStart": 1.693,
+        "responseStart": 591.724,
+        "responseEnd": 594.534
+      },
+      "when": 1781707757717
+    },
+    {
+      "url": "https://hawkeye-frontend-dev-chi.vercel.app/api/next/audit-requests/requestSingleAudit?request_id=new&page=1&limit=1",
+      "method": "GET",
+      "status": 404,
+      "contentType": "application/json",
+      "contentLengthBytes": 0,
+      "timing": {
+        "startTime": 1781707757150.6118,
+        "domainLookupStart": -1,
+        "domainLookupEnd": -1,
+        "connectStart": -1,
+        "secureConnectionStart": -1,
+        "connectEnd": -1,
+        "requestStart": 1.138,
+        "responseStart": 1021.914,
+        "responseEnd": 1024.941
+      },
+      "when": 1781707758178
+    },
+    {
+      "url": "https://hawkeye-backend-dev.vercel.app/api/auditor/audits/new/report",
+      "method": "GET",
+      "status": 404,
+      "contentType": "application/json; charset=utf-8",
+      "contentLengthBytes": 49,
+      "timing": {
+        "startTime": 1781707757396.269,
+        "domainLookupStart": 1.437,
+        "domainLookupEnd": 1.456,
+        "connectStart": 1.456,
+        "secureConnectionStart": 28.971,
+        "connectEnd": 115.2,
+        "requestStart": 118.953,
+        "responseStart": 1065.25,
+        "responseEnd": 1066.974
+      },
+      "when": 1781707758468
+    },
+    {
+      "url": "https://hawkeye-backend-dev.vercel.app/api/universal/module-config/active",
+      "method": "GET",
+      "status": 200,
+      "contentType": "application/json; charset=utf-8",
+      "contentLengthBytes": 646,
+      "timing": {
+        "startTime": 1781707757584.8909,
+        "domainLookupStart": -1,
+        "domainLookupEnd": -1,
+        "connectStart": -1,
+        "secureConnectionStart": -1,
+        "connectEnd": -1,
+        "requestStart": 1.61,
+        "responseStart": 1394.05,
+        "responseEnd": 1583.726
+      },
+      "when": 1781707758988
+    },
+    {
+      "url": "https://hawkeye-frontend-dev-chi.vercel.app/api/next/audits/new/tracking",
+      "method": "GET",
+      "status": 500,
+      "contentType": "application/json",
+      "contentLengthBytes": 0,
+      "timing": {
+        "startTime": 1781707757147.161,
+        "domainLookupStart": -1,
+        "domainLookupEnd": -1,
+        "connectStart": -1,
+        "secureConnectionStart": -1,
+        "connectEnd": -1,
+        "requestStart": 1.323,
+        "responseStart": 1888.364,
+        "responseEnd": 1890.781
+      },
+      "when": 1781707759038
+    },
+    {
+      "url": "https://hawkeye-frontend-dev-chi.vercel.app/api/next/audit-requests/requestSingleAudit?request_id=new&page=1&limit=1",
+      "method": "GET",
+      "status": 404,
+      "contentType": "application/json",
+      "contentLengthBytes": 0,
+      "timing": {
+        "startTime": 1781707757152.9597,
+        "domainLookupStart": -1,
+        "domainLookupEnd": -1,
+        "connectStart": -1,
+        "secureConnectionStart": -1,
+        "connectEnd": -1,
+        "requestStart": 1023.921,
+        "responseStart": 2032.791,
+        "responseEnd": 2035.399
+      },
+      "when": 1781707759189
+    },
+    {
+      "url": "https://hawkeye-frontend-dev-chi.vercel.app/api/next/audit-requests/requestSingleAudit?request_id=new&page=1&limit=1",
+      "method": "GET",
+      "status": 404,
+      "contentType": "application/json",
+      "contentLengthBytes": 0,
+      "timing": {
+        "startTime": 1781707757155.4412,
+        "domainLookupStart": -1,
+        "domainLookupEnd": -1,
+        "connectStart": -1,
+        "secureConnectionStart": -1,
+        "connectEnd": -1,
+        "requestStart": 2032.578,
+        "responseStart": 3031.644,
+        "responseEnd": 3034.114
+      },
+      "when": 1781707760190
+    }
+  ]
+}

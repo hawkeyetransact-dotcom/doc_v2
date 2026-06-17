@@ -1,0 +1,53 @@
+{
+  "label": "audits_list_warm",
+  "elapsed": 3740,
+  "navTiming": {
+    "dnsMs": 0,
+    "tcpMs": 151.29999995231628,
+    "requestMs": 95.5,
+    "responseMs": 448.5,
+    "domContentLoadedMs": 1252.7999999523163,
+    "loadEventMs": 1254.5,
+    "ttfbMs": 250.29999995231628
+  },
+  "apiOnly": [
+    {
+      "url": "https://hawkeye-backend-dev.vercel.app/api/table-variants?tableKey=audit-summary",
+      "method": "GET",
+      "status": 200,
+      "contentType": "application/json; charset=utf-8",
+      "contentLengthBytes": 35,
+      "timing": {
+        "startTime": 1781707744477.905,
+        "domainLookupStart": -1,
+        "domainLookupEnd": -1,
+        "connectStart": -1,
+        "secureConnectionStart": -1,
+        "connectEnd": -1,
+        "requestStart": 2.238,
+        "responseStart": 1434.126,
+        "responseEnd": 1511.606
+      },
+      "when": 1781707746597
+    },
+    {
+      "url": "https://hawkeye-frontend-dev-chi.vercel.app/api/next/notifications/unread-count",
+      "method": "GET",
+      "status": 200,
+      "contentType": "application/json",
+      "contentLengthBytes": 0,
+      "timing": {
+        "startTime": 1781707748495.989,
+        "domainLookupStart": -1,
+        "domainLookupEnd": -1,
+        "connectStart": -1,
+        "secureConnectionStart": -1,
+        "connectEnd": -1,
+        "requestStart": 2.03,
+        "responseStart": 576.175,
+        "responseEnd": 581.64
+      },
+      "when": 1781707749079
+    }
+  ]
+}

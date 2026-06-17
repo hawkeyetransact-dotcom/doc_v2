@@ -1,0 +1,148 @@
+{
+  "label": "audit_details_new",
+  "elapsed": 4194,
+  "navTiming": {
+    "dnsMs": 0,
+    "tcpMs": 0,
+    "requestMs": 64.10000002384186,
+    "responseMs": 323.7000000476837,
+    "domContentLoadedMs": 689.7999999523163,
+    "loadEventMs": 729.8999999761581,
+    "ttfbMs": 68.29999995231628
+  },
+  "apiOnly": [
+    {
+      "url": "https://hawkeye-frontend-dev-chi.vercel.app/api/next/notifications/unread-count",
+      "method": "GET",
+      "status": 200,
+      "contentType": "application/json",
+      "contentLengthBytes": 0,
+      "timing": {
+        "startTime": 1781707752637.564,
+        "domainLookupStart": -1,
+        "domainLookupEnd": -1,
+        "connectStart": -1,
+        "secureConnectionStart": -1,
+        "connectEnd": -1,
+        "requestStart": 1.746,
+        "responseStart": 581.744,
+        "responseEnd": 584.716
+      },
+      "when": 1781707753223
+    },
+    {
+      "url": "https://hawkeye-frontend-dev-chi.vercel.app/api/next/audit-requests/requestSingleAudit?request_id=new&page=1&limit=1",
+      "method": "GET",
+      "status": 404,
+      "contentType": "application/json",
+      "contentLengthBytes": 0,
+      "timing": {
+        "startTime": 1781707752670.757,
+        "domainLookupStart": -1,
+        "domainLookupEnd": -1,
+        "connectStart": -1,
+        "secureConnectionStart": -1,
+        "connectEnd": -1,
+        "requestStart": 1.013,
+        "responseStart": 1015.903,
+        "responseEnd": 1018.739
+      },
+      "when": 1781707753690
+    },
+    {
+      "url": "https://hawkeye-backend-dev.vercel.app/api/auditor/audits/new/report",
+      "method": "GET",
+      "status": 404,
+      "contentType": "application/json; charset=utf-8",
+      "contentLengthBytes": 49,
+      "timing": {
+        "startTime": 1781707753023.632,
+        "domainLookupStart": -1,
+        "domainLookupEnd": -1,
+        "connectStart": -1,
+        "secureConnectionStart": -1,
+        "connectEnd": -1,
+        "requestStart": 1.099,
+        "responseStart": 957.404,
+        "responseEnd": 1052.062
+      },
+      "when": 1781707753985
+    },
+    {
+      "url": "https://hawkeye-backend-dev.vercel.app/api/universal/module-config/active",
+      "method": "GET",
+      "status": 200,
+      "contentType": "application/json; charset=utf-8",
+      "contentLengthBytes": 646,
+      "timing": {
+        "startTime": 1781707752931.698,
+        "domainLookupStart": -1,
+        "domainLookupEnd": -1,
+        "connectStart": -1,
+        "secureConnectionStart": -1,
+        "connectEnd": -1,
+        "requestStart": 1.59,
+        "responseStart": 1510.174,
+        "responseEnd": 1512.177
+      },
+      "when": 1781707754447
+    },
+    {
+      "url": "https://hawkeye-frontend-dev-chi.vercel.app/api/next/audits/new/tracking",
+      "method": "GET",
+      "status": 500,
+      "contentType": "application/json",
+      "contentLengthBytes": 0,
+      "timing": {
+        "startTime": 1781707752666.0461,
+        "domainLookupStart": -1,
+        "domainLookupEnd": -1,
+        "connectStart": -1,
+        "secureConnectionStart": -1,
+        "connectEnd": -1,
+        "requestStart": 1.693,
+        "responseStart": 1946.402,
+        "responseEnd": 1948.815
+      },
+      "when": 1781707754620
+    },
+    {
+      "url": "https://hawkeye-frontend-dev-chi.vercel.app/api/next/audit-requests/requestSingleAudit?request_id=new&page=1&limit=1",
+      "method": "GET",
+      "status": 404,
+      "contentType": "application/json",
+      "contentLengthBytes": 0,
+      "timing": {
+        "startTime": 1781707752674.819,
+        "domainLookupStart": -1,
+        "domainLookupEnd": -1,
+        "connectStart": -1,
+        "secureConnectionStart": -1,
+        "connectEnd": -1,
+        "requestStart": 1014.621,
+        "responseStart": 1989.093,
+        "responseEnd": 1991.462
+      },
+      "when": 1781707754700
+    },
+    {
+      "url": "https://hawkeye-frontend-dev-chi.vercel.app/api/next/audit-requests/requestSingleAudit?request_id=new&page=1&limit=1",
+      "method": "GET",
+      "status": 404,
+      "contentType": "application/json",
+      "contentLengthBytes": 0,
+      "timing": {
+        "startTime": 1781707752681.1018,
+        "domainLookupStart": -1,
+        "domainLookupEnd": -1,
+        "connectStart": -1,
+        "secureConnectionStart": -1,
+        "connectEnd": -1,
+        "requestStart": 1986.925,
+        "responseStart": 3019.059,
+        "responseEnd": 3023.775
+      },
+      "when": 1781707755707
+    }
+  ]
+}
