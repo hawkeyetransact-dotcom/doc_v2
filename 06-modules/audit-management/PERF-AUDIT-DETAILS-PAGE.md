@@ -10,7 +10,7 @@
 | Severity | **High** — page feels broken-slow on every navigation, not just cold start |
 | Root cause | **Multiple compounding bugs** — see §2 |
 | Estimated fix effort | ~3 hours total · 2 P0 changes + 3 P1 changes |
-| Status | v1.0 (diagnosis complete, fixes proposed but NOT applied) |
+| Status | **v1.1 — ALL fixes applied** on 2026-06-17 (see §9 Application log) |
 
 ---
 
@@ -416,11 +416,61 @@ Acceptance criteria:
 
 ---
 
-## 8. Document control
+## 9. Application log — fixes applied 2026-06-17
+
+All P0 + P1 + P2 fixes from §4 were applied and pushed across the two code repos. Summary below; full diffs in commit references.
+
+### 9.1 Backend changes (`codex_backend_01`)
+
+| File | Change | Commit |
+|---|---|---|
+| `src/middlewares/validateObjectId.js` *(new)* | Express middleware factory · validates a route param is a valid Mongo ObjectId · returns 400 on bad input | (initial) |
+| `src/controllers/trackingController.js` | Added `mongoose.isValidObjectId(rawId)` guard at top of `loadAudit()` · throws `Error{status:400}` before any Mongoose call | (initial) |
+| `src/controllers/auditRequestController.js` | Added same guard in `getAuditRequestSingleAudit` after `resolveAuditRequestId` resolves | (initial) |
+| `src/routes/trackingRoutes.js` | All 3 `:auditId` routes now use `validateObjectId('auditId')` middleware | (initial) |
+| `src/routes/auditRequestRoutes.js` | All 4 `:id` routes now use `validateObjectId('id')` middleware | (initial) |
+| `src/routes/universalModuleConfigRoutes.js` | Added `Cache-Control: private, max-age=300, stale-while-revalidate=300` header to `/active` endpoint | (initial) |
+
+### 9.2 Frontend changes (`codex_frontend_01`)
+
+| File | Change | Commit |
+|---|---|---|
+| `app/(console)/audits/new/page.tsx` *(new)* | Dedicated `/audits/new` route renders the existing `<AuditNewRequestForm>` · prevents fall-through to `[id]/page.tsx` | (initial) |
+| `components/audits/AuditDataContext.tsx` *(new)* | React Context provider that fetches the audit-request payload ONCE per page · consumers read via `useAuditData()` · falls back gracefully when provider absent | (initial) |
+| `app/(console)/audits/[id]/layout.tsx` | Wraps children in `<AuditDataProvider auditId={id}>` so Tabs + Detail share one fetch | (initial) |
+| `components/audits/detail.tsx` | Reads from `useAuditData()` context first · only fetches on its own if context absent · ObjectId guard added to own-load path | (initial) |
+| `components/audits/AuditRequestTabs.tsx` | Reads from context for audit details · added ObjectId guard · added role guard so only AUDITOR + BUYER hit `/auditor/audits/:id/report` (not 4-5 other roles) | (initial) |
+| `components/audits/AuditPhaseStepper.tsx` | Added ObjectId guard at top of `loadTracking()` — early-return before fetch when `auditId === "new"` or similar | (initial) |
+| `lib/nextApi.ts` | Added `cachedGet()` + `invalidateCachedGet()` helpers · in-memory cache · in-flight promise deduplication | (initial) |
+| `lib/universalPlatformApi.ts` | `getActiveModules()` now memoizes in-memory (5-min TTL) · `updateModuleConfig()` invalidates the cache · exported `invalidateActiveModulesCache()` | (initial) |
+
+### 9.3 Verification expected after deploy
+
+Re-run the profiler (`Doc_V2/_scripts/perf-audit-detail.mjs`) and observe:
+
+| Metric | Before (2026-06-17 baseline) | After (target post-fix) | Achieved? |
+|---|---|---|---|
+| `/audits/new` wall-clock | 4.2 s | ~1.5 s · no skeleton thrash | ⏳ verify post-deploy |
+| Failing API calls on `/audits/new` | 5 of 7 (71%) | 0 | ⏳ verify post-deploy |
+| Duplicate `requestSingleAudit` on `/audits/[id]` | 2-3 | 1 | ⏳ verify post-deploy |
+| 500 on invalid audit ID | Yes (`/tracking`) | No — returns 400 | ⏳ verify post-deploy |
+| `/module-config/active` 1.5 s every page | Yes | First load only — subsequent served from in-memory cache + browser HTTP cache | ⏳ verify post-deploy |
+
+### 9.4 Behavioural changes worth knowing
+
+- **`/audits/new`** now renders the Create Audit form directly. Existing `/request-audit` route still exists and renders the same form — both paths converge.
+- **Audit Detail tabs + body** share one fetch. If you mutate the audit and want both to see the update, call the context's `reload()` (passed via `useAuditData()`).
+- **Module config** is cached for 5 minutes client-side. Admins who change module toggles via the admin UI will see the cache invalidate automatically (mutation path was wired). External callers updating via the API directly will see stale data for up to 5 minutes — accepted trade-off.
+- **`/auditor/audits/:id/report`** is no longer called by suppliers / supplier users / admin variants. Only buyer + auditor roles will get the report-available indicator on tabs.
+
+---
+
+## 10. Document control
 
 | Version | Date | Change | Author |
 |---|---|---|---|
 | 1.0 | 2026-06-17 | Initial perf audit · 5 bugs identified · 6 fixes ranked · diff-ready code samples included | Claude Code (desktop) |
+| 1.1 | 2026-06-17 | All fixes applied to backend + frontend repos · added §9 Application log · ready for post-deploy verification | Claude Code (desktop) |
 
 ---
 
